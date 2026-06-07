@@ -1,0 +1,387 @@
+ost range<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Production Cost Studio — The Spectator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3E9D4; --ink:#241F1C; --ox:#8C2A1B; --ox-d:#6E1F13;
+    --wheat:#C8922E; --olive:#3B6D11; --rule:rgba(36,31,28,.28);
+    --ledger:#EADDBF; --card:#FBF4E2;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Source Serif 4",Georgia,serif; font-size:16px; line-height:1.5; -webkit-font-smoothing:antialiased}
+  .sheet{max-width:980px; margin:0 auto; padding:36px 22px 70px}
+  .masthead{border-top:3px solid var(--ink); border-bottom:1px solid var(--ink); padding:8px 0 12px; text-align:center; margin-bottom:26px}
+  .masthead .paper{font-family:"Playfair Display",serif; font-weight:900; font-size:14px; letter-spacing:.42em; text-transform:uppercase; margin-left:.42em}
+  h1{font-family:"Playfair Display",serif; font-weight:900; font-size:clamp(28px,5vw,40px); margin:0 0 6px; letter-spacing:-.01em}
+  .sub{font-style:italic; color:#3a322d; margin:0 0 26px}
+  .grid{display:grid; gap:20px; grid-template-columns:1fr; align-items:start}
+  @media(min-width:880px){ .grid{grid-template-columns:340px 1fr} }
+  .grid.viewonly{grid-template-columns:1fr}
+  .grid.viewonly #controls{display:none}
+  .tablewrap{overflow-x:auto}
+  .card{background:var(--card); border:1px solid var(--ink); padding:18px}
+  .card h2{font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--ox); margin:0 0 14px; border-bottom:1px solid var(--rule); padding-bottom:8px}
+  .card h2:not(:first-child){margin-top:24px}
+  .fields{display:grid; grid-template-columns:1fr 1fr; gap:12px 14px}
+  .field{display:flex; flex-direction:column; gap:4px}
+  .field.wide{grid-column:1 / -1}
+  label{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ox-d)}
+  input,select{font-family:"IBM Plex Mono",monospace; font-size:14px; padding:7px 8px; border:1px solid var(--rule); background:#fff; color:var(--ink); border-radius:2px; width:100%}
+  input:focus,select:focus{outline:2px solid var(--wheat); outline-offset:-1px}
+  input[readonly]{background:var(--ledger); color:#5a5147; cursor:default}
+  input[readonly]:focus{outline:none}
+  .check{flex-direction:row; align-items:center; gap:8px}
+  .check input{width:auto}
+  .regrow{display:grid; grid-template-columns:14px 1fr 64px 72px 26px; gap:8px; align-items:center; margin-bottom:8px}
+  .regrow .bar{width:14px; height:30px; border-radius:2px}
+  .regrow input{font-size:13px; padding:6px}
+  .reghdr{display:grid; grid-template-columns:14px 1fr 64px 72px 26px; gap:8px; font-family:"IBM Plex Mono",monospace; font-size:9.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ox-d); margin-bottom:6px}
+  .reghdr span:nth-child(1){grid-column:2}
+  .del{cursor:pointer; border:1px solid var(--rule); background:#fff; color:var(--ox); border-radius:2px; height:30px; font-family:"IBM Plex Mono",monospace; font-size:14px; line-height:1}
+  .addbtn{margin-top:6px; width:100%; cursor:pointer; border:1px dashed var(--ox); background:transparent; color:var(--ox); padding:8px; font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; border-radius:2px}
+  .addbtn:hover{background:rgba(140,42,27,.06)}
+  .copybtn{margin-top:8px; width:100%; cursor:pointer; border:1px solid var(--ink); background:var(--ink); color:var(--paper); padding:9px; font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; border-radius:2px}
+  .copybtn:hover{background:var(--ox-d)}
+  #link{font-size:11px; color:#555}
+  .chartcard h2{text-align:left}
+  .legend{display:flex; flex-wrap:wrap; gap:8px 16px; font-family:"IBM Plex Mono",monospace; font-size:12px; margin-bottom:12px}
+  .legend span{display:flex; align-items:center; gap:7px}
+  .sw{width:20px; height:10px; border-radius:2px; display:inline-block}
+  .chartbox{position:relative; width:100%; height:400px}
+  .note{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--ox-d); margin-top:10px; line-height:1.7}
+  table{width:100%; border-collapse:collapse; margin-top:16px; font-family:"IBM Plex Mono",monospace; font-size:12px}
+  th,td{text-align:right; padding:6px 8px; border-bottom:1px solid var(--rule)}
+  th{font-size:9.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ox-d)}
+  th:first-child,td:first-child{text-align:left}
+  td .dot{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:6px; vertical-align:middle}
+  td.pos{color:var(--olive)} td.neg{color:var(--ox)}
+  .be-hi{color:var(--olive)}   /* out of range, higher = good (green) */
+  .be-lo{color:var(--ox)}      /* out of range, lower = bad (red)   */
+  .be-na{color:#9a8f7d}
+  #readout small{color:#9a8f7d; font-size:9px; letter-spacing:.04em}
+</style>
+
+<div class="sheet">
+  <div class="masthead"><div class="paper">The Spectator</div></div>
+  <h1>Production Cost Studio</h1>
+  <p class="sub">Calculate the cost to produce any manufactured good across a range of raw resource prices, and compare regions by tax and bonus. 
+    Each region is drawn as a shaded band for any set net wage: the upper edge is low fidelity, the lower edge is full fidelity. Lower cost is better, and a band sitting below that the sell price line is in profit. 
+    The table below shows each region's average cost and net benefit across the fidelity band, plus the price range for raw resource where you breaks even against the sell price (higher break‑even is better.) </p>
+
+  <div class="grid">
+    <div class="card" id="controls">
+      <h2>Production</h2>
+      <div class="fields">
+        <div class="field wide">
+          <label for="preset">Manufactured good</label>
+          <select id="preset"></select>
+        </div>
+        <div class="field"><label for="rawunits">Raw units</label><input id="rawunits" type="text" readonly></div>
+        <div class="field"><label for="pp">Production points</label><input id="pp" type="text" readonly></div>
+      </div>
+
+      <h2>Market</h2>
+      <div class="fields">
+        <div class="field wide"><label for="rawname">Raw resource</label><input id="rawname" type="text" readonly></div>
+        <div class="field"><label for="pmin">Raw price low</label><input id="pmin" type="number" step="0.0001" value="0.078"></div>
+        <div class="field"><label for="pmax">Raw price high</label><input id="pmax" type="number" step="0.0001" value="0.082"></div>
+        <div class="field wide"><label id="selllabel" for="sell">Concrete sell price</label><input id="sell" type="number" step="0.001" value="1.600"></div>
+        <div class="field check wide"><input id="sellon" type="checkbox" checked><label for="sellon" style="text-transform:none; letter-spacing:0; font-size:12px">Show net benefit</label></div>
+      </div>
+
+      <h2>Labour</h2>
+      <div class="fields">
+        <div class="field wide"><label for="net">Net wage target</label><input id="net" type="number" step="0.001" value="0.120"></div>
+        <div class="field"><label for="fmin">Start fidelity %</label><input id="fmin" type="number" step="1" min="1" max="10" value="1"></div>
+        <div class="field"><label for="fmax">Full fidelity %</label><input id="fmax" type="number" step="1" min="1" max="10" value="10"></div>
+      </div>
+
+      <h2>Regions</h2>
+      <div class="reghdr"><span>name</span><span>tax%</span><span>bonus%</span><span></span></div>
+      <div id="regions"></div>
+      <button class="addbtn" id="add">+ add region</button>
+
+      <h2>Share</h2>
+      <input id="link" type="text" readonly value="">
+      <button class="copybtn" id="copy">Copy share link</button>
+      <button class="copybtn" id="copyview">Copy view‑only link</button>
+    </div>
+
+    <div class="card chartcard">
+      <h2>Cost to manufacture one <span id="goodlabel">Concrete</span> (BTC)</h2>
+      <div class="legend" id="legend"></div>
+      <div class="chartbox"><canvas id="chart" role="img" aria-label="Interactive line chart. Left axis is cost per good, right axis is net benefit relative to the sell price. Each region is a shaded band between low fidelity and full fidelity. The dashed sell line marks zero net benefit."></canvas></div>
+      <div class="tablewrap"><table id="readout"><thead><tr><th>Region</th><th>set wage</th><th>cost (avg)</th><th>net benefit (avg)</th><th>cost range</th><th>raw price break‑even</th></tr></thead><tbody></tbody></table></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+(function(){
+  var PAL = ['#8C2A1B','#3B6D11','#1F6B6B','#6A3D7A','#B8860B','#2F4858','#A0522D'];
+  // good : raw resource, raw units/good, production points/good, default raw price low/high
+  var GOODS = [
+    {good:'Concrete',    raw:'Limestone',        units:10,  pp:10,  lo:0.078, hi:0.082},
+    {good:'Steel',       raw:'Iron',             units:10,  pp:10,  lo:0.078, hi:0.082},
+    {good:'Paper',       raw:'Wood',             units:10,  pp:10,  lo:0.078, hi:0.082},
+    {good:'Oil',         raw:'Petroleum',        units:1,   pp:1,   lo:0.078, hi:0.082},
+    {good:'Heavy Ammo',  raw:'Lead',             units:16,  pp:16,  lo:0.078, hi:0.082},
+    {good:'Ammo',        raw:'Lead',             units:4,   pp:4,   lo:0.078, hi:0.082},
+    {good:'Light Ammo',  raw:'Lead',             units:1,   pp:1,   lo:0.078, hi:0.082},
+    {good:'Pill',        raw:'Mysterious Plant', units:200, pp:200, lo:0.078, hi:0.082},
+    {good:'Cooked Fish', raw:'Fish',             units:1,   pp:40,  lo:3.12,  hi:3.28},
+    {good:'Steak',       raw:'Livestock',        units:1,   pp:20,  lo:1.56,  hi:1.64},
+    {good:'Bread',       raw:'Grain',            units:10,  pp:10,  lo:0.078, hi:0.082}
+  ];
+  var regions = [
+    {name:'Game pick', tax:12, bonus:60.75, color:'#8C2A1B'},
+    {name:'Union 2.5%', tax:2.5, bonus:55, color:'#3B6D11'}
+  ];
+  var chart, curSell=NaN, curSellOn=true, viewMode=false;
+
+  function $(id){ return document.getElementById(id); }
+  function num(id){ return parseFloat($(id).value); }
+  function hexA(hex,a){ var n=parseInt(hex.slice(1),16); return 'rgba('+((n>>16)&255)+','+((n>>8)&255)+','+(n&255)+','+a+')'; }
+  function clampTax(t){ if(isNaN(t)) return 1; return Math.max(1, Math.min(99, t)); }
+  function clampFid(f){ if(isNaN(f)) return 1; return Math.max(1, Math.min(10, f)); }
+  function gross(net, tax){ return net/(1 - clampTax(tax)/100); }
+  function labour(net, tax, pp, bonus, fid){ return gross(net,tax)*pp / (1 + (bonus+fid)/100); }
+  function curGood(){ return GOODS[+$('preset').value] || GOODS[0]; }
+
+  function fillGoodFields(){
+    var g=curGood();
+    $('rawname').value=g.raw; $('rawunits').value=g.units; $('pp').value=g.pp;
+    $('goodlabel').textContent=g.good;
+    $('selllabel').textContent=g.good+' sell price';
+  }
+  function applyGoodDefaults(){
+    var g=curGood();
+    $('pmin').value=g.lo; $('pmax').value=g.hi;
+    $('sell').value=(g.pp*0.16).toFixed(3);
+  }
+
+  function xPoints(min,max){
+    if(isNaN(min)) min=0; if(isNaN(max)) max=min;
+    if(max<min){ var t=min; min=max; max=t; }
+    if(max===min){ return [min]; }
+    var N=7, xs=[]; for(var i=0;i<N;i++){ xs.push(min + (max-min)*i/(N-1)); } return xs;
+  }
+
+  // ---------- shareable state ----------
+  function buildState(){
+    return {
+      g:curGood().good, lo:num('pmin'), hi:num('pmax'), so:$('sellon').checked, se:num('sell'),
+      nw:num('net'), f0:num('fmin'), f1:num('fmax'),
+      rg:regions.map(function(r){ return {n:r.name,t:r.tax,b:r.bonus,c:r.color}; })
+    };
+  }
+  function applyState(s){
+    try{
+      if(s.g){ for(var i=0;i<GOODS.length;i++){ if(GOODS[i].good===s.g){ $('preset').value=i; break; } } }
+      if(s.lo!=null) $('pmin').value=s.lo;
+      if(s.hi!=null) $('pmax').value=s.hi;
+      if(s.so!=null) $('sellon').checked=!!s.so;
+      if(s.se!=null) $('sell').value=s.se;
+      if(s.nw!=null) $('net').value=s.nw;
+      if(s.f0!=null) $('fmin').value=s.f0;
+      if(s.f1!=null) $('fmax').value=s.f1;
+      if(Array.isArray(s.rg) && s.rg.length){
+        regions = s.rg.map(function(r,i){ return {name:r.n!=null?r.n:('Region '+(i+1)), tax:+r.t, bonus:+r.b, color:r.c||PAL[i%PAL.length]}; });
+      }
+    }catch(e){}
+  }
+  function stateURL(withView){
+    var st=buildState(); if(withView) st.v=1;
+    return location.href.split('#')[0] + '#' + encodeURIComponent(JSON.stringify(st));
+  }
+  function syncHash(){
+    try{ history.replaceState(null,'',stateURL(viewMode)); }catch(e){}
+    $('link').value = stateURL(false);
+  }
+  function loadHash(){
+    if(!location.hash || location.hash.length<2) return false;
+    try{ var s=JSON.parse(decodeURIComponent(location.hash.slice(1))); applyState(s); if(s.v) viewMode=true; return true; }catch(e){ return false; }
+  }
+
+  function renderRegions(){
+    var box=$('regions'); box.innerHTML='';
+    regions.forEach(function(r,i){
+      var row=document.createElement('div'); row.className='regrow';
+      row.innerHTML =
+        '<span class="bar" style="background:'+r.color+'"></span>'+
+        '<input type="text" data-i="'+i+'" data-k="name" value="'+String(r.name).replace(/"/g,'&quot;')+'">'+
+        '<input type="number" step="0.1" min="1" data-i="'+i+'" data-k="tax" value="'+r.tax+'">'+
+        '<input type="number" step="0.25" data-i="'+i+'" data-k="bonus" value="'+r.bonus+'">'+
+        '<button class="del" data-del="'+i+'" title="remove">&times;</button>';
+      box.appendChild(row);
+    });
+    box.querySelectorAll('input').forEach(function(inp){
+      inp.addEventListener('input', function(){
+        var i=+this.dataset.i, k=this.dataset.k;
+        regions[i][k] = (k==='name') ? this.value : parseFloat(this.value);
+        update();
+      });
+    });
+    box.querySelectorAll('.del').forEach(function(b){
+      b.addEventListener('click', function(){
+        if(regions.length<=1) return;
+        regions.splice(+this.dataset.del,1); renderRegions(); update();
+      });
+    });
+  }
+
+  function update(){
+    var g=curGood(), units=g.units, pp=g.pp;
+    var net=num('net'), fmin=clampFid(num('fmin')), fmax=clampFid(num('fmax'));
+    var xs=xPoints(num('pmin'), num('pmax'));
+    var sellOn=$('sellon').checked, sell=num('sell');
+    curSell=sell; curSellOn=sellOn;
+
+    var datasets=[], legendHTML='', rows='', allY=[];
+    var avg = xs.reduce(function(a,b){return a+b;},0)/xs.length;
+    var xmin=Math.min.apply(null,xs), xmax=Math.max.apply(null,xs);
+
+    regions.forEach(function(r){
+      var up = xs.map(function(x){ return labour(net,r.tax,pp,r.bonus,fmin) + units*x; });
+      var lo = xs.map(function(x){ return labour(net,r.tax,pp,r.bonus,fmax) + units*x; });
+      allY = allY.concat(up, lo);
+      datasets.push({label:r.name, region:r.name, fid:fmin, kind:'region', data:up, borderColor:r.color, backgroundColor:r.color,
+        borderWidth:2, pointRadius:2, pointBackgroundColor:r.color, tension:0, fill:false, yAxisID:'y'});
+      datasets.push({label:r.name, region:r.name, fid:fmax, kind:'region', data:lo, borderColor:r.color, backgroundColor:hexA(r.color,0.16),
+        borderWidth:2, borderDash:[6,4], pointRadius:2, pointBackgroundColor:r.color, tension:0, fill:'-1', yAxisID:'y'});
+
+      legendHTML += '<span><span class="sw" style="background:'+r.color+'"></span>'+r.name+' · '+r.tax+'% tax · '+r.bonus+'% bonus</span>';
+
+      var setW = gross(net, r.tax);
+      var newAvg = labour(net,r.tax,pp,r.bonus,fmin) + units*avg;
+      var matAvg = labour(net,r.tax,pp,r.bonus,fmax) + units*avg;
+      var bandAvg = (newAvg+matAvg)/2;
+      var lowCost = labour(net,r.tax,pp,r.bonus,fmax) + units*xmin;
+      var highCost= labour(net,r.tax,pp,r.bonus,fmin) + units*xmax;
+      var nbCls='', nbTxt='—';
+      if(sellOn && !isNaN(sell)){ var nb=sell-bandAvg; nbCls = nb>=0?'pos':'neg'; nbTxt=(nb>=0?'+':'')+nb.toFixed(3); }
+
+      function beTxt(fid){
+        if(!(units>0) || !sellOn || isNaN(sell)) return '<span class="be-na">—</span>';
+        var x=(sell - labour(net,r.tax,pp,r.bonus,fid))/units;
+        if(x<=0) return '<span class="be-na">never</span>';
+        var cls='';
+        if(x>xmax) cls='be-hi';        // out of range, higher than market high -> better
+        else if(x<xmin) cls='be-lo';   // out of range, lower than market low  -> worse
+        return '<span class="'+cls+'">'+x.toFixed(4)+'</span>';
+      }
+      var beCell = beTxt(fmin)+' <small>'+fmin+'%</small><br>'+beTxt(fmax)+' <small>'+fmax+'%</small>';
+
+      rows += '<tr><td><span class="dot" style="background:'+r.color+'"></span>'+r.name+'</td>'+
+              '<td>'+setW.toFixed(3)+'</td><td>'+bandAvg.toFixed(3)+'</td>'+
+              '<td class="'+nbCls+'">'+nbTxt+'</td>'+
+              '<td>'+lowCost.toFixed(3)+'–'+highCost.toFixed(3)+'</td>'+
+              '<td>'+beCell+'</td></tr>';
+    });
+
+    if(sellOn && !isNaN(sell)){
+      allY.push(sell);
+      datasets.push({label:'sell price', kind:'sell', data:xs.map(function(){return sell;}), borderColor:'#241F1C',
+        borderDash:[2,3], borderWidth:1.5, pointRadius:0, tension:0, fill:false, yAxisID:'y'});
+      legendHTML += '<span><span class="sw" style="background:#241F1C"></span>sell price '+sell.toFixed(3)+' (net benefit = 0)</span>';
+    }
+
+    var dMin=Math.min.apply(null,allY), dMax=Math.max.apply(null,allY);
+    var pad=(dMax-dMin)*0.08; if(!(pad>0)) pad=Math.max(0.02, Math.abs(dMax)*0.05);
+    var Lmin=dMin-pad, Lmax=dMax+pad;
+    var y2min = sell - Lmax, y2max = sell - Lmin;
+
+    $('legend').innerHTML = legendHTML;
+    $('readout').querySelector('tbody').innerHTML = rows;
+
+    var labels = xs.map(function(x){ return x.toFixed(4); });
+    var xtitle = g.raw + ' price (BTC per unit)';
+    if(!chart){
+      chart = new Chart($('chart'), {
+        type:'line',
+        data:{labels:labels, datasets:datasets},
+        options:{
+          responsive:true, maintainAspectRatio:false,
+          interaction:{mode:'nearest', intersect:false},
+          plugins:{ legend:{display:false},
+            tooltip:{ callbacks:{
+              title:function(items){ return items.length ? items[0].parsed.y.toFixed(3) : ''; },
+              label:function(c){
+                var d=c.dataset;
+                if(d.kind==='sell') return 'Sell price';
+                var cost=c.parsed.y, fidTxt='(with '+d.fid+'% fidelity)';
+                if(curSellOn && !isNaN(curSell)){
+                  var nb=curSell-cost;
+                  return d.region+' Net Benefit: '+(nb>=0?'+':'')+nb.toFixed(3)+' '+fidTxt;
+                }
+                return d.region+' cost '+fidTxt;
+              }
+            }}},
+          scales:{
+            x:{ title:{display:true, text:xtitle, color:'#241F1C', font:{family:'IBM Plex Mono'}},
+                ticks:{color:'#241F1C', font:{family:'IBM Plex Mono',size:11}}, grid:{color:'rgba(36,31,28,0.10)'} },
+            y:{ position:'left', min:Lmin, max:Lmax,
+                title:{display:true, text:'cost per good (BTC)', color:'#241F1C', font:{family:'IBM Plex Mono'}},
+                ticks:{color:'#241F1C', font:{family:'IBM Plex Mono',size:11}, callback:function(v){return v.toFixed(2);}},
+                grid:{color:'rgba(36,31,28,0.10)'} },
+            y2:{ position:'right', reverse:true, display:sellOn, min:y2min, max:y2max,
+                title:{display:true, text:'net benefit (BTC)', color:'#3B6D11', font:{family:'IBM Plex Mono'}},
+                ticks:{ font:{family:'IBM Plex Mono',size:11},
+                        color:function(c){ var v=c.tick.value; if(Math.abs(v)<5e-4) return '#241F1C'; return v<0 ? '#8C2A1B' : '#3B6D11'; },
+                        callback:function(v){ return (v>0?'+':'')+v.toFixed(3); } },
+                grid:{drawOnChartArea:false} }
+          }
+        }
+      });
+    } else {
+      chart.data.labels = labels;
+      chart.data.datasets = datasets;
+      chart.options.scales.x.title.text = xtitle;
+      chart.options.scales.y.min = Lmin;
+      chart.options.scales.y.max = Lmax;
+      chart.options.scales.y2.display = sellOn;
+      chart.options.scales.y2.min = y2min;
+      chart.options.scales.y2.max = y2max;
+      chart.update();
+    }
+    syncHash();
+  }
+
+  GOODS.forEach(function(g,i){
+    var o=document.createElement('option'); o.value=i; o.textContent=g.good; $('preset').appendChild(o);
+  });
+
+  $('preset').addEventListener('change', function(){ fillGoodFields(); applyGoodDefaults(); update(); });
+  ['pmin','pmax','sell','net','fmin','fmax'].forEach(function(id){ $(id).addEventListener('input', update); });
+  $('sellon').addEventListener('change', update);
+  $('add').addEventListener('click', function(){
+    regions.push({name:'Region '+(regions.length+1), tax:2.5, bonus:30, color:PAL[regions.length % PAL.length]});
+    renderRegions(); update();
+  });
+  function fallbackCopy(text){ var f=$('link'); var old=f.value; f.value=text; f.focus(); f.select(); try{document.execCommand('copy');}catch(e){} f.value=old; }
+  $('copy').addEventListener('click', function(){
+    var f=$('link'); f.focus(); f.select();
+    var done=function(){ var b=$('copy'), t=b.textContent; b.textContent='Copied!'; setTimeout(function(){b.textContent=t;},1300); };
+    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(f.value).then(done, function(){ fallbackCopy(f.value); done(); }); }
+    else { fallbackCopy(f.value); done(); }
+  });
+  $('copyview').addEventListener('click', function(){
+    var url=stateURL(true), b=this, t=b.textContent;
+    var done=function(){ b.textContent='Copied view link!'; setTimeout(function(){b.textContent=t;},1300); };
+    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(done, function(){ fallbackCopy(url); done(); }); }
+    else { fallbackCopy(url); done(); }
+  });
+
+  var hadHash = loadHash();
+  fillGoodFields();
+  if(!hadHash) applyGoodDefaults();
+  if(viewMode){ document.querySelector('.grid').classList.add('viewonly'); }
+  renderRegions();
+  update();
+})();
+</script>
