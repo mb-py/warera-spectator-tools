@@ -158,8 +158,8 @@
   function beRegionLine(r,x){
     var f = beFidelity(r.tax, r.bonus, x);
     if(f===null || f>10) return r.name+': never profitable';
-    if(f<=1) return r.name+': always profitable';
-    return r.name+': break-even @ '+f.toFixed(1)+'% fidelity';
+    if(f<=1) return r.name+' always profitable';
+    return r.name+' '+f.toFixed(1)+'% fidelity';
   }
   function labour(net, tax, pp, bonus, fid){ return gross(net,tax)*pp / (1 + (bonus+fid)/100); }
   function curGood(){ return GOODS[+$('preset').value] || GOODS[0]; }
