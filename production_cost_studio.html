@@ -141,7 +141,7 @@
   var regions = [
     {name:'Region 1', tax:2.5, bonus:30, color:'#8C2A1B'}
   ];
-  var chart, curSell=NaN, curSellOn=true, viewMode=false;
+  var chart, curSell=NaN, curSellOn=true, viewMode=false, curNet=0, curUnits=0, curPP=0, curRegions=[];
 
   function $(id){ return document.getElementById(id); }
   function num(id){ return parseFloat($(id).value); }
@@ -149,6 +149,18 @@
   function clampTax(t){ if(isNaN(t)) return 1; return Math.max(1, Math.min(99, t)); }
   function clampFid(f){ if(isNaN(f)) return 1; return Math.max(1, Math.min(10, f)); }
   function gross(net, tax){ return net/(1 - clampTax(tax)/100); }
+  function labour(net, tax, pp, bonus, fid){ return gross(net,tax)*pp / (1 + (bonus+fid)/100); }
+  function beFidelity(tax,bonus,x){
+    var M = curSell - curUnits*x;                 // labour budget left after raw cost
+    if(!(M>0)) return null;                       // raw cost alone meets/exceeds sell
+    return 100*(gross(curNet,tax)*curPP/M - 1) - bonus;
+  }
+  function beRegionLine(r,x){
+    var f = beFidelity(r.tax, r.bonus, x);
+    if(f===null || f>10) return r.name+': never profitable';
+    if(f<=1) return r.name+': always profitable';
+    return r.name+': break-even @ '+f.toFixed(1)+'% fidelity';
+  }
   function labour(net, tax, pp, bonus, fid){ return gross(net,tax)*pp / (1 + (bonus+fid)/100); }
   function curGood(){ return GOODS[+$('preset').value] || GOODS[0]; }
 
@@ -239,7 +251,8 @@
     var net=num('net'), fmin=clampFid(num('fmin')), fmax=clampFid(num('fmax'));
     var xs=xPoints(num('pmin'), num('pmax'));
     var sellOn=$('sellon').checked, sell=num('sell');
-    curSell=sell; curSellOn=sellOn;
+    curSell=sell; curSellOn=sellOn; curNet=net; curUnits=units; curPP=pp;
+    curRegions=regions.map(function(r){ return {name:r.name, tax:r.tax, bonus:r.bonus}; });
 
     var datasets=[], legendHTML='', rows='', allY=[];
     var avg = xs.reduce(function(a,b){return a+b;},0)/xs.length;
@@ -309,10 +322,18 @@
           interaction:{mode:'nearest', intersect:false},
           plugins:{ legend:{display:false},
             tooltip:{ callbacks:{
-              title:function(items){ return items.length ? items[0].parsed.y.toFixed(3) : ''; },
+              title:function(items){
+                if(!items.length) return '';
+                var it=items[0];
+                if(it.dataset.kind==='sell') return it.label;   // raw price at this point
+                return it.parsed.y.toFixed(3);                  // cost to manufacture
+              },
               label:function(c){
                 var d=c.dataset;
-                if(d.kind==='sell') return 'Sell price';
+                if(d.kind==='sell'){
+                  var x=parseFloat(c.label);
+                  return curRegions.map(function(r){ return beRegionLine(r,x); });
+                }
                 var cost=c.parsed.y, fidTxt='(with '+d.fid+'% fidelity)';
                 if(curSellOn && !isNaN(curSell)){
                   var nb=curSell-cost;
