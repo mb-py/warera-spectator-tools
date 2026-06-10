@@ -23,6 +23,7 @@
   .grid.viewonly{grid-template-columns:1fr}
   .grid.viewonly #controls{display:none}
   .tablewrap{overflow-x:auto}
+  #download{width:auto; margin-top:14px; padding:9px 16px}
   .card{background:var(--card); border:1px solid var(--ink); padding:18px}
   .card h2{font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--ox); margin:0 0 14px; border-bottom:1px solid var(--rule); padding-bottom:8px}
   .card h2:not(:first-child){margin-top:24px}
@@ -111,7 +112,7 @@
       <button class="copybtn" id="copyview">Copy view‑only link</button>
     </div>
 
-    <div class="card chartcard">
+    <div class="card chartcard" id="chartcard">
       <h2>Cost to manufacture one <span id="goodlabel">Concrete</span> (BTC)</h2>
       <div class="legend" id="legend"></div>
       <div class="chartbox"><canvas id="chart" role="img" aria-label="Interactive line chart. Left axis is cost per good, right axis is net benefit relative to the sell price. Each region is a shaded band between low fidelity and full fidelity. The dashed sell line marks zero net benefit."></canvas></div>
@@ -121,6 +122,7 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script>
 (function(){
   var PAL = ['#8C2A1B','#3B6D11','#1F6B6B','#6A3D7A','#B8860B','#2F4858','#A0522D'];
@@ -395,6 +397,18 @@
     var done=function(){ b.textContent='Copied view link!'; setTimeout(function(){b.textContent=t;},1300); };
     if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(done, function(){ fallbackCopy(url); done(); }); }
     else { fallbackCopy(url); done(); }
+  });
+  $('download').addEventListener('click', function(){
+    if(typeof html2canvas!=='function'){ return; }
+    var node=document.getElementById('chartcard'), b=this;
+    b.style.display='none';                 // keep the button out of the shot
+    html2canvas(node, {backgroundColor:'#F3E9D4', scale:2, logging:false}).then(function(canvas){
+      b.style.display='';
+      var a=document.createElement('a');
+      a.download=curGood().good.replace(/\s+/g,'_').toLowerCase()+'_cost_chart.png';
+      a.href=canvas.toDataURL('image/png');
+      a.click();
+    }).catch(function(){ b.style.display=''; });
   });
 
   var hadHash = loadHash();
