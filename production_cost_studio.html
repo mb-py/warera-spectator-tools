@@ -403,7 +403,7 @@
     if(typeof html2canvas!=='function'){ return; }
     var node=document.getElementById('chartcard'), b=this;
     b.style.display='none';                 // keep the button out of the shot
-    html2canvas(node, {backgroundColor:'#F3E9D4', scale:2, logging:false}).then(function(canvas){
+    html2canvas(node, {backgroundColor:'#F3E9D4', scale:1, logging:false}).then(function(canvas){
       b.style.display='';
       var a=document.createElement('a');
       a.download=curGood().good.replace(/\s+/g,'_').toLowerCase()+'_cost_chart.png';
