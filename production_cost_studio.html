@@ -404,7 +404,7 @@
   // ---------- clipboard ----------
   function renderCard(){
     var node=document.getElementById('chartcard');
-    var SCALE=3, prev=chart.options.devicePixelRatio;
+    var SCALE=1, prev=chart.options.devicePixelRatio;
     chart.options.devicePixelRatio=SCALE; chart.resize();
     return new Promise(function(resolve,reject){
       requestAnimationFrame(function(){
