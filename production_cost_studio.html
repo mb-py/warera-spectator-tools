@@ -111,7 +111,7 @@
       <input id="link" type="text" readonly value="">
       <button class="copybtn" id="copy">Copy share link</button>
       <button class="copybtn" id="copyview">Copy view‑only link</button>
-      <button class="copybtn" id="download">Download chart image (PNG)</button>
+      <button class="copybtn" id="download">Copy to clipboard (PNG)</button>
     </div>
 
     <div class="card chartcard" id="chartcard">
@@ -120,7 +120,7 @@
       <div class="chartbox"><canvas id="chart" role="img" aria-label="Interactive line chart. Left axis is cost per good, right axis is net benefit relative to the sell price. Each region is a shaded band between low fidelity and full fidelity. The dashed sell line marks zero net benefit."></canvas></div>
       <div class="tablewrap"><table id="readout"><thead><tr><th>Region</th><th>set wage</th><th>cost (avg)</th><th>net benefit (avg)</th><th>cost range</th><th>raw cost break‑even</th></tr></thead><tbody></tbody></table></div>
     </div>
-    <button class="copybtn" id="downloadView">Download chart image (PNG)</button>
+    <button class="copybtn" id="downloadView">Copy to clipboard (PNG)</button>
   </div>
 </div>
 
@@ -401,25 +401,45 @@
     if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(done, function(){ fallbackCopy(url); done(); }); }
     else { fallbackCopy(url); done(); }
   });
-  function downloadChart(b){
-    if(typeof html2canvas!=='function'){ return; }
+  // ---------- clipboard ----------
+  function renderCard(){
     var node=document.getElementById('chartcard');
-    var SCALE=3, prev=chart.options.devicePixelRatio, t=b?b.textContent:'';
-    if(b) b.textContent='Rendering…';
+    var SCALE=3, prev=chart.options.devicePixelRatio;
     chart.options.devicePixelRatio=SCALE; chart.resize();
-    requestAnimationFrame(function(){
-      html2canvas(node, {backgroundColor:'#F3E9D4', scale:SCALE, logging:false}).then(function(canvas){
-        chart.options.devicePixelRatio=prev; chart.resize();
-        if(b) b.textContent=t;
-        var a=document.createElement('a');
-        a.download=curGood().good.replace(/\s+/g,'_').toLowerCase()+'_cost_chart.png';
-        a.href=canvas.toDataURL('image/png'); a.click();
-      }).catch(function(){ chart.options.devicePixelRatio=prev; chart.resize(); if(b) b.textContent=t; });
+    return new Promise(function(resolve,reject){
+      requestAnimationFrame(function(){
+        html2canvas(node, {backgroundColor:'#F3E9D4', scale:SCALE, logging:false}).then(function(canvas){
+          chart.options.devicePixelRatio=prev; chart.resize();
+          resolve(canvas);
+        }).catch(function(e){ chart.options.devicePixelRatio=prev; chart.resize(); reject(e); });
+      });
     });
   }
+
+  function saveAsFile(canvas){
+    var a=document.createElement('a');
+    a.download=curGood().good.replace(/\s+/g,'_').toLowerCase()+'_cost_chart.png';
+    a.href=canvas.toDataURL('image/png'); a.click();
+  }
+
+  function exportChart(b){
+    if(typeof html2canvas!=='function'){ return; }
+    var t=b?b.textContent:''; if(b) b.textContent='Rendering…';
+    var restore=function(msg){ if(b){ b.textContent=msg; setTimeout(function(){b.textContent=t;},1300); } };
+    renderCard().then(function(canvas){
+      var canClip = navigator.clipboard && window.ClipboardItem && window.isSecureContext;
+      if(!canClip){ saveAsFile(canvas); restore('Downloaded'); return; }
+      canvas.toBlob(function(blob){
+        navigator.clipboard.write([new ClipboardItem({'image/png':blob})])
+          .then(function(){ restore('Copied!'); })
+          .catch(function(){ saveAsFile(canvas); restore('Downloaded'); });
+      }, 'image/png');
+    }).catch(function(){ restore('Failed'); });
+  }
+
   ['download','downloadView'].forEach(function(id){
     var el=document.getElementById(id);
-    if(el) el.addEventListener('click', function(){ downloadChart(this); });
+    if(el) el.addEventListener('click', function(){ exportChart(this); });
   });
 
   var hadHash = loadHash();
