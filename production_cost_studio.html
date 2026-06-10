@@ -23,7 +23,8 @@
   .grid.viewonly{grid-template-columns:1fr}
   .grid.viewonly #controls{display:none}
   .tablewrap{overflow-x:auto}
-  #download{width:auto; margin-top:14px; padding:9px 16px}
+  #downloadView{display:none}
+  .grid.viewonly #downloadView{display:block; width:100%}
   .card{background:var(--card); border:1px solid var(--ink); padding:18px}
   .card h2{font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--ox); margin:0 0 14px; border-bottom:1px solid var(--rule); padding-bottom:8px}
   .card h2:not(:first-child){margin-top:24px}
@@ -110,6 +111,7 @@
       <input id="link" type="text" readonly value="">
       <button class="copybtn" id="copy">Copy share link</button>
       <button class="copybtn" id="copyview">Copy view‑only link</button>
+      <button class="copybtn" id="download">Download chart image (PNG)</button>
     </div>
 
     <div class="card chartcard" id="chartcard">
@@ -117,8 +119,8 @@
       <div class="legend" id="legend"></div>
       <div class="chartbox"><canvas id="chart" role="img" aria-label="Interactive line chart. Left axis is cost per good, right axis is net benefit relative to the sell price. Each region is a shaded band between low fidelity and full fidelity. The dashed sell line marks zero net benefit."></canvas></div>
       <div class="tablewrap"><table id="readout"><thead><tr><th>Region</th><th>set wage</th><th>cost (avg)</th><th>net benefit (avg)</th><th>cost range</th><th>raw cost break‑even</th></tr></thead><tbody></tbody></table></div>
-      </div>
-    <button class="copybtn" id="download">Download chart image (PNG)</button>
+    </div>
+    <button class="copybtn" id="downloadView">Download chart image (PNG)</button>
   </div>
 </div>
 
@@ -399,17 +401,25 @@
     if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(done, function(){ fallbackCopy(url); done(); }); }
     else { fallbackCopy(url); done(); }
   });
-  $('download').addEventListener('click', function(){
+  function downloadChart(b){
     if(typeof html2canvas!=='function'){ return; }
-    var node=document.getElementById('chartcard'), b=this;
-    b.style.display='none';                 // keep the button out of the shot
-    html2canvas(node, {backgroundColor:'#F3E9D4', scale:1, logging:false}).then(function(canvas){
-      b.style.display='';
-      var a=document.createElement('a');
-      a.download=curGood().good.replace(/\s+/g,'_').toLowerCase()+'_cost_chart.png';
-      a.href=canvas.toDataURL('image/png');
-      a.click();
-    }).catch(function(){ b.style.display=''; });
+    var node=document.getElementById('chartcard');
+    var SCALE=3, prev=chart.options.devicePixelRatio, t=b?b.textContent:'';
+    if(b) b.textContent='Rendering…';
+    chart.options.devicePixelRatio=SCALE; chart.resize();
+    requestAnimationFrame(function(){
+      html2canvas(node, {backgroundColor:'#F3E9D4', scale:SCALE, logging:false}).then(function(canvas){
+        chart.options.devicePixelRatio=prev; chart.resize();
+        if(b) b.textContent=t;
+        var a=document.createElement('a');
+        a.download=curGood().good.replace(/\s+/g,'_').toLowerCase()+'_cost_chart.png';
+        a.href=canvas.toDataURL('image/png'); a.click();
+      }).catch(function(){ chart.options.devicePixelRatio=prev; chart.resize(); if(b) b.textContent=t; });
+    });
+  }
+  ['download','downloadView'].forEach(function(id){
+    var el=document.getElementById(id);
+    if(el) el.addEventListener('click', function(){ downloadChart(this); });
   });
 
   var hadHash = loadHash();
