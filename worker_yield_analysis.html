@@ -1,0 +1,943 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Worker Yield Analysis — The Spectator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="spectator.css">
+<style>
+  /* natrow — two-line layout */
+  .natrow{display:flex; align-items:flex-start; gap:8px; padding:5px 0; font-family:"IBM Plex Mono",monospace; font-size:12px}
+  .natrow .bar{width:12px; height:12px; border-radius:2px; display:inline-block; flex:none; margin-top:2px}
+  .natrow .nat-info{display:flex; flex-direction:column; gap:1px; flex:1; min-width:0}
+  .natrow .nat-name{font-size:12px}
+  .natrow small{color:var(--ox-d); font-size:9px}
+  .nat-empty{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--ox-d); padding:4px 0}
+  .msg{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ox-d); padding:20px; line-height:1.7}
+
+  /* outer layout: sidebar + main */
+  .app-layout{display:grid; gap:20px; grid-template-columns:1fr; align-items:start}
+  @media(min-width:780px){ .app-layout{grid-template-columns:240px 1fr} }
+  .main-area{min-width:0}
+
+  /* main tabs */
+  .tabs{display:flex; gap:0; margin-bottom:0; border-bottom:2px solid var(--ink)}
+  .tabpanel.active>.card{border-top:none}
+  .tab-btn{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+    padding:8px 18px; border:1px solid transparent; border-bottom:none; background:transparent;
+    color:var(--ox-d); cursor:pointer; position:relative; bottom:-2px}
+  .tab-btn.active{color:var(--ink); background:var(--card); border-color:var(--ink); border-bottom:2px solid var(--card)}
+  .tab-btn:hover:not(.active){color:var(--ink); background:rgba(36,31,28,.05)}
+  .tabpanel{display:none}
+  .tabpanel.active{display:block}
+
+  /* sidebar inner tabs */
+  .stab-bar{display:flex; margin:-18px -18px 0; border-bottom:1px solid var(--rule)}
+  .stab-btn{font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.14em; text-transform:uppercase;
+    flex:1; padding:8px 6px; border:none; background:transparent; color:var(--ox-d); cursor:pointer;
+    border-bottom:2px solid transparent; position:relative; top:1px; text-align:center}
+  .stab-btn.active{color:var(--ink); border-bottom-color:var(--ox)}
+  .stab-btn:hover:not(.active){color:var(--ink)}
+  .stabpanel{display:none; padding-top:14px}
+  .stabpanel.active{display:block}
+
+  /* prices panel (inside sidebar prices tab) */
+  .price-fields{display:grid; grid-template-columns:1fr 1fr; gap:5px 8px; margin-top:5px}
+  .price-field{display:flex; flex-direction:column; gap:2px}
+  .price-field label{font-size:9px; letter-spacing:.06em}
+  .price-field input{font-size:11px; padding:3px 5px}
+  .price-sec{font-family:"IBM Plex Mono",monospace; font-size:9px; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--ox-d); margin-top:12px; padding-top:9px; border-top:1px solid var(--rule)}
+  .price-sec:first-child{margin-top:0; padding-top:0; border-top:none}
+
+  /* viewonly */
+  .sheet.viewonly .sidebar{display:none}
+  .sheet.viewonly .tabs{display:none}
+  .sheet.viewonly .app-layout{grid-template-columns:1fr}
+  /* analysis view (default): hide overview */
+  .sheet.viewonly:not(.view-ov) #tab-overview{display:none!important}
+  /* overview view: show overview, hide analysis */
+  .sheet.viewonly.view-ov #tab-analysis{display:none!important}
+  .sheet.viewonly.view-ov #tab-overview{display:block!important}
+</style>
+
+<div class="sheet">
+  <div class="masthead"><div class="paper">The Spectator</div></div>
+  <h1>Worker Yield Analysis</h1>
+  <p class="sub">Find where your workers return the most. Ranked by net benefit per production point across every resource and region, from fidelity 1% to 10%.</p>
+
+  <div class="app-layout">
+
+    <!-- ══ Sidebar: two cards ══ -->
+    <div class="sidebar">
+
+      <!-- Card 1: Wage -->
+      <div class="card" style="margin-bottom:16px">
+        <h2>Wage</h2>
+        <div class="fields">
+          <div class="field"><label for="wmode">Type</label><select id="wmode"><option value="net">Net</option><option value="gross">Gross</option></select></div>
+          <div class="field"><label for="wage">Amount</label><input id="wage" type="number" step="0.001" value="0.120"></div>
+        </div>
+      </div>
+
+      <!-- Card 2: Resource config + Prices (inner tabs) -->
+      <div class="card">
+        <div class="stab-bar">
+          <button class="stab-btn active" data-stab="prices">All Prices</button>
+          <button class="stab-btn" data-stab="resource">Per Product</button>
+        </div>
+
+        <!-- Inner tab: Resource analysis config -->
+        <div id="stab-resource" class="stabpanel">
+          <div class="fields" style="grid-template-columns:1fr">
+            <div class="field"><label for="res">Product</label><select id="res"></select></div>
+            <div class="field"><label for="recipe">Input</label><input id="recipe" type="text" readonly></div>
+            <div class="field"><label id="selllabel" for="sell">Sell price</label><input id="sell" type="number" step="0.0001"></div>
+            <div class="field" id="inpriceField"><label id="inpricelabel" for="inprice">Input price</label><input id="inprice" type="number" step="0.0001"></div>
+          </div>
+
+          <h2>Specialised regions</h2>
+          <div id="nations"></div>
+        </div>
+
+        <!-- Inner tab: Market prices -->
+        <div id="stab-prices" class="stabpanel active">
+          <p style="font-family:'IBM Plex Mono',monospace; font-size:9.5px; color:var(--ox-d); margin:0 0 8px; line-height:1.6">
+            Override default market prices. Updates both charts immediately.
+          </p>
+          <div class="price-sec">Manufactured</div>
+          <div class="price-fields" id="pf-mfg"></div>
+          <div class="price-sec">Raw</div>
+          <div class="price-fields" id="pf-raw"></div>
+        </div>
+      </div>
+
+      <!-- Card 3: Share + export -->
+      <div class="card" style="margin-top:16px">
+        <h2>Share</h2>
+        <input id="link" type="text" readonly value="">
+        <button class="copybtn" id="copy">Copy share link</button>
+        <button class="copybtn" id="copyview">Copy view‑only link</button>
+        <button class="copybtn" id="export">Copy chart image</button>
+        <button class="copybtn" id="resetls" style="margin-top:8px; background:var(--ox-d); border-color:var(--ox-d)">Reset saved prices</button>
+      </div>
+
+    </div><!-- /.sidebar -->
+
+    <!-- ══ Main area: tabs + two charts ══ -->
+    <div class="main-area">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="overview">All Resources</button>
+        <button class="tab-btn" data-tab="analysis">Resource Analysis</button>
+      </div>
+
+      <!-- Tab 1: single-resource line chart -->
+      <div id="tab-analysis" class="tabpanel">
+        <div class="card chartcard" id="chartcard">
+          <h2>Net benefit per worker — <span id="reslabel">Concrete</span></h2>
+          <div class="legend" id="legend"></div>
+          <div class="chartbox"><canvas id="chart" role="img" aria-label="Line chart of net benefit per worker against worker fidelity from 1 to 10 percent."></canvas></div>
+          <div class="tablewrap"><table id="readout"><thead><tr><th>Region</th><th>set wage</th><th>net @1%</th><th>net @10%</th><th>break‑even fidelity</th></tr></thead><tbody></tbody></table></div>
+        </div>
+      </div>
+
+      <!-- Tab 2: all-resources line chart + table -->
+      <div id="tab-overview" class="tabpanel active">
+        <div class="card chartcard">
+          <h2>Net benefit per worker — all resources, best regions</h2>
+          <div class="legend" id="ov-legend"></div>
+          <div class="chartbox"><canvas id="ov-chart" role="img" aria-label="Line chart of net benefit per worker for every resource's best region, fidelity 1–10%."></canvas></div>
+          <div class="tablewrap">
+            <table id="overview-table">
+              <thead>
+                <tr>
+                  <th>Resource</th>
+                  <th>Best @ 10% fidelity</th>
+                  <th>Net / PP</th>
+                  <th>Best @ 1% fidelity</th>
+                  <th>Net / PP</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.main-area -->
+  </div><!-- /.app-layout -->
+</div><!-- /.sheet -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+(function(){
+  var PAL = ['#3B6D11','#8C2A1B','#1F6B6B','#6A3D7A','#B8860B','#2F4858','#A0522D'];
+  /* Semantic color map for the All Resources overview chart */
+  var RESOURCE_COLOR = {
+    concrete:   '#C88000', limestone:  '#E8CC80',   /* amber-yellow / pale yellow */
+    steel:      '#2C4A6A', iron:       '#8AAABB',   /* deep blue-gray / pale blue-gray */
+    paper:      '#1A5C22', wood:       '#78A878',   /* deep green / pale sage */
+    oil:        '#5C2E10', petroleum:  '#A87858',   /* dark brown / pale tan */
+    bread:      '#B87000', grain:      '#DEC870',   /* deep golden / pale straw */
+    steak:      '#8C2828', livestock:  '#D09090',   /* deep red / pale pink */
+    cookedFish: '#1A70A0', fish:       '#80C0E0',   /* ocean blue / pale sky */
+    heavyAmmo:  '#4A1080', ammo:       '#7030A0',   /* dark purple / medium purple */
+    lightAmmo:  '#A060C0', lead:       '#505060',   /* light purple / dark gray */
+    cocain:     '#7A8800', coca:       '#B8CC58',   /* deep yellow-green / pale yellow-green */
+  };
+
+  var RESOURCES = [
+    {key:'concrete',   name:'Concrete',   type:'mfg', input:'limestone', inUnits:10,  pp:10},
+    {key:'steel',      name:'Steel',      type:'mfg', input:'iron',      inUnits:10,  pp:10},
+    {key:'paper',      name:'Paper',      type:'mfg', input:'wood',      inUnits:1,   pp:1},
+    {key:'oil',        name:'Oil',        type:'mfg', input:'petroleum', inUnits:1,   pp:1},
+    {key:'bread',      name:'Bread',      type:'mfg', input:'grain',     inUnits:10,  pp:10},
+    {key:'steak',      name:'Steak',      type:'mfg', input:'livestock', inUnits:1,   pp:20},
+    {key:'cookedFish', name:'Cooked Fish',type:'mfg', input:'fish',      inUnits:1,   pp:40},
+    {key:'heavyAmmo',  name:'Heavy Ammo', type:'mfg', input:'lead',      inUnits:16,  pp:16},
+    {key:'ammo',       name:'Ammo',       type:'mfg', input:'lead',      inUnits:4,   pp:4},
+    {key:'lightAmmo',  name:'Light Ammo', type:'mfg', input:'lead',      inUnits:1,   pp:1},
+    {key:'cocain',     name:'Cocaine',    type:'mfg', input:'coca',      inUnits:200, pp:200},
+    {key:'limestone',  name:'Limestone',  type:'raw', input:null, inUnits:0, pp:1},
+    {key:'iron',       name:'Iron',       type:'raw', input:null, inUnits:0, pp:1},
+    {key:'wood',       name:'Wood',       type:'raw', input:null, inUnits:0, pp:1},
+    {key:'lead',       name:'Lead',       type:'raw', input:null, inUnits:0, pp:1},
+    {key:'petroleum',  name:'Petroleum',  type:'raw', input:null, inUnits:0, pp:1},
+    {key:'coca',       name:'Coca',       type:'raw', input:null, inUnits:0, pp:1},
+    {key:'grain',      name:'Grain',      type:'raw', input:null, inUnits:0, pp:1},
+    {key:'livestock',  name:'Livestock',  type:'raw', input:null, inUnits:0, pp:20},
+    {key:'fish',       name:'Fish',       type:'raw', input:null, inUnits:0, pp:40}
+  ];
+
+  /* Hybrid linear-log scale for the All Resources chart.
+     |x| ≤ LIN_MAX  →  f(x) = x            (identity; equal pixel spacing per unit)
+     |x| >  LIN_MAX  →  f(x) = sign · (LIN_MAX + LIN_K · log₁₀(|x|/LIN_MAX))
+     LIN_K = LIN_MAX · ln10 gives C¹ continuity at the transition. */
+  var LIN_MAX = 0.005;
+  var LIN_K   = LIN_MAX * Math.LN10;  /* ≈ 0.01151 */
+  function ovSymlog(x){
+    if(x===0) return 0;
+    var s=x>0?1:-1, a=Math.abs(x);
+    return a<=LIN_MAX ? x : s*(LIN_MAX + LIN_K*Math.log10(a/LIN_MAX));
+  }
+  function ovSymexp(y){
+    if(y===0) return 0;
+    var s=y>0?1:-1, a=Math.abs(y);
+    return a<=LIN_MAX ? y : s*LIN_MAX*Math.pow(10,(a-LIN_MAX)/LIN_K);
+  }
+  /* Fine-grained ticks inside the linear region, coarser log ticks outside */
+  var OV_NICE = [-0.2,-0.1,-0.05,-0.02,-0.01,
+                 -0.005,-0.004,-0.003,-0.002,-0.001,
+                  0,
+                  0.001,0.002,0.003,0.004,0.005,
+                  0.01,0.02,0.05,0.1,0.2];
+  function ovFmt(symVal){
+    var orig = ovSymexp(symVal);
+    if(Math.abs(orig)<1e-9) return '0';
+    var abs=Math.abs(orig);
+    /* Gridlines for every 0.001 in the linear region, but labels only at ±LIN_MAX and beyond */
+    if(abs < LIN_MAX - 1e-9) return null;
+    var str=abs>=0.1?abs.toFixed(2):abs.toFixed(3);
+    return orig<0?'-'+str:str;
+  }
+
+  var PRICES={}, NATIONS=[];
+  var AGRARIAN=['fish','coca','grain','livestock'];
+  var viewMode=false, pendingTab=null, chart, overviewChart;
+  var ovHoveredIdx = -1;      /* dataset index hovered in legend (-1 = none) */
+  var ovHoveredResource = ''; /* resource name hovered in table row ('' = none) */
+
+  function $(id){ return document.getElementById(id); }
+  function num(id){ return parseFloat($(id).value); }
+  function clampTax(t){ if(isNaN(t)) return 1; return Math.max(1, Math.min(99, t)); }
+  function rnd(x){ return Math.round(x*10000)/10000; }
+  function nameOf(key){ for(var i=0;i<RESOURCES.length;i++){ if(RESOURCES[i].key===key) return RESOURCES[i].name; } return key; }
+  function curRes(){ return RESOURCES[+$('res').value] || RESOURCES[0]; }
+  function grossFor(mode,wage,tax){ return mode==='gross' ? wage : wage/(1-clampTax(tax)/100); }
+  function netFor(mode,wage,tax){ return mode==='gross' ? wage*(1-clampTax(tax)/100) : wage; }
+
+  function effSpec(n){
+    if(n.specialty==='agrarian') return AGRARIAN.slice();
+    if(n.specialty && n.specialty!=='none') return [n.specialty];
+    return [];
+  }
+  function matchingNations(key){
+    var m = NATIONS.filter(function(n){ return effSpec(n).indexOf(key)>=0; });
+    m.forEach(function(n,i){ n._color = PAL[i % PAL.length]; });
+    return m;
+  }
+
+  // ---------- main tabs ----------
+  function initTabs(){
+    document.querySelectorAll('.tab-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){ switchMainTab(this.dataset.tab); });
+    });
+  }
+
+  // ---------- tab switching (bidirectional sync) ----------
+  function switchSidebarTab(stabKey){
+    document.querySelectorAll('.stab-btn').forEach(function(b){ b.classList.remove('active'); });
+    document.querySelectorAll('.stabpanel').forEach(function(p){ p.classList.remove('active'); });
+    document.querySelector('.stab-btn[data-stab="'+stabKey+'"]').classList.add('active');
+    $('stab-'+stabKey).classList.add('active');
+  }
+
+  function switchMainTab(tabKey){
+    document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+    document.querySelectorAll('.tabpanel').forEach(function(p){ p.classList.remove('active'); });
+    document.querySelector('.tab-btn[data-tab="'+tabKey+'"]').classList.add('active');
+    $('tab-'+tabKey).classList.add('active');
+    if(tabKey==='overview'){
+      switchSidebarTab('prices');
+      if(overviewChart){ setTimeout(function(){ overviewChart.resize(); }, 10); }
+    } else {
+      switchSidebarTab('resource');
+    }
+  }
+
+  function initSidebarTabs(){
+    document.querySelectorAll('.stab-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        switchSidebarTab(this.dataset.stab);
+        if(this.dataset.stab==='prices') switchMainTab('overview');
+        else switchMainTab('analysis');
+      });
+    });
+  }
+
+  // ---------- prices panel ----------
+  function setPriceInput(key, val){
+    var inp = document.querySelector('.price-input[data-key="'+key+'"]');
+    if(inp) inp.value = rnd(val);
+  }
+
+  function buildPricesPanel(){
+    var mfg = $('pf-mfg'), raw = $('pf-raw');
+    RESOURCES.forEach(function(r){
+      var field = document.createElement('div');
+      field.className = 'price-field';
+      var val = rnd(PRICES[r.key] != null ? PRICES[r.key] : 0);
+      field.innerHTML = '<label>'+r.name+'</label>'+
+        '<input type="number" step="0.0001" class="price-input" data-key="'+r.key+'" value="'+val+'">';
+      (r.type==='mfg' ? mfg : raw).appendChild(field);
+    });
+    document.querySelectorAll('.price-input').forEach(function(inp){
+      inp.addEventListener('input', function(){
+        var key = this.dataset.key;
+        PRICES[key] = parseFloat(this.value) || 0;
+        var r = curRes();
+        if(r.key === key) $('sell').value = rnd(PRICES[key]);
+        if(r.type==='mfg' && r.input === key) $('inprice').value = rnd(PRICES[key]);
+        update();
+      });
+    });
+  }
+
+  // ---------- overview: line chart + table ----------
+  function updateOverview(){
+    var mode = $('wmode').value, wage = num('wage');
+    var FIDS = [1,2,3,4,5,6,7,8,9,10];
+    var rows = '', datasets = [], legendHTML = '', rawVals = [], tableRows = [];
+
+    RESOURCES.forEach(function(r){
+      var matching = matchingNations(r.key);
+      if(!matching.length) return;
+
+      var sell    = PRICES[r.key] || 0;
+      var inPrice = (r.type==='mfg') ? (PRICES[r.input] || 0) : 0;
+      var rawCost = r.inUnits * inPrice;
+
+      function nb(tax, bonus, f){
+        return (sell - (grossFor(mode, wage, tax) * r.pp / (1+(bonus+f)/100) + rawCost)) / r.pp;
+      }
+
+      var best1  = matching.reduce(function(a,b){ return nb(a.tax,a.bonus,1)  >= nb(b.tax,b.bonus,1)  ? a : b; });
+      var best10 = matching.reduce(function(a,b){ return nb(a.tax,a.bonus,10) >= nb(b.tax,b.bonus,10) ? a : b; });
+      var v1  = rnd(nb(best1.tax,  best1.bonus,  1));
+      var v10 = rnd(nb(best10.tax, best10.bonus, 10));
+      var same = best1.name === best10.name;
+      var c1 = v1>=0?'pos':'neg', c10 = v10>=0?'pos':'neg';
+
+      // chart + table share the same semantic resource color
+      var color = RESOURCE_COLOR[r.key] || PAL[Object.keys(RESOURCE_COLOR).length % PAL.length];
+
+      // stash table data for sorting after all resources are processed
+      tableRows.push({name:r.name, color:color, same:same,
+        best1:best1, best10:best10, v1:v1, v10:v10, c1:c1, c10:c10});
+
+      /* collect raw values for y-axis bounds, then transform to symlog space for the chart */
+      var raw1 = FIDS.map(function(f){ return rnd(nb(best1.tax, best1.bonus, f)); });
+      rawVals = rawVals.concat(raw1);
+      /* Scriptable color functions evaluated at render time — reads hover state directly,
+         bypassing Chart.js element style cache. Captures color+name per resource via IIFE. */
+      (function(c, n){
+        function dimCol(ctx){
+          if(ovHoveredResource) return n !== ovHoveredResource ? c+'28' : c;
+          if(ovHoveredIdx >= 0) return ctx.datasetIndex !== ovHoveredIdx ? c+'28' : c;
+          return c;
+        }
+        datasets.push({
+          label: r.name+' · '+best1.name,
+          resource: r.name, region: best1.name,
+          data: raw1.map(ovSymlog),
+          borderColor: dimCol, backgroundColor: dimCol,
+          pointBackgroundColor: dimCol, pointBorderColor: dimCol,
+          borderWidth: 2, pointRadius: 2, cubicInterpolationMode:'monotone', fill: false
+        });
+      })(color, r.name);
+      legendHTML += '<span class="legend-item"><span class="sw" style="background:'+color+'"></span>'+r.name+' · '+best1.name+'</span>';
+
+      if(!same){
+        var raw10 = FIDS.map(function(f){ return rnd(nb(best10.tax, best10.bonus, f)); });
+        rawVals = rawVals.concat(raw10);
+        (function(c, n){
+          function dimCol(ctx){
+            if(ovHoveredResource) return n !== ovHoveredResource ? c+'28' : c;
+            if(ovHoveredIdx >= 0) return ctx.datasetIndex !== ovHoveredIdx ? c+'28' : c;
+            return c;
+          }
+          datasets.push({
+            label: r.name+' · '+best10.name+' (10%)',
+            resource: r.name, region: best10.name,
+            data: raw10.map(ovSymlog),
+            borderColor: dimCol, backgroundColor: dimCol,
+            pointBackgroundColor: dimCol, pointBorderColor: dimCol,
+            borderDash: [6,3],
+            borderWidth: 1.5, pointRadius: 2, cubicInterpolationMode:'monotone', fill: false
+          });
+        })(color, r.name);
+        legendHTML += '<span class="legend-item"><span class="sw" style="background:'+color+'; opacity:.5"></span>'+r.name+' · '+best10.name+' (10%)</span>';
+      }
+    });
+
+    // sort table by highest 10% net benefit, render with 10% column first
+    tableRows.sort(function(a,b){ return b.v10 - a.v10; });
+    tableRows.forEach(function(row){
+      var dot = '<span class="dot" style="background:'+row.color+'"></span>';
+      var trOpen = '<tr data-resource="'+row.name+'">';
+      rows += row.same
+        ? trOpen+
+            '<td>'+dot+row.name+'</td>'+
+            '<td>'+row.best10.name+'</td>'+
+            '<td class="'+row.c10+'">'+(row.v10>=0?'+':'')+row.v10.toFixed(3)+'</td>'+
+            '<td class="be-na" style="font-size:9.5px">same</td>'+
+            '<td class="'+row.c1+'">'+(row.v1>=0?'+':'')+row.v1.toFixed(3)+'</td>'+
+          '</tr>'
+        : trOpen+
+            '<td>'+dot+row.name+'</td>'+
+            '<td>'+row.best10.name+'</td>'+
+            '<td class="'+row.c10+'">'+(row.v10>=0?'+':'')+row.v10.toFixed(3)+'</td>'+
+            '<td>'+row.best1.name+'</td>'+
+            '<td class="'+row.c1+'">'+(row.v1>=0?'+':'')+row.v1.toFixed(3)+'</td>'+
+          '</tr>';
+    });
+
+    document.querySelector('#overview-table tbody').innerHTML = rows ||
+      '<tr><td colspan="5" class="be-na" style="text-align:center;padding:20px">No region data loaded.</td></tr>';
+    $('ov-legend').innerHTML = legendHTML || '<span class="be-na">No regions in data.</span>';
+
+    var labels = FIDS.map(function(f){ return f+'%'; });
+    var rawMax = rawVals.length ? Math.max.apply(null, rawVals) : 0.1;
+    var rawMin = rawVals.length ? Math.min.apply(null, rawVals) : 0;
+    /* Round rawMax up to the next 0.005 boundary for a clean upper limit with breathing room. */
+    var paddedMax = Math.ceil((rawMax + 0.005) * 200) / 200;
+    var ovYMax = ovSymlog(paddedMax);
+    var ovYMin = Math.max(ovSymlog(-0.2), -ovYMax);
+
+    var ovYscale = {
+      min: ovYMin, max: ovYMax,
+      afterBuildTicks: function(scale){
+        scale.ticks = OV_NICE
+          .map(function(v){ return {value: ovSymlog(v)}; })
+          .filter(function(t){ return t.value >= scale.min-1e-9 && t.value <= scale.max+1e-9; });
+      },
+      title:{display:true, text:'net benefit per PP (BTC)', color:'#241F1C', font:{family:'IBM Plex Mono'}},
+      ticks:{color:'#241F1C', font:{family:'IBM Plex Mono',size:11}, callback: ovFmt},
+      grid:{color:function(c){ return c.tick.value===0 ? 'rgba(36,31,28,0.55)' : 'rgba(36,31,28,0.10)'; }}
+    };
+
+    if(!overviewChart){
+      overviewChart = new Chart($('ov-chart'), {
+        type:'line',
+        data:{ labels:labels, datasets:datasets },
+        options:{
+          responsive:true, maintainAspectRatio:false,
+          interaction:{mode:'nearest', intersect:false},
+          plugins:{
+            legend:{display:false},
+            tooltip:{ callbacks:{
+              title:function(items){ return items.length ? items[0].label+' fidelity' : ''; },
+              label:function(c){
+                var v=ovSymexp(c.parsed.y);
+                return c.dataset.label+': '+(v>=0?'+':'')+v.toFixed(4);
+              }
+            }}
+          },
+          scales:{
+            x:{ title:{display:true, text:'worker fidelity', color:'#241F1C', font:{family:'IBM Plex Mono'}},
+                ticks:{color:'#241F1C', font:{family:'IBM Plex Mono',size:11}}, grid:{color:'rgba(36,31,28,0.10)'} },
+            y: ovYscale
+          }
+        }
+      });
+    } else {
+      overviewChart.data.datasets = datasets;
+      overviewChart.options.scales.y.min = ovYMin;
+      overviewChart.options.scales.y.max = ovYMax;
+      overviewChart.update();
+    }
+  }
+
+  function fillResourceDisplay(){
+    var r=curRes();
+    $('reslabel').textContent = r.name;
+    $('selllabel').textContent = r.name + ' price';
+    if(r.type==='mfg'){
+      $('recipe').value = r.pp + ' PP + ' + r.inUnits + ' ' + nameOf(r.input);
+      $('inpriceField').style.display='';
+      $('inpricelabel').textContent = nameOf(r.input) + ' price';
+    } else {
+      $('recipe').value = r.pp + ' PP';
+      $('inpriceField').style.display='none';
+    }
+  }
+  function fillResourceDefaults(){
+    var r=curRes();
+    $('sell').value = rnd(PRICES[r.key]!=null?PRICES[r.key]:0);
+    if(r.type==='mfg'){ $('inprice').value = rnd(PRICES[r.input]!=null?PRICES[r.input]:0); }
+  }
+
+  // ---------- shareable state ----------
+  function buildState(){
+    /* Store all PRICES (rounded) so the full market config is shared */
+    var p = {};
+    for(var k in PRICES){ if(Object.prototype.hasOwnProperty.call(PRICES,k)) p[k]=rnd(PRICES[k]); }
+    var activeTab = document.querySelector('.tab-btn.active');
+    return {
+      r:curRes().key, wm:$('wmode').value, w:num('wage'), p:p,
+      tab: activeTab ? activeTab.dataset.tab : 'analysis'
+    };
+  }
+  function applyState(s){
+    try{
+      /* Restore prices first so fillResourceDefaults picks them up */
+      if(s.p && typeof s.p==='object'){
+        for(var k in s.p){ if(Object.prototype.hasOwnProperty.call(s.p,k)) PRICES[k]=s.p[k]; }
+      }
+      /* Legacy URLs had se/ip instead of p */
+      if(s.se!=null && !s.p){ PRICES[curRes().key]=s.se; }
+      if(s.ip!=null && !s.p && curRes().input){ PRICES[curRes().input]=s.ip; }
+      if(s.r){ for(var i=0;i<RESOURCES.length;i++){ if(RESOURCES[i].key===s.r){ $('res').value=i; break; } } }
+      fillResourceDisplay();
+      fillResourceDefaults();
+      if(s.wm) $('wmode').value=s.wm;
+      if(s.w!=null) $('wage').value=s.w;
+      if(s.tab && s.tab!=='analysis') pendingTab=s.tab;
+      if(s.v) viewMode=true;
+    }catch(e){}
+  }
+  function stateURL(withView){ var st=buildState(); if(withView) st.v=1; return location.href.split('#')[0]+'#'+encodeURIComponent(JSON.stringify(st)); }
+  function syncHash(){
+    try{ history.replaceState(null,'',stateURL(viewMode)); }catch(e){}
+    $('link').value=stateURL(false);
+    lsSave();
+  }
+  function loadHash(){ if(!location.hash||location.hash.length<2) return false;
+    try{ applyState(JSON.parse(decodeURIComponent(location.hash.slice(1)))); return true; }catch(e){ return false; } }
+
+  // ---------- localStorage persistence ----------
+  var LS_KEY = 'spectator_state';
+  function lsSave(){
+    try{
+      var p={};
+      for(var k in PRICES){ if(Object.prototype.hasOwnProperty.call(PRICES,k)) p[k]=PRICES[k]; }
+      localStorage.setItem(LS_KEY, JSON.stringify({p:p, wm:$('wmode').value, w:$('wage').value}));
+    }catch(e){}
+  }
+  function lsLoad(){
+    try{
+      var raw=localStorage.getItem(LS_KEY); if(!raw) return;
+      var s=JSON.parse(raw);
+      if(s.p && typeof s.p==='object'){
+        for(var k in s.p){ if(Object.prototype.hasOwnProperty.call(s.p,k)) PRICES[k]=s.p[k]; }
+      }
+      if(s.wm) $('wmode').value=s.wm;
+      if(s.w!=null) $('wage').value=s.w;
+    }catch(e){}
+  }
+
+  function renderNations(){
+    var key=curRes().key, m=matchingNations(key), box=$('nations');
+    box.innerHTML='';
+    if(!m.length){ box.innerHTML='<div class="nat-empty">No regions specialise in '+curRes().name+'.</div>'; return; }
+    m.forEach(function(n){
+      var spec = (n.specialty==='agrarian') ? 'agrarian' : nameOf(n.specialty);
+      var ctx  = (n.region && n.region!==n.country) ? (n.country+' · ') : '';
+      var row=document.createElement('div'); row.className='natrow';
+      row.innerHTML =
+        '<span class="bar" style="background:'+n._color+'"></span>'+
+        '<span class="nat-info">'+
+          '<span class="nat-name">'+n.name+'</span>'+
+          '<small>'+ctx+n.tax+'% · '+n.bonus+'% · '+spec+'</small>'+
+        '</span>';
+      box.appendChild(row);
+    });
+  }
+
+  function setResource(reset){
+    fillResourceDisplay();
+    if(reset){ fillResourceDefaults(); }
+    renderNations(); update();
+  }
+
+  function update(){
+    var r=curRes();
+    var sell=num('sell'), pp=r.pp;
+    var inUnits = (r.type==='mfg') ? r.inUnits : 0;
+    var inPrice = (r.type==='mfg') ? (num('inprice')||0) : 0;
+    var mode=$('wmode').value, wage=num('wage');
+    var rawCost=inUnits*inPrice;
+    var matching=matchingNations(r.key);
+    var chosen=matching;
+    var FIDS=[1,2,3,4,5,6,7,8,9,10];
+
+    function cost(tax,bonus,f){ return grossFor(mode,wage,tax)*pp/(1+(bonus+f)/100)+rawCost; }
+    function nb(tax,bonus,f){ return sell-cost(tax,bonus,f); }
+    function avgNB(n){ var s=0; for(var i=0;i<FIDS.length;i++){ s+=nb(n.tax,n.bonus,FIDS[i]); } return s/FIDS.length; }
+    function topBy(arr,score,k){ return arr.slice().sort(function(a,b){return score(b)-score(a);}).slice(0,k); }
+
+    var top1=topBy(chosen,function(n){return nb(n.tax,n.bonus,1);},2);
+    var top10=topBy(chosen,function(n){return nb(n.tax,n.bonus,10);},2);
+    var charted=top1.slice(); top10.forEach(function(n){if(charted.indexOf(n)<0) charted.push(n);});
+    if(charted.length<3) charted=topBy(chosen,avgNB,3);
+
+    var datasets=[], legendHTML='', rows='';
+    charted.forEach(function(n){
+      var line=FIDS.map(function(f){return nb(n.tax,n.bonus,f);});
+      datasets.push({label:n.name, region:n.name, data:line, borderColor:n._color, backgroundColor:n._color,
+        borderWidth:2, pointRadius:2.5, pointBackgroundColor:n._color, tension:0, fill:false});
+      legendHTML+='<span class="legend-item"><span class="sw" style="background:'+n._color+'"></span>'+n.name+' · '+n.tax+'% tax · '+n.bonus+'% bonus</span>';
+    });
+    chosen.forEach(function(n){
+      var g=grossFor(mode,wage,n.tax), netv=netFor(mode,wage,n.tax);
+      var nb1=nb(n.tax,n.bonus,1), nb10=nb(n.tax,n.bonus,10);
+      var M=sell-rawCost, beTxt;
+      if(!(M>0)) beTxt='<span class="be-lo">never</span>';
+      else { var f=100*(g*pp/M-1)-n.bonus;
+        if(f>10) beTxt='<span class="be-lo">never</span>';
+        else if(f<=1) beTxt='<span class="be-hi">always</span>';
+        else beTxt=f.toFixed(1)+'%'; }
+      var off=charted.indexOf(n)<0;
+      rows+='<tr data-region="'+n.name+'"'+(off?' style="opacity:.5"':'')+'><td><span class="dot" style="background:'+n._color+'"></span>'+n.name+'</td>'+
+            '<td>'+g.toFixed(3)+' ('+netv.toFixed(3)+')</td>'+
+            '<td class="'+(nb1>=0?'pos':'neg')+'">'+(nb1>=0?'+':'')+nb1.toFixed(3)+'</td>'+
+            '<td class="'+(nb10>=0?'pos':'neg')+'">'+(nb10>=0?'+':'')+nb10.toFixed(3)+'</td>'+
+            '<td>'+beTxt+'</td></tr>';
+    });
+
+    if(!matching.length) legendHTML='<span class="be-na">No regions specialise in '+r.name+'.</span>';
+    else if(!chosen.length) legendHTML='<span class="be-na">Tick a region to plot it.</span>';
+
+    $('legend').innerHTML=legendHTML;
+    $('readout').querySelector('tbody').innerHTML=rows;
+
+    var labels=FIDS.map(function(f){return f+'%';});
+    var allVals=datasets.reduce(function(a,d){return a.concat(d.data);}, []);
+    var dataMin=allVals.length?Math.min.apply(null,allVals):0;
+    var yMin=Math.min(0, dataMin);
+    if(!chart){
+      chart=new Chart($('chart'),{
+        type:'line',
+        data:{labels:labels, datasets:datasets},
+        options:{
+          responsive:true, maintainAspectRatio:false,
+          interaction:{mode:'nearest', intersect:false},
+          plugins:{legend:{display:false},
+            tooltip:{callbacks:{
+              title:function(items){return items.length?items[0].label+' fidelity':'';},
+              label:function(c){var v=c.parsed.y;return c.dataset.region+' net benefit: '+(v>=0?'+':'')+v.toFixed(3);}
+            }}},
+          scales:{
+            x:{title:{display:true,text:'worker fidelity',color:'#241F1C',font:{family:'IBM Plex Mono'}},
+               ticks:{color:'#241F1C',font:{family:'IBM Plex Mono',size:11}},grid:{color:'rgba(36,31,28,0.10)'}},
+            y:{min:yMin,
+               title:{display:true,text:'net benefit (BTC)',color:'#241F1C',font:{family:'IBM Plex Mono'}},
+               ticks:{color:'#241F1C',font:{family:'IBM Plex Mono',size:11},callback:function(v){return (v>0?'+':'')+v.toFixed(3);}},
+               grid:{color:function(c){return c.tick.value===0?'rgba(36,31,28,0.55)':'rgba(36,31,28,0.10)';}}}
+          }
+        }
+      });
+    } else {
+      chart.data.labels=labels;
+      chart.data.datasets=datasets;
+      chart.options.scales.y.min=yMin;
+      chart.update();
+    }
+
+    // keep PRICES in sync with analysis sell / inprice fields
+    PRICES[r.key]=sell||0; setPriceInput(r.key, PRICES[r.key]);
+    if(r.type==='mfg'){ PRICES[r.input]=inPrice; setPriceInput(r.input, PRICES[r.input]); }
+
+    syncHash();
+    updateOverview();
+  }
+
+  function buildDropdown(){
+    var groups=[
+      {label:'Ammunition',      keys:['heavyAmmo','ammo','lightAmmo']},
+      {label:'Construction',    keys:['concrete','steel','paper','oil']},
+      {label:'Food',            keys:['cocain','cookedFish','steak','bread']},
+      {label:'Raw (Industrial)',keys:['lead','limestone','iron','wood','petroleum']},
+      {label:'Raw (Agrarian)',  keys:['coca','fish','livestock','grain']},
+    ];
+    var sel=$('res');
+    groups.forEach(function(g){
+      var og=document.createElement('optgroup'); og.label=g.label;
+      g.keys.forEach(function(key){
+        var idx=-1;
+        for(var j=0;j<RESOURCES.length;j++){ if(RESOURCES[j].key===key){ idx=j; break; } }
+        if(idx<0) return;
+        var o=document.createElement('option'); o.value=idx; o.textContent=RESOURCES[idx].name;
+        og.appendChild(o);
+      });
+      sel.appendChild(og);
+    });
+  }
+
+  /* Legend hover: dim all lines except the one under the cursor. Uses CSS classes on
+     the container for the fade, and borderColor alpha on the chart datasets for the lines. */
+  function wireLegendHover(legendEl, getChart){
+    legendEl.addEventListener('mouseover', function(e){
+      var item = e.target.closest('.legend-item');
+      if(!item) return;
+      var items = Array.prototype.slice.call(legendEl.querySelectorAll('.legend-item'));
+      var idx = items.indexOf(item);
+      if(idx < 0) return;
+      var ch = getChart(); if(!ch) return;
+      /* CSS dims all items then un-dims the hovered one */
+      legendEl.classList.add('dimmed');
+      items.forEach(function(el){ el.classList.remove('hovered'); });
+      item.classList.add('hovered');
+      /* Fade non-hovered chart lines by appending hex alpha to the stored color */
+      ch.data.datasets.forEach(function(ds, j){
+        if(!ds._oc) ds._oc = ds.borderColor; /* stash original */
+        var orig = ds._oc;
+        if(j === idx){
+          ds.borderColor = orig;
+          ds.backgroundColor = orig;
+          ds.pointBackgroundColor = orig;
+          ds.pointBorderColor = orig;
+          ds.borderWidth = (ds.borderDash ? 1.5 : 2) * 1.4;
+        } else {
+          ds.borderColor = orig + '28';
+          ds.backgroundColor = orig + '28';
+          ds.pointBackgroundColor = orig + '28';
+          ds.pointBorderColor = orig + '28';
+          ds.borderWidth = ds.borderDash ? 1 : 1.5;
+        }
+      });
+      ch.update('none');
+    });
+    legendEl.addEventListener('mouseleave', function(){
+      legendEl.classList.remove('dimmed');
+      legendEl.querySelectorAll('.legend-item').forEach(function(el){ el.classList.remove('hovered'); });
+      var ch = getChart(); if(!ch) return;
+      ch.data.datasets.forEach(function(ds){
+        if(ds._oc){
+          ds.borderColor = ds._oc; ds.backgroundColor = ds._oc;
+          ds.pointBackgroundColor = ds._oc; ds.pointBorderColor = ds._oc;
+          delete ds._oc;
+        }
+        ds.borderWidth = ds.borderDash ? 1.5 : 2;
+      });
+      ch.update('none');
+    });
+  }
+
+  function fallbackCopy(text){ var f=$('link'); var old=f.value; f.value=text; f.focus(); f.select(); try{document.execCommand('copy');}catch(e){} f.value=old; }
+  function wireShareExport(){
+    $('copy').addEventListener('click', function(){
+      var f=$('link'); f.focus(); f.select();
+      var done=function(){var b=$('copy'),t=b.textContent; b.textContent='Copied!'; setTimeout(function(){b.textContent=t;},1300);};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(f.value).then(done,function(){fallbackCopy(f.value);done();});}
+      else{fallbackCopy(f.value);done();}
+    });
+    $('copyview').addEventListener('click', function(){
+      var url=stateURL(true),b=this,t=b.textContent;
+      var done=function(){b.textContent='Copied view link!'; setTimeout(function(){b.textContent=t;},1300);};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(done,function(){fallbackCopy(url);done();});}
+      else{fallbackCopy(url);done();}
+    });
+    $('export').addEventListener('click', function(){
+      if(typeof html2canvas!=='function'){return;}
+      var b=this,t=b.textContent; b.textContent='Rendering…';
+      var restore=function(msg){b.textContent=msg; setTimeout(function(){b.textContent=t;},1300);};
+      var isOv=$('tab-overview').classList.contains('active');
+      var activeChart=isOv?overviewChart:chart;
+      var node=isOv?document.querySelector('#tab-overview .card.chartcard'):$('chartcard');
+      var fname=isOv?'all_resources_net_benefit':curRes().name.replace(/\s+/g,'_').toLowerCase()+'_net_benefit';
+      if(!activeChart||!node){restore('Nothing to export');return;}
+      var SCALE=3,prev=activeChart.options.devicePixelRatio;
+      activeChart.options.devicePixelRatio=SCALE; activeChart.resize();
+      requestAnimationFrame(function(){
+        html2canvas(node,{backgroundColor:'#F3E9D4',scale:SCALE,logging:false}).then(function(canvas){
+          activeChart.options.devicePixelRatio=prev; activeChart.resize();
+          var canClip=navigator.clipboard&&window.ClipboardItem&&window.isSecureContext;
+          if(!canClip){var a=document.createElement('a');a.download=fname+'.png';a.href=canvas.toDataURL('image/png');a.click();restore('Downloaded');return;}
+          canvas.toBlob(function(blob){
+            navigator.clipboard.write([new ClipboardItem({'image/png':blob})]).then(function(){restore('Copied!');})
+              .catch(function(){var a=document.createElement('a');a.download=fname+'.png';a.href=canvas.toDataURL('image/png');a.click();restore('Downloaded');});
+          },'image/png');
+        }).catch(function(){activeChart.options.devicePixelRatio=prev;activeChart.resize();restore('Failed');});
+      });
+    });
+    $('resetls').addEventListener('click', function(){
+      try{ localStorage.removeItem(LS_KEY); }catch(e){}
+      location.href = location.pathname; /* strip hash so loadHash() has nothing to read */
+    });
+  }
+
+  function start(){
+    buildDropdown();
+    initTabs();
+    initSidebarTabs();
+    $('res').addEventListener('change', function(){setResource(true);});
+    $('sell').addEventListener('input', update);
+    $('inprice').addEventListener('input', update);
+    $('wage').addEventListener('input', update);
+    $('wmode').addEventListener('change', update);
+    wireShareExport();
+    wireLegendHover($('legend'), function(){ return chart; });
+    /* Overview uses scriptable colors — just flip ovHoveredIdx and redraw. */
+    (function(){
+      var leg = $('ov-legend');
+      leg.addEventListener('mouseover', function(e){
+        var item = e.target.closest('.legend-item'); if(!item) return;
+        var items = Array.prototype.slice.call(leg.querySelectorAll('.legend-item'));
+        var idx = items.indexOf(item); if(idx < 0) return;
+        ovHoveredIdx = idx;
+        leg.classList.add('dimmed');
+        items.forEach(function(el){ el.classList.remove('hovered'); });
+        item.classList.add('hovered');
+        if(overviewChart) overviewChart.update('none');
+      });
+      leg.addEventListener('mouseleave', function(){
+        ovHoveredIdx = -1;
+        leg.classList.remove('dimmed');
+        leg.querySelectorAll('.legend-item').forEach(function(el){ el.classList.remove('hovered'); });
+        if(overviewChart) overviewChart.update('none');
+      });
+    })();
+    /* Overview table: hover highlights chart datasets; click navigates to Resource Analysis. */
+    (function(){
+      var tbl = document.querySelector('#overview-table');
+      tbl.addEventListener('mouseover', function(e){
+        var tr = e.target.closest('tbody tr'); if(!tr) return;
+        var res = tr.getAttribute('data-resource'); if(!res) return;
+        if(ovHoveredResource === res) return;
+        ovHoveredResource = res;
+        tbl.classList.add('dimmed');
+        tbl.querySelectorAll('tbody tr').forEach(function(r){ r.classList.remove('hov'); });
+        tr.classList.add('hov');
+        if(overviewChart) overviewChart.update('none');
+      });
+      tbl.addEventListener('mouseleave', function(){
+        ovHoveredResource = '';
+        tbl.classList.remove('dimmed');
+        tbl.querySelectorAll('tbody tr').forEach(function(r){ r.classList.remove('hov'); });
+        if(overviewChart) overviewChart.update('none');
+      });
+      tbl.addEventListener('click', function(e){
+        var tr = e.target.closest('tbody tr'); if(!tr) return;
+        var resName = tr.getAttribute('data-resource'); if(!resName) return;
+        var idx = -1;
+        for(var i=0; i<RESOURCES.length; i++){ if(RESOURCES[i].name === resName){ idx=i; break; } }
+        if(idx < 0) return;
+        ovHoveredResource = '';
+        tbl.classList.remove('dimmed');
+        tbl.querySelectorAll('tbody tr').forEach(function(r){ r.classList.remove('hov'); });
+        $('res').value = idx;
+        switchMainTab('analysis');
+        setResource(true);
+      });
+    })();
+    /* Analysis table: hover highlights the matching chart line and dims others. */
+    (function(){
+      var tbl = $('readout');
+      tbl.addEventListener('mouseover', function(e){
+        var tr = e.target.closest('tbody tr'); if(!tr) return;
+        var region = tr.getAttribute('data-region'); if(!region || !chart) return;
+        var idx = -1;
+        chart.data.datasets.forEach(function(ds, j){ if(ds.region === region) idx = j; });
+        tbl.classList.add('dimmed');
+        tbl.querySelectorAll('tbody tr').forEach(function(r){ r.classList.remove('hov'); });
+        tr.classList.add('hov');
+        if(idx < 0) return; /* off/greyed row — dim table only, leave chart alone */
+        chart.data.datasets.forEach(function(ds, j){
+          if(!ds._oc) ds._oc = ds.borderColor;
+          var orig = ds._oc;
+          if(j === idx){
+            ds.borderColor=orig; ds.backgroundColor=orig;
+            ds.pointBackgroundColor=orig; ds.pointBorderColor=orig;
+            ds.borderWidth=2.8;
+          } else {
+            ds.borderColor=orig+'28'; ds.backgroundColor=orig+'28';
+            ds.pointBackgroundColor=orig+'28'; ds.pointBorderColor=orig+'28';
+            ds.borderWidth=1.5;
+          }
+        });
+        chart.update('none');
+      });
+      tbl.addEventListener('mouseleave', function(){
+        tbl.classList.remove('dimmed');
+        tbl.querySelectorAll('tbody tr').forEach(function(r){ r.classList.remove('hov'); });
+        if(!chart) return;
+        chart.data.datasets.forEach(function(ds){
+          if(ds._oc){ ds.borderColor=ds._oc; ds.backgroundColor=ds._oc;
+            ds.pointBackgroundColor=ds._oc; ds.pointBorderColor=ds._oc; delete ds._oc; }
+          ds.borderWidth=2;
+        });
+        chart.update('none');
+      });
+    })();
+
+    var hadHash=loadHash();
+    if(!hadHash){ fillResourceDisplay(); fillResourceDefaults(); }
+    buildPricesPanel();
+    renderNations();
+    update();
+    if(pendingTab) switchMainTab(pendingTab);
+    if(viewMode){
+      var sheet=document.querySelector('.sheet');
+      sheet.classList.add('viewonly');
+      if(pendingTab==='overview') sheet.classList.add('view-ov');
+    }
+  }
+
+  function showError(msg){
+    $('legend').innerHTML='';
+    var box=document.querySelector('.chartbox');
+    if(box) box.innerHTML='<div class="msg">'+msg+'</div>';
+  }
+
+  function boot(){
+    Promise.all([
+      fetch('prices.json').then(function(r){if(!r.ok) throw 0; return r.json();}),
+      fetch('regions.json').then(function(r){if(!r.ok) throw 0; return r.json();})
+    ]).then(function(res){
+      PRICES=(res[0]&&res[0].result&&res[0].result.data)?res[0].result.data:{};
+      var raw=Array.isArray(res[1])?res[1]:(res[1].regions||[]);
+      NATIONS=raw.map(function(r){
+        return {name:r.region_name||r.country_name, country:r.country_name, region:r.region_name||null,
+                tax:r.income_tax, bonus:r.total_bonus, specialty:r.specialty};
+      });
+      /* Apply localStorage on top of JSON defaults; loadHash() will override if a URL hash exists */
+      lsLoad();
+      start();
+    }).catch(function(){ showError('Could not load prices.json and regions.json.'); });
+  }
+
+  boot();
+})();
+</script>

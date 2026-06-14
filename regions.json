@@ -1,0 +1,380 @@
+[
+  {
+    "country_name": "Colombia",
+    "income_tax": 1,
+    "specialty": "agrarian",
+    "total_bonus": 30,
+    "region_name": null
+  },
+  {
+    "country_name": "Mauritania",
+    "income_tax": 10,
+    "specialty": "agrarian",
+    "total_bonus": 30,
+    "region_name": null
+  },
+  {
+    "country_name": "Eswatini",
+    "income_tax": 4.5,
+    "specialty": "agrarian",
+    "total_bonus": 30,
+    "region_name": null
+  },
+  {
+    "country_name": "Burundi",
+    "income_tax": 7,
+    "specialty": "ammo",
+    "total_bonus": 45,
+    "region_name": null
+  },
+  {
+    "country_name": "Palestine",
+    "income_tax": 10,
+    "specialty": "ammo",
+    "total_bonus": 35.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Brazil",
+    "income_tax": 2.5,
+    "specialty": "ammo",
+    "total_bonus": 35,
+    "region_name": null
+  },
+  {
+    "country_name": "Tunisia",
+    "income_tax": 9.5,
+    "specialty": "ammo",
+    "total_bonus": 35,
+    "region_name": null
+  },
+  {
+    "country_name": "Oman",
+    "income_tax": 1,
+    "specialty": "ammo",
+    "total_bonus": 10,
+    "region_name": null
+  },
+  {
+    "country_name": "Belgium",
+    "income_tax": 10,
+    "specialty": "bread",
+    "total_bonus": 15,
+    "region_name": null
+  },
+  {
+    "country_name": "Djibouti",
+    "income_tax": 1,
+    "specialty": "coca",
+    "total_bonus": 10,
+    "region_name": null
+  },
+  {
+    "country_name": "Philippines",
+    "income_tax": 8,
+    "specialty": "cocain",
+    "total_bonus": 25,
+    "region_name": null
+  },
+  {
+    "country_name": "Netherlands",
+    "income_tax": 8,
+    "specialty": "cocain",
+    "total_bonus": 15,
+    "region_name": null
+  },
+  {
+    "country_name": "Poland",
+    "income_tax": 12,
+    "specialty": "concrete",
+    "total_bonus": 61.25,
+    "region_name": null
+  },
+  {
+    "country_name": "Libya",
+    "income_tax": 5,
+    "specialty": "concrete",
+    "total_bonus": 35,
+    "region_name": null
+  },
+  {
+    "country_name": "India",
+    "income_tax": 8,
+    "specialty": "cookedFish",
+    "total_bonus": 25.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Lithuania",
+    "income_tax": 8,
+    "specialty": "cookedFish",
+    "total_bonus": 15.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Iceland",
+    "income_tax": 10,
+    "specialty": "fish",
+    "total_bonus": 60,
+    "region_name": "Southern Iceland"
+  },
+  {
+    "country_name": "Greenland",
+    "income_tax": 10,
+    "specialty": "fish",
+    "total_bonus": 60,
+    "region_name": "Norwestern Greenland"
+  },
+  {
+    "country_name": "Algeria",
+    "income_tax": 8,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Northern Algeria"
+  },
+  {
+    "country_name": "Myanmar",
+    "income_tax": 4,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Yangon"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 4,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Ogooué"
+  },
+  {
+    "country_name": "Ecuador",
+    "income_tax": 3.4,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Ecuadorian Islands"
+  },
+  {
+    "country_name": "Denmark",
+    "income_tax": 5,
+    "specialty": "grain",
+    "total_bonus": 10,
+    "region_name": null
+  },
+  {
+    "country_name": "Ethiopia",
+    "income_tax": 5,
+    "specialty": "heavyAmmo",
+    "total_bonus": 40,
+    "region_name": null
+  },
+  {
+    "country_name": "Egypt",
+    "income_tax": 11,
+    "specialty": "iron",
+    "total_bonus": 62,
+    "region_name": null
+  },
+  {
+    "country_name": "Botswana",
+    "income_tax": 10,
+    "specialty": "iron",
+    "total_bonus": 40,
+    "region_name": "Kgalagadi"
+  },
+  {
+    "country_name": "Angola",
+    "income_tax": 7.5,
+    "specialty": "iron",
+    "total_bonus": 30,
+    "region_name": null
+  },
+  {
+    "country_name": "Italy",
+    "income_tax": 7.9,
+    "specialty": "lead",
+    "total_bonus": 60.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Chile",
+    "income_tax": 4,
+    "specialty": "lead",
+    "total_bonus": 35,
+    "region_name": null
+  },
+  {
+    "country_name": "Malaysia",
+    "income_tax": 1,
+    "specialty": "lightAmmo",
+    "total_bonus": 40,
+    "region_name": null
+  },
+  {
+    "country_name": "Paraguay",
+    "income_tax": 8,
+    "specialty": "lightAmmo",
+    "total_bonus": 35,
+    "region_name": null
+  },
+  {
+    "country_name": "Liberia",
+    "income_tax": 1,
+    "specialty": "lightAmmo",
+    "total_bonus": 10,
+    "region_name": null
+  },
+  {
+    "country_name": "Iraq",
+    "income_tax": 11,
+    "specialty": "limestone",
+    "total_bonus": 55.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Dominican Republic",
+    "income_tax": 1,
+    "specialty": "limestone",
+    "total_bonus": 30,
+    "region_name": null
+  },
+  {
+    "country_name": "Singapore",
+    "income_tax": 5,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Singapore"
+  },
+  {
+    "country_name": "Panama",
+    "income_tax": 12,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Western Panama"
+  },
+  {
+    "country_name": "Zambia",
+    "income_tax": 2.5,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Copperbelt"
+  },
+  {
+    "country_name": "New Zealand",
+    "income_tax": 3.9,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "North Island"
+  },
+  {
+    "country_name": "Costa Rica",
+    "income_tax": 6.5,
+    "specialty": "oil",
+    "total_bonus": 45.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Morocco",
+    "income_tax": 10,
+    "specialty": "oil",
+    "total_bonus": 40,
+    "region_name": null
+  },
+  {
+    "country_name": "Cyprus",
+    "income_tax": 5,
+    "specialty": "oil",
+    "total_bonus": 40,
+    "region_name": null
+  },
+  {
+    "country_name": "Tanzania",
+    "income_tax": 5,
+    "specialty": "oil",
+    "total_bonus": 10,
+    "region_name": null
+  },
+  {
+    "country_name": "Turkiye",
+    "income_tax": 12,
+    "specialty": "paper",
+    "total_bonus": 61,
+    "region_name": null
+  },
+  {
+    "country_name": "Latvia",
+    "income_tax": 8,
+    "specialty": "paper",
+    "total_bonus": 35,
+    "region_name": null
+  },
+  {
+    "country_name": "Mali",
+    "income_tax": 6.5,
+    "specialty": "petroleum",
+    "total_bonus": 45,
+    "region_name": "Kayes"
+  },
+  {
+    "country_name": "Slovakia",
+    "income_tax": 6,
+    "specialty": "petroleum",
+    "total_bonus": 35,
+    "region_name": null
+  },
+  {
+    "country_name": "Equatorial Guinea",
+    "income_tax": 2.5,
+    "specialty": "steak",
+    "total_bonus": 20,
+    "region_name": null
+  },
+  {
+    "country_name": "Croatia",
+    "income_tax": 12,
+    "specialty": "steak",
+    "total_bonus": 20,
+    "region_name": null
+  },
+  {
+    "country_name": "France",
+    "income_tax": 7,
+    "specialty": "steak",
+    "total_bonus": 15.5,
+    "region_name": null
+  },
+  {
+    "country_name": "South Africa",
+    "income_tax": 12,
+    "specialty": "steel",
+    "total_bonus": 63.25,
+    "region_name": null
+  },
+  {
+    "country_name": "Uganda",
+    "income_tax": 8,
+    "specialty": "steel",
+    "total_bonus": 30,
+    "region_name": null
+  },
+  {
+    "country_name": "Comoros",
+    "income_tax": 2,
+    "specialty": "steel",
+    "total_bonus": 10,
+    "region_name": null
+  },
+  {
+    "country_name": "United States",
+    "income_tax": 10,
+    "specialty": "wood",
+    "total_bonus": 55.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Nicaragua",
+    "income_tax": 4,
+    "specialty": "wood",
+    "total_bonus": 35,
+    "region_name": null
+  }
+]
