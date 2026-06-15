@@ -7,6 +7,13 @@
     "region_name": null
   },
   {
+    "country_name": "Azerbaijan",
+    "income_tax": 12.0,
+    "specialty": "agrarian",
+    "total_bonus": 30,
+    "region_name": null
+  },
+  {
     "country_name": "Mauritania",
     "income_tax": 10.0,
     "specialty": "agrarian",
@@ -175,13 +182,6 @@
     "region_name": null
   },
   {
-    "country_name": "Botswana",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 40.0,
-    "region_name": "Kgalagadi"
-  },
-  {
     "country_name": "Angola",
     "income_tax": 7.5,
     "specialty": "iron",
@@ -189,17 +189,24 @@
     "region_name": null
   },
   {
+    "country_name": "Botswana",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Italy",
     "income_tax": 7.9,
     "specialty": "lead",
-    "total_bonus": 60.5,
+    "total_bonus": 60.0,
     "region_name": null
   },
   {
     "country_name": "Chile",
     "income_tax": 4.0,
     "specialty": "lead",
-    "total_bonus": 35.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -220,7 +227,7 @@
     "country_name": "Liberia",
     "income_tax": 1.0,
     "specialty": "lightAmmo",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -269,7 +276,7 @@
     "country_name": "Costa Rica",
     "income_tax": 6.5,
     "specialty": "oil",
-    "total_bonus": 45.5,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -297,7 +304,7 @@
     "country_name": "Turkiye",
     "income_tax": 12.0,
     "specialty": "paper",
-    "total_bonus": 61.0,
+    "total_bonus": 61.5,
     "region_name": null
   },
   {
@@ -329,17 +336,17 @@
     "region_name": null
   },
   {
-    "country_name": "Croatia",
-    "income_tax": 12.0,
-    "specialty": "steak",
-    "total_bonus": 20.0,
-    "region_name": null
-  },
-  {
     "country_name": "France",
     "income_tax": 7.0,
     "specialty": "steak",
     "total_bonus": 15.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Croatia",
+    "income_tax": 12.0,
+    "specialty": "steak",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
