@@ -1,7 +1,44 @@
 /* The Spectator — shared stylesheet */
 :root{
-  --paper:#F3E9D4; --ink:#241F1C; --ox:#8C2A1B; --ox-d:#6E1F13;
-  --wheat:#C8922E; --olive:#3B6D11; --rule:rgba(36,31,28,.28);
+  /* Main Palette */
+  --light-shades:  #F3E9D4;
+  --light-accent:  #C8922E;
+  --main-brand-color: #8C2A1B;
+  --dark-accent:   #6E1F13;
+  --dark-shades:   #241F1C;
+
+  /* Resource Legend Palette — manufactured goods */
+  --res-concrete:    #C88000;  /* amber-yellow     */
+  --res-steel:       #2C4A6A;  /* deep blue-gray   */
+  --res-paper:       #1A5C22;  /* deep green       */
+  --res-oil:         #5C2E10;  /* dark brown       */
+  --res-bread:       #B87000;  /* deep golden      */
+  --res-steak:       #8C2828;  /* deep red         */
+  --res-cooked-fish: #1A70A0;  /* ocean blue       */
+  --res-heavy-ammo:  #4A1080;  /* dark purple      */
+  --res-ammo:        #7030A0;  /* medium purple    */
+  --res-light-ammo:  #A060C0;  /* light purple     */
+  --res-cocain:      #7A8800;  /* deep yellow-green*/
+
+  /* Resource Legend Palette — raw materials */
+  --res-limestone:   #E8CC80;  /* pale yellow      */
+  --res-iron:        #8AAABB;  /* pale blue-gray   */
+  --res-wood:        #78A878;  /* pale sage        */
+  --res-petroleum:   #A87858;  /* pale tan         */
+  --res-grain:       #DEC870;  /* pale straw       */
+  --res-livestock:   #D09090;  /* pale pink        */
+  --res-fish:        #80C0E0;  /* pale sky         */
+  --res-lead:        #505060;  /* dark gray        */
+  --res-coca:        #B8CC58;  /* pale yellow-green*/
+
+
+  /* Semantic tokens derived from palette */
+  --paper:  var(--light-shades);
+  --ink:    var(--dark-shades);
+  --ox:     var(--main-brand-color);
+  --ox-d:   var(--dark-accent);
+  --wheat:  var(--light-accent);
+  --olive:#3B6D11; --rule:rgba(36,31,28,.28);
   --ledger:#EADDBF; --card:#FBF4E2;
 }
 *{box-sizing:border-box}
@@ -10,6 +47,8 @@ body{margin:0; background:var(--paper); color:var(--ink);
 .sheet{max-width:980px; margin:0 auto; padding:36px 22px 70px}
 .masthead{border-top:3px solid var(--ink); border-bottom:1px solid var(--ink); padding:8px 0 12px; text-align:center; margin-bottom:26px}
 .masthead .paper{font-family:"Playfair Display",serif; font-weight:900; font-size:14px; letter-spacing:.42em; text-transform:uppercase; margin-left:.42em}
+.masthead a.paper{color:inherit; text-decoration:none}
+.masthead a.paper:hover{text-decoration:underline}
 h1{font-family:"Playfair Display",serif; font-weight:900; font-size:clamp(28px,5vw,40px); margin:0 0 6px; letter-spacing:-.01em}
 .sub{font-style:italic; color:#3a322d; margin:0 0 26px}
 .grid{display:grid; gap:20px; grid-template-columns:1fr; align-items:start}

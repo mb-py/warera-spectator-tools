@@ -4,38 +4,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="spectator.css">
 <style>
-  :root{
-    --paper:#F3E9D4; --ink:#241F1C; --ox:#8C2A1B; --ox-d:#6E1F13;
-    --wheat:#C8922E; --olive:#3B6D11; --rule:rgba(36,31,28,.28);
-    --ledger:#EADDBF; --card:#FBF4E2;
-  }
-  *{box-sizing:border-box}
-  body{margin:0; background:var(--paper); color:var(--ink);
-    font-family:"Source Serif 4",Georgia,serif; font-size:16px; line-height:1.5; -webkit-font-smoothing:antialiased}
-  .sheet{max-width:980px; margin:0 auto; padding:36px 22px 70px}
-  .masthead{border-top:3px solid var(--ink); border-bottom:1px solid var(--ink); padding:8px 0 12px; text-align:center; margin-bottom:26px}
-  .masthead .paper{font-family:"Playfair Display",serif; font-weight:900; font-size:14px; letter-spacing:.42em; text-transform:uppercase; margin-left:.42em}
-  h1{font-family:"Playfair Display",serif; font-weight:900; font-size:clamp(28px,5vw,40px); margin:0 0 6px; letter-spacing:-.01em}
-  .sub{font-style:italic; color:#3a322d; margin:0 0 26px}
-  .grid{display:grid; gap:20px; grid-template-columns:1fr; align-items:start}
-  @media(min-width:880px){ .grid{grid-template-columns:340px 1fr} }
-  .grid.viewonly{grid-template-columns:1fr}
-  .grid.viewonly #controls{display:none}
-  .tablewrap{overflow-x:auto}
   #downloadView{display:none}
   .grid.viewonly #downloadView{display:block; width:100%}
-  .card{background:var(--card); border:1px solid var(--ink); padding:18px}
-  .card h2{font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--ox); margin:0 0 14px; border-bottom:1px solid var(--rule); padding-bottom:8px}
-  .card h2:not(:first-child){margin-top:24px}
-  .fields{display:grid; grid-template-columns:1fr 1fr; gap:12px 14px}
-  .field{display:flex; flex-direction:column; gap:4px}
-  .field.wide{grid-column:1 / -1}
-  label{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ox-d)}
-  input,select{font-family:"IBM Plex Mono",monospace; font-size:14px; padding:7px 8px; border:1px solid var(--rule); background:#fff; color:var(--ink); border-radius:2px; width:100%}
-  input:focus,select:focus{outline:2px solid var(--wheat); outline-offset:-1px}
-  input[readonly]{background:var(--ledger); color:#5a5147; cursor:default}
-  input[readonly]:focus{outline:none}
   .check{flex-direction:row; align-items:center; gap:8px}
   .check input{width:auto}
   .regrow{display:grid; grid-template-columns:14px 1fr 64px 72px 26px; gap:8px; align-items:center; margin-bottom:8px}
@@ -46,29 +18,12 @@
   .del{cursor:pointer; border:1px solid var(--rule); background:#fff; color:var(--ox); border-radius:2px; height:30px; font-family:"IBM Plex Mono",monospace; font-size:14px; line-height:1}
   .addbtn{margin-top:6px; width:100%; cursor:pointer; border:1px dashed var(--ox); background:transparent; color:var(--ox); padding:8px; font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; border-radius:2px}
   .addbtn:hover{background:rgba(140,42,27,.06)}
-  .copybtn{margin-top:8px; width:100%; cursor:pointer; border:1px solid var(--ink); background:var(--ink); color:var(--paper); padding:9px; font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; border-radius:2px}
-  .copybtn:hover{background:var(--ox-d)}
-  #link{font-size:11px; color:#555}
-  .chartcard h2{text-align:left}
-  .legend{display:flex; flex-wrap:wrap; gap:8px 16px; font-family:"IBM Plex Mono",monospace; font-size:12px; margin-bottom:12px}
-  .legend span{display:flex; align-items:center; gap:7px}
-  .sw{width:20px; height:10px; border-radius:2px; display:inline-block}
-  .chartbox{position:relative; width:100%; height:400px}
   .note{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--ox-d); margin-top:10px; line-height:1.7}
-  table{width:100%; border-collapse:collapse; margin-top:16px; font-family:"IBM Plex Mono",monospace; font-size:12px}
-  th,td{text-align:right; padding:6px 8px; border-bottom:1px solid var(--rule)}
-  th{font-size:9.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ox-d)}
-  th:first-child,td:first-child{text-align:left}
-  td .dot{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:6px; vertical-align:middle}
-  td.pos{color:var(--olive)} td.neg{color:var(--ox)}
-  .be-hi{color:var(--olive)}   /* out of range, higher = good (green) */
-  .be-lo{color:var(--ox)}      /* out of range, lower = bad (red)   */
-  .be-na{color:#9a8f7d}
   #readout small{color:#9a8f7d; font-size:9px; letter-spacing:.04em}
 </style>
 
 <div class="sheet">
-  <div class="masthead"><div class="paper">The Spectator</div></div>
+  <div class="masthead"><a href="index.html" class="paper">The Spectator</a></div>
   <h1>Production Cost Studio</h1>
   <p class="sub">Calculate the cost to produce any manufactured good across a range of raw resource prices, and compare regions by tax and bonus. 
     Each region is drawn as a shaded band for any set net wage: the upper edge is low fidelity, the lower edge is full fidelity. Lower cost is better, and a band sitting below that the sell price line is in profit. 

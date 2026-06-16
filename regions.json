@@ -1,33 +1,5 @@
 [
   {
-    "country_name": "Colombia",
-    "income_tax": 1.0,
-    "specialty": "agrarian",
-    "total_bonus": 30,
-    "region_name": null
-  },
-  {
-    "country_name": "Azerbaijan",
-    "income_tax": 12.0,
-    "specialty": "agrarian",
-    "total_bonus": 30,
-    "region_name": null
-  },
-  {
-    "country_name": "Mauritania",
-    "income_tax": 10.0,
-    "specialty": "agrarian",
-    "total_bonus": 30,
-    "region_name": null
-  },
-  {
-    "country_name": "Eswatini",
-    "income_tax": 4.5,
-    "specialty": "agrarian",
-    "total_bonus": 30,
-    "region_name": null
-  },
-  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "ammo",
@@ -68,6 +40,13 @@
     "specialty": "bread",
     "total_bonus": 15.0,
     "region_name": null
+  },
+  {
+    "country_name": "Zambia",
+    "income_tax": 2.5,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Luapula"
   },
   {
     "country_name": "Djibouti",
@@ -119,13 +98,6 @@
     "region_name": null
   },
   {
-    "country_name": "Iceland",
-    "income_tax": 10.0,
-    "specialty": "fish",
-    "total_bonus": 60,
-    "region_name": "Northeastern Iceland"
-  },
-  {
     "country_name": "Greenland",
     "income_tax": 10.0,
     "specialty": "fish",
@@ -147,6 +119,13 @@
     "region_name": "Yangon"
   },
   {
+    "country_name": "New Zealand",
+    "income_tax": 3.9,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "South Island"
+  },
+  {
     "country_name": "Central Africa",
     "income_tax": 4.0,
     "specialty": "grain",
@@ -159,13 +138,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Ecuadorian Islands"
-  },
-  {
-    "country_name": "Denmark",
-    "income_tax": 5.0,
-    "specialty": "grain",
-    "total_bonus": 10.0,
-    "region_name": null
   },
   {
     "country_name": "Ethiopia",
@@ -257,20 +229,6 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Western Panama"
-  },
-  {
-    "country_name": "Zambia",
-    "income_tax": 2.5,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Copperbelt"
-  },
-  {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "North Island"
   },
   {
     "country_name": "Costa Rica",

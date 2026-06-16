@@ -62,7 +62,7 @@
 </style>
 
 <div class="sheet">
-  <div class="masthead"><div class="paper">The Spectator</div></div>
+  <div class="masthead"><a href="index.html" class="paper">The Spectator</a></div>
   <h1>Worker Yield Analysis</h1>
   <p class="sub">Find where your workers return the most. Ranked by net benefit per production point across every resource and region. Beware that this is an experimental tool that uses a static dataset, and that region bonusses and deposit locations may be out of date.</p>
 
@@ -173,19 +173,23 @@
 <script>
 (function(){
   var PAL = ['#3B6D11','#8C2A1B','#1F6B6B','#6A3D7A','#B8860B','#2F4858','#A0522D'];
-  /* Semantic color map for the All Resources overview chart */
-  var RESOURCE_COLOR = {
-    concrete:   '#C88000', limestone:  '#E8CC80',   /* amber-yellow / pale yellow */
-    steel:      '#2C4A6A', iron:       '#8AAABB',   /* deep blue-gray / pale blue-gray */
-    paper:      '#1A5C22', wood:       '#78A878',   /* deep green / pale sage */
-    oil:        '#5C2E10', petroleum:  '#A87858',   /* dark brown / pale tan */
-    bread:      '#B87000', grain:      '#DEC870',   /* deep golden / pale straw */
-    steak:      '#8C2828', livestock:  '#D09090',   /* deep red / pale pink */
-    cookedFish: '#1A70A0', fish:       '#80C0E0',   /* ocean blue / pale sky */
-    heavyAmmo:  '#4A1080', ammo:       '#7030A0',   /* dark purple / medium purple */
-    lightAmmo:  '#A060C0', lead:       '#505060',   /* light purple / dark gray */
-    cocain:     '#7A8800', coca:       '#B8CC58',   /* deep yellow-green / pale yellow-green */
-  };
+  /* Read resource colors from CSS custom properties defined in spectator.css */
+  var RESOURCE_COLOR = (function(){
+    var cs = getComputedStyle(document.documentElement);
+    function c(v){ return cs.getPropertyValue(v).trim(); }
+    return {
+      concrete:   c('--res-concrete'),   limestone:  c('--res-limestone'),
+      steel:      c('--res-steel'),      iron:       c('--res-iron'),
+      paper:      c('--res-paper'),      wood:       c('--res-wood'),
+      oil:        c('--res-oil'),        petroleum:  c('--res-petroleum'),
+      bread:      c('--res-bread'),      grain:      c('--res-grain'),
+      steak:      c('--res-steak'),      livestock:  c('--res-livestock'),
+      cookedFish: c('--res-cooked-fish'),fish:       c('--res-fish'),
+      heavyAmmo:  c('--res-heavy-ammo'), ammo:       c('--res-ammo'),
+      lightAmmo:  c('--res-light-ammo'), lead:       c('--res-lead'),
+      cocain:     c('--res-cocain'),     coca:       c('--res-coca'),
+    };
+  })();
 
   var RESOURCES = [
     {key:'concrete',   name:'Concrete',   type:'mfg', input:'limestone', inUnits:10,  pp:10},
@@ -926,7 +930,7 @@
       fetch('prices.json').then(function(r){if(!r.ok) throw 0; return r.json();}),
       fetch('regions.json').then(function(r){if(!r.ok) throw 0; return r.json();})
     ]).then(function(res){
-      PRICES=(res[0]&&res[0].result&&res[0].result.data)?res[0].result.data:{};
+      var p=res[0]; PRICES=(p&&p.result&&p.result.data)?p.result.data:(p&&typeof p==='object'&&!Array.isArray(p))?p:{};
       var raw=Array.isArray(res[1])?res[1]:(res[1].regions||[]);
       NATIONS=raw.map(function(r){
         return {name:r.region_name||r.country_name, country:r.country_name, region:r.region_name||null,
