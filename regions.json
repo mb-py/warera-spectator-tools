@@ -105,6 +105,13 @@
     "region_name": null
   },
   {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 60,
+    "region_name": "Eastern Iceland"
+  },
+  {
     "country_name": "Myanmar",
     "income_tax": 4.0,
     "specialty": "grain",
@@ -124,13 +131,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Ogoou\u00e9"
-  },
-  {
-    "country_name": "Ecuador",
-    "income_tax": 3.4,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Ecuadorian Islands"
   },
   {
     "country_name": "Denmark",
@@ -290,7 +290,7 @@
     "country_name": "Equatorial Guinea",
     "income_tax": 2.5,
     "specialty": "steak",
-    "total_bonus": 20.0,
+    "total_bonus": 25.0,
     "region_name": null
   },
   {
