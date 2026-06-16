@@ -105,13 +105,6 @@
     "region_name": "Norwestern Greenland"
   },
   {
-    "country_name": "Algeria",
-    "income_tax": 8.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Northern Algeria"
-  },
-  {
     "country_name": "Myanmar",
     "income_tax": 4.0,
     "specialty": "grain",
@@ -138,6 +131,13 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Ecuadorian Islands"
+  },
+  {
+    "country_name": "Denmark",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 10.0,
+    "region_name": null
   },
   {
     "country_name": "Ethiopia",
