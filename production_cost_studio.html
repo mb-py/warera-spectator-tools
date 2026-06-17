@@ -13,12 +13,12 @@
   .regrow{display:grid; grid-template-columns:14px 1fr 64px 72px 26px; gap:8px; align-items:center; margin-bottom:8px}
   .regrow .bar{width:14px; height:30px; border-radius:2px}
   .regrow input{font-size:13px; padding:6px}
-  .reghdr{display:grid; grid-template-columns:14px 1fr 64px 72px 26px; gap:8px; font-family:"IBM Plex Mono",monospace; font-size:9.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ox-d); margin-bottom:6px}
+  .reghdr{display:grid; grid-template-columns:14px 1fr 64px 72px 26px; gap:8px; font-family:"IBM Plex Mono",monospace; font-size:9.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--dark-accent); margin-bottom:6px}
   .reghdr span:nth-child(1){grid-column:2}
-  .del{cursor:pointer; border:1px solid var(--rule); background:#fff; color:var(--ox); border-radius:2px; height:30px; font-family:"IBM Plex Mono",monospace; font-size:14px; line-height:1}
-  .addbtn{margin-top:6px; width:100%; cursor:pointer; border:1px dashed var(--ox); background:transparent; color:var(--ox); padding:8px; font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; border-radius:2px}
+  .del{cursor:pointer; border:1px solid var(--rule); background:#fff; color:var(--main-brand); border-radius:2px; height:30px; font-family:"IBM Plex Mono",monospace; font-size:14px; line-height:1}
+  .addbtn{margin-top:6px; width:100%; cursor:pointer; border:1px dashed var(--main-brand); background:transparent; color:var(--main-brand); padding:8px; font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; border-radius:2px}
   .addbtn:hover{background:rgba(140,42,27,.06)}
-  .note{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--ox-d); margin-top:10px; line-height:1.7}
+  .note{font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--dark-accent); margin-top:10px; line-height:1.7}
   #readout small{color:#9a8f7d; font-size:9px; letter-spacing:.04em}
 </style>
 
@@ -81,27 +81,17 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="spectator-utils.js"></script>
 <script>
 (function(){
   var PAL = ['#8C2A1B','#3B6D11','#1F6B6B','#6A3D7A','#B8860B','#2F4858','#A0522D'];
-  // good : raw resource, raw units/good, production points/good, default raw price low/high
-  var GOODS = [
-    {good:'Concrete',    raw:'Limestone',        units:10,  pp:10,  lo:0.078, hi:0.082},
-    {good:'Steel',       raw:'Iron',             units:10,  pp:10,  lo:0.078, hi:0.082},
-    {good:'Paper',       raw:'Wood',             units:1,   pp:1,   lo:0.078, hi:0.082},
-    {good:'Oil',         raw:'Petroleum',        units:1,   pp:1,   lo:0.078, hi:0.082},
-    {good:'Heavy Ammo',  raw:'Lead',             units:16,  pp:16,  lo:0.078, hi:0.082},
-    {good:'Ammo',        raw:'Lead',             units:4,   pp:4,   lo:0.078, hi:0.082},
-    {good:'Light Ammo',  raw:'Lead',             units:1,   pp:1,   lo:0.078, hi:0.082},
-    {good:'Pill',        raw:'Mysterious Plant', units:200, pp:200, lo:0.078, hi:0.082},
-    {good:'Cooked Fish', raw:'Fish',             units:1,   pp:40,  lo:3.12,  hi:3.28},
-    {good:'Steak',       raw:'Livestock',        units:1,   pp:20,  lo:1.56,  hi:1.64},
-    {good:'Bread',       raw:'Grain',            units:10,  pp:10,  lo:0.078, hi:0.082}
-  ];
+  var RESOURCES = [];  /* populated by boot() from resources.json */
   var regions = [
     {name:'Region 1', tax:2.5, bonus:30, color:'#8C2A1B'}
   ];
-  var chart, curSell=NaN, curSellOn=true, viewMode=false, curNet=0, curUnits=0, curPP=0, curRegions=[];
+  var chart, curChartType='', curSell=NaN, curSellOn=true, viewMode=false, curNet=0, curUnits=0, curPP=0, curRegions=[];
+  var DEFAULT_NW=0.120, DEFAULT_F0=1, DEFAULT_F1=10, DEFAULT_SO=true;
+  var DEFAULT_RG=JSON.stringify([{n:'Region 1',t:2.5,b:30,c:'#8C2A1B'}]);
 
   function $(id){ return document.getElementById(id); }
   function num(id){ return parseFloat($(id).value); }
@@ -111,8 +101,8 @@
   function gross(net, tax){ return net/(1 - clampTax(tax)/100); }
   function labour(net, tax, pp, bonus, fid){ return gross(net,tax)*pp / (1 + (bonus+fid)/100); }
   function beFidelity(tax,bonus,x){
-    var M = curSell - curUnits*x;                 // labour budget left after raw cost
-    if(!(M>0)) return null;                       // raw cost alone meets/exceeds sell
+    var M = curSell - curUnits*x;
+    if(!(M>0)) return null;
     return 100*(gross(curNet,tax)*curPP/M - 1) - bonus;
   }
   function beRegionLine(r,x){
@@ -121,19 +111,21 @@
     if(f<=1) return r.name+' always profitable';
     return r.name+' '+f.toFixed(1)+'% fidelity';
   }
-  function labour(net, tax, pp, bonus, fid){ return gross(net,tax)*pp / (1 + (bonus+fid)/100); }
-  function curGood(){ return GOODS[+$('preset').value] || GOODS[0]; }
+  function curRes(){ return RESOURCES[+$('preset').value] || RESOURCES[0]; }
 
   function fillGoodFields(){
-    var g=curGood();
+    var g=curRes(), isRaw=g.units===0;
     $('rawname').value=g.raw; $('rawunits').value=g.units; $('pp').value=g.pp;
-    $('goodlabel').textContent=g.good;
-    $('selllabel').textContent=g.good+' sell price';
+    $('goodlabel').textContent=g.name;
+    $('selllabel').textContent=g.name+' sell price';
+    ['rawname','rawunits','pmin','pmax'].forEach(function(id){
+      $(''+id).closest('.field').style.display = isRaw ? 'none' : '';
+    });
   }
   function applyGoodDefaults(){
-    var g=curGood();
+    var g=curRes();
     $('pmin').value=g.lo; $('pmax').value=g.hi;
-    $('sell').value=(g.pp*0.16).toFixed(3);
+    $('sell').value=g.sell != null ? g.sell : (g.pp*0.16).toFixed(3);
   }
 
   function xPoints(min,max){
@@ -143,17 +135,30 @@
     var N=7, xs=[]; for(var i=0;i<N;i++){ xs.push(min + (max-min)*i/(N-1)); } return xs;
   }
 
-  // ---------- shareable state ----------
+  // ---------- shareable state (delta-encoded: only store non-default values) ----------
+  function rnd4(v){ return Math.round(v*10000)/10000; }
   function buildState(){
-    return {
-      g:curGood().good, lo:num('pmin'), hi:num('pmax'), so:$('sellon').checked, se:num('sell'),
-      nw:num('net'), f0:num('fmin'), f1:num('fmax'),
-      rg:regions.map(function(r){ return {n:r.name,t:r.tax,b:r.bonus,c:r.color}; })
-    };
+    var g=curRes(), gi=+$('preset').value;
+    var lo=num('pmin'), hi=num('pmax'), se=num('sell');
+    var nw=num('net'), f0=num('fmin'), f1=num('fmax'), so=$('sellon').checked;
+    var rg=regions.map(function(r){ return {n:r.name,t:r.tax,b:r.bonus,c:r.color}; });
+    var st={};
+    if(gi!==0) st.g=g.name;
+    if(rnd4(lo)!==rnd4(g.lo)) st.lo=lo;
+    if(rnd4(hi)!==rnd4(g.hi)) st.hi=hi;
+    var defSell=g.sell!=null?g.sell:+(g.pp*0.16).toFixed(3);
+    if(rnd4(se)!==rnd4(defSell)) st.se=se;
+    if(so!==DEFAULT_SO) st.so=so;
+    if(rnd4(nw)!==rnd4(DEFAULT_NW)) st.nw=nw;
+    if(f0!==DEFAULT_F0) st.f0=f0;
+    if(f1!==DEFAULT_F1) st.f1=f1;
+    if(JSON.stringify(rg)!==DEFAULT_RG) st.rg=rg;
+    return st;
   }
   function applyState(s){
     try{
-      if(s.g){ for(var i=0;i<GOODS.length;i++){ if(GOODS[i].good===s.g){ $('preset').value=i; break; } } }
+      if(s.g){ for(var i=0;i<RESOURCES.length;i++){ if(RESOURCES[i].name===s.g){ $('preset').value=i; break; } } }
+      applyGoodDefaults(); /* seed prices.json defaults; state overrides follow */
       if(s.lo!=null) $('pmin').value=s.lo;
       if(s.hi!=null) $('pmax').value=s.hi;
       if(s.so!=null) $('sellon').checked=!!s.so;
@@ -168,7 +173,8 @@
   }
   function stateURL(withView){
     var st=buildState(); if(withView) st.v=1;
-    return location.href.split('#')[0] + '#' + encodeURIComponent(JSON.stringify(st));
+    var base=location.href.split('#')[0];
+    return Object.keys(st).length ? base+'#'+encodeURIComponent(JSON.stringify(st)) : base;
   }
   function syncHash(){
     try{ history.replaceState(null,'',stateURL(viewMode)); }catch(e){}
@@ -206,8 +212,8 @@
     });
   }
 
-  function update(){
-    var g=curGood(), units=g.units, pp=g.pp;
+  function updateLine(){
+    var g=curRes(), units=g.units, pp=g.pp;
     var net=num('net'), fmin=clampFid(num('fmin')), fmax=clampFid(num('fmax'));
     var xs=xPoints(num('pmin'), num('pmax'));
     var sellOn=$('sellon').checked, sell=num('sell');
@@ -243,8 +249,8 @@
         var x=(sell - labour(net,r.tax,pp,r.bonus,fid))/units;
         if(x<=0) return '<span class="be-na">never</span>';
         var cls='';
-        if(x>xmax) cls='be-hi';        // out of range, higher than market high -> better
-        else if(x<xmin) cls='be-lo';   // out of range, lower than market low  -> worse
+        if(x>xmax) cls='be-hi';
+        else if(x<xmin) cls='be-lo';
         return '<span class="'+cls+'">'+x.toFixed(4)+'</span>';
       }
       var beCell = beTxt(fmin)+' <small>'+fmin+'%</small><br>'+beTxt(fmax)+' <small>'+fmax+'%</small>';
@@ -273,6 +279,8 @@
 
     var labels = xs.map(function(x){ return x.toFixed(4); });
     var xtitle = g.raw + ' price (BTC per unit)';
+    if(chart && curChartType !== 'line'){ chart.destroy(); chart = null; }
+    curChartType = 'line';
     if(!chart){
       chart = new Chart($('chart'), {
         type:'line',
@@ -285,8 +293,8 @@
               title:function(items){
                 if(!items.length) return '';
                 var it=items[0];
-                if(it.dataset.kind==='sell') return it.label;   // raw price at this point
-                return it.parsed.y.toFixed(3);                  // cost to manufacture
+                if(it.dataset.kind==='sell') return it.label;
+                return it.parsed.y.toFixed(3);
               },
               label:function(c){
                 var d=c.dataset;
@@ -307,7 +315,7 @@
                 ticks:{color:'#241F1C', font:{family:'IBM Plex Mono',size:11}}, grid:{color:'rgba(36,31,28,0.10)'} },
             y:{ position:'left', min:Lmin, max:Lmax,
                 title:{display:true, text:'cost per unit (BTC)', color:'#241F1C', font:{family:'IBM Plex Mono'}},
-                ticks:{color:'#241F1C', font:{family:'IBM Plex Mono',size:11}, callback:function(v){return v.toFixed(2);}},
+                ticks:{color:'#241F1C', font:{family:'IBM Plex Mono',size:11}, callback:function(v){return v.toFixed(3);}},
                 grid:{color:'rgba(36,31,28,0.10)'} },
             y2:{ position:'right', reverse:true, display:sellOn, min:y2min, max:y2max,
                 title:{display:true, text:'net benefit (BTC)', color:'#3B6D11', font:{family:'IBM Plex Mono'}},
@@ -332,30 +340,167 @@
     syncHash();
   }
 
-  GOODS.forEach(function(g,i){
-    var o=document.createElement('option'); o.value=i; o.textContent=g.good; $('preset').appendChild(o);
-  });
+  /* DUMBBELL_PLUGIN — defined in spectator-utils.js */
 
-  $('preset').addEventListener('change', function(){ fillGoodFields(); applyGoodDefaults(); update(); });
-  ['pmin','pmax','sell','net','fmin','fmax'].forEach(function(id){ $(id).addEventListener('input', update); });
-  $('sellon').addEventListener('change', update);
-  $('add').addEventListener('click', function(){
-    regions.push({name:'Region '+(regions.length+1), tax:2.5, bonus:30, color:PAL[regions.length % PAL.length]});
-    renderRegions(); update();
-  });
-  function fallbackCopy(text){ var f=$('link'); var old=f.value; f.value=text; f.focus(); f.select(); try{document.execCommand('copy');}catch(e){} f.value=old; }
-  $('copy').addEventListener('click', function(){
-    var f=$('link'); f.focus(); f.select();
-    var done=function(){ var b=$('copy'), t=b.textContent; b.textContent='Copied!'; setTimeout(function(){b.textContent=t;},1300); };
-    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(f.value).then(done, function(){ fallbackCopy(f.value); done(); }); }
-    else { fallbackCopy(f.value); done(); }
-  });
-  $('copyview').addEventListener('click', function(){
-    var url=stateURL(true), b=this, t=b.textContent;
-    var done=function(){ b.textContent='Copied view link!'; setTimeout(function(){b.textContent=t;},1300); };
-    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(done, function(){ fallbackCopy(url); done(); }); }
-    else { fallbackCopy(url); done(); }
-  });
+  function updateBar(){
+    var g=curRes(), pp=g.pp;
+    var net=num('net'), fmin=clampFid(num('fmin')), fmax=clampFid(num('fmax'));
+    var sellOn=$('sellon').checked, sell=num('sell');
+    curSell=sell; curSellOn=sellOn; curNet=net; curUnits=0; curPP=pp;
+    curRegions=regions.map(function(r){ return {name:r.name, tax:r.tax, bonus:r.bonus}; });
+
+    var legendHTML='', rows='', allY=[];
+    var labels = regions.map(function(r){ return r.name; });
+
+    var bandData = regions.map(function(r){
+      var costFull = labour(net, r.tax, pp, r.bonus, fmax); /* full fidelity = lowest cost */
+      var costNew  = labour(net, r.tax, pp, r.bonus, fmin); /* low fidelity = highest cost */
+      allY.push(costFull, costNew);
+      return [costFull, costNew];
+    });
+
+    var barColors = regions.map(function(r){ return r.color; });
+    var sellPrices = (sellOn && !isNaN(sell)) ? regions.map(function(){ return sell; }) : null;
+    if(sellPrices) allY.push(sell);
+
+    var datasets = [{
+      dumbbell: true,
+      label: 'Fidelity band',
+      data: bandData,
+      sellData: sellPrices,        /* passed to plugin for hollow sell-price dot */
+      backgroundColor: barColors,  /* used by plugin for dot fill color */
+      borderWidth: 0,
+      barThickness: 2,             /* 2px bar = connector line */
+      borderSkipped: false
+    }];
+
+    regions.forEach(function(r, i){
+      var costFull=bandData[i][0], costNew=bandData[i][1], bandAvg=(costFull+costNew)/2;
+      var setW=gross(net, r.tax);
+      var nbCls='', nbTxt='—';
+      if(sellOn && !isNaN(sell)){ var nb=sell-bandAvg; nbCls=nb>=0?'pos':'neg'; nbTxt=(nb>=0?'+':'')+nb.toFixed(3); }
+      legendHTML += '<span><span class="sw" style="background:'+r.color+'"></span>'+r.name+' · '+r.tax+'% tax · '+r.bonus+'% bonus</span>';
+      rows += '<tr><td><span class="dot" style="background:'+r.color+'"></span>'+r.name+'</td>'+
+              '<td>'+setW.toFixed(3)+' ('+net.toFixed(3)+')</td><td>'+bandAvg.toFixed(3)+'</td>'+
+              '<td class="'+nbCls+'">'+nbTxt+'</td>'+
+              '<td>'+costFull.toFixed(3)+'–'+costNew.toFixed(3)+'</td>'+
+              '<td><span class="be-na">—</span></td></tr>';
+    });
+    if(sellOn && !isNaN(sell)){
+      legendHTML += '<span>&#9675; sell price '+sell.toFixed(3)+'</span>';
+    }
+
+    var dMin=Math.min.apply(null,allY), dMax=Math.max.apply(null,allY);
+    var pad=(dMax-dMin)*0.25; if(!(pad>0)) pad=Math.max(0.02, Math.abs(dMax)*0.10);
+    var Lmin=dMin-pad, Lmax=dMax+pad;
+    var y2min=sell-Lmax, y2max=sell-Lmin;
+
+    $('legend').innerHTML = legendHTML;
+    $('readout').querySelector('tbody').innerHTML = rows;
+
+    if(chart && curChartType !== 'bar'){ chart.destroy(); chart = null; }
+    curChartType = 'bar';
+    if(!chart){
+      chart = new Chart($('chart'), {
+        type: 'bar',
+        plugins: [DUMBBELL_PLUGIN],
+        data: {labels: labels, datasets: datasets},
+        options:{
+          responsive:true, maintainAspectRatio:false,
+          interaction:{mode:'nearest', intersect:false},
+          plugins:{ legend:{display:false},
+            tooltip:{ callbacks:{
+              title: function(items){ return items.length ? items[0].label : ''; },
+              label: function(c){
+                if(!c.dataset.dumbbell) return '';
+                var i=c.dataIndex, r=regions[i];
+                if(!r) return '';
+                var d=c.dataset.data[i];
+                var costFull=d[0], costNew=d[1];
+                var lines=[];
+                if(curSellOn && !isNaN(curSell)){
+                  /* breakeven fidelity: fid = 100*(gross*pp/sell - 1) - bonus */
+                  var gw=gross(net, r.tax);
+                  var beF = curSell>0 ? 100*(gw*pp/curSell-1)-r.bonus : null;
+                  var nbFull=curSell-costFull, nbNew=curSell-costNew;
+                  if(beF!==null && beF<=fmin)              lines.push('— always profitable —');
+                  lines.push(fmin+'%: '+costNew.toFixed(3)+' ('+(nbNew>=0?'+':'')+nbNew.toFixed(3)+')');
+                  if(beF!==null && beF>fmin && beF<=fmax)  lines.push(beF.toFixed(1)+'%: breakeven');
+                  lines.push(fmax+'%: '+costFull.toFixed(3)+' ('+(nbFull>=0?'+':'')+nbFull.toFixed(3)+')');
+                  if(beF===null || beF>fmax)                lines.push('— never profitable —');
+                } else {
+                  lines.push(fmin+'%: '+costNew.toFixed(3));
+                  lines.push(fmax+'%: '+costFull.toFixed(3));
+                }
+                return lines;
+              }
+            }}},
+          scales:{
+            x:{ ticks:{color:'#241F1C', font:{family:'IBM Plex Mono',size:11}},
+                grid:{color:'rgba(36,31,28,0.10)'} },
+            y:{ position:'left', min:Lmin, max:Lmax,
+                title:{display:true, text:'cost per unit (BTC)', color:'#241F1C', font:{family:'IBM Plex Mono'}},
+                ticks:{color:'#241F1C', font:{family:'IBM Plex Mono',size:11}, callback:function(v){return v.toFixed(3);}},
+                grid:{color:'rgba(36,31,28,0.10)'} },
+            y2:{ position:'right', reverse:true, display:sellOn, min:y2min, max:y2max,
+                title:{display:true, text:'net benefit (BTC)', color:'#3B6D11', font:{family:'IBM Plex Mono'}},
+                ticks:{ font:{family:'IBM Plex Mono',size:11},
+                        color:function(c){ var v=c.tick.value; if(Math.abs(v)<5e-4) return '#241F1C'; return v<0?'#8C2A1B':'#3B6D11'; },
+                        callback:function(v){ return (v>0?'+':'')+v.toFixed(3); } },
+                grid:{drawOnChartArea:false} }
+          }
+        }
+      });
+    } else {
+      chart.data.labels = labels;
+      chart.data.datasets = datasets;
+      chart.options.scales.y.min = Lmin;
+      chart.options.scales.y.max = Lmax;
+      chart.options.scales.y2.display = sellOn;
+      chart.options.scales.y2.min = y2min;
+      chart.options.scales.y2.max = y2max;
+      chart.update();
+    }
+    syncHash();
+  }
+
+  function update(){
+    if(curRes().units === 0) updateBar(); else updateLine();
+  }
+
+  function buildResources(resources, prices){
+    var nameMap = {};
+    resources.forEach(function(r){ nameMap[r.key] = r.name; });
+    return resources.map(function(r){
+      var inputPrice = r.input ? (prices[r.input] || 0.08) : 0;
+      var sellPrice = prices[r.key];
+      return {
+        name:  r.name,
+        raw:   r.input ? (nameMap[r.input] || r.input) : '—',
+        units: r.units,
+        pp:    r.pp,
+        lo:    r.type==='mfg' ? +(inputPrice*0.99).toFixed(4) : 0,
+        hi:    r.type==='mfg' ? +(inputPrice*1.01).toFixed(4) : 0,
+        sell:  sellPrice != null ? +parseFloat(sellPrice).toFixed(3) : null
+      };
+    });
+  }
+
+  function start(){
+    var sel = $('preset'); sel.innerHTML = '';
+    RESOURCES.forEach(function(g,i){
+      var o=document.createElement('option'); o.value=i; o.textContent=g.name; sel.appendChild(o);
+    });
+
+    $('preset').addEventListener('change', function(){ fillGoodFields(); applyGoodDefaults(); update(); });
+    ['pmin','pmax','sell','net','fmin','fmax'].forEach(function(id){ $(id).addEventListener('input', update); });
+    $('sellon').addEventListener('change', update);
+    $('add').addEventListener('click', function(){
+      regions.push({name:'Region '+(regions.length+1), tax:2.5, bonus:30, color:PAL[regions.length % PAL.length]});
+      renderRegions(); update();
+    });
+    $('copy').addEventListener('click', function(){ clipCopy($('link').value, this, 'Copied!'); });
+    $('copyview').addEventListener('click', function(){ clipCopy(stateURL(true), this, 'Copied view link!'); });
   // ---------- clipboard ----------
   function renderCard(){
     var node=document.getElementById('chartcard');
@@ -373,7 +518,7 @@
 
   function saveAsFile(canvas){
     var a=document.createElement('a');
-    a.download=curGood().good.replace(/\s+/g,'_').toLowerCase()+'_cost_chart.png';
+    a.download=curRes().name.replace(/\s+/g,'_').toLowerCase()+'_cost_chart.png';
     a.href=canvas.toDataURL('image/png'); a.click();
   }
 
@@ -392,16 +537,48 @@
     }).catch(function(){ restore('Failed'); });
   }
 
-  ['download','downloadView'].forEach(function(id){
-    var el=document.getElementById(id);
-    if(el) el.addEventListener('click', function(){ exportChart(this); });
-  });
+    ['download','downloadView'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(el) el.addEventListener('click', function(){ exportChart(this); });
+    });
 
-  var hadHash = loadHash();
-  fillGoodFields();
-  if(!hadHash) applyGoodDefaults();
-  if(viewMode){ document.querySelector('.grid').classList.add('viewonly'); }
-  renderRegions();
-  update();
+    var hadHash = loadHash();
+    fillGoodFields();
+    if(!hadHash) applyGoodDefaults();
+    if(viewMode){ document.querySelector('.grid').classList.add('viewonly'); }
+    renderRegions();
+    update();
+  }
+
+  function boot(){
+    Promise.all([
+      fetch('resources.json').then(function(r){if(!r.ok) throw 0; return r.json();}),
+      fetch('prices.json').then(function(r){if(!r.ok) throw 0; return r.json();})
+    ]).then(function(res){
+      var resources = Array.isArray(res[0]) ? res[0] : [];
+      var p = res[1];
+      var prices = (p&&p.result&&p.result.data)?p.result.data:(p&&typeof p==='object'&&!Array.isArray(p))?p:{};
+      RESOURCES = buildResources(resources, prices);
+      start();
+    }).catch(function(){
+      /* fallback: hardcoded RESOURCES so the tool still works offline */
+      RESOURCES = [
+        {name:'Concrete',   raw:'Limestone', units:10,  pp:10,  lo:0.078, hi:0.082},
+        {name:'Steel',      raw:'Iron',      units:10,  pp:10,  lo:0.078, hi:0.082},
+        {name:'Paper',      raw:'Wood',      units:1,   pp:1,   lo:0.078, hi:0.082},
+        {name:'Oil',        raw:'Petroleum', units:1,   pp:1,   lo:0.078, hi:0.082},
+        {name:'Bread',      raw:'Grain',     units:10,  pp:10,  lo:0.078, hi:0.082},
+        {name:'Steak',      raw:'Livestock', units:1,   pp:20,  lo:1.56,  hi:1.64},
+        {name:'Cooked Fish',raw:'Fish',      units:1,   pp:40,  lo:3.12,  hi:3.28},
+        {name:'Heavy Ammo', raw:'Lead',      units:16,  pp:16,  lo:0.078, hi:0.082},
+        {name:'Ammo',       raw:'Lead',      units:4,   pp:4,   lo:0.078, hi:0.082},
+        {name:'Light Ammo', raw:'Lead',      units:1,   pp:1,   lo:0.078, hi:0.082},
+        {name:'Cocaine',    raw:'Coca',      units:200, pp:200, lo:0.078, hi:0.082}
+      ];
+      start();
+    });
+  }
+
+  boot();
 })();
 </script>

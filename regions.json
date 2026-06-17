@@ -42,6 +42,13 @@
     "region_name": "Luapula"
   },
   {
+    "country_name": "Ecuador",
+    "income_tax": 3.4,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Ecuadorian Coast"
+  },
+  {
     "country_name": "Djibouti",
     "income_tax": 1.0,
     "specialty": "coca",
@@ -203,6 +210,13 @@
     "region_name": "Western Panama"
   },
   {
+    "country_name": "Myanmar",
+    "income_tax": 4.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Yangon"
+  },
+  {
     "country_name": "Colombia",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -252,17 +266,17 @@
     "region_name": null
   },
   {
-    "country_name": "Mali",
-    "income_tax": 5.0,
-    "specialty": "petroleum",
-    "total_bonus": 45.0,
-    "region_name": "Kayes"
-  },
-  {
     "country_name": "Slovakia",
     "income_tax": 6.0,
     "specialty": "petroleum",
     "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Mali",
+    "income_tax": 5.0,
+    "specialty": "petroleum",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {

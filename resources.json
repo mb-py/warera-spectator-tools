@@ -1,0 +1,22 @@
+[
+  {"key":"concrete",   "name":"Concrete",    "type":"mfg", "input":"limestone", "units":10,  "pp":10},
+  {"key":"steel",      "name":"Steel",       "type":"mfg", "input":"iron",      "units":10,  "pp":10},
+  {"key":"paper",      "name":"Paper",       "type":"mfg", "input":"wood",      "units":1,   "pp":1},
+  {"key":"oil",        "name":"Oil",         "type":"mfg", "input":"petroleum", "units":1,   "pp":1},
+  {"key":"bread",      "name":"Bread",       "type":"mfg", "input":"grain",     "units":10,  "pp":10},
+  {"key":"steak",      "name":"Steak",       "type":"mfg", "input":"livestock", "units":1,   "pp":20},
+  {"key":"cookedFish", "name":"Cooked Fish", "type":"mfg", "input":"fish",      "units":1,   "pp":40},
+  {"key":"heavyAmmo",  "name":"Heavy Ammo",  "type":"mfg", "input":"lead",      "units":16,  "pp":16},
+  {"key":"ammo",       "name":"Ammo",        "type":"mfg", "input":"lead",      "units":4,   "pp":4},
+  {"key":"lightAmmo",  "name":"Light Ammo",  "type":"mfg", "input":"lead",      "units":1,   "pp":1},
+  {"key":"cocain",     "name":"Cocaine",     "type":"mfg", "input":"coca",      "units":200, "pp":200},
+  {"key":"limestone",  "name":"Limestone",   "type":"raw", "input":null, "units":0, "pp":1},
+  {"key":"iron",       "name":"Iron",        "type":"raw", "input":null, "units":0, "pp":1},
+  {"key":"wood",       "name":"Wood",        "type":"raw", "input":null, "units":0, "pp":1},
+  {"key":"lead",       "name":"Lead",        "type":"raw", "input":null, "units":0, "pp":1},
+  {"key":"petroleum",  "name":"Petroleum",   "type":"raw", "input":null, "units":0, "pp":1},
+  {"key":"coca",       "name":"Coca",        "type":"raw", "input":null, "units":0, "pp":1},
+  {"key":"grain",      "name":"Grain",       "type":"raw", "input":null, "units":0, "pp":1},
+  {"key":"livestock",  "name":"Livestock",   "type":"raw", "input":null, "units":0, "pp":20},
+  {"key":"fish",       "name":"Fish",        "type":"raw", "input":null, "units":0, "pp":40}
+]

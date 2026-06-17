@@ -11,9 +11,9 @@
   .natrow .bar{width:12px; height:12px; border-radius:2px; display:inline-block; flex:none; margin-top:2px}
   .natrow .nat-info{display:flex; flex-direction:column; gap:1px; flex:1; min-width:0}
   .natrow .nat-name{font-size:12px}
-  .natrow small{color:var(--ox-d); font-size:9px}
-  .nat-empty{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--ox-d); padding:4px 0}
-  .msg{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ox-d); padding:20px; line-height:1.7}
+  .natrow small{color:var(--dark-accent); font-size:9px}
+  .nat-empty{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--dark-accent); padding:4px 0}
+  .msg{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--dark-accent); padding:20px; line-height:1.7}
 
   /* outer layout: sidebar + main */
   .app-layout{display:grid; gap:20px; grid-template-columns:1fr; align-items:start}
@@ -25,19 +25,19 @@
   .tabpanel.active>.card{border-top:none}
   .tab-btn{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.16em; text-transform:uppercase;
     padding:8px 18px; border:1px solid transparent; border-bottom:none; background:transparent;
-    color:var(--ox-d); cursor:pointer; position:relative; bottom:-2px}
-  .tab-btn.active{color:var(--ink); background:var(--card); border-color:var(--ink); border-bottom:2px solid var(--card)}
-  .tab-btn:hover:not(.active){color:var(--ink); background:rgba(36,31,28,.05)}
+    color:var(--dark-accent); cursor:pointer; position:relative; bottom:-2px}
+  .tab-btn.active{color:var(--main-brand); background:var(--card); border-color:var(--ink); border-bottom:2px solid var(--card)}
+  .tab-btn:hover:not(.active){color:var(--main-brand); background:color-mix(in srgb, var(--light-shades) 20%, transparent)}
   .tabpanel{display:none}
   .tabpanel.active{display:block}
 
   /* sidebar inner tabs */
   .stab-bar{display:flex; margin:-18px -18px 0; border-bottom:1px solid var(--rule)}
   .stab-btn{font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.14em; text-transform:uppercase;
-    flex:1; padding:8px 6px; border:none; background:transparent; color:var(--ox-d); cursor:pointer;
+    flex:1; padding:8px 6px; border:none; background:transparent; color:var(--dark-accent); cursor:pointer;
     border-bottom:2px solid transparent; position:relative; top:1px; text-align:center}
-  .stab-btn.active{color:var(--ink); border-bottom-color:var(--ox)}
-  .stab-btn:hover:not(.active){color:var(--ink)}
+  .stab-btn.active{color:var(--main-brand); border-bottom-color:var(--main-brand)}
+  .stab-btn:hover:not(.active){color:var(--main-brand); background:color-mix(in srgb, var(--light-shades) 20%, transparent)}
   .stabpanel{display:none; padding-top:14px}
   .stabpanel.active{display:block}
 
@@ -47,7 +47,7 @@
   .price-field label{font-size:9px; letter-spacing:.06em}
   .price-field input{font-size:11px; padding:3px 5px}
   .price-sec{font-family:"IBM Plex Mono",monospace; font-size:9px; letter-spacing:.12em; text-transform:uppercase;
-    color:var(--ox-d); margin-top:12px; padding-top:9px; border-top:1px solid var(--rule)}
+    color:var(--dark-accent); margin-top:12px; padding-top:9px; border-top:1px solid var(--rule)}
   .price-sec:first-child{margin-top:0; padding-top:0; border-top:none}
 
   /* viewonly */
@@ -87,7 +87,19 @@
           <button class="stab-btn" data-stab="resource">Per Product</button>
         </div>
 
-        <!-- Inner tab: Resource analysis config -->
+        <!-- Inner tab: Market prices -->
+        <div id="stab-prices" class="stabpanel active">
+          <p style="font-family:'IBM Plex Mono',monospace; font-size:9.5px; color:var(--dark-accent); margin:0 0 8px; line-height:1.6">
+            Override default market prices. Updates both charts immediately.
+          </p>
+          <div class="price-sec">Manufactured</div>
+          <div class="price-fields" id="pf-mfg"></div>
+          <div class="price-sec">Raw</div>
+          <div class="price-fields" id="pf-raw"></div>
+          <button class="resetbtn" id="resetls" style="margin-top:14px">Reset saved prices</button>
+        </div>
+
+        <!-- Inner tab: Per product config -->
         <div id="stab-resource" class="stabpanel">
           <div class="fields" style="grid-template-columns:1fr">
             <div class="field"><label for="res">Product</label><select id="res"></select></div>
@@ -95,20 +107,9 @@
             <div class="field"><label id="selllabel" for="sell">Sell price</label><input id="sell" type="number" step="0.0001"></div>
             <div class="field" id="inpriceField"><label id="inpricelabel" for="inprice">Input price</label><input id="inprice" type="number" step="0.0001"></div>
           </div>
-
           <h2>Specialised regions</h2>
           <div id="nations"></div>
-        </div>
-
-        <!-- Inner tab: Market prices -->
-        <div id="stab-prices" class="stabpanel active">
-          <p style="font-family:'IBM Plex Mono',monospace; font-size:9.5px; color:var(--ox-d); margin:0 0 8px; line-height:1.6">
-            Override default market prices. Updates both charts immediately.
-          </p>
-          <div class="price-sec">Manufactured</div>
-          <div class="price-fields" id="pf-mfg"></div>
-          <div class="price-sec">Raw</div>
-          <div class="price-fields" id="pf-raw"></div>
+          <button class="copybtn" id="openstudio" style="margin-top:14px">Open in PCS →</button>
         </div>
       </div>
 
@@ -118,8 +119,7 @@
         <input id="link" type="text" readonly value="">
         <button class="copybtn" id="copy">Copy share link</button>
         <button class="copybtn" id="copyview">Copy view‑only link</button>
-        <button class="copybtn" id="export">Copy chart image</button>
-        <button class="copybtn" id="resetls" style="margin-top:8px; background:var(--ox-d); border-color:var(--ox-d)">Reset saved prices</button>
+        <button class="copybtn" id="export">Copy to clipboard</button>
       </div>
 
     </div><!-- /.sidebar -->
@@ -170,6 +170,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="spectator-utils.js"></script>
 <script>
 (function(){
   var PAL = ['#3B6D11','#8C2A1B','#1F6B6B','#6A3D7A','#B8860B','#2F4858','#A0522D'];
@@ -191,62 +192,11 @@
     };
   })();
 
-  var RESOURCES = [
-    {key:'concrete',   name:'Concrete',   type:'mfg', input:'limestone', inUnits:10,  pp:10},
-    {key:'steel',      name:'Steel',      type:'mfg', input:'iron',      inUnits:10,  pp:10},
-    {key:'paper',      name:'Paper',      type:'mfg', input:'wood',      inUnits:1,   pp:1},
-    {key:'oil',        name:'Oil',        type:'mfg', input:'petroleum', inUnits:1,   pp:1},
-    {key:'bread',      name:'Bread',      type:'mfg', input:'grain',     inUnits:10,  pp:10},
-    {key:'steak',      name:'Steak',      type:'mfg', input:'livestock', inUnits:1,   pp:20},
-    {key:'cookedFish', name:'Cooked Fish',type:'mfg', input:'fish',      inUnits:1,   pp:40},
-    {key:'heavyAmmo',  name:'Heavy Ammo', type:'mfg', input:'lead',      inUnits:16,  pp:16},
-    {key:'ammo',       name:'Ammo',       type:'mfg', input:'lead',      inUnits:4,   pp:4},
-    {key:'lightAmmo',  name:'Light Ammo', type:'mfg', input:'lead',      inUnits:1,   pp:1},
-    {key:'cocain',     name:'Cocaine',    type:'mfg', input:'coca',      inUnits:200, pp:200},
-    {key:'limestone',  name:'Limestone',  type:'raw', input:null, inUnits:0, pp:1},
-    {key:'iron',       name:'Iron',       type:'raw', input:null, inUnits:0, pp:1},
-    {key:'wood',       name:'Wood',       type:'raw', input:null, inUnits:0, pp:1},
-    {key:'lead',       name:'Lead',       type:'raw', input:null, inUnits:0, pp:1},
-    {key:'petroleum',  name:'Petroleum',  type:'raw', input:null, inUnits:0, pp:1},
-    {key:'coca',       name:'Coca',       type:'raw', input:null, inUnits:0, pp:1},
-    {key:'grain',      name:'Grain',      type:'raw', input:null, inUnits:0, pp:1},
-    {key:'livestock',  name:'Livestock',  type:'raw', input:null, inUnits:0, pp:20},
-    {key:'fish',       name:'Fish',       type:'raw', input:null, inUnits:0, pp:40}
-  ];
+  var RESOURCES = []; /* populated from resources.json in boot() */
 
-  /* Hybrid linear-log scale for the All Resources chart.
-     |x| ≤ LIN_MAX  →  f(x) = x            (identity; equal pixel spacing per unit)
-     |x| >  LIN_MAX  →  f(x) = sign · (LIN_MAX + LIN_K · log₁₀(|x|/LIN_MAX))
-     LIN_K = LIN_MAX · ln10 gives C¹ continuity at the transition. */
-  var LIN_MAX = 0.005;
-  var LIN_K   = LIN_MAX * Math.LN10;  /* ≈ 0.01151 */
-  function ovSymlog(x){
-    if(x===0) return 0;
-    var s=x>0?1:-1, a=Math.abs(x);
-    return a<=LIN_MAX ? x : s*(LIN_MAX + LIN_K*Math.log10(a/LIN_MAX));
-  }
-  function ovSymexp(y){
-    if(y===0) return 0;
-    var s=y>0?1:-1, a=Math.abs(y);
-    return a<=LIN_MAX ? y : s*LIN_MAX*Math.pow(10,(a-LIN_MAX)/LIN_K);
-  }
-  /* Fine-grained ticks inside the linear region, coarser log ticks outside */
-  var OV_NICE = [-0.2,-0.1,-0.05,-0.02,-0.01,
-                 -0.005,-0.004,-0.003,-0.002,-0.001,
-                  0,
-                  0.001,0.002,0.003,0.004,0.005,
-                  0.01,0.02,0.05,0.1,0.2];
-  function ovFmt(symVal){
-    var orig = ovSymexp(symVal);
-    if(Math.abs(orig)<1e-9) return '0';
-    var abs=Math.abs(orig);
-    /* Gridlines for every 0.001 in the linear region, but labels only at ±LIN_MAX and beyond */
-    if(abs < LIN_MAX - 1e-9) return null;
-    var str=abs>=0.1?abs.toFixed(2):abs.toFixed(3);
-    return orig<0?'-'+str:str;
-  }
+  /* symlog scale, SYMLOG_NICE, fmtSymlog — defined in spectator-utils.js */
 
-  var PRICES={}, NATIONS=[];
+  var PRICES={}, DEFAULT_PRICES={}, NATIONS=[];
   var AGRARIAN=['fish','coca','grain','livestock'];
   var viewMode=false, pendingTab=null, chart, overviewChart;
   var ovHoveredIdx = -1;      /* dataset index hovered in legend (-1 = none) */
@@ -298,6 +248,7 @@
     } else {
       switchSidebarTab('resource');
     }
+    syncHash();
   }
 
   function initSidebarTabs(){
@@ -350,7 +301,7 @@
 
       var sell    = PRICES[r.key] || 0;
       var inPrice = (r.type==='mfg') ? (PRICES[r.input] || 0) : 0;
-      var rawCost = r.inUnits * inPrice;
+      var rawCost = r.units * inPrice;
 
       function nb(tax, bonus, f){
         return (sell - (grossFor(mode, wage, tax) * r.pp / (1+(bonus+f)/100) + rawCost)) / r.pp;
@@ -384,7 +335,7 @@
         datasets.push({
           label: r.name+' · '+best1.name,
           resource: r.name, region: best1.name,
-          data: raw1.map(ovSymlog),
+          data: raw1.map(symlog),
           borderColor: dimCol, backgroundColor: dimCol,
           pointBackgroundColor: dimCol, pointBorderColor: dimCol,
           borderWidth: 2, pointRadius: 2, cubicInterpolationMode:'monotone', fill: false
@@ -404,7 +355,7 @@
           datasets.push({
             label: r.name+' · '+best10.name+' (10%)',
             resource: r.name, region: best10.name,
-            data: raw10.map(ovSymlog),
+            data: raw10.map(symlog),
             borderColor: dimCol, backgroundColor: dimCol,
             pointBackgroundColor: dimCol, pointBorderColor: dimCol,
             borderDash: [6,3],
@@ -446,18 +397,18 @@
     var rawMin = rawVals.length ? Math.min.apply(null, rawVals) : 0;
     /* Round rawMax up to the next 0.005 boundary for a clean upper limit with breathing room. */
     var paddedMax = Math.ceil((rawMax + 0.005) * 200) / 200;
-    var ovYMax = ovSymlog(paddedMax);
-    var ovYMin = Math.max(ovSymlog(-0.2), -ovYMax);
+    var ovYMax = symlog(paddedMax);
+    var ovYMin = Math.max(symlog(-0.2), -ovYMax);
 
     var ovYscale = {
       min: ovYMin, max: ovYMax,
       afterBuildTicks: function(scale){
-        scale.ticks = OV_NICE
-          .map(function(v){ return {value: ovSymlog(v)}; })
+        scale.ticks = SYMLOG_NICE
+          .map(function(v){ return {value: symlog(v)}; })
           .filter(function(t){ return t.value >= scale.min-1e-9 && t.value <= scale.max+1e-9; });
       },
       title:{display:true, text:'net benefit per PP (BTC)', color:'#241F1C', font:{family:'IBM Plex Mono'}},
-      ticks:{color:'#241F1C', font:{family:'IBM Plex Mono',size:11}, callback: ovFmt},
+      ticks:{color:'#241F1C', font:{family:'IBM Plex Mono',size:11}, callback: fmtSymlog},
       grid:{color:function(c){ return c.tick.value===0 ? 'rgba(36,31,28,0.55)' : 'rgba(36,31,28,0.10)'; }}
     };
 
@@ -473,7 +424,7 @@
             tooltip:{ callbacks:{
               title:function(items){ return items.length ? items[0].label+' fidelity' : ''; },
               label:function(c){
-                var v=ovSymexp(c.parsed.y);
+                var v=symexp(c.parsed.y);
                 return c.dataset.label+': '+(v>=0?'+':'')+v.toFixed(4);
               }
             }}
@@ -498,7 +449,7 @@
     $('reslabel').textContent = r.name;
     $('selllabel').textContent = r.name + ' price';
     if(r.type==='mfg'){
-      $('recipe').value = r.pp + ' PP + ' + r.inUnits + ' ' + nameOf(r.input);
+      $('recipe').value = r.pp + ' PP + ' + r.units + ' ' + nameOf(r.input);
       $('inpriceField').style.display='';
       $('inpricelabel').textContent = nameOf(r.input) + ' price';
     } else {
@@ -513,19 +464,28 @@
   }
 
   // ---------- shareable state ----------
+  var DEFAULT_WMODE = 'net', DEFAULT_WAGE = 0.12, DEFAULT_TAB = 'overview';
   function buildState(){
-    /* Store all PRICES (rounded) so the full market config is shared */
+    /* Only encode fields that differ from their defaults — omitting them keeps URLs clean */
     var p = {};
-    for(var k in PRICES){ if(Object.prototype.hasOwnProperty.call(PRICES,k)) p[k]=rnd(PRICES[k]); }
+    for(var k in PRICES){
+      if(Object.prototype.hasOwnProperty.call(PRICES,k)){
+        var v=rnd(PRICES[k]);
+        if(v !== rnd(DEFAULT_PRICES[k])) p[k]=v;
+      }
+    }
+    var st = {};
+    var resKey = curRes().key; if(resKey !== RESOURCES[0].key) st.r = resKey;
+    var wm = $('wmode').value;  if(wm !== DEFAULT_WMODE) st.wm = wm;
+    var w = num('wage');        if(w !== DEFAULT_WAGE)   st.w  = w;
     var activeTab = document.querySelector('.tab-btn.active');
-    return {
-      r:curRes().key, wm:$('wmode').value, w:num('wage'), p:p,
-      tab: activeTab ? activeTab.dataset.tab : 'analysis'
-    };
+    var tab = activeTab ? activeTab.dataset.tab : DEFAULT_TAB;
+    if(tab !== DEFAULT_TAB) st.tab = tab;
+    if(Object.keys(p).length) st.p = p;
+    return st;
   }
   function applyState(s){
     try{
-      /* Restore prices first so fillResourceDefaults picks them up */
       if(s.p && typeof s.p==='object'){
         for(var k in s.p){ if(Object.prototype.hasOwnProperty.call(s.p,k)) PRICES[k]=s.p[k]; }
       }
@@ -537,11 +497,16 @@
       fillResourceDefaults();
       if(s.wm) $('wmode').value=s.wm;
       if(s.w!=null) $('wage').value=s.w;
-      if(s.tab && s.tab!=='analysis') pendingTab=s.tab;
+      if(s.tab && s.tab!==DEFAULT_TAB) pendingTab=s.tab;
       if(s.v) viewMode=true;
     }catch(e){}
   }
-  function stateURL(withView){ var st=buildState(); if(withView) st.v=1; return location.href.split('#')[0]+'#'+encodeURIComponent(JSON.stringify(st)); }
+  function stateURL(withView){
+    var st=buildState();
+    if(withView) st.v=1;
+    var base=location.href.split('#')[0];
+    return Object.keys(st).length ? base+'#'+encodeURIComponent(JSON.stringify(st)) : base;
+  }
   function syncHash(){
     try{ history.replaceState(null,'',stateURL(viewMode)); }catch(e){}
     $('link').value=stateURL(false);
@@ -555,7 +520,12 @@
   function lsSave(){
     try{
       var p={};
-      for(var k in PRICES){ if(Object.prototype.hasOwnProperty.call(PRICES,k)) p[k]=PRICES[k]; }
+      for(var k in PRICES){
+        if(Object.prototype.hasOwnProperty.call(PRICES,k)){
+          var v=rnd(PRICES[k]);
+          if(v !== rnd(DEFAULT_PRICES[k])) p[k]=v;
+        }
+      }
       localStorage.setItem(LS_KEY, JSON.stringify({p:p, wm:$('wmode').value, w:$('wage').value}));
     }catch(e){}
   }
@@ -598,10 +568,10 @@
   function update(){
     var r=curRes();
     var sell=num('sell'), pp=r.pp;
-    var inUnits = (r.type==='mfg') ? r.inUnits : 0;
+    var units = (r.type==='mfg') ? r.units : 0;
     var inPrice = (r.type==='mfg') ? (num('inprice')||0) : 0;
     var mode=$('wmode').value, wage=num('wage');
-    var rawCost=inUnits*inPrice;
+    var rawCost=units*inPrice;
     var matching=matchingNations(r.key);
     var chosen=matching;
     var FIDS=[1,2,3,4,5,6,7,8,9,10];
@@ -759,20 +729,9 @@
     });
   }
 
-  function fallbackCopy(text){ var f=$('link'); var old=f.value; f.value=text; f.focus(); f.select(); try{document.execCommand('copy');}catch(e){} f.value=old; }
   function wireShareExport(){
-    $('copy').addEventListener('click', function(){
-      var f=$('link'); f.focus(); f.select();
-      var done=function(){var b=$('copy'),t=b.textContent; b.textContent='Copied!'; setTimeout(function(){b.textContent=t;},1300);};
-      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(f.value).then(done,function(){fallbackCopy(f.value);done();});}
-      else{fallbackCopy(f.value);done();}
-    });
-    $('copyview').addEventListener('click', function(){
-      var url=stateURL(true),b=this,t=b.textContent;
-      var done=function(){b.textContent='Copied view link!'; setTimeout(function(){b.textContent=t;},1300);};
-      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(done,function(){fallbackCopy(url);done();});}
-      else{fallbackCopy(url);done();}
-    });
+    $('copy').addEventListener('click', function(){ clipCopy($('link').value, this, 'Copied!'); });
+    $('copyview').addEventListener('click', function(){ clipCopy(stateURL(true), this, 'Copied view link!'); });
     $('export').addEventListener('click', function(){
       if(typeof html2canvas!=='function'){return;}
       var b=this,t=b.textContent; b.textContent='Rendering…';
@@ -782,7 +741,7 @@
       var node=isOv?document.querySelector('#tab-overview .card.chartcard'):$('chartcard');
       var fname=isOv?'all_resources_net_benefit':curRes().name.replace(/\s+/g,'_').toLowerCase()+'_net_benefit';
       if(!activeChart||!node){restore('Nothing to export');return;}
-      var SCALE=3,prev=activeChart.options.devicePixelRatio;
+      var SCALE=1,prev=activeChart.options.devicePixelRatio;
       activeChart.options.devicePixelRatio=SCALE; activeChart.resize();
       requestAnimationFrame(function(){
         html2canvas(node,{backgroundColor:'#F3E9D4',scale:SCALE,logging:false}).then(function(canvas){
@@ -802,6 +761,30 @@
     });
   }
 
+  function openInStudio(){
+    var r = curRes();
+    var inputPrice = r.input ? (PRICES[r.input] || 0) : 0;
+    var sellPrice = PRICES[r.key] || 0;
+    var wage = num('wage');
+    var wmode = $('wmode').value;
+    var nations = matchingNations(r.key);
+    var FIDS = [1,2,3,4,5,6,7,8,9,10];
+    function nb(n,f){
+      var rc = r.units * inputPrice;
+      return sellPrice - (grossFor(wmode, wage, n.tax) * r.pp / (1+(n.bonus+f)/100) + rc);
+    }
+    function avgNB(n){ var s=0; FIDS.forEach(function(f){s+=nb(n,f);}); return s/FIDS.length; }
+    var top = nations.slice().sort(function(a,b){return avgNB(b)-avgNB(a);}).slice(0,4);
+    var state = {
+      g: r.name,
+      lo: r.type==='mfg' ? +(inputPrice*0.99).toFixed(4) : 0,
+      hi: r.type==='mfg' ? +(inputPrice*1.01).toFixed(4) : 0,
+      so: true, se: sellPrice, nw: wage,
+      rg: top.map(function(n,i){return {n:n.name, t:n.tax, b:n.bonus, c:n._color||PAL[i%PAL.length]};})
+    };
+    window.open('production_cost_studio.html#'+encodeURIComponent(JSON.stringify(state)),'_blank');
+  }
+
   function start(){
     buildDropdown();
     initTabs();
@@ -812,6 +795,7 @@
     $('wage').addEventListener('input', update);
     $('wmode').addEventListener('change', update);
     wireShareExport();
+    $('openstudio').addEventListener('click', openInStudio);
     wireLegendHover($('legend'), function(){ return chart; });
     /* Overview uses scriptable colors — just flip ovHoveredIdx and redraw. */
     (function(){
@@ -915,7 +899,7 @@
     if(viewMode){
       var sheet=document.querySelector('.sheet');
       sheet.classList.add('viewonly');
-      if(pendingTab==='overview') sheet.classList.add('view-ov');
+      if(pendingTab !== 'analysis') sheet.classList.add('view-ov');
     }
   }
 
@@ -928,14 +912,17 @@
   function boot(){
     Promise.all([
       fetch('prices.json').then(function(r){if(!r.ok) throw 0; return r.json();}),
-      fetch('regions.json').then(function(r){if(!r.ok) throw 0; return r.json();})
+      fetch('regions.json').then(function(r){if(!r.ok) throw 0; return r.json();}),
+      fetch('resources.json').then(function(r){if(!r.ok) throw 0; return r.json();})
     ]).then(function(res){
       var p=res[0]; PRICES=(p&&p.result&&p.result.data)?p.result.data:(p&&typeof p==='object'&&!Array.isArray(p))?p:{};
+      for(var k in PRICES) DEFAULT_PRICES[k]=PRICES[k]; /* snapshot before any overrides */
       var raw=Array.isArray(res[1])?res[1]:(res[1].regions||[]);
       NATIONS=raw.map(function(r){
         return {name:r.region_name||r.country_name, country:r.country_name, region:r.region_name||null,
                 tax:r.income_tax, bonus:r.total_bonus, specialty:r.specialty};
       });
+      RESOURCES = Array.isArray(res[2]) ? res[2] : [];
       /* Apply localStorage on top of JSON defaults; loadHash() will override if a URL hash exists */
       lsLoad();
       start();
