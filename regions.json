@@ -36,14 +36,14 @@
   },
   {
     "country_name": "Zambia",
-    "income_tax": 3.3,
+    "income_tax": 3.0,
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Luapula"
   },
   {
     "country_name": "Ecuador",
-    "income_tax": 3.2,
+    "income_tax": 2.5,
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Ecuadorian Coast"
@@ -124,13 +124,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Mbomou"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 4.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Ogoou\u00e9"
   },
   {
     "country_name": "Denmark",
@@ -224,6 +217,13 @@
     "region_name": "Western Panama"
   },
   {
+    "country_name": "Algeria",
+    "income_tax": 8.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Northwestern Algeria"
+  },
+  {
     "country_name": "Myanmar",
     "income_tax": 4.0,
     "specialty": "livestock",
@@ -236,13 +236,6 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Colombian Andes"
-  },
-  {
-    "country_name": "Azerbaijan",
-    "income_tax": 12.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Shirvan"
   },
   {
     "country_name": "Costa Rica",
@@ -276,7 +269,7 @@
     "country_name": "Turkiye",
     "income_tax": 12.0,
     "specialty": "paper",
-    "total_bonus": 56.5,
+    "total_bonus": 26.5,
     "region_name": null
   },
   {
@@ -302,7 +295,7 @@
   },
   {
     "country_name": "Equatorial Guinea",
-    "income_tax": 2.5,
+    "income_tax": 3.2,
     "specialty": "steak",
     "total_bonus": 25.0,
     "region_name": null
