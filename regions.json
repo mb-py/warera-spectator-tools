@@ -36,14 +36,14 @@
   },
   {
     "country_name": "Zambia",
-    "income_tax": 3.0,
+    "income_tax": 1.0,
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Luapula"
   },
   {
     "country_name": "Ecuador",
-    "income_tax": 2.5,
+    "income_tax": 1.0,
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Ecuadorian Coast"
@@ -59,14 +59,14 @@
     "country_name": "Philippines",
     "income_tax": 8.0,
     "specialty": "cocain",
-    "total_bonus": 20.0,
+    "total_bonus": 25.0,
     "region_name": null
   },
   {
     "country_name": "Netherlands",
     "income_tax": 8.0,
     "specialty": "cocain",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -190,7 +190,7 @@
   },
   {
     "country_name": "Liberia",
-    "income_tax": 10.0,
+    "income_tax": 1.0,
     "specialty": "lightAmmo",
     "total_bonus": 20.5,
     "region_name": null
@@ -208,13 +208,6 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Singapore"
-  },
-  {
-    "country_name": "Panama",
-    "income_tax": 12.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Western Panama"
   },
   {
     "country_name": "Algeria",
@@ -238,8 +231,15 @@
     "region_name": "Colombian Andes"
   },
   {
+    "country_name": "Azerbaijan",
+    "income_tax": 12.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Shirvan"
+  },
+  {
     "country_name": "Costa Rica",
-    "income_tax": 3.5,
+    "income_tax": 10.0,
     "specialty": "oil",
     "total_bonus": 45.0,
     "region_name": null
@@ -269,7 +269,7 @@
     "country_name": "Turkiye",
     "income_tax": 12.0,
     "specialty": "paper",
-    "total_bonus": 26.5,
+    "total_bonus": 26.0,
     "region_name": null
   },
   {
@@ -305,6 +305,13 @@
     "income_tax": 7.0,
     "specialty": "steak",
     "total_bonus": 15.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Croatia",
+    "income_tax": 12.0,
+    "specialty": "steak",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
