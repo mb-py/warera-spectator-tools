@@ -25,9 +25,9 @@
 <div class="sheet">
   <div class="masthead"><a href="index.html" class="paper">The Spectator</a></div>
   <h1>Production Cost Studio</h1>
-  <p class="sub">Calculate the cost to produce any manufactured good across a range of raw resource prices, and compare regions by tax and bonus. 
-    Each region is drawn as a shaded band for any set net wage: the upper edge is low fidelity, the lower edge is full fidelity. Lower cost is better, and a band sitting below that the sell price line is in profit. 
-    The table below shows each region's average cost and net benefit across the fidelity band, plus the cost range for raw resource where you breaks even against the sell price (higher break‑even is better.) </p>
+  <p class="sub">Calculate the cost to produce any manufactured good across a range of raw resource prices, and compare regions by tax and bonus.
+    Each region is drawn as a shaded band for any set net wage: the upper edge is low fidelity, the lower edge is full fidelity. Lower cost is better, and a band sitting below that the sell price line is in profit.
+    The table below shows each region's average cost and net benefit across the fidelity band, plus the cost range for raw resource where you breaks even against the sell price (higher break‑even is better.)</p>
 
   <div class="grid">
     <div class="card" id="controls">
@@ -552,12 +552,14 @@
 
   function boot(){
     Promise.all([
-      fetch('resources.json').then(function(r){if(!r.ok) throw 0; return r.json();}),
-      fetch('prices.json').then(function(r){if(!r.ok) throw 0; return r.json();})
+      fetch('resources.json',{cache:'no-cache'}).then(function(r){if(!r.ok) throw 0; return r.json();}),
+      fetch('prices.json',   {cache:'no-cache'}).then(function(r){if(!r.ok) throw 0; return r.json();})
     ]).then(function(res){
       var resources = Array.isArray(res[0]) ? res[0] : [];
       var p = res[1];
+
       var prices = (p&&p.result&&p.result.data)?p.result.data:(p&&typeof p==='object'&&!Array.isArray(p))?p:{};
+      delete prices._updated;
       RESOURCES = buildResources(resources, prices);
       start();
     }).catch(function(){

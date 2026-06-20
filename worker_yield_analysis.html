@@ -64,7 +64,7 @@
 <div class="sheet">
   <div class="masthead"><a href="index.html" class="paper">The Spectator</a></div>
   <h1>Worker Yield Analysis</h1>
-  <p class="sub">Find where your workers return the most. Ranked by net benefit per production point across every resource and region. Beware that this is an experimental tool that uses a static dataset, and that region bonusses and deposit locations may be out of date.</p>
+  <p class="sub">Find where your workers return the most. Ranked by net benefit per production point across every resource and region. Beware that this is an experimental tool that uses a static dataset, and that region bonusses and deposit locations may be out of date.<span id="price-date"></span></p>
 
   <div class="app-layout">
 
@@ -196,7 +196,7 @@
 
   /* symlog scale, SYMLOG_NICE, fmtSymlog — defined in spectator-utils.js */
 
-  var PRICES={}, DEFAULT_PRICES={}, NATIONS=[];
+  var PRICES={}, DEFAULT_PRICES={}, NATIONS=[], PRICES_UPDATED=0;
   var AGRARIAN=['fish','coca','grain','livestock'];
   var viewMode=false, pendingTab=null, chart, overviewChart;
   var ovHoveredIdx = -1;      /* dataset index hovered in legend (-1 = none) */
@@ -526,13 +526,18 @@
           if(v !== rnd(DEFAULT_PRICES[k])) p[k]=v;
         }
       }
-      localStorage.setItem(LS_KEY, JSON.stringify({p:p, wm:$('wmode').value, w:$('wage').value}));
+      localStorage.setItem(LS_KEY, JSON.stringify({p:p, wm:$('wmode').value, w:$('wage').value, ts:Date.now()}));
     }catch(e){}
   }
+  var LS_TTL = 86400000; /* 1 day in ms */
   function lsLoad(){
     try{
       var raw=localStorage.getItem(LS_KEY); if(!raw) return;
       var s=JSON.parse(raw);
+      /* Discard if no timestamp (legacy), >1 day old, or prices.json was updated after last save */
+      if(!s.ts || Date.now()-s.ts > LS_TTL || (PRICES_UPDATED && PRICES_UPDATED > s.ts)){
+        localStorage.removeItem(LS_KEY); return;
+      }
       if(s.p && typeof s.p==='object'){
         for(var k in s.p){ if(Object.prototype.hasOwnProperty.call(s.p,k)) PRICES[k]=s.p[k]; }
       }
@@ -911,11 +916,18 @@
 
   function boot(){
     Promise.all([
-      fetch('prices.json').then(function(r){if(!r.ok) throw 0; return r.json();}),
-      fetch('regions.json').then(function(r){if(!r.ok) throw 0; return r.json();}),
-      fetch('resources.json').then(function(r){if(!r.ok) throw 0; return r.json();})
+      fetch('prices.json',   {cache:'no-cache'}).then(function(r){if(!r.ok) throw 0; return r.json();}),
+      fetch('regions.json',  {cache:'no-cache'}).then(function(r){if(!r.ok) throw 0; return r.json();}),
+      fetch('resources.json',{cache:'no-cache'}).then(function(r){if(!r.ok) throw 0; return r.json();})
     ]).then(function(res){
-      var p=res[0]; PRICES=(p&&p.result&&p.result.data)?p.result.data:(p&&typeof p==='object'&&!Array.isArray(p))?p:{};
+      var p=res[0];
+      if(p && p._updated){
+        PRICES_UPDATED = new Date(p._updated).getTime();
+        var pd = document.getElementById('price-date');
+        if(pd) pd.innerHTML = '<br>Prices updated '+fmtPriceDate(p._updated);
+      }
+      PRICES=(p&&p.result&&p.result.data)?p.result.data:(p&&typeof p==='object'&&!Array.isArray(p))?p:{};
+      delete PRICES._updated;
       for(var k in PRICES) DEFAULT_PRICES[k]=PRICES[k]; /* snapshot before any overrides */
       var raw=Array.isArray(res[1])?res[1]:(res[1].regions||[]);
       NATIONS=raw.map(function(r){

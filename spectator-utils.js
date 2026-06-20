@@ -18,6 +18,17 @@ function clipCopy(text, btn, label){
   } else { fallback(); done(); }
 }
 
+/* ── Price-date formatter ────────────────────────────────────────────────────
+   Formats an ISO 8601 string (or any Date-parseable value) as "20 Jun 2026 10:42" in local time. */
+function fmtPriceDate(iso){
+  if(!iso) return '';
+  var d = new Date(iso);
+  if(isNaN(d)) return '';
+  var mon = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return d.getDate()+' '+mon[d.getMonth()]+' '+d.getFullYear()+
+    ' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
+}
+
 /* ── Symlog scale helpers ────────────────────────────────────────────────────
    Hybrid linear-log for Chart.js axes where values cluster near zero.
    |x| ≤ SYMLOG_LIN_MAX  →  f(x) = x            (identity; equal pixel per unit)
