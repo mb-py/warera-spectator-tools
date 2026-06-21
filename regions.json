@@ -28,13 +28,6 @@
     "region_name": null
   },
   {
-    "country_name": "Zambia",
-    "income_tax": 1.0,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Luapula"
-  },
-  {
     "country_name": "Ecuador",
     "income_tax": 1.0,
     "specialty": "coca",
@@ -52,7 +45,7 @@
     "country_name": "Philippines",
     "income_tax": 8.0,
     "specialty": "cocain",
-    "total_bonus": 25.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -94,7 +87,7 @@
     "country_name": "Ukraine",
     "income_tax": 10.0,
     "specialty": "cookedFish",
-    "total_bonus": 10.0,
+    "total_bonus": 10.75,
     "region_name": null
   },
   {
@@ -112,11 +105,11 @@
     "region_name": "Northeastern Greenland"
   },
   {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
+    "country_name": "Algeria",
+    "income_tax": 8.0,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "South Island"
+    "region_name": "Northeastern Algeria"
   },
   {
     "country_name": "Central Africa",
@@ -141,7 +134,7 @@
   },
   {
     "country_name": "Egypt",
-    "income_tax": 11.0,
+    "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 61.75,
     "region_name": null
@@ -175,6 +168,13 @@
     "region_name": null
   },
   {
+    "country_name": "Liberia",
+    "income_tax": 1.0,
+    "specialty": "lightAmmo",
+    "total_bonus": 50.5,
+    "region_name": null
+  },
+  {
     "country_name": "Malaysia",
     "income_tax": 1.0,
     "specialty": "lightAmmo",
@@ -186,13 +186,6 @@
     "income_tax": 8.0,
     "specialty": "lightAmmo",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Liberia",
-    "income_tax": 1.0,
-    "specialty": "lightAmmo",
-    "total_bonus": 20.5,
     "region_name": null
   },
   {
@@ -214,11 +207,11 @@
     "income_tax": 12.0,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Western Panama"
+    "region_name": "Eastern Panama"
   },
   {
     "country_name": "Myanmar",
-    "income_tax": 4.0,
+    "income_tax": 5.0,
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Yangon"
@@ -231,17 +224,17 @@
     "region_name": "Colombian Andes"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.0,
+    "country_name": "New Zealand",
+    "income_tax": 3.9,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Ogoou\u00e9"
+    "region_name": "South Island"
   },
   {
     "country_name": "Costa Rica",
     "income_tax": 10.0,
     "specialty": "oil",
-    "total_bonus": 45.5,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -269,15 +262,15 @@
     "country_name": "Turkiye",
     "income_tax": 12.0,
     "specialty": "paper",
-    "total_bonus": 20.5,
+    "total_bonus": 10.5,
     "region_name": null
   },
   {
-    "country_name": "Mali",
-    "income_tax": 5.0,
+    "country_name": "Nicaragua",
+    "income_tax": 4.0,
     "specialty": "petroleum",
     "total_bonus": 40.0,
-    "region_name": "Kayes"
+    "region_name": null
   },
   {
     "country_name": "Slovakia",
@@ -294,6 +287,13 @@
     "region_name": null
   },
   {
+    "country_name": "Mali",
+    "income_tax": 5.0,
+    "specialty": "petroleum",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Equatorial Guinea",
     "income_tax": 3.2,
     "specialty": "steak",
@@ -304,7 +304,7 @@
     "country_name": "France",
     "income_tax": 7.0,
     "specialty": "steak",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -329,13 +329,6 @@
     "region_name": null
   },
   {
-    "country_name": "Romania",
-    "income_tax": 9.0,
-    "specialty": "steel",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Comoros",
     "income_tax": 2.0,
     "specialty": "steel",
@@ -347,13 +340,6 @@
     "income_tax": 10.0,
     "specialty": "wood",
     "total_bonus": 55.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Nicaragua",
-    "income_tax": 4.0,
-    "specialty": "wood",
-    "total_bonus": 35.0,
     "region_name": null
   }
 ]
