@@ -158,7 +158,7 @@
     "income_tax": 7.9,
     "specialty": "lead",
     "total_bonus": 60.5,
-    "region_name": null
+    "region_name": "Southern Albania"
   },
   {
     "country_name": "Chile",
@@ -217,11 +217,11 @@
     "region_name": "Yangon"
   },
   {
-    "country_name": "Colombia",
-    "income_tax": 3.0,
+    "country_name": "Zambia",
+    "income_tax": 1.0,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Colombian Andes"
+    "region_name": "Western Zambia"
   },
   {
     "country_name": "New Zealand",
@@ -273,6 +273,13 @@
     "region_name": null
   },
   {
+    "country_name": "Mali",
+    "income_tax": 5.0,
+    "specialty": "petroleum",
+    "total_bonus": 40.0,
+    "region_name": "S\u00e9gou & Mopti"
+  },
+  {
     "country_name": "Slovakia",
     "income_tax": 6.0,
     "specialty": "petroleum",
@@ -284,13 +291,6 @@
     "income_tax": 5.9,
     "specialty": "petroleum",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Mali",
-    "income_tax": 5.0,
-    "specialty": "petroleum",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
