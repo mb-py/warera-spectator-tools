@@ -28,6 +28,13 @@
     "region_name": null
   },
   {
+    "country_name": "Zambia",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Western Zambia"
+  },
+  {
     "country_name": "Djibouti",
     "income_tax": 1.0,
     "specialty": "coca",
@@ -38,7 +45,7 @@
     "country_name": "Philippines",
     "income_tax": 8.0,
     "specialty": "cocain",
-    "total_bonus": 20.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -270,13 +277,6 @@
     "income_tax": 3.9,
     "specialty": "petroleum",
     "total_bonus": 40.0,
-    "region_name": "S\u00e9gou & Mopti"
-  },
-  {
-    "country_name": "Mali",
-    "income_tax": 3.9,
-    "specialty": "petroleum",
-    "total_bonus": 40.0,
     "region_name": "Western Burkina Faso"
   },
   {
@@ -294,6 +294,13 @@
     "region_name": null
   },
   {
+    "country_name": "Cambodia",
+    "income_tax": 6.0,
+    "specialty": "petroleum",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
     "country_name": "Equatorial Guinea",
     "income_tax": 3.2,
     "specialty": "steak",
@@ -303,6 +310,13 @@
   {
     "country_name": "France",
     "income_tax": 7.0,
+    "specialty": "steak",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Serbia",
+    "income_tax": 8.0,
     "specialty": "steak",
     "total_bonus": 10.0,
     "region_name": null
