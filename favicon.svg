@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900');</style>
+  </defs>
+  <!-- Paper background -->
+  <rect width="64" height="64" fill="#bfbbb1"/>
+  <!-- Masthead top rule (3px equivalent) -->
+  <rect x="0" y="0" width="64" height="5" fill="#102532"/>
+  <!-- Masthead bottom rule (1px equivalent) -->
+  <rect x="0" y="61" width="64" height="3" fill="#102532"/>
+  <!-- S in Playfair Display Black, centered in the content band -->
+  <text x="32" y="33" font-family="'Playfair Display',Georgia,serif" font-weight="900"
+        font-size="46" text-anchor="middle" dominant-baseline="central" fill="#102532">S</text>
+</svg>
