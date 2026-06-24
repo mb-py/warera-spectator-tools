@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "_updated": "2026-06-24T09:30:16Z",
   "ammo": 0.659,
   "bread": 1.7613,
@@ -20,4 +21,27 @@
   "steak": 3.505,
   "steel": 1.577,
   "wood": 0.0862
+=======
+  "_updated": "2026-06-24T15:04:09Z",
+  "ammo": 0.6644,
+  "bread": 1.7549,
+  "coca": 0.0803,
+  "cocain": 36.0836,
+  "concrete": 1.5894,
+  "cookedFish": 7.1837,
+  "fish": 3.1747,
+  "grain": 0.0786,
+  "heavyAmmo": 2.3103,
+  "iron": 0.0796,
+  "lead": 0.0812,
+  "lightAmmo": 0.1625,
+  "limestone": 0.0798,
+  "livestock": 1.5721,
+  "oil": 0.177,
+  "paper": 0.1825,
+  "petroleum": 0.0872,
+  "steak": 3.4919,
+  "steel": 1.5885,
+  "wood": 0.0855
+>>>>>>> Stashed changes
 }

@@ -164,8 +164,13 @@
     "country_name": "Italy",
     "income_tax": 7.9,
     "specialty": "lead",
+<<<<<<< Updated upstream
     "total_bonus": 45.0,
     "region_name": null
+=======
+    "total_bonus": 40.0,
+    "region_name": "Liechtenstein"
+>>>>>>> Stashed changes
   },
   {
     "country_name": "Chile",
