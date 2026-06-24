@@ -164,13 +164,8 @@
     "country_name": "Italy",
     "income_tax": 7.9,
     "specialty": "lead",
-<<<<<<< Updated upstream
-    "total_bonus": 45.0,
-    "region_name": null
-=======
     "total_bonus": 40.0,
     "region_name": "Liechtenstein"
->>>>>>> Stashed changes
   },
   {
     "country_name": "Chile",
@@ -206,6 +201,13 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Singapore"
+  },
+  {
+    "country_name": "Panama",
+    "income_tax": 12.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Eastern Panama"
   },
   {
     "country_name": "Colombia",
