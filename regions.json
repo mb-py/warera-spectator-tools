@@ -126,13 +126,6 @@
     "region_name": "North Island"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Ogoou\u00e9"
-  },
-  {
     "country_name": "Denmark",
     "income_tax": 5.0,
     "specialty": "grain",
@@ -151,7 +144,14 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 56.25,
-    "region_name": null
+    "region_name": "Northern Sudan"
+  },
+  {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 56.25,
+    "region_name": "Southern District"
   },
   {
     "country_name": "Angola",
@@ -192,7 +192,7 @@
     "country_name": "Iraq",
     "income_tax": 10.0,
     "specialty": "limestone",
-    "total_bonus": 55.5,
+    "total_bonus": 56.0,
     "region_name": null
   },
   {
@@ -208,6 +208,13 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Eastern Panama"
+  },
+  {
+    "country_name": "Algeria",
+    "income_tax": 8.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Northwestern Algeria"
   },
   {
     "country_name": "Colombia",
@@ -255,7 +262,7 @@
     "country_name": "Turkiye",
     "income_tax": 12.0,
     "specialty": "paper",
-    "total_bonus": 20.5,
+    "total_bonus": 15.5,
     "region_name": null
   },
   {
@@ -343,6 +350,13 @@
     "region_name": null
   },
   {
+    "country_name": "Austria",
+    "income_tax": 5.0,
+    "specialty": "wood",
+    "total_bonus": 35.5,
+    "region_name": null
+  },
+  {
     "country_name": "United States",
     "income_tax": 10.0,
     "specialty": "wood",
@@ -351,7 +365,7 @@
   },
   {
     "country_name": "Slovakia",
-    "income_tax": 8.0,
+    "income_tax": 7.0,
     "specialty": "wood",
     "total_bonus": 35.0,
     "region_name": null
