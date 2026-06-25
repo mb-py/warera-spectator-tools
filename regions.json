@@ -154,6 +154,13 @@
     "region_name": "Southern District"
   },
   {
+    "country_name": "Equatorial Guinea",
+    "income_tax": 1.0,
+    "specialty": "iron",
+    "total_bonus": 55.0,
+    "region_name": null
+  },
+  {
     "country_name": "Angola",
     "income_tax": 7.5,
     "specialty": "iron",
@@ -291,13 +298,6 @@
     "income_tax": 5.9,
     "specialty": "petroleum",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Equatorial Guinea",
-    "income_tax": 3.2,
-    "specialty": "steak",
-    "total_bonus": 25.0,
     "region_name": null
   },
   {
