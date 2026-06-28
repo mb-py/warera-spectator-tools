@@ -38,7 +38,7 @@
     "country_name": "Belgium",
     "income_tax": 10.0,
     "specialty": "bread",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -252,17 +252,17 @@
     "region_name": null
   },
   {
+    "country_name": "Tunisia",
+    "income_tax": 7.5,
+    "specialty": "paper",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
     "country_name": "Liberia",
     "income_tax": 8.0,
     "specialty": "paper",
     "total_bonus": 20.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Gambia",
-    "income_tax": 1.0,
-    "specialty": "paper",
-    "total_bonus": 15.5,
     "region_name": null
   },
   {
@@ -304,7 +304,7 @@
     "country_name": "South Africa",
     "income_tax": 12.0,
     "specialty": "steel",
-    "total_bonus": 62.75,
+    "total_bonus": 62.5,
     "region_name": null
   },
   {
@@ -334,6 +334,13 @@
     "specialty": "wood",
     "total_bonus": 45.5,
     "region_name": "Northern Austria"
+  },
+  {
+    "country_name": "United States",
+    "income_tax": 10.0,
+    "specialty": "wood",
+    "total_bonus": 35.0,
+    "region_name": null
   },
   {
     "country_name": "Slovakia",
