@@ -28,13 +28,6 @@
     "region_name": null
   },
   {
-    "country_name": "Belgium",
-    "income_tax": 10.0,
-    "specialty": "bread",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Gambia",
     "income_tax": 9.0,
     "specialty": "coca",
@@ -210,13 +203,6 @@
     "region_name": "Eastern Panama"
   },
   {
-    "country_name": "Algeria",
-    "income_tax": 8.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Northwestern Algeria"
-  },
-  {
     "country_name": "Colombia",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -229,6 +215,13 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Ouham"
+  },
+  {
+    "country_name": "Azerbaijan",
+    "income_tax": 12.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Baku"
   },
   {
     "country_name": "Costa Rica",
