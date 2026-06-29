@@ -14,13 +14,6 @@
     "region_name": null
   },
   {
-    "country_name": "Papua New Guinea",
-    "income_tax": 10.0,
-    "specialty": "ammo",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Montenegro",
     "income_tax": 1.0,
     "specialty": "ammo",
@@ -42,31 +35,24 @@
     "region_name": null
   },
   {
-    "country_name": "Myanmar",
-    "income_tax": 5.0,
+    "country_name": "Gambia",
+    "income_tax": 9.0,
     "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Yangon"
-  },
-  {
-    "country_name": "Zambia",
-    "income_tax": 3.0,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Luapula"
+    "total_bonus": 45.5,
+    "region_name": "Gambia"
   },
   {
     "country_name": "Djibouti",
     "income_tax": 1.0,
     "specialty": "coca",
-    "total_bonus": 15.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
     "country_name": "Poland",
     "income_tax": 12.0,
     "specialty": "concrete",
-    "total_bonus": 61.25,
+    "total_bonus": 45.5,
     "region_name": null
   },
   {
@@ -80,7 +66,7 @@
     "country_name": "Lithuania",
     "income_tax": 8.0,
     "specialty": "cookedFish",
-    "total_bonus": 15.5,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -88,7 +74,7 @@
     "income_tax": 10.0,
     "specialty": "fish",
     "total_bonus": 60,
-    "region_name": "Western Iceland"
+    "region_name": "Eastern Iceland"
   },
   {
     "country_name": "Greenland",
@@ -112,6 +98,13 @@
     "region_name": "Ecuadorian Islands"
   },
   {
+    "country_name": "Comoros",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Antsiranana"
+  },
+  {
     "country_name": "Denmark",
     "income_tax": 5.0,
     "specialty": "grain",
@@ -122,7 +115,7 @@
     "country_name": "Ethiopia",
     "income_tax": 5.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -133,10 +126,10 @@
     "region_name": null
   },
   {
-    "country_name": "Equatorial Guinea",
-    "income_tax": 1.0,
+    "country_name": "Nigeria",
+    "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 40.0,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -154,10 +147,10 @@
     "region_name": null
   },
   {
-    "country_name": "Angola",
-    "income_tax": 7.5,
+    "country_name": "Equatorial Guinea",
+    "income_tax": 1.0,
     "specialty": "iron",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -203,6 +196,20 @@
     "region_name": null
   },
   {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Singapore"
+  },
+  {
+    "country_name": "Panama",
+    "income_tax": 12.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Eastern Panama"
+  },
+  {
     "country_name": "Algeria",
     "income_tax": 8.0,
     "specialty": "livestock",
@@ -222,13 +229,6 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Ouham"
-  },
-  {
-    "country_name": "Azerbaijan",
-    "income_tax": 12.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Baku"
   },
   {
     "country_name": "Costa Rica",
@@ -262,14 +262,14 @@
     "country_name": "Liberia",
     "income_tax": 8.0,
     "specialty": "paper",
-    "total_bonus": 20.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
     "country_name": "Cambodia",
     "income_tax": 6.0,
     "specialty": "petroleum",
-    "total_bonus": 45.0,
+    "total_bonus": 45.5,
     "region_name": null
   },
   {
@@ -329,17 +329,17 @@
     "region_name": null
   },
   {
+    "country_name": "Romania",
+    "income_tax": 9.0,
+    "specialty": "steel",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Austria",
     "income_tax": 7.0,
     "specialty": "wood",
     "total_bonus": 45.5,
-    "region_name": "Northern Austria"
-  },
-  {
-    "country_name": "United States",
-    "income_tax": 10.0,
-    "specialty": "wood",
-    "total_bonus": 35.0,
     "region_name": null
   },
   {
