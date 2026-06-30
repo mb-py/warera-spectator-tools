@@ -38,7 +38,7 @@
     "country_name": "Gambia",
     "income_tax": 9.0,
     "specialty": "coca",
-    "total_bonus": 45.5,
+    "total_bonus": 45.0,
     "region_name": "Gambia"
   },
   {
@@ -77,11 +77,11 @@
     "region_name": "Eastern Iceland"
   },
   {
-    "country_name": "Greenland",
-    "income_tax": 10.0,
-    "specialty": "fish",
+    "country_name": "Panama",
+    "income_tax": 12.0,
+    "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Northeastern Greenland"
+    "region_name": "Eastern Panama"
   },
   {
     "country_name": "New Zealand",
@@ -231,11 +231,11 @@
     "region_name": "Western Zambia"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.0,
+    "country_name": "Azerbaijan",
+    "income_tax": 12.0,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Ouham"
+    "region_name": "Baku"
   },
   {
     "country_name": "Costa Rica",
@@ -267,7 +267,7 @@
   },
   {
     "country_name": "Tunisia",
-    "income_tax": 7.5,
+    "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 35.0,
     "region_name": null
@@ -322,13 +322,6 @@
     "region_name": null
   },
   {
-    "country_name": "Argentina",
-    "income_tax": 12.0,
-    "specialty": "steel",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Romania",
     "income_tax": 9.0,
     "specialty": "steel",
@@ -337,7 +330,7 @@
   },
   {
     "country_name": "Austria",
-    "income_tax": 7.0,
+    "income_tax": 5.0,
     "specialty": "wood",
     "total_bonus": 45.5,
     "region_name": null
