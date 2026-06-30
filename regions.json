@@ -154,17 +154,10 @@
     "region_name": null
   },
   {
-    "country_name": "Mali",
-    "income_tax": 6.0,
-    "specialty": "lead",
-    "total_bonus": 45.0,
-    "region_name": "Tombouctou"
-  },
-  {
     "country_name": "Laos",
     "income_tax": 7.5,
     "specialty": "lead",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -172,6 +165,13 @@
     "income_tax": 7.9,
     "specialty": "lead",
     "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Mali",
+    "income_tax": 6.0,
+    "specialty": "lead",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -193,13 +193,6 @@
     "income_tax": 2.0,
     "specialty": "limestone",
     "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Iraq",
-    "income_tax": 10.0,
-    "specialty": "limestone",
-    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -241,7 +234,7 @@
     "country_name": "Cyprus",
     "income_tax": 5.0,
     "specialty": "oil",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -295,7 +288,7 @@
   },
   {
     "country_name": "South Africa",
-    "income_tax": 45.0,
+    "income_tax": 12.0,
     "specialty": "steel",
     "total_bonus": 62.5,
     "region_name": null
