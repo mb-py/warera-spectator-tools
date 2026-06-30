@@ -45,7 +45,7 @@
     "country_name": "Djibouti",
     "income_tax": 1.0,
     "specialty": "coca",
-    "total_bonus": 20.0,
+    "total_bonus": 20.5,
     "region_name": null
   },
   {
@@ -140,15 +140,15 @@
     "region_name": null
   },
   {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
+    "country_name": "Equatorial Guinea",
+    "income_tax": 1.0,
     "specialty": "iron",
-    "total_bonus": 35.5,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Equatorial Guinea",
-    "income_tax": 1.0,
+    "country_name": "Egypt",
+    "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 35.0,
     "region_name": null
@@ -231,13 +231,6 @@
     "region_name": "Western Zambia"
   },
   {
-    "country_name": "Azerbaijan",
-    "income_tax": 12.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Baku"
-  },
-  {
     "country_name": "Costa Rica",
     "income_tax": 8.0,
     "specialty": "oil",
@@ -302,7 +295,7 @@
   },
   {
     "country_name": "South Africa",
-    "income_tax": 12.0,
+    "income_tax": 45.0,
     "specialty": "steel",
     "total_bonus": 62.5,
     "region_name": null
