@@ -35,6 +35,13 @@
     "region_name": null
   },
   {
+    "country_name": "Comoros",
+    "income_tax": 5.0,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Comoros"
+  },
+  {
     "country_name": "Gambia",
     "income_tax": 9.0,
     "specialty": "coca",
@@ -77,11 +84,11 @@
     "region_name": "Eastern Iceland"
   },
   {
-    "country_name": "Panama",
-    "income_tax": 12.0,
-    "specialty": "grain",
+    "country_name": "Greenland",
+    "income_tax": 10.0,
+    "specialty": "fish",
     "total_bonus": 60,
-    "region_name": "Eastern Panama"
+    "region_name": "Norwestern Greenland"
   },
   {
     "country_name": "New Zealand",
@@ -222,6 +229,13 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Western Zambia"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 4.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Kotto"
   },
   {
     "country_name": "Costa Rica",
