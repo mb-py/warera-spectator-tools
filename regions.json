@@ -25,6 +25,13 @@
     "income_tax": 4.0,
     "specialty": "coca",
     "total_bonus": 60,
+    "region_name": "Antsiranana"
+  },
+  {
+    "country_name": "Comoros",
+    "income_tax": 4.0,
+    "specialty": "coca",
+    "total_bonus": 60,
     "region_name": "Comoros"
   },
   {
@@ -63,18 +70,18 @@
     "region_name": "Northeastern Iceland"
   },
   {
+    "country_name": "Greenland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 60,
+    "region_name": "Norwestern Greenland"
+  },
+  {
     "country_name": "Colombia",
     "income_tax": 3.0,
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Colombian Amazon"
-  },
-  {
-    "country_name": "Costa Rica",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Eastern Nicaragua"
   },
   {
     "country_name": "Ecuador",
@@ -190,7 +197,7 @@
   },
   {
     "country_name": "Yemen",
-    "income_tax": 2.0,
+    "income_tax": 4.0,
     "specialty": "limestone",
     "total_bonus": 46.0,
     "region_name": null
@@ -210,18 +217,11 @@
     "region_name": "Singapore"
   },
   {
-    "country_name": "Costa Rica",
-    "income_tax": 3.0,
+    "country_name": "Panama",
+    "income_tax": 12.0,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Eastern Honduras"
-  },
-  {
-    "country_name": "Costa Rica",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Western Costa Rica"
+    "region_name": "Eastern Panama"
   },
   {
     "country_name": "Costa Rica",
@@ -231,11 +231,18 @@
     "region_name": "Western El Salvador"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.0,
+    "country_name": "Zambia",
+    "income_tax": 3.0,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Kotto"
+    "region_name": "Western Zambia"
+  },
+  {
+    "country_name": "New Zealand",
+    "income_tax": 3.9,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "South Island"
   },
   {
     "country_name": "Cyprus",
@@ -297,7 +304,14 @@
     "country_name": "South Africa",
     "income_tax": 7.0,
     "specialty": "steel",
-    "total_bonus": 52.0,
+    "total_bonus": 46.75,
+    "region_name": null
+  },
+  {
+    "country_name": "Venezuela",
+    "income_tax": 6.0,
+    "specialty": "steel",
+    "total_bonus": 41.25,
     "region_name": null
   },
   {
@@ -308,13 +322,6 @@
     "region_name": null
   },
   {
-    "country_name": "Venezuela",
-    "income_tax": 6.0,
-    "specialty": "steel",
-    "total_bonus": 11.25,
-    "region_name": null
-  },
-  {
     "country_name": "Romania",
     "income_tax": 9.0,
     "specialty": "steel",
@@ -322,17 +329,17 @@
     "region_name": null
   },
   {
-    "country_name": "Austria",
-    "income_tax": 5.0,
-    "specialty": "wood",
-    "total_bonus": 40.5,
-    "region_name": null
-  },
-  {
     "country_name": "Slovakia",
     "income_tax": 4.0,
     "specialty": "wood",
     "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Austria",
+    "income_tax": 5.0,
+    "specialty": "wood",
+    "total_bonus": 35.5,
     "region_name": null
   }
 ]
