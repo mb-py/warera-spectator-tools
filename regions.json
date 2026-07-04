@@ -63,13 +63,6 @@
     "region_name": null
   },
   {
-    "country_name": "Iceland",
-    "income_tax": 10.0,
-    "specialty": "fish",
-    "total_bonus": 60,
-    "region_name": "Northeastern Iceland"
-  },
-  {
     "country_name": "Greenland",
     "income_tax": 10.0,
     "specialty": "fish",
@@ -133,15 +126,15 @@
     "region_name": null
   },
   {
-    "country_name": "Angola",
-    "income_tax": 7.5,
+    "country_name": "El Salvador",
+    "income_tax": 2.0,
     "specialty": "iron",
-    "total_bonus": 30.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
-    "country_name": "Equatorial Guinea",
-    "income_tax": 1.0,
+    "country_name": "Angola",
+    "income_tax": 7.5,
     "specialty": "iron",
     "total_bonus": 30.0,
     "region_name": null
@@ -169,7 +162,7 @@
   },
   {
     "country_name": "Mexico",
-    "income_tax": 6.0,
+    "income_tax": 1.0,
     "specialty": "lightAmmo",
     "total_bonus": 40.0,
     "region_name": null
@@ -231,6 +224,13 @@
     "region_name": "Western El Salvador"
   },
   {
+    "country_name": "Costa Rica",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Western Honduras"
+  },
+  {
     "country_name": "Zambia",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -238,22 +238,15 @@
     "region_name": "Western Zambia"
   },
   {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "South Island"
+    "country_name": "Syria",
+    "income_tax": 3.0,
+    "specialty": "oil",
+    "total_bonus": 40.0,
+    "region_name": null
   },
   {
     "country_name": "Cyprus",
     "income_tax": 8.0,
-    "specialty": "oil",
-    "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Syria",
-    "income_tax": 3.0,
     "specialty": "oil",
     "total_bonus": 35.0,
     "region_name": null
@@ -330,7 +323,7 @@
   },
   {
     "country_name": "Slovakia",
-    "income_tax": 4.0,
+    "income_tax": 6.0,
     "specialty": "wood",
     "total_bonus": 40.0,
     "region_name": null
