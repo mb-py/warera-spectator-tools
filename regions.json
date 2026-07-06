@@ -168,10 +168,17 @@
     "region_name": null
   },
   {
+    "country_name": "Egypt",
+    "income_tax": 45.0,
+    "specialty": "iron",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "El Salvador",
     "income_tax": 7.0,
     "specialty": "lead",
-    "total_bonus": 45.5,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -266,17 +273,17 @@
     "region_name": "South Island"
   },
   {
-    "country_name": "Syria",
-    "income_tax": 3.0,
+    "country_name": "Finland",
+    "income_tax": 8.0,
     "specialty": "oil",
     "total_bonus": 40.0,
     "region_name": null
   },
   {
-    "country_name": "Finland",
-    "income_tax": 8.0,
+    "country_name": "Syria",
+    "income_tax": 3.0,
     "specialty": "oil",
-    "total_bonus": 35.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -291,6 +298,13 @@
     "income_tax": 5.5,
     "specialty": "paper",
     "total_bonus": 40.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Mauritania",
+    "income_tax": 10.0,
+    "specialty": "paper",
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
