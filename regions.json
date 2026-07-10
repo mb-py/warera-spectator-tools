@@ -171,14 +171,14 @@
     "country_name": "DR Congo",
     "income_tax": 11.0,
     "specialty": "iron",
-    "total_bonus": 50.0,
+    "total_bonus": 55.0,
     "region_name": null
   },
   {
     "country_name": "Equatorial Guinea",
     "income_tax": 1.0,
     "specialty": "iron",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -264,6 +264,13 @@
     "specialty": "limestone",
     "total_bonus": 50.75,
     "region_name": null
+  },
+  {
+    "country_name": "Costa Rica",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Eastern El Salvador"
   },
   {
     "country_name": "New Zealand",
@@ -357,10 +364,10 @@
     "region_name": null
   },
   {
-    "country_name": "Kenya",
-    "income_tax": 9.0,
+    "country_name": "Cameroon",
+    "income_tax": 18.0,
     "specialty": "steak",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
