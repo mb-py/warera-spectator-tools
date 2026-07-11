@@ -262,7 +262,7 @@
     "country_name": "Yemen",
     "income_tax": 5.0,
     "specialty": "limestone",
-    "total_bonus": 56.25,
+    "total_bonus": 61.25,
     "region_name": null
   },
   {
@@ -278,6 +278,13 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Eastern El Salvador"
+  },
+  {
+    "country_name": "Costa Rica",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Eastern Nicaragua"
   },
   {
     "country_name": "New Zealand",
@@ -357,15 +364,15 @@
     "region_name": "Ho Chi Minh City"
   },
   {
-    "country_name": "Honduras",
-    "income_tax": 4.0,
+    "country_name": "Cameroon",
+    "income_tax": 5.0,
     "specialty": "steak",
-    "total_bonus": 15.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
-    "country_name": "Cameroon",
-    "income_tax": 5.0,
+    "country_name": "Honduras",
+    "income_tax": 4.0,
     "specialty": "steak",
     "total_bonus": 15.0,
     "region_name": null
