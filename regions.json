@@ -1,14 +1,14 @@
 [
   {
     "country_name": "Ecuador",
-    "income_tax": 4.0,
+    "income_tax": 1.0,
     "specialty": "ammo",
     "total_bonus": 40.0,
     "region_name": null
   },
   {
     "country_name": "Cyprus",
-    "income_tax": 5.0,
+    "income_tax": 1.0,
     "specialty": "ammo",
     "total_bonus": 40.0,
     "region_name": null
@@ -35,25 +35,18 @@
     "region_name": null
   },
   {
-    "country_name": "Zambia",
-    "income_tax": 3.0,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Copperbelt"
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 4.0,
     "specialty": "coca",
     "total_bonus": 60,
-    "region_name": "Ouham"
+    "region_name": "Mbomou"
   },
   {
     "country_name": "Gambia",
     "income_tax": 9.0,
     "specialty": "coca",
-    "total_bonus": 15.0,
-    "region_name": null
+    "total_bonus": 45.0,
+    "region_name": "Gambia"
   },
   {
     "country_name": "Brazil",
@@ -119,13 +112,6 @@
     "region_name": "Northeastern Greenland"
   },
   {
-    "country_name": "Singapore",
-    "income_tax": 5.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Singapore"
-  },
-  {
     "country_name": "Costa Rica",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -138,6 +124,13 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Western Costa Rica"
+  },
+  {
+    "country_name": "Zambia",
+    "income_tax": 2.5,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Western Zambia"
   },
   {
     "country_name": "Comoros",
@@ -179,7 +172,7 @@
     "income_tax": 7.5,
     "specialty": "iron",
     "total_bonus": 55.75,
-    "region_name": "Southwestern Nepal"
+    "region_name": null
   },
   {
     "country_name": "Equatorial Guinea",
@@ -262,7 +255,7 @@
     "country_name": "Yemen",
     "income_tax": 5.0,
     "specialty": "limestone",
-    "total_bonus": 61.25,
+    "total_bonus": 61.5,
     "region_name": null
   },
   {
@@ -299,13 +292,6 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Eastern Anatolia"
-  },
-  {
-    "country_name": "Georgia",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Tbilisi"
   },
   {
     "country_name": "Finland",
@@ -403,13 +389,6 @@
     "income_tax": 7.0,
     "specialty": "steel",
     "total_bonus": 40.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Uganda",
-    "income_tax": 8.0,
-    "specialty": "steel",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
