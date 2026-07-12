@@ -273,13 +273,6 @@
     "region_name": "Eastern El Salvador"
   },
   {
-    "country_name": "Costa Rica",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Eastern Nicaragua"
-  },
-  {
     "country_name": "New Zealand",
     "income_tax": 3.9,
     "specialty": "livestock",
