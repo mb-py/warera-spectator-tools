@@ -116,13 +116,6 @@
     "income_tax": 3.0,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Southern Guatemala"
-  },
-  {
-    "country_name": "Costa Rica",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 60,
     "region_name": "Western Costa Rica"
   },
   {
@@ -287,13 +280,6 @@
     "region_name": "South Island"
   },
   {
-    "country_name": "Georgia",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Eastern Anatolia"
-  },
-  {
     "country_name": "Finland",
     "income_tax": 7.0,
     "specialty": "oil",
@@ -351,7 +337,7 @@
   },
   {
     "country_name": "Cameroon",
-    "income_tax": 5.0,
+    "income_tax": 12.0,
     "specialty": "steak",
     "total_bonus": 20.0,
     "region_name": null
@@ -389,6 +375,13 @@
     "income_tax": 7.0,
     "specialty": "steel",
     "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Romania",
+    "income_tax": 9.0,
+    "specialty": "steel",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
