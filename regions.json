@@ -141,7 +141,7 @@
   },
   {
     "country_name": "Guinea-Bissau",
-    "income_tax": 4.0,
+    "income_tax": 6.0,
     "specialty": "heavyAmmo",
     "total_bonus": 40.0,
     "region_name": null
@@ -264,6 +264,13 @@
     "specialty": "limestone",
     "total_bonus": 50.75,
     "region_name": null
+  },
+  {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Singapore"
   },
   {
     "country_name": "Costa Rica",
