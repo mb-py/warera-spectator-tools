@@ -35,8 +35,15 @@
     "region_name": null
   },
   {
+    "country_name": "Costa Rica",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Eastern Nicaragua"
+  },
+  {
     "country_name": "Central Africa",
-    "income_tax": 4.0,
+    "income_tax": 4.9,
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Mbomou"
@@ -109,7 +116,7 @@
     "income_tax": 10.0,
     "specialty": "fish",
     "total_bonus": 60,
-    "region_name": "Northeastern Greenland"
+    "region_name": "Norwestern Greenland"
   },
   {
     "country_name": "Costa Rica",
@@ -162,20 +169,13 @@
   },
   {
     "country_name": "India",
-    "income_tax": 7.5,
+    "income_tax": 4.0,
     "specialty": "iron",
     "total_bonus": 55.75,
     "region_name": null
   },
   {
     "country_name": "Equatorial Guinea",
-    "income_tax": 1.0,
-    "specialty": "iron",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Nigeria",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 30.0,
@@ -186,6 +186,13 @@
     "income_tax": 45.0,
     "specialty": "iron",
     "total_bonus": 15.5,
+    "region_name": null
+  },
+  {
+    "country_name": "China",
+    "income_tax": 5.0,
+    "specialty": "lead",
+    "total_bonus": 50.75,
     "region_name": null
   },
   {
@@ -217,13 +224,6 @@
     "region_name": null
   },
   {
-    "country_name": "Mali",
-    "income_tax": 6.0,
-    "specialty": "lead",
-    "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
     "country_name": "Burkina Faso",
     "income_tax": 7.0,
     "specialty": "lightAmmo",
@@ -252,13 +252,6 @@
     "region_name": null
   },
   {
-    "country_name": "China",
-    "income_tax": 5.0,
-    "specialty": "limestone",
-    "total_bonus": 50.75,
-    "region_name": null
-  },
-  {
     "country_name": "Singapore",
     "income_tax": 5.0,
     "specialty": "livestock",
@@ -284,6 +277,13 @@
     "income_tax": 7.0,
     "specialty": "oil",
     "total_bonus": 45.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Venezuela",
+    "income_tax": 6.0,
+    "specialty": "oil",
+    "total_bonus": 41.25,
     "region_name": null
   },
   {
@@ -361,13 +361,6 @@
     "income_tax": 10.0,
     "specialty": "steel",
     "total_bonus": 60.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Venezuela",
-    "income_tax": 6.0,
-    "specialty": "steel",
-    "total_bonus": 41.25,
     "region_name": null
   },
   {
