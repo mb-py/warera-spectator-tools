@@ -119,6 +119,13 @@
     "region_name": "Norwestern Greenland"
   },
   {
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Ticons Grisons"
+  },
+  {
     "country_name": "Costa Rica",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -172,13 +179,6 @@
     "income_tax": 5.0,
     "specialty": "iron",
     "total_bonus": 60.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Equatorial Guinea",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -273,6 +273,13 @@
     "region_name": "South Island"
   },
   {
+    "country_name": "Georgia",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Kakheti"
+  },
+  {
     "country_name": "Finland",
     "income_tax": 7.0,
     "specialty": "oil",
@@ -319,7 +326,7 @@
     "income_tax": 4.0,
     "specialty": "petroleum",
     "total_bonus": 40.0,
-    "region_name": null
+    "region_name": "Northern Guatemala"
   },
   {
     "country_name": "Algeria",
@@ -333,7 +340,7 @@
     "income_tax": 6.0,
     "specialty": "petroleum",
     "total_bonus": 30.0,
-    "region_name": "Ho Chi Minh City"
+    "region_name": null
   },
   {
     "country_name": "Cameroon",
