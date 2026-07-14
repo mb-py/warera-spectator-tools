@@ -161,17 +161,17 @@
     "region_name": null
   },
   {
+    "country_name": "India",
+    "income_tax": 4.0,
+    "specialty": "iron",
+    "total_bonus": 60.75,
+    "region_name": null
+  },
+  {
     "country_name": "DR Congo",
     "income_tax": 5.0,
     "specialty": "iron",
     "total_bonus": 60.0,
-    "region_name": null
-  },
-  {
-    "country_name": "India",
-    "income_tax": 4.0,
-    "specialty": "iron",
-    "total_bonus": 55.75,
     "region_name": null
   },
   {
@@ -189,17 +189,17 @@
     "region_name": null
   },
   {
-    "country_name": "China",
-    "income_tax": 5.0,
-    "specialty": "lead",
-    "total_bonus": 50.75,
-    "region_name": null
-  },
-  {
     "country_name": "Namibia",
     "income_tax": 6.9,
     "specialty": "lead",
     "total_bonus": 50.0,
+    "region_name": null
+  },
+  {
+    "country_name": "China",
+    "income_tax": 5.0,
+    "specialty": "lead",
+    "total_bonus": 45.75,
     "region_name": null
   },
   {
@@ -360,7 +360,7 @@
     "country_name": "Serbia",
     "income_tax": 10.0,
     "specialty": "steel",
-    "total_bonus": 60.5,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
