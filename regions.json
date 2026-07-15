@@ -28,6 +28,13 @@
     "region_name": null
   },
   {
+    "country_name": "Costa Rica",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Eastern Costa Rica"
+  },
+  {
     "country_name": "Nicaragua",
     "income_tax": 4.0,
     "specialty": "coca",
@@ -49,18 +56,11 @@
     "region_name": "Ogoou\u00e9"
   },
   {
-    "country_name": "Eswatini",
-    "income_tax": 4.5,
+    "country_name": "Central Africa",
+    "income_tax": 4.9,
     "specialty": "coca",
     "total_bonus": 60,
-    "region_name": "Eswatini"
-  },
-  {
-    "country_name": "Gambia",
-    "income_tax": 9.0,
-    "specialty": "coca",
-    "total_bonus": 45.0,
-    "region_name": "Gambia"
+    "region_name": "Sangha and Likouala"
   },
   {
     "country_name": "Brazil",
@@ -116,7 +116,7 @@
     "income_tax": 10.0,
     "specialty": "fish",
     "total_bonus": 60,
-    "region_name": "Western Iceland"
+    "region_name": "Southern Iceland"
   },
   {
     "country_name": "Greenland",
@@ -131,13 +131,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Ticons Grisons"
-  },
-  {
-    "country_name": "Costa Rica",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Western Costa Rica"
   },
   {
     "country_name": "Zambia",
