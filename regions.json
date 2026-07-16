@@ -140,6 +140,13 @@
     "region_name": "Western Zambia"
   },
   {
+    "country_name": "Georgia",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Kakheti"
+  },
+  {
     "country_name": "Comoros",
     "income_tax": 4.0,
     "specialty": "grain",
@@ -250,13 +257,6 @@
     "specialty": "limestone",
     "total_bonus": 61.5,
     "region_name": null
-  },
-  {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "South Island"
   },
   {
     "country_name": "Singapore",
