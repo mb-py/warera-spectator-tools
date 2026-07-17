@@ -273,13 +273,6 @@
     "region_name": null
   },
   {
-    "country_name": "Singapore",
-    "income_tax": 5.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Singapore"
-  },
-  {
     "country_name": "Finland",
     "income_tax": 7.0,
     "specialty": "oil",
@@ -290,7 +283,7 @@
     "country_name": "Venezuela",
     "income_tax": 6.0,
     "specialty": "oil",
-    "total_bonus": 40.5,
+    "total_bonus": 40.75,
     "region_name": null
   },
   {
