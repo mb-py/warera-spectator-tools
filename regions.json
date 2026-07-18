@@ -28,25 +28,11 @@
     "region_name": null
   },
   {
-    "country_name": "Nicaragua",
-    "income_tax": 4.0,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Eastern Nicaragua"
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 4.9,
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Sangha and Likouala"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 4.9,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Ogoou\u00e9"
   },
   {
     "country_name": "Myanmar",
@@ -59,8 +45,8 @@
     "country_name": "Gambia",
     "income_tax": 9.0,
     "specialty": "coca",
-    "total_bonus": 45.0,
-    "region_name": "Gambia"
+    "total_bonus": 15.0,
+    "region_name": null
   },
   {
     "country_name": "Brazil",
@@ -112,20 +98,6 @@
     "region_name": null
   },
   {
-    "country_name": "Greenland",
-    "income_tax": 10.0,
-    "specialty": "fish",
-    "total_bonus": 60,
-    "region_name": "Norwestern Greenland"
-  },
-  {
-    "country_name": "Iceland",
-    "income_tax": 10.0,
-    "specialty": "fish",
-    "total_bonus": 60,
-    "region_name": "Southern Iceland"
-  },
-  {
     "country_name": "Costa Rica",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -140,18 +112,11 @@
     "region_name": "Ticons Grisons"
   },
   {
-    "country_name": "Zambia",
-    "income_tax": 2.5,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Western Zambia"
-  },
-  {
     "country_name": "Georgia",
     "income_tax": 3.0,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Kakheti"
+    "region_name": "Imereti"
   },
   {
     "country_name": "New Zealand",
@@ -159,6 +124,13 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "South Island"
+  },
+  {
+    "country_name": "Comoros",
+    "income_tax": 4.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Comoros"
   },
   {
     "country_name": "Guinea-Bissau",
@@ -271,6 +243,20 @@
     "specialty": "limestone",
     "total_bonus": 10.0,
     "region_name": null
+  },
+  {
+    "country_name": "Zambia",
+    "income_tax": 2.5,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Lusaka"
+  },
+  {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Singapore"
   },
   {
     "country_name": "Finland",
