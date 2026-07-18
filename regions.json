@@ -259,6 +259,13 @@
     "region_name": "Singapore"
   },
   {
+    "country_name": "Venezuela",
+    "income_tax": 6.0,
+    "specialty": "oil",
+    "total_bonus": 45.75,
+    "region_name": null
+  },
+  {
     "country_name": "Finland",
     "income_tax": 7.0,
     "specialty": "oil",
@@ -266,17 +273,17 @@
     "region_name": null
   },
   {
-    "country_name": "Venezuela",
-    "income_tax": 6.0,
-    "specialty": "oil",
-    "total_bonus": 40.75,
-    "region_name": null
-  },
-  {
     "country_name": "Syria",
     "income_tax": 3.0,
     "specialty": "oil",
     "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Mexico",
+    "income_tax": 4.0,
+    "specialty": "paper",
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -298,13 +305,6 @@
     "income_tax": 10.0,
     "specialty": "paper",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Mexico",
-    "income_tax": 4.0,
-    "specialty": "petroleum",
-    "total_bonus": 45.0,
     "region_name": null
   },
   {
