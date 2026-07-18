@@ -28,11 +28,11 @@
     "region_name": null
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.9,
+    "country_name": "Nicaragua",
+    "income_tax": 4.0,
     "specialty": "coca",
     "total_bonus": 60,
-    "region_name": "Sangha and Likouala"
+    "region_name": "Eastern Nicaragua"
   },
   {
     "country_name": "Myanmar",
@@ -98,18 +98,25 @@
     "region_name": null
   },
   {
-    "country_name": "Costa Rica",
-    "income_tax": 1.0,
-    "specialty": "grain",
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
     "total_bonus": 60,
-    "region_name": "Western Costa Rica"
+    "region_name": "Southern Iceland"
+  },
+  {
+    "country_name": "Greenland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 60,
+    "region_name": "Southern Greenland"
   },
   {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Ticons Grisons"
+    "region_name": "Zurich"
   },
   {
     "country_name": "Georgia",
@@ -123,7 +130,7 @@
     "income_tax": 3.9,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "South Island"
+    "region_name": "North Island"
   },
   {
     "country_name": "Comoros",
@@ -131,6 +138,13 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Comoros"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 4.9,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Ogoou\u00e9"
   },
   {
     "country_name": "Guinea-Bissau",
@@ -150,7 +164,7 @@
     "country_name": "Spain",
     "income_tax": 10.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 15.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -246,7 +260,7 @@
   },
   {
     "country_name": "Zambia",
-    "income_tax": 2.5,
+    "income_tax": 4.0,
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Lusaka"
@@ -262,7 +276,7 @@
     "country_name": "Venezuela",
     "income_tax": 6.0,
     "specialty": "oil",
-    "total_bonus": 45.75,
+    "total_bonus": 45.5,
     "region_name": null
   },
   {
@@ -309,7 +323,7 @@
   },
   {
     "country_name": "Algeria",
-    "income_tax": 5.0,
+    "income_tax": 3.0,
     "specialty": "petroleum",
     "total_bonus": 35.0,
     "region_name": null
