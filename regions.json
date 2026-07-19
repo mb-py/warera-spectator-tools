@@ -35,13 +35,6 @@
     "region_name": "Eastern Nicaragua"
   },
   {
-    "country_name": "Myanmar",
-    "income_tax": 5.0,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Kachin and Sagaing"
-  },
-  {
     "country_name": "Gambia",
     "income_tax": 9.0,
     "specialty": "coca",
