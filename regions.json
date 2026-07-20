@@ -28,11 +28,25 @@
     "region_name": null
   },
   {
+    "country_name": "Costa Rica",
+    "income_tax": 1.0,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Western Costa Rica"
+  },
+  {
     "country_name": "Nicaragua",
     "income_tax": 4.0,
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Eastern Nicaragua"
+  },
+  {
+    "country_name": "Eswatini",
+    "income_tax": 4.5,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Eswatini"
   },
   {
     "country_name": "Gambia",
@@ -112,13 +126,6 @@
     "region_name": "Zurich"
   },
   {
-    "country_name": "Georgia",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Imereti"
-  },
-  {
     "country_name": "New Zealand",
     "income_tax": 3.9,
     "specialty": "grain",
@@ -133,17 +140,17 @@
     "region_name": "Ogoou\u00e9"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.9,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Ouham"
-  },
-  {
     "country_name": "Guinea-Bissau",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
     "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Kenya",
+    "income_tax": 9.0,
+    "specialty": "heavyAmmo",
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -157,7 +164,7 @@
     "country_name": "Spain",
     "income_tax": 10.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 20.0,
+    "total_bonus": 25.0,
     "region_name": null
   },
   {
@@ -252,11 +259,25 @@
     "region_name": null
   },
   {
+    "country_name": "Comoros",
+    "income_tax": 4.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Comoros"
+  },
+  {
     "country_name": "Zambia",
     "income_tax": 4.0,
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Lusaka"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 4.9,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Sangha and Likouala"
   },
   {
     "country_name": "Myanmar",
@@ -273,17 +294,17 @@
     "region_name": "Singapore"
   },
   {
-    "country_name": "Venezuela",
-    "income_tax": 6.0,
-    "specialty": "oil",
-    "total_bonus": 45.5,
-    "region_name": null
-  },
-  {
     "country_name": "Finland",
     "income_tax": 7.0,
     "specialty": "oil",
     "total_bonus": 45.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Venezuela",
+    "income_tax": 6.0,
+    "specialty": "oil",
+    "total_bonus": 40.5,
     "region_name": null
   },
   {
@@ -330,7 +351,7 @@
   },
   {
     "country_name": "Cameroon",
-    "income_tax": 16.0,
+    "income_tax": 17.2,
     "specialty": "steak",
     "total_bonus": 20.0,
     "region_name": null
