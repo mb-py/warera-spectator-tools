@@ -29,7 +29,7 @@
   },
   {
     "country_name": "Costa Rica",
-    "income_tax": 1.0,
+    "income_tax": 3.5,
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Western Costa Rica"
@@ -47,6 +47,13 @@
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Eswatini"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 4.9,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Eastern Cameroon"
   },
   {
     "country_name": "Gambia",
@@ -133,11 +140,11 @@
     "region_name": "North Island"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.9,
+    "country_name": "Lebanon",
+    "income_tax": 4.0,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Ogoou\u00e9"
+    "region_name": "Northern District"
   },
   {
     "country_name": "Guinea-Bissau",
@@ -192,7 +199,7 @@
     "country_name": "China",
     "income_tax": 5.0,
     "specialty": "lead",
-    "total_bonus": 51.0,
+    "total_bonus": 50.75,
     "region_name": null
   },
   {
@@ -347,6 +354,13 @@
     "income_tax": 3.0,
     "specialty": "petroleum",
     "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Cambodia",
+    "income_tax": 6.0,
+    "specialty": "petroleum",
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
