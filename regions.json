@@ -140,6 +140,13 @@
     "region_name": "North Island"
   },
   {
+    "country_name": "Comoros",
+    "income_tax": 4.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Antsiranana"
+  },
+  {
     "country_name": "Lebanon",
     "income_tax": 4.0,
     "specialty": "grain",
@@ -168,13 +175,6 @@
     "region_name": null
   },
   {
-    "country_name": "Spain",
-    "income_tax": 10.0,
-    "specialty": "heavyAmmo",
-    "total_bonus": 25.0,
-    "region_name": null
-  },
-  {
     "country_name": "India",
     "income_tax": 4.0,
     "specialty": "iron",
@@ -196,17 +196,17 @@
     "region_name": null
   },
   {
-    "country_name": "China",
-    "income_tax": 5.0,
-    "specialty": "lead",
-    "total_bonus": 50.75,
-    "region_name": null
-  },
-  {
     "country_name": "Namibia",
     "income_tax": 6.9,
     "specialty": "lead",
     "total_bonus": 50.0,
+    "region_name": null
+  },
+  {
+    "country_name": "China",
+    "income_tax": 5.0,
+    "specialty": "lead",
+    "total_bonus": 45.5,
     "region_name": null
   },
   {
@@ -224,10 +224,10 @@
     "region_name": null
   },
   {
-    "country_name": "Mali",
-    "income_tax": 6.0,
+    "country_name": "Laos",
+    "income_tax": 7.5,
     "specialty": "lead",
-    "total_bonus": 15.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -266,6 +266,13 @@
     "region_name": null
   },
   {
+    "country_name": "Georgia",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Abkhazia"
+  },
+  {
     "country_name": "Comoros",
     "income_tax": 4.0,
     "specialty": "livestock",
@@ -284,21 +291,14 @@
     "income_tax": 4.9,
     "specialty": "livestock",
     "total_bonus": 60,
+    "region_name": "Ogoou\u00e9"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 4.9,
+    "specialty": "livestock",
+    "total_bonus": 60,
     "region_name": "Sangha and Likouala"
-  },
-  {
-    "country_name": "Myanmar",
-    "income_tax": 5.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Yangon"
-  },
-  {
-    "country_name": "Singapore",
-    "income_tax": 5.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Singapore"
   },
   {
     "country_name": "Finland",
@@ -360,7 +360,14 @@
     "country_name": "Cambodia",
     "income_tax": 6.0,
     "specialty": "petroleum",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Spain",
+    "income_tax": 4.0,
+    "specialty": "petroleum",
+    "total_bonus": 25.5,
     "region_name": null
   },
   {
@@ -368,13 +375,6 @@
     "income_tax": 17.2,
     "specialty": "steak",
     "total_bonus": 20.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Honduras",
-    "income_tax": 4.0,
-    "specialty": "steak",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -389,6 +389,13 @@
     "income_tax": 9.0,
     "specialty": "steel",
     "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Honduras",
+    "income_tax": 4.0,
+    "specialty": "wood",
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
