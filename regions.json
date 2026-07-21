@@ -28,6 +28,13 @@
     "region_name": null
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 3.5,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Eastern Nicaragua"
+  },
+  {
     "country_name": "Costa Rica",
     "income_tax": 3.5,
     "specialty": "coca",
@@ -35,11 +42,11 @@
     "region_name": "Western Costa Rica"
   },
   {
-    "country_name": "Nicaragua",
-    "income_tax": 4.0,
+    "country_name": "Central Africa",
+    "income_tax": 4.2,
     "specialty": "coca",
     "total_bonus": 60,
-    "region_name": "Eastern Nicaragua"
+    "region_name": "Eastern Cameroon"
   },
   {
     "country_name": "Eswatini",
@@ -49,24 +56,17 @@
     "region_name": "Eswatini"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.9,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Eastern Cameroon"
-  },
-  {
-    "country_name": "Gambia",
-    "income_tax": 9.0,
-    "specialty": "coca",
-    "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
     "country_name": "Brazil",
     "income_tax": 5.0,
     "specialty": "cocain",
     "total_bonus": 20.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Thailand",
+    "income_tax": 1.0,
+    "specialty": "cocain",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -206,7 +206,7 @@
     "country_name": "China",
     "income_tax": 5.0,
     "specialty": "lead",
-    "total_bonus": 45.5,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -288,17 +288,17 @@
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 4.9,
+    "income_tax": 4.2,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Ogoou\u00e9"
+    "region_name": "Ouham"
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 4.9,
+    "income_tax": 4.2,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Sangha and Likouala"
+    "region_name": "Ogoou\u00e9"
   },
   {
     "country_name": "Finland",
@@ -350,6 +350,13 @@
     "region_name": null
   },
   {
+    "country_name": "Spain",
+    "income_tax": 4.0,
+    "specialty": "petroleum",
+    "total_bonus": 55.5,
+    "region_name": "Puerto Rico"
+  },
+  {
     "country_name": "Algeria",
     "income_tax": 3.0,
     "specialty": "petroleum",
@@ -364,15 +371,8 @@
     "region_name": null
   },
   {
-    "country_name": "Spain",
-    "income_tax": 4.0,
-    "specialty": "petroleum",
-    "total_bonus": 25.5,
-    "region_name": null
-  },
-  {
     "country_name": "Cameroon",
-    "income_tax": 17.2,
+    "income_tax": 5.0,
     "specialty": "steak",
     "total_bonus": 20.0,
     "region_name": null
@@ -381,7 +381,7 @@
     "country_name": "Serbia",
     "income_tax": 10.0,
     "specialty": "steel",
-    "total_bonus": 60.0,
+    "total_bonus": 55.0,
     "region_name": null
   },
   {
