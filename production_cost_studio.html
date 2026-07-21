@@ -549,6 +549,13 @@
     if(viewMode){ document.querySelector('.grid').classList.add('viewonly'); }
     renderRegions();
     update();
+
+    window.addEventListener('hashchange', function(){
+      loadHash();
+      fillGoodFields();
+      renderRegions();
+      update();
+    });
   }
 
   function boot(){
