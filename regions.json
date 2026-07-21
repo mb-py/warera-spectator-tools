@@ -17,7 +17,7 @@
     "country_name": "Chile",
     "income_tax": 4.0,
     "specialty": "bread",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -311,7 +311,7 @@
     "country_name": "Venezuela",
     "income_tax": 6.0,
     "specialty": "oil",
-    "total_bonus": 40.5,
+    "total_bonus": 40.75,
     "region_name": null
   },
   {
@@ -353,8 +353,8 @@
     "country_name": "Spain",
     "income_tax": 4.0,
     "specialty": "petroleum",
-    "total_bonus": 55.5,
-    "region_name": "Puerto Rico"
+    "total_bonus": 50.5,
+    "region_name": null
   },
   {
     "country_name": "Algeria",
