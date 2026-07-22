@@ -126,25 +126,11 @@
     "region_name": "Southern Greenland"
   },
   {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "North Island"
-  },
-  {
     "country_name": "Comoros",
     "income_tax": 4.0,
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Antsiranana"
-  },
-  {
-    "country_name": "Lebanon",
-    "income_tax": 4.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Northern District"
   },
   {
     "country_name": "Guinea-Bissau",
@@ -169,7 +155,7 @@
   },
   {
     "country_name": "India",
-    "income_tax": 4.0,
+    "income_tax": 7.5,
     "specialty": "iron",
     "total_bonus": 60.5,
     "region_name": null
@@ -203,6 +189,13 @@
     "region_name": null
   },
   {
+    "country_name": "Mali",
+    "income_tax": 6.0,
+    "specialty": "lead",
+    "total_bonus": 45.0,
+    "region_name": "Tombouctou"
+  },
+  {
     "country_name": "Latvia",
     "income_tax": 7.0,
     "specialty": "lead",
@@ -217,17 +210,10 @@
     "region_name": null
   },
   {
-    "country_name": "Laos",
-    "income_tax": 7.5,
-    "specialty": "lead",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
     "country_name": "Burkina Faso",
-    "income_tax": 7.0,
+    "income_tax": 2.9,
     "specialty": "lightAmmo",
-    "total_bonus": 45.5,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
