@@ -17,7 +17,7 @@
     "country_name": "Chile",
     "income_tax": 4.0,
     "specialty": "bread",
-    "total_bonus": 15.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -33,13 +33,6 @@
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Eastern Nicaragua"
-  },
-  {
-    "country_name": "Costa Rica",
-    "income_tax": 3.5,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Western Costa Rica"
   },
   {
     "country_name": "Zambia",
@@ -123,7 +116,21 @@
     "income_tax": 10.0,
     "specialty": "fish",
     "total_bonus": 60,
-    "region_name": "Southern Greenland"
+    "region_name": "Norwestern Greenland"
+  },
+  {
+    "country_name": "Costa Rica",
+    "income_tax": 3.5,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Western Costa Rica"
+  },
+  {
+    "country_name": "New Zealand",
+    "income_tax": 3.9,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "North Island"
   },
   {
     "country_name": "Comoros",
