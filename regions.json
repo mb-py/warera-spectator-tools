@@ -42,13 +42,6 @@
     "region_name": "Western Costa Rica"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.2,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Eastern Cameroon"
-  },
-  {
     "country_name": "Eswatini",
     "income_tax": 4.5,
     "specialty": "coca",
@@ -124,13 +117,6 @@
     "specialty": "fish",
     "total_bonus": 60,
     "region_name": "Southern Greenland"
-  },
-  {
-    "country_name": "Switzerland",
-    "income_tax": 1.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Zurich"
   },
   {
     "country_name": "New Zealand",
@@ -259,11 +245,11 @@
     "region_name": null
   },
   {
-    "country_name": "Bosnia",
-    "income_tax": 5.0,
-    "specialty": "limestone",
-    "total_bonus": 10.0,
-    "region_name": null
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Ticons Grisons"
   },
   {
     "country_name": "Georgia",
@@ -280,13 +266,6 @@
     "region_name": "Comoros"
   },
   {
-    "country_name": "Zambia",
-    "income_tax": 4.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Lusaka"
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 4.2,
     "specialty": "livestock",
@@ -301,17 +280,17 @@
     "region_name": "Ogoou\u00e9"
   },
   {
+    "country_name": "Venezuela",
+    "income_tax": 6.0,
+    "specialty": "oil",
+    "total_bonus": 45.75,
+    "region_name": null
+  },
+  {
     "country_name": "Finland",
     "income_tax": 7.0,
     "specialty": "oil",
     "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Venezuela",
-    "income_tax": 6.0,
-    "specialty": "oil",
-    "total_bonus": 40.75,
     "region_name": null
   },
   {
@@ -353,7 +332,7 @@
     "country_name": "Spain",
     "income_tax": 4.0,
     "specialty": "petroleum",
-    "total_bonus": 50.5,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -372,7 +351,7 @@
   },
   {
     "country_name": "Cameroon",
-    "income_tax": 5.0,
+    "income_tax": 15.0,
     "specialty": "steak",
     "total_bonus": 20.0,
     "region_name": null
@@ -381,7 +360,7 @@
     "country_name": "Serbia",
     "income_tax": 10.0,
     "specialty": "steel",
-    "total_bonus": 55.0,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
