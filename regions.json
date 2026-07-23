@@ -1,14 +1,7 @@
 [
   {
     "country_name": "Ecuador",
-    "income_tax": 6.0,
-    "specialty": "ammo",
-    "total_bonus": 40.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Cyprus",
-    "income_tax": 6.0,
+    "income_tax": 4.0,
     "specialty": "ammo",
     "total_bonus": 40.0,
     "region_name": null
@@ -47,6 +40,13 @@
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Eswatini"
+  },
+  {
+    "country_name": "Sudan",
+    "income_tax": 5.0,
+    "specialty": "coca",
+    "total_bonus": 45.0,
+    "region_name": "Nuba Mountains"
   },
   {
     "country_name": "Brazil",
@@ -100,6 +100,13 @@
   {
     "country_name": "Lithuania",
     "income_tax": 7.0,
+    "specialty": "cookedFish",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Ukraine",
+    "income_tax": 10.0,
     "specialty": "cookedFish",
     "total_bonus": 10.0,
     "region_name": null
@@ -164,8 +171,8 @@
     "country_name": "India",
     "income_tax": 7.5,
     "specialty": "iron",
-    "total_bonus": 60.5,
-    "region_name": null
+    "total_bonus": 61.0,
+    "region_name": "Timor-Leste"
   },
   {
     "country_name": "DR Congo",
@@ -189,18 +196,18 @@
     "region_name": null
   },
   {
-    "country_name": "China",
-    "income_tax": 5.0,
-    "specialty": "lead",
-    "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
     "country_name": "Mali",
     "income_tax": 6.0,
     "specialty": "lead",
     "total_bonus": 45.0,
     "region_name": "Tombouctou"
+  },
+  {
+    "country_name": "China",
+    "income_tax": 5.0,
+    "specialty": "lead",
+    "total_bonus": 40.0,
+    "region_name": null
   },
   {
     "country_name": "Latvia",
@@ -235,6 +242,13 @@
     "income_tax": 8.0,
     "specialty": "lightAmmo",
     "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Taiwan",
+    "income_tax": 10.0,
+    "specialty": "lightAmmo",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -277,7 +291,7 @@
     "income_tax": 4.2,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Ouham"
+    "region_name": "Coastal Gabon"
   },
   {
     "country_name": "Venezuela",
@@ -360,7 +374,7 @@
     "country_name": "Serbia",
     "income_tax": 10.0,
     "specialty": "steel",
-    "total_bonus": 55.5,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
