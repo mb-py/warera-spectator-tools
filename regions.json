@@ -1,16 +1,9 @@
 [
   {
     "country_name": "Chile",
-    "income_tax": 8.0,
+    "income_tax": 6.0,
     "specialty": "ammo",
     "total_bonus": 50.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Ecuador",
-    "income_tax": 2.5,
-    "specialty": "ammo",
-    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -206,7 +199,7 @@
     "country_name": "Mali",
     "income_tax": 6.0,
     "specialty": "lead",
-    "total_bonus": 45.0,
+    "total_bonus": 45.5,
     "region_name": "Tombouctou"
   },
   {
@@ -231,6 +224,13 @@
     "region_name": null
   },
   {
+    "country_name": "Ecuador",
+    "income_tax": 2.5,
+    "specialty": "lightAmmo",
+    "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
     "country_name": "Malaysia",
     "income_tax": 3.0,
     "specialty": "lightAmmo",
@@ -238,17 +238,17 @@
     "region_name": null
   },
   {
-    "country_name": "Burkina Faso",
-    "income_tax": 2.9,
+    "country_name": "Paraguay",
+    "income_tax": 8.0,
     "specialty": "lightAmmo",
     "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Paraguay",
-    "income_tax": 8.0,
+    "country_name": "Burkina Faso",
+    "income_tax": 2.9,
     "specialty": "lightAmmo",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
