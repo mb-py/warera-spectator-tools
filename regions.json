@@ -21,13 +21,6 @@
     "region_name": null
   },
   {
-    "country_name": "Nicaragua",
-    "income_tax": 3.5,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Eastern Nicaragua"
-  },
-  {
     "country_name": "Zambia",
     "income_tax": 4.0,
     "specialty": "coca",
@@ -43,7 +36,7 @@
   },
   {
     "country_name": "Brazil",
-    "income_tax": 5.0,
+    "income_tax": 7.1,
     "specialty": "cocain",
     "total_bonus": 20.0,
     "region_name": null
@@ -154,6 +147,13 @@
     "region_name": "Antsiranana"
   },
   {
+    "country_name": "Eswatini",
+    "income_tax": 4.5,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Eswatini"
+  },
+  {
     "country_name": "Guinea-Bissau",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
@@ -185,7 +185,7 @@
     "country_name": "India",
     "income_tax": 7.5,
     "specialty": "iron",
-    "total_bonus": 55.5,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -255,12 +255,12 @@
     "country_name": "Taiwan",
     "income_tax": 10.0,
     "specialty": "lightAmmo",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
     "country_name": "Yemen",
-    "income_tax": 5.0,
+    "income_tax": 6.9,
     "specialty": "limestone",
     "total_bonus": 61.5,
     "region_name": null
