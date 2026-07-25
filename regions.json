@@ -189,13 +189,6 @@
     "region_name": null
   },
   {
-    "country_name": "Mali",
-    "income_tax": 6.0,
-    "specialty": "lead",
-    "total_bonus": 45.5,
-    "region_name": "Tombouctou"
-  },
-  {
     "country_name": "Latvia",
     "income_tax": 7.0,
     "specialty": "lead",
@@ -212,6 +205,13 @@
   {
     "country_name": "China",
     "income_tax": 5.0,
+    "specialty": "lead",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Laos",
+    "income_tax": 7.5,
     "specialty": "lead",
     "total_bonus": 30.0,
     "region_name": null
@@ -266,13 +266,6 @@
     "region_name": "Ticons Grisons"
   },
   {
-    "country_name": "Georgia",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Abkhazia"
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 4.2,
     "specialty": "livestock",
@@ -292,6 +285,13 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Kachin and Sagaing"
+  },
+  {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Singapore"
   },
   {
     "country_name": "Venezuela",
