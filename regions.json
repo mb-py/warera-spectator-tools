@@ -28,6 +28,20 @@
     "region_name": "Western Zambia"
   },
   {
+    "country_name": "Eswatini",
+    "income_tax": 4.5,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Eswatini"
+  },
+  {
+    "country_name": "Sudan",
+    "income_tax": 5.0,
+    "specialty": "coca",
+    "total_bonus": 45.0,
+    "region_name": "Nuba Mountains"
+  },
+  {
     "country_name": "Brazil",
     "income_tax": 7.1,
     "specialty": "cocain",
@@ -52,7 +66,7 @@
     "country_name": "Djibouti",
     "income_tax": 7.5,
     "specialty": "concrete",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -283,7 +297,7 @@
     "country_name": "Venezuela",
     "income_tax": 6.0,
     "specialty": "oil",
-    "total_bonus": 45.5,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -358,7 +372,7 @@
   },
   {
     "country_name": "Serbia",
-    "income_tax": 10.0,
+    "income_tax": 6.0,
     "specialty": "steel",
     "total_bonus": 50.0,
     "region_name": null
