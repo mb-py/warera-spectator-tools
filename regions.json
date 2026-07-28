@@ -133,6 +133,13 @@
     "region_name": null
   },
   {
+    "country_name": "Ethiopia",
+    "income_tax": 5.0,
+    "specialty": "heavyAmmo",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
     "country_name": "Kenya",
     "income_tax": 9.0,
     "specialty": "heavyAmmo",
@@ -144,13 +151,6 @@
     "income_tax": 10.0,
     "specialty": "heavyAmmo",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Ethiopia",
-    "income_tax": 5.0,
-    "specialty": "heavyAmmo",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
