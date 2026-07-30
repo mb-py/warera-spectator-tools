@@ -7,6 +7,13 @@
     "region_name": null
   },
   {
+    "country_name": "Thailand",
+    "income_tax": 6.0,
+    "specialty": "bread",
+    "total_bonus": 15.5,
+    "region_name": null
+  },
+  {
     "country_name": "Bahamas",
     "income_tax": 8.0,
     "specialty": "bread",
@@ -26,6 +33,13 @@
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Western Costa Rica"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 3.5,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Ogoou\u00e9"
   },
   {
     "country_name": "Zambia",
@@ -56,10 +70,10 @@
     "region_name": null
   },
   {
-    "country_name": "Thailand",
-    "income_tax": 45.0,
-    "specialty": "cocain",
-    "total_bonus": 15.5,
+    "country_name": "Malta",
+    "income_tax": 4.9,
+    "specialty": "concrete",
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -74,13 +88,6 @@
     "income_tax": 7.5,
     "specialty": "concrete",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Malta",
-    "income_tax": 7.0,
-    "specialty": "concrete",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -112,11 +119,11 @@
     "region_name": "Western Iceland"
   },
   {
-    "country_name": "Greenland",
-    "income_tax": 10.0,
+    "country_name": "South Sudan",
+    "income_tax": 5.0,
     "specialty": "fish",
-    "total_bonus": 60,
-    "region_name": "Norwestern Greenland"
+    "total_bonus": 10.0,
+    "region_name": null
   },
   {
     "country_name": "New Zealand",
@@ -124,13 +131,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "North Island"
-  },
-  {
-    "country_name": "Comoros",
-    "income_tax": 4.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Comoros"
   },
   {
     "country_name": "Lebanon",
@@ -168,17 +168,17 @@
     "region_name": null
   },
   {
+    "country_name": "Mali",
+    "income_tax": 6.0,
+    "specialty": "iron",
+    "total_bonus": 45.5,
+    "region_name": "Western Burkina Faso"
+  },
+  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 55.0,
-    "region_name": null
-  },
-  {
-    "country_name": "India",
-    "income_tax": 7.5,
-    "specialty": "iron",
-    "total_bonus": 30.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -192,7 +192,7 @@
     "country_name": "Latvia",
     "income_tax": 7.0,
     "specialty": "lead",
-    "total_bonus": 45.5,
+    "total_bonus": 50.5,
     "region_name": null
   },
   {
@@ -207,13 +207,6 @@
     "income_tax": 3.0,
     "specialty": "lead",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Mali",
-    "income_tax": 6.0,
-    "specialty": "lead",
-    "total_bonus": 15.5,
     "region_name": null
   },
   {
@@ -248,14 +241,14 @@
     "country_name": "Yemen",
     "income_tax": 10.0,
     "specialty": "limestone",
-    "total_bonus": 55.0,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
     "country_name": "Iraq",
     "income_tax": 10.0,
     "specialty": "limestone",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -266,27 +259,6 @@
     "region_name": "Zurich"
   },
   {
-    "country_name": "Georgia",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Imereti"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Eastern Cameroon"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Southwestern Central Africa"
-  },
-  {
     "country_name": "Zambia",
     "income_tax": 4.0,
     "specialty": "livestock",
@@ -294,17 +266,24 @@
     "region_name": "Lunda"
   },
   {
-    "country_name": "Venezuela",
-    "income_tax": 6.0,
-    "specialty": "oil",
-    "total_bonus": 45.0,
-    "region_name": null
+    "country_name": "Myanmar",
+    "income_tax": 5.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Yangon"
   },
   {
     "country_name": "Finland",
     "income_tax": 7.0,
     "specialty": "oil",
     "total_bonus": 45.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Venezuela",
+    "income_tax": 6.0,
+    "specialty": "oil",
+    "total_bonus": 40.5,
     "region_name": null
   },
   {
@@ -322,13 +301,6 @@
     "region_name": null
   },
   {
-    "country_name": "Liberia",
-    "income_tax": 3.5,
-    "specialty": "paper",
-    "total_bonus": 40.5,
-    "region_name": null
-  },
-  {
     "country_name": "Mauritania",
     "income_tax": 10.0,
     "specialty": "paper",
@@ -339,14 +311,14 @@
     "country_name": "Turkiye",
     "income_tax": 45.0,
     "specialty": "paper",
-    "total_bonus": 15.5,
+    "total_bonus": 16.0,
     "region_name": null
   },
   {
     "country_name": "Spain",
     "income_tax": 4.0,
     "specialty": "petroleum",
-    "total_bonus": 45.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -371,10 +343,17 @@
     "region_name": null
   },
   {
+    "country_name": "Liberia",
+    "income_tax": 6.0,
+    "specialty": "steel",
+    "total_bonus": 40.5,
+    "region_name": null
+  },
+  {
     "country_name": "Serbia",
     "income_tax": 6.0,
     "specialty": "steel",
-    "total_bonus": 45.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -395,7 +374,7 @@
     "country_name": "Austria",
     "income_tax": 5.0,
     "specialty": "wood",
-    "total_bonus": 40.5,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
