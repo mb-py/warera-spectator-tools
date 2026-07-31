@@ -56,17 +56,17 @@
     "region_name": "Southwestern Central Africa"
   },
   {
-    "country_name": "Eswatini",
-    "income_tax": 4.5,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Eswatini"
-  },
-  {
     "country_name": "Brazil",
     "income_tax": 7.1,
     "specialty": "cocain",
     "total_bonus": 20.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Ethiopia",
+    "income_tax": 5.0,
+    "specialty": "concrete",
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -138,13 +138,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "South Lebanon"
-  },
-  {
-    "country_name": "Ethiopia",
-    "income_tax": 5.0,
-    "specialty": "heavyAmmo",
-    "total_bonus": 45.0,
-    "region_name": null
   },
   {
     "country_name": "Guinea-Bissau",
