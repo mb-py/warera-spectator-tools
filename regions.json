@@ -49,6 +49,13 @@
     "region_name": null
   },
   {
+    "country_name": "Tanzania",
+    "income_tax": 5.0,
+    "specialty": "cocain",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Brazil",
     "income_tax": 7.1,
     "specialty": "cocain",
@@ -59,7 +66,7 @@
     "country_name": "Turkiye",
     "income_tax": 10.0,
     "specialty": "concrete",
-    "total_bonus": 61.0,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
@@ -144,6 +151,13 @@
     "income_tax": 45.0,
     "specialty": "iron",
     "total_bonus": 20.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Botswana",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -252,13 +266,6 @@
     "region_name": null
   },
   {
-    "country_name": "Tanzania",
-    "income_tax": 5.0,
-    "specialty": "oil",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Mexico",
     "income_tax": 4.0,
     "specialty": "paper",
@@ -281,10 +288,17 @@
   },
   {
     "country_name": "Slovakia",
-    "income_tax": 5.0,
+    "income_tax": 7.0,
     "specialty": "petroleum",
-    "total_bonus": 40.0,
+    "total_bonus": 45.0,
     "region_name": null
+  },
+  {
+    "country_name": "Pakistan",
+    "income_tax": 4.0,
+    "specialty": "petroleum",
+    "total_bonus": 35.0,
+    "region_name": "Northwestern Afghanistan"
   },
   {
     "country_name": "Cambodia",
@@ -301,17 +315,17 @@
     "region_name": null
   },
   {
+    "country_name": "Italy",
+    "income_tax": 7.0,
+    "specialty": "steel",
+    "total_bonus": 55.5,
+    "region_name": null
+  },
+  {
     "country_name": "Liberia",
     "income_tax": 6.0,
     "specialty": "steel",
     "total_bonus": 55.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Italy",
-    "income_tax": 7.0,
-    "specialty": "steel",
-    "total_bonus": 50.5,
     "region_name": null
   },
   {
