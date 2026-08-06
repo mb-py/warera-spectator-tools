@@ -915,11 +915,16 @@
     if(box) box.innerHTML='<div class="msg">'+msg+'</div>';
   }
 
+  // Data is committed to main by a scheduled task in this repo; fetched from raw
+  // GitHub content so updates show up without waiting on a Pages rebuild.
+  // Fork the repo? Update this to point at your own fork.
+  var DATA_BASE = 'https://raw.githubusercontent.com/mb-py/warera-spectator-tools/main/';
+
   function boot(){
     Promise.all([
-      fetch('prices.json',   {cache:'no-cache'}).then(function(r){if(!r.ok) throw 0; return r.json();}),
-      fetch('regions.json',  {cache:'no-cache'}).then(function(r){if(!r.ok) throw 0; return r.json();}),
-      fetch('resources.json',{cache:'no-cache'}).then(function(r){if(!r.ok) throw 0; return r.json();})
+      fetch(DATA_BASE+'prices.json',   {cache:'no-cache'}).then(function(r){if(!r.ok) throw 0; return r.json();}),
+      fetch(DATA_BASE+'regions.json',  {cache:'no-cache'}).then(function(r){if(!r.ok) throw 0; return r.json();}),
+      fetch(DATA_BASE+'resources.json',{cache:'no-cache'}).then(function(r){if(!r.ok) throw 0; return r.json();})
     ]).then(function(res){
       var p=res[0];
       if(p && p._updated){
