@@ -10,7 +10,7 @@
     "country_name": "Thailand",
     "income_tax": 6.0,
     "specialty": "bread",
-    "total_bonus": 25.5,
+    "total_bonus": 26.0,
     "region_name": null
   },
   {
@@ -42,18 +42,18 @@
     "region_name": "Continental Equatorial Guinea"
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 3.5,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Coastal Gabon"
+  },
+  {
     "country_name": "Zambia",
     "income_tax": 3.5,
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Luapula"
-  },
-  {
-    "country_name": "Sri Lanka",
-    "income_tax": 5.0,
-    "specialty": "cocain",
-    "total_bonus": 10.0,
-    "region_name": null
   },
   {
     "country_name": "Tanzania",
@@ -115,7 +115,7 @@
     "country_name": "South Sudan",
     "income_tax": 45.0,
     "specialty": "fish",
-    "total_bonus": 20.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -131,13 +131,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "South Island"
-  },
-  {
-    "country_name": "Comoros",
-    "income_tax": 4.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Comoros"
   },
   {
     "country_name": "Ecuador",
@@ -161,17 +154,17 @@
     "region_name": null
   },
   {
-    "country_name": "Bangladesh",
-    "income_tax": 8.0,
-    "specialty": "iron",
-    "total_bonus": 45.0,
-    "region_name": "Northern Bangladesh"
-  },
-  {
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 45.0,
+    "region_name": null
+  },
+  {
+    "country_name": "DR Congo",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -182,8 +175,8 @@
     "region_name": null
   },
   {
-    "country_name": "Botswana",
-    "income_tax": 10.0,
+    "country_name": "Bangladesh",
+    "income_tax": 8.0,
     "specialty": "iron",
     "total_bonus": 15.0,
     "region_name": null
@@ -193,13 +186,6 @@
     "income_tax": 8.5,
     "specialty": "lead",
     "total_bonus": 55.0,
-    "region_name": null
-  },
-  {
-    "country_name": "China",
-    "income_tax": 5.0,
-    "specialty": "lead",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -213,7 +199,7 @@
     "country_name": "Libya",
     "income_tax": 5.0,
     "specialty": "lightAmmo",
-    "total_bonus": 50.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -259,11 +245,11 @@
     "region_name": "Western Costa Rica"
   },
   {
-    "country_name": "Georgia",
+    "country_name": "Mongolia",
     "income_tax": 3.0,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Guria and Ajaria"
+    "region_name": "Western Mongolia"
   },
   {
     "country_name": "Nicaragua",
@@ -273,17 +259,17 @@
     "region_name": "Western Nicaragua"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
+    "country_name": "Comoros",
+    "income_tax": 4.0,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Ogoou\u00e9"
+    "region_name": "Antsiranana"
   },
   {
     "country_name": "Venezuela",
-    "income_tax": 6.0,
+    "income_tax": 8.0,
     "specialty": "oil",
-    "total_bonus": 50.5,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -295,7 +281,7 @@
   },
   {
     "country_name": "Mexico",
-    "income_tax": 4.0,
+    "income_tax": 6.0,
     "specialty": "paper",
     "total_bonus": 50.0,
     "region_name": null
@@ -343,6 +329,13 @@
     "region_name": null
   },
   {
+    "country_name": "Yemen",
+    "income_tax": 6.9,
+    "specialty": "steak",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "France",
     "income_tax": 7.0,
     "specialty": "steak",
@@ -353,12 +346,12 @@
     "country_name": "Italy",
     "income_tax": 4.5,
     "specialty": "steel",
-    "total_bonus": 61.0,
+    "total_bonus": 61.5,
     "region_name": null
   },
   {
     "country_name": "Liberia",
-    "income_tax": 6.0,
+    "income_tax": 3.0,
     "specialty": "steel",
     "total_bonus": 55.0,
     "region_name": null
