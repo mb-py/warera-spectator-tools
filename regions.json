@@ -108,7 +108,7 @@
     "country_name": "Croatia",
     "income_tax": 10.0,
     "specialty": "cookedFish",
-    "total_bonus": 20.5,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -129,7 +129,7 @@
     "country_name": "South Sudan",
     "income_tax": 1.0,
     "specialty": "fish",
-    "total_bonus": 20.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -140,18 +140,18 @@
     "region_name": "Eastern Cameroon"
   },
   {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "South Island"
-  },
-  {
     "country_name": "Lebanon",
     "income_tax": 4.0,
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "North Lebanon"
+  },
+  {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Singapore"
   },
   {
     "country_name": "Ecuador",
@@ -168,17 +168,17 @@
     "region_name": null
   },
   {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 55.5,
+    "region_name": null
+  },
+  {
     "country_name": "Indonesia",
     "income_tax": 9.0,
     "specialty": "iron",
     "total_bonus": 55.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 50.5,
     "region_name": null
   },
   {
@@ -297,7 +297,7 @@
     "country_name": "Venezuela",
     "income_tax": 8.0,
     "specialty": "oil",
-    "total_bonus": 50.0,
+    "total_bonus": 55.0,
     "region_name": null
   },
   {
@@ -325,7 +325,7 @@
     "country_name": "Mauritania",
     "income_tax": 3.0,
     "specialty": "paper",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
