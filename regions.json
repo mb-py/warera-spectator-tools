@@ -59,7 +59,7 @@
     "country_name": "South Africa",
     "income_tax": 12.0,
     "specialty": "cocain",
-    "total_bonus": 25.0,
+    "total_bonus": 25.5,
     "region_name": null
   },
   {
@@ -133,13 +133,6 @@
     "region_name": "Luapula"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Eastern Cameroon"
-  },
-  {
     "country_name": "Lebanon",
     "income_tax": 4.0,
     "specialty": "grain",
@@ -182,17 +175,17 @@
     "region_name": null
   },
   {
+    "country_name": "Mali",
+    "income_tax": 45.0,
+    "specialty": "iron",
+    "total_bonus": 50.0,
+    "region_name": "Kidal"
+  },
+  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Mali",
-    "income_tax": 45.0,
-    "specialty": "iron",
-    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -273,6 +266,13 @@
     "region_name": "Western Mongolia"
   },
   {
+    "country_name": "Myanmar",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Kachin and Sagaing"
+  },
+  {
     "country_name": "Central Africa",
     "income_tax": 3.5,
     "specialty": "livestock",
@@ -285,13 +285,6 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Western Nicaragua"
-  },
-  {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "South Island"
   },
   {
     "country_name": "Venezuela",
@@ -365,7 +358,7 @@
   },
   {
     "country_name": "Liberia",
-    "income_tax": 3.0,
+    "income_tax": 1.0,
     "specialty": "steel",
     "total_bonus": 55.0,
     "region_name": null
