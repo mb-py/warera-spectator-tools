@@ -3,14 +3,14 @@
     "country_name": "Chile",
     "income_tax": 6.5,
     "specialty": "ammo",
-    "total_bonus": 55.5,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
     "country_name": "Thailand",
     "income_tax": 6.0,
     "specialty": "bread",
-    "total_bonus": 31.0,
+    "total_bonus": 31.25,
     "region_name": null
   },
   {
@@ -42,11 +42,11 @@
     "region_name": "Coastal Gabon"
   },
   {
-    "country_name": "Comoros",
-    "income_tax": 4.0,
+    "country_name": "Eswatini",
+    "income_tax": 4.5,
     "specialty": "coca",
     "total_bonus": 60,
-    "region_name": "Comoros"
+    "region_name": "Eswatini"
   },
   {
     "country_name": "Burundi",
@@ -80,7 +80,7 @@
     "country_name": "Turkiye",
     "income_tax": 8.0,
     "specialty": "concrete",
-    "total_bonus": 60.5,
+    "total_bonus": 50.5,
     "region_name": null
   },
   {
@@ -131,6 +131,13 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Luapula"
+  },
+  {
+    "country_name": "Comoros",
+    "income_tax": 4.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Comoros"
   },
   {
     "country_name": "Lebanon",
