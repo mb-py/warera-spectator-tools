@@ -126,6 +126,13 @@
     "region_name": "Southern Iceland"
   },
   {
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Bern"
+  },
+  {
     "country_name": "Zambia",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -144,14 +151,14 @@
     "income_tax": 4.0,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "North Lebanon"
+    "region_name": "Northern District"
   },
   {
-    "country_name": "Singapore",
-    "income_tax": 5.0,
+    "country_name": "Lebanon",
+    "income_tax": 4.0,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Singapore"
+    "region_name": "North Lebanon"
   },
   {
     "country_name": "Ecuador",
@@ -259,13 +266,6 @@
     "region_name": null
   },
   {
-    "country_name": "Switzerland",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Bern"
-  },
-  {
     "country_name": "Mongolia",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -292,6 +292,13 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Western Nicaragua"
+  },
+  {
+    "country_name": "New Zealand",
+    "income_tax": 3.9,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "South Island"
   },
   {
     "country_name": "Venezuela",
