@@ -7,13 +7,6 @@
     "region_name": null
   },
   {
-    "country_name": "Thailand",
-    "income_tax": 6.0,
-    "specialty": "bread",
-    "total_bonus": 31.25,
-    "region_name": null
-  },
-  {
     "country_name": "Vanuatu",
     "income_tax": 5.0,
     "specialty": "bread",
@@ -33,13 +26,6 @@
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Continental Equatorial Guinea"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Coastal Gabon"
   },
   {
     "country_name": "Eswatini",
@@ -80,7 +66,7 @@
     "country_name": "Turkiye",
     "income_tax": 8.0,
     "specialty": "concrete",
-    "total_bonus": 50.5,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -95,6 +81,13 @@
     "income_tax": 5.0,
     "specialty": "concrete",
     "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Thailand",
+    "income_tax": 6.0,
+    "specialty": "concrete",
+    "total_bonus": 31.25,
     "region_name": null
   },
   {
@@ -126,6 +119,13 @@
     "region_name": "Southern Iceland"
   },
   {
+    "country_name": "Costa Rica",
+    "income_tax": 1.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Western Costa Rica"
+  },
+  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -140,25 +140,18 @@
     "region_name": "Luapula"
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 3.5,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Coastal Gabon"
+  },
+  {
     "country_name": "Comoros",
     "income_tax": 4.0,
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Comoros"
-  },
-  {
-    "country_name": "Lebanon",
-    "income_tax": 4.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Northern District"
-  },
-  {
-    "country_name": "Lebanon",
-    "income_tax": 4.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "North Lebanon"
   },
   {
     "country_name": "Ecuador",
@@ -224,6 +217,13 @@
     "region_name": null
   },
   {
+    "country_name": "Liberia",
+    "income_tax": 11.0,
+    "specialty": "lightAmmo",
+    "total_bonus": 55.0,
+    "region_name": null
+  },
+  {
     "country_name": "El Salvador",
     "income_tax": 5.0,
     "specialty": "lightAmmo",
@@ -249,13 +249,6 @@
     "income_tax": 8.0,
     "specialty": "lightAmmo",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Burkina Faso",
-    "income_tax": 2.9,
-    "specialty": "lightAmmo",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -316,7 +309,7 @@
   },
   {
     "country_name": "Nigeria",
-    "income_tax": 3.5,
+    "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 55.0,
     "region_name": null
@@ -365,16 +358,9 @@
   },
   {
     "country_name": "Italy",
-    "income_tax": 4.5,
+    "income_tax": 9.0,
     "specialty": "steel",
     "total_bonus": 61.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Liberia",
-    "income_tax": 1.0,
-    "specialty": "steel",
-    "total_bonus": 55.0,
     "region_name": null
   },
   {
