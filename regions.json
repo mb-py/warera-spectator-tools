@@ -28,13 +28,6 @@
     "region_name": "Continental Equatorial Guinea"
   },
   {
-    "country_name": "Eswatini",
-    "income_tax": 4.5,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Eswatini"
-  },
-  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "coca",
@@ -287,11 +280,11 @@
     "region_name": "Western Nicaragua"
   },
   {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
+    "country_name": "Comoros",
+    "income_tax": 4.0,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "South Island"
+    "region_name": "Antsiranana"
   },
   {
     "country_name": "Venezuela",
