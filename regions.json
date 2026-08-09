@@ -172,7 +172,7 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 56.0,
-    "region_name": null
+    "region_name": "Ha'il"
   },
   {
     "country_name": "Indonesia",
@@ -183,23 +183,23 @@
   },
   {
     "country_name": "Mali",
-    "income_tax": 45.0,
+    "income_tax": 2.0,
     "specialty": "iron",
     "total_bonus": 50.0,
     "region_name": "Kidal"
+  },
+  {
+    "country_name": "Bangladesh",
+    "income_tax": 8.0,
+    "specialty": "iron",
+    "total_bonus": 45.0,
+    "region_name": "Northern Bangladesh"
   },
   {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Bangladesh",
-    "income_tax": 8.0,
-    "specialty": "iron",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
