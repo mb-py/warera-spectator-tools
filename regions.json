@@ -1,14 +1,14 @@
 [
   {
-    "country_name": "Vanuatu",
-    "income_tax": 5.0,
+    "country_name": "Belgium",
+    "income_tax": 10.0,
     "specialty": "bread",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
-    "country_name": "Belgium",
-    "income_tax": 10.0,
+    "country_name": "Vanuatu",
+    "income_tax": 5.0,
     "specialty": "bread",
     "total_bonus": 10.0,
     "region_name": null
@@ -91,18 +91,18 @@
     "region_name": null
   },
   {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 60,
+    "region_name": "Eastern Iceland"
+  },
+  {
     "country_name": "Greenland",
     "income_tax": 10.0,
     "specialty": "fish",
     "total_bonus": 60,
     "region_name": "Southern Greenland"
-  },
-  {
-    "country_name": "Iceland",
-    "income_tax": 10.0,
-    "specialty": "fish",
-    "total_bonus": 60,
-    "region_name": "Southern Iceland"
   },
   {
     "country_name": "Costa Rica",
@@ -130,14 +130,14 @@
     "income_tax": 3.5,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Coastal Gabon"
+    "region_name": "Ouham"
   },
   {
-    "country_name": "Comoros",
-    "income_tax": 4.0,
+    "country_name": "Central Africa",
+    "income_tax": 3.5,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Comoros"
+    "region_name": "Coastal Gabon"
   },
   {
     "country_name": "Ecuador",
@@ -154,17 +154,17 @@
     "region_name": null
   },
   {
+    "country_name": "Indonesia",
+    "income_tax": 9.0,
+    "specialty": "iron",
+    "total_bonus": 60.0,
+    "region_name": null
+  },
+  {
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 56.0,
-    "region_name": "Ha'il"
-  },
-  {
-    "country_name": "Indonesia",
-    "income_tax": 9.0,
-    "specialty": "iron",
-    "total_bonus": 55.0,
     "region_name": null
   },
   {
@@ -190,7 +190,7 @@
   },
   {
     "country_name": "Chile",
-    "income_tax": 6.5,
+    "income_tax": 8.0,
     "specialty": "lead",
     "total_bonus": 60.5,
     "region_name": null
@@ -273,20 +273,6 @@
     "region_name": "Sangha and Likouala"
   },
   {
-    "country_name": "Nicaragua",
-    "income_tax": 3.5,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Western Nicaragua"
-  },
-  {
-    "country_name": "Comoros",
-    "income_tax": 4.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Antsiranana"
-  },
-  {
     "country_name": "Venezuela",
     "income_tax": 8.0,
     "specialty": "oil",
@@ -311,7 +297,7 @@
     "country_name": "Mexico",
     "income_tax": 3.0,
     "specialty": "paper",
-    "total_bonus": 50.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
