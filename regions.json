@@ -28,6 +28,13 @@
     "region_name": "Eswatini"
   },
   {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Singapore"
+  },
+  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "coca",
@@ -257,13 +264,6 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Western Mongolia"
-  },
-  {
-    "country_name": "Myanmar",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Kachin and Sagaing"
   },
   {
     "country_name": "Central Africa",
