@@ -98,6 +98,13 @@
     "region_name": null
   },
   {
+    "country_name": "Jamaica",
+    "income_tax": 5.0,
+    "specialty": "cookedFish",
+    "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
     "country_name": "Cameroon",
     "income_tax": 9.5,
     "specialty": "cookedFish",
@@ -117,6 +124,13 @@
     "specialty": "fish",
     "total_bonus": 60,
     "region_name": "Southern Greenland"
+  },
+  {
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Ticons Grisons"
   },
   {
     "country_name": "Costa Rica",
@@ -145,13 +159,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Western Nicaragua"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Coastal Gabon"
   },
   {
     "country_name": "Ecuador",
@@ -186,14 +193,14 @@
     "income_tax": 2.3,
     "specialty": "iron",
     "total_bonus": 50.0,
-    "region_name": "Kidal"
+    "region_name": "Western Burkina Faso"
   },
   {
-    "country_name": "Bangladesh",
-    "income_tax": 8.0,
+    "country_name": "Mali",
+    "income_tax": 2.3,
     "specialty": "iron",
-    "total_bonus": 45.0,
-    "region_name": "Northern Bangladesh"
+    "total_bonus": 50.0,
+    "region_name": "Kidal"
   },
   {
     "country_name": "DR Congo",
