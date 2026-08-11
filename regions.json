@@ -1,10 +1,24 @@
 [
   {
+    "country_name": "Uganda",
+    "income_tax": 8.0,
+    "specialty": "ammo",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
     "country_name": "Vanuatu",
     "income_tax": 5.0,
     "specialty": "bread",
     "total_bonus": 10.0,
     "region_name": null
+  },
+  {
+    "country_name": "Myanmar",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Kachin and Sagaing"
   },
   {
     "country_name": "Central Africa",
@@ -39,13 +53,6 @@
     "income_tax": 12.0,
     "specialty": "cocain",
     "total_bonus": 25.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Tanzania",
-    "income_tax": 5.0,
-    "specialty": "cocain",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -119,6 +126,13 @@
     "region_name": "Western Costa Rica"
   },
   {
+    "country_name": "Zambia",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Western Zambia"
+  },
+  {
     "country_name": "Central Africa",
     "income_tax": 3.5,
     "specialty": "grain",
@@ -140,13 +154,6 @@
     "region_name": "Coastal Gabon"
   },
   {
-    "country_name": "Comoros",
-    "income_tax": 4.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Comoros"
-  },
-  {
     "country_name": "Ecuador",
     "income_tax": 5.0,
     "specialty": "heavyAmmo",
@@ -164,7 +171,7 @@
     "country_name": "Indonesia",
     "income_tax": 9.0,
     "specialty": "iron",
-    "total_bonus": 60.0,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
@@ -217,17 +224,17 @@
     "region_name": null
   },
   {
-    "country_name": "Liberia",
-    "income_tax": 11.0,
-    "specialty": "lightAmmo",
-    "total_bonus": 55.0,
-    "region_name": null
-  },
-  {
     "country_name": "El Salvador",
     "income_tax": 5.0,
     "specialty": "lightAmmo",
-    "total_bonus": 50.5,
+    "total_bonus": 55.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Liberia",
+    "income_tax": 3.0,
+    "specialty": "lightAmmo",
+    "total_bonus": 55.0,
     "region_name": null
   },
   {
@@ -280,6 +287,13 @@
     "region_name": null
   },
   {
+    "country_name": "Morocco",
+    "income_tax": 10.0,
+    "specialty": "oil",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Nigeria",
     "income_tax": 5.0,
     "specialty": "paper",
@@ -290,14 +304,14 @@
     "country_name": "Mexico",
     "income_tax": 3.0,
     "specialty": "paper",
-    "total_bonus": 40.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
     "country_name": "Mauritania",
     "income_tax": 3.0,
     "specialty": "paper",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -333,13 +347,6 @@
     "income_tax": 9.0,
     "specialty": "steel",
     "total_bonus": 56.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Uganda",
-    "income_tax": 8.0,
-    "specialty": "steel",
-    "total_bonus": 35.0,
     "region_name": null
   },
   {
