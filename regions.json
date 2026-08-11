@@ -119,20 +119,6 @@
     "region_name": "Western Costa Rica"
   },
   {
-    "country_name": "Switzerland",
-    "income_tax": 1.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Bern"
-  },
-  {
-    "country_name": "Zambia",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Luapula"
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 3.5,
     "specialty": "grain",
@@ -140,11 +126,25 @@
     "region_name": "Ouham"
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 3.5,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Western Nicaragua"
+  },
+  {
     "country_name": "Central Africa",
     "income_tax": 3.5,
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Coastal Gabon"
+  },
+  {
+    "country_name": "Comoros",
+    "income_tax": 4.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Comoros"
   },
   {
     "country_name": "Ecuador",
@@ -259,13 +259,6 @@
     "region_name": null
   },
   {
-    "country_name": "Mongolia",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Western Mongolia"
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 3.5,
     "specialty": "livestock",
@@ -297,7 +290,7 @@
     "country_name": "Mexico",
     "income_tax": 3.0,
     "specialty": "paper",
-    "total_bonus": 45.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -326,7 +319,7 @@
     "income_tax": 6.0,
     "specialty": "petroleum",
     "total_bonus": 30.0,
-    "region_name": null
+    "region_name": "Battambang"
   },
   {
     "country_name": "Belgium",
@@ -339,7 +332,7 @@
     "country_name": "Italy",
     "income_tax": 9.0,
     "specialty": "steel",
-    "total_bonus": 61.5,
+    "total_bonus": 56.5,
     "region_name": null
   },
   {
