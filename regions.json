@@ -3,7 +3,7 @@
     "country_name": "Uganda",
     "income_tax": 8.0,
     "specialty": "ammo",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -42,13 +42,6 @@
     "region_name": "Singapore"
   },
   {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Burundi"
-  },
-  {
     "country_name": "South Africa",
     "income_tax": 12.0,
     "specialty": "cocain",
@@ -70,15 +63,15 @@
     "region_name": null
   },
   {
-    "country_name": "Turkiye",
-    "income_tax": 8.0,
+    "country_name": "Algeria",
+    "income_tax": 3.0,
     "specialty": "concrete",
-    "total_bonus": 45.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Algeria",
-    "income_tax": 3.0,
+    "country_name": "Turkiye",
+    "income_tax": 8.0,
     "specialty": "concrete",
     "total_bonus": 35.0,
     "region_name": null
@@ -99,9 +92,9 @@
   },
   {
     "country_name": "Jamaica",
-    "income_tax": 5.0,
+    "income_tax": 9.0,
     "specialty": "cookedFish",
-    "total_bonus": 15.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -119,13 +112,6 @@
     "region_name": "Eastern Iceland"
   },
   {
-    "country_name": "Greenland",
-    "income_tax": 10.0,
-    "specialty": "fish",
-    "total_bonus": 60,
-    "region_name": "Southern Greenland"
-  },
-  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -140,6 +126,13 @@
     "region_name": "Western Costa Rica"
   },
   {
+    "country_name": "Mongolia",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Ulaanbaatar"
+  },
+  {
     "country_name": "Zambia",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -152,13 +145,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Ouham"
-  },
-  {
-    "country_name": "Nicaragua",
-    "income_tax": 3.5,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Western Nicaragua"
   },
   {
     "country_name": "Ecuador",
@@ -211,7 +197,7 @@
   },
   {
     "country_name": "Chile",
-    "income_tax": 8.0,
+    "income_tax": 5.0,
     "specialty": "lead",
     "total_bonus": 60.5,
     "region_name": null
@@ -273,11 +259,11 @@
     "region_name": null
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
+    "country_name": "Lebanon",
+    "income_tax": 4.0,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Sangha and Likouala"
+    "region_name": "South Lebanon"
   },
   {
     "country_name": "Venezuela",
@@ -346,14 +332,21 @@
     "country_name": "Belgium",
     "income_tax": 10.0,
     "specialty": "steak",
-    "total_bonus": 15.0,
+    "total_bonus": 15.5,
     "region_name": null
   },
   {
     "country_name": "Italy",
     "income_tax": 9.0,
     "specialty": "steel",
-    "total_bonus": 56.5,
+    "total_bonus": 55.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Albania",
+    "income_tax": 1.0,
+    "specialty": "steel",
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -361,6 +354,13 @@
     "income_tax": 6.0,
     "specialty": "wood",
     "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Armenia",
+    "income_tax": 1.0,
+    "specialty": "wood",
+    "total_bonus": 10.5,
     "region_name": null
   }
 ]
