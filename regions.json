@@ -1,5 +1,19 @@
 [
   {
+    "country_name": "Kenya",
+    "income_tax": 9.0,
+    "specialty": "ammo",
+    "total_bonus": 35.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Togo",
+    "income_tax": 1.0,
+    "specialty": "ammo",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
     "country_name": "Uganda",
     "income_tax": 8.0,
     "specialty": "ammo",
@@ -63,6 +77,13 @@
     "region_name": null
   },
   {
+    "country_name": "Thailand",
+    "income_tax": 6.0,
+    "specialty": "concrete",
+    "total_bonus": 61.25,
+    "region_name": null
+  },
+  {
     "country_name": "Algeria",
     "income_tax": 3.0,
     "specialty": "concrete",
@@ -74,13 +95,6 @@
     "income_tax": 8.0,
     "specialty": "concrete",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Thailand",
-    "income_tax": 6.0,
-    "specialty": "concrete",
-    "total_bonus": 31.25,
     "region_name": null
   },
   {
@@ -217,13 +231,6 @@
     "region_name": null
   },
   {
-    "country_name": "Namibia",
-    "income_tax": 8.0,
-    "specialty": "lead",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
     "country_name": "El Salvador",
     "income_tax": 5.0,
     "specialty": "lightAmmo",
@@ -235,13 +242,6 @@
     "income_tax": 3.0,
     "specialty": "lightAmmo",
     "total_bonus": 55.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Libya",
-    "income_tax": 5.0,
-    "specialty": "lightAmmo",
-    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -259,11 +259,25 @@
     "region_name": null
   },
   {
+    "country_name": "Taiwan",
+    "income_tax": 1.0,
+    "specialty": "lightAmmo",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "limestone",
     "total_bonus": 60.5,
     "region_name": null
+  },
+  {
+    "country_name": "Luxembourg",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Luxembourg"
   },
   {
     "country_name": "Lebanon",
@@ -327,13 +341,6 @@
     "specialty": "petroleum",
     "total_bonus": 45.0,
     "region_name": null
-  },
-  {
-    "country_name": "Cambodia",
-    "income_tax": 6.0,
-    "specialty": "petroleum",
-    "total_bonus": 30.0,
-    "region_name": "Battambang"
   },
   {
     "country_name": "Belgium",
