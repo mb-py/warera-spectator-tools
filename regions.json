@@ -91,6 +91,13 @@
     "region_name": null
   },
   {
+    "country_name": "Djibouti",
+    "income_tax": 7.5,
+    "specialty": "concrete",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Turkiye",
     "income_tax": 8.0,
     "specialty": "concrete",
@@ -126,6 +133,13 @@
     "region_name": "Ticons Grisons"
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 1.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Western Nicaragua"
+  },
+  {
     "country_name": "Costa Rica",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -145,13 +159,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Sangha and Likouala"
-  },
-  {
-    "country_name": "Nicaragua",
-    "income_tax": 3.5,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Western Nicaragua"
   },
   {
     "country_name": "Ecuador",
@@ -178,7 +185,7 @@
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 56.0,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -257,13 +264,6 @@
     "specialty": "limestone",
     "total_bonus": 60.5,
     "region_name": null
-  },
-  {
-    "country_name": "Luxembourg",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Luxembourg"
   },
   {
     "country_name": "Central Africa",
