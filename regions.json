@@ -1,5 +1,19 @@
 [
   {
+    "country_name": "Kenya",
+    "income_tax": 9.0,
+    "specialty": "ammo",
+    "total_bonus": 35.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Togo",
+    "income_tax": 1.0,
+    "specialty": "ammo",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
     "country_name": "Uganda",
     "income_tax": 8.0,
     "specialty": "ammo",
@@ -63,10 +77,10 @@
     "region_name": null
   },
   {
-    "country_name": "Thailand",
-    "income_tax": 6.0,
+    "country_name": "Turkiye",
+    "income_tax": 8.0,
     "specialty": "concrete",
-    "total_bonus": 31.25,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -126,6 +140,13 @@
     "region_name": "Western Costa Rica"
   },
   {
+    "country_name": "Mongolia",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Ulaanbaatar"
+  },
+  {
     "country_name": "Zambia",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -138,13 +159,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Sangha and Likouala"
-  },
-  {
-    "country_name": "Nicaragua",
-    "income_tax": 3.5,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Western Nicaragua"
   },
   {
     "country_name": "Ecuador",
@@ -210,13 +224,6 @@
     "region_name": null
   },
   {
-    "country_name": "Namibia",
-    "income_tax": 8.0,
-    "specialty": "lead",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
     "country_name": "El Salvador",
     "income_tax": 7.0,
     "specialty": "lightAmmo",
@@ -252,6 +259,13 @@
     "region_name": null
   },
   {
+    "country_name": "Taiwan",
+    "income_tax": 1.0,
+    "specialty": "lightAmmo",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "limestone",
@@ -259,8 +273,8 @@
     "region_name": null
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
+    "country_name": "Luxembourg",
+    "income_tax": 1.0,
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Southwestern Central Africa"
