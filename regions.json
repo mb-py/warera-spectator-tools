@@ -66,7 +66,7 @@
     "country_name": "Brazil",
     "income_tax": 5.6,
     "specialty": "cocain",
-    "total_bonus": 25.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -189,8 +189,8 @@
     "region_name": null
   },
   {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
+    "country_name": "Nigeria",
+    "income_tax": 6.0,
     "specialty": "iron",
     "total_bonus": 55.0,
     "region_name": null
@@ -203,17 +203,17 @@
     "region_name": "Western Burkina Faso"
   },
   {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 50.0,
+    "region_name": null
+  },
+  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Bangladesh",
-    "income_tax": 8.0,
-    "specialty": "iron",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -234,7 +234,7 @@
     "country_name": "El Salvador",
     "income_tax": 7.0,
     "specialty": "lightAmmo",
-    "total_bonus": 55.5,
+    "total_bonus": 50.5,
     "region_name": null
   },
   {
@@ -298,13 +298,6 @@
     "income_tax": 7.0,
     "specialty": "oil",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Nigeria",
-    "income_tax": 6.0,
-    "specialty": "paper",
-    "total_bonus": 55.0,
     "region_name": null
   },
   {
