@@ -10,7 +10,7 @@
     "country_name": "Kenya",
     "income_tax": 9.0,
     "specialty": "ammo",
-    "total_bonus": 35.5,
+    "total_bonus": 40.5,
     "region_name": null
   },
   {
@@ -126,6 +126,13 @@
     "region_name": null
   },
   {
+    "country_name": "Greenland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 60,
+    "region_name": "Norwestern Greenland"
+  },
+  {
     "country_name": "Iceland",
     "income_tax": 10.0,
     "specialty": "fish",
@@ -147,11 +154,18 @@
     "region_name": "Western Nicaragua"
   },
   {
-    "country_name": "Costa Rica",
-    "income_tax": 1.0,
+    "country_name": "Mongolia",
+    "income_tax": 3.0,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Western Costa Rica"
+    "region_name": "Western Mongolia"
+  },
+  {
+    "country_name": "Syria",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Lattakia & Tartus"
   },
   {
     "country_name": "Zambia",
@@ -159,13 +173,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Western Zambia"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Sangha and Likouala"
   },
   {
     "country_name": "Ecuador",
@@ -271,13 +278,6 @@
     "specialty": "limestone",
     "total_bonus": 60.5,
     "region_name": null
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Southwestern Central Africa"
   },
   {
     "country_name": "Lebanon",
