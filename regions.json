@@ -3,7 +3,7 @@
     "country_name": "Venezuela",
     "income_tax": 8.0,
     "specialty": "ammo",
-    "total_bonus": 55.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -206,14 +206,14 @@
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 50.0,
-    "region_name": null
+    "total_bonus": 45.0,
+    "region_name": "Lower Egypt"
   },
   {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 35.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -271,6 +271,13 @@
     "specialty": "limestone",
     "total_bonus": 60.5,
     "region_name": null
+  },
+  {
+    "country_name": "Costa Rica",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Western Costa Rica"
   },
   {
     "country_name": "Lebanon",
