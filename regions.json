@@ -189,15 +189,15 @@
     "region_name": "Beirut"
   },
   {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 45.0,
-    "region_name": "Lower Egypt"
-  },
-  {
     "country_name": "Mali",
     "income_tax": 2.3,
+    "specialty": "iron",
+    "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Bangladesh",
+    "income_tax": 8.0,
     "specialty": "iron",
     "total_bonus": 15.0,
     "region_name": null
@@ -238,17 +238,17 @@
     "region_name": null
   },
   {
-    "country_name": "Paraguay",
-    "income_tax": 8.0,
+    "country_name": "Liberia",
+    "income_tax": 3.0,
     "specialty": "lightAmmo",
     "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Taiwan",
-    "income_tax": 1.0,
+    "country_name": "Paraguay",
+    "income_tax": 8.0,
     "specialty": "lightAmmo",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -339,7 +339,7 @@
     "country_name": "Guinea-Bissau",
     "income_tax": 6.0,
     "specialty": "wood",
-    "total_bonus": 40.0,
+    "total_bonus": 45.0,
     "region_name": null
   }
 ]
