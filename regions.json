@@ -7,15 +7,15 @@
     "region_name": null
   },
   {
-    "country_name": "Togo",
-    "income_tax": 1.0,
+    "country_name": "Kenya",
+    "income_tax": 9.0,
     "specialty": "ammo",
-    "total_bonus": 35.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
-    "country_name": "Kenya",
-    "income_tax": 9.0,
+    "country_name": "Togo",
+    "income_tax": 1.0,
     "specialty": "ammo",
     "total_bonus": 35.0,
     "region_name": null
@@ -47,6 +47,13 @@
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Kachin and Sagaing"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 3.5,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Ogoou\u00e9"
   },
   {
     "country_name": "South Africa",
@@ -133,6 +140,13 @@
     "region_name": "Ticons Grisons"
   },
   {
+    "country_name": "Luxembourg",
+    "income_tax": 2.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Luxembourg"
+  },
+  {
     "country_name": "Comoros",
     "income_tax": 2.0,
     "specialty": "grain",
@@ -145,13 +159,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Northern Mongolia"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Ouham"
   },
   {
     "country_name": "Palestine",
@@ -182,6 +189,13 @@
     "region_name": null
   },
   {
+    "country_name": "Mali",
+    "income_tax": 2.3,
+    "specialty": "iron",
+    "total_bonus": 45.0,
+    "region_name": "Tombouctou"
+  },
+  {
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -194,13 +208,6 @@
     "specialty": "iron",
     "total_bonus": 40.0,
     "region_name": "Southeastern Botswana"
-  },
-  {
-    "country_name": "Mali",
-    "income_tax": 2.3,
-    "specialty": "iron",
-    "total_bonus": 15.0,
-    "region_name": null
   },
   {
     "country_name": "Chile",
