@@ -119,6 +119,13 @@
     "region_name": "Western Iceland"
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 1.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Western Nicaragua"
+  },
+  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -145,13 +152,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "South Island"
-  },
-  {
-    "country_name": "Lebanon",
-    "income_tax": 4.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Jerusalem"
   },
   {
     "country_name": "Palestine",
