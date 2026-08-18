@@ -7,15 +7,15 @@
     "region_name": null
   },
   {
-    "country_name": "Kenya",
-    "income_tax": 9.0,
+    "country_name": "Togo",
+    "income_tax": 1.0,
     "specialty": "ammo",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Togo",
-    "income_tax": 1.0,
+    "country_name": "Kenya",
+    "income_tax": 9.0,
     "specialty": "ammo",
     "total_bonus": 35.0,
     "region_name": null
@@ -189,15 +189,15 @@
     "region_name": "Beirut"
   },
   {
-    "country_name": "Mali",
-    "income_tax": 2.3,
+    "country_name": "Botswana",
+    "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 15.0,
-    "region_name": null
+    "total_bonus": 40.0,
+    "region_name": "Southeastern Botswana"
   },
   {
-    "country_name": "Bangladesh",
-    "income_tax": 8.0,
+    "country_name": "Mali",
+    "income_tax": 2.3,
     "specialty": "iron",
     "total_bonus": 15.0,
     "region_name": null
