@@ -56,13 +56,6 @@
     "region_name": "Ogoou\u00e9"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 3.5,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Continental Equatorial Guinea"
-  },
-  {
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
@@ -189,17 +182,17 @@
     "region_name": null
   },
   {
+    "country_name": "Nigeria",
+    "income_tax": 4.0,
+    "specialty": "iron",
+    "total_bonus": 60.75,
+    "region_name": null
+  },
+  {
     "country_name": "Indonesia",
     "income_tax": 9.0,
     "specialty": "iron",
     "total_bonus": 60.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Nigeria",
-    "income_tax": 4.0,
-    "specialty": "iron",
-    "total_bonus": 55.75,
     "region_name": null
   },
   {
@@ -367,7 +360,7 @@
     "country_name": "Serbia",
     "income_tax": 6.0,
     "specialty": "steel",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
