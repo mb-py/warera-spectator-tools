@@ -119,6 +119,13 @@
     "region_name": null
   },
   {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 60,
+    "region_name": "Eastern Iceland"
+  },
+  {
     "country_name": "Greenland",
     "income_tax": 10.0,
     "specialty": "fish",
@@ -147,18 +154,18 @@
     "region_name": "Luxembourg"
   },
   {
-    "country_name": "Comoros",
-    "income_tax": 2.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Comoros"
-  },
-  {
     "country_name": "Mongolia",
     "income_tax": 3.0,
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Northern Mongolia"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 3.5,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Ouham"
   },
   {
     "country_name": "Palestine",
@@ -273,6 +280,13 @@
     "region_name": "Eswatini"
   },
   {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Singapore"
+  },
+  {
     "country_name": "Pakistan",
     "income_tax": 3.0,
     "specialty": "oil",
@@ -332,7 +346,14 @@
     "country_name": "Italy",
     "income_tax": 9.0,
     "specialty": "steel",
-    "total_bonus": 60.5,
+    "total_bonus": 55.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Serbia",
+    "income_tax": 6.0,
+    "specialty": "steel",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
