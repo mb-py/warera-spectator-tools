@@ -35,13 +35,6 @@
     "region_name": null
   },
   {
-    "country_name": "Costa Rica",
-    "income_tax": 1.0,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Western Costa Rica"
-  },
-  {
     "country_name": "Myanmar",
     "income_tax": 3.0,
     "specialty": "coca",
@@ -105,13 +98,6 @@
     "region_name": null
   },
   {
-    "country_name": "Ukraine",
-    "income_tax": 6.9,
-    "specialty": "cookedFish",
-    "total_bonus": 26.0,
-    "region_name": null
-  },
-  {
     "country_name": "Jamaica",
     "income_tax": 8.0,
     "specialty": "cookedFish",
@@ -147,18 +133,18 @@
     "region_name": "Luxembourg"
   },
   {
-    "country_name": "Mongolia",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Northern Mongolia"
-  },
-  {
     "country_name": "New Zealand",
     "income_tax": 3.9,
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "South Island"
+  },
+  {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Singapore"
   },
   {
     "country_name": "Palestine",
@@ -200,7 +186,7 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 45.0,
-    "region_name": "Beirut"
+    "region_name": null
   },
   {
     "country_name": "Botswana",
@@ -252,10 +238,10 @@
     "region_name": null
   },
   {
-    "country_name": "Iraq",
-    "income_tax": 8.0,
+    "country_name": "Ukraine",
+    "income_tax": 6.9,
     "specialty": "limestone",
-    "total_bonus": 60.0,
+    "total_bonus": 26.0,
     "region_name": null
   },
   {
@@ -333,6 +319,13 @@
     "income_tax": 8.0,
     "specialty": "steel",
     "total_bonus": 60.75,
+    "region_name": null
+  },
+  {
+    "country_name": "Iraq",
+    "income_tax": 8.0,
+    "specialty": "steel",
+    "total_bonus": 60.0,
     "region_name": null
   },
   {
