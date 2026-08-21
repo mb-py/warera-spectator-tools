@@ -35,13 +35,6 @@
     "region_name": null
   },
   {
-    "country_name": "Myanmar",
-    "income_tax": 3.0,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Kachin and Sagaing"
-  },
-  {
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
@@ -112,6 +105,13 @@
     "region_name": "Northeastern Greenland"
   },
   {
+    "country_name": "Costa Rica",
+    "income_tax": 1.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Western Costa Rica"
+  },
+  {
     "country_name": "Nicaragua",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -147,17 +147,17 @@
     "region_name": null
   },
   {
-    "country_name": "Nigeria",
-    "income_tax": 8.0,
+    "country_name": "Indonesia",
+    "income_tax": 9.0,
     "specialty": "iron",
     "total_bonus": 60.0,
     "region_name": null
   },
   {
-    "country_name": "Indonesia",
-    "income_tax": 9.0,
+    "country_name": "Nigeria",
+    "income_tax": 8.0,
     "specialty": "iron",
-    "total_bonus": 60.0,
+    "total_bonus": 55.0,
     "region_name": null
   },
   {
