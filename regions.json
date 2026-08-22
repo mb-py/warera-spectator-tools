@@ -38,7 +38,7 @@
     "country_name": "Brazil",
     "income_tax": 5.6,
     "specialty": "cocain",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -98,6 +98,13 @@
     "region_name": "Western Costa Rica"
   },
   {
+    "country_name": "Comoros",
+    "income_tax": 2.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Comoros"
+  },
+  {
     "country_name": "Luxembourg",
     "income_tax": 2.0,
     "specialty": "grain",
@@ -110,13 +117,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Ulaanbaatar"
-  },
-  {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "South Island"
   },
   {
     "country_name": "Singapore",
@@ -294,6 +294,13 @@
     "region_name": null
   },
   {
+    "country_name": "France",
+    "income_tax": 7.0,
+    "specialty": "steak",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Thailand",
     "income_tax": 8.0,
     "specialty": "steel",
@@ -302,7 +309,7 @@
   },
   {
     "country_name": "Iraq",
-    "income_tax": 8.0,
+    "income_tax": 4.0,
     "specialty": "steel",
     "total_bonus": 60.0,
     "region_name": null
