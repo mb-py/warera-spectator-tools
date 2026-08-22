@@ -105,11 +105,11 @@
     "region_name": "Comoros"
   },
   {
-    "country_name": "Luxembourg",
-    "income_tax": 2.0,
+    "country_name": "Central Africa",
+    "income_tax": 2.748,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Luxembourg"
+    "region_name": "Sangha and Likouala"
   },
   {
     "country_name": "Mongolia",
@@ -134,7 +134,7 @@
   },
   {
     "country_name": "Palestine",
-    "income_tax": 7.2,
+    "income_tax": 8.0,
     "specialty": "heavyAmmo",
     "total_bonus": 40.0,
     "region_name": null
@@ -147,18 +147,18 @@
     "region_name": null
   },
   {
-    "country_name": "Nigeria",
-    "income_tax": 8.0,
-    "specialty": "iron",
-    "total_bonus": 55.0,
-    "region_name": null
-  },
-  {
     "country_name": "Mali",
     "income_tax": 2.3,
     "specialty": "iron",
     "total_bonus": 45.0,
     "region_name": "S\u00e9gou & Mopti"
+  },
+  {
+    "country_name": "Nigeria",
+    "income_tax": 8.0,
+    "specialty": "iron",
+    "total_bonus": 45.0,
+    "region_name": null
   },
   {
     "country_name": "Botswana",
@@ -231,11 +231,11 @@
     "region_name": "Bern"
   },
   {
-    "country_name": "Honduras",
-    "income_tax": 1.0,
+    "country_name": "Luxembourg",
+    "income_tax": 2.0,
     "specialty": "livestock",
     "total_bonus": 60,
-    "region_name": "Eastern Honduras"
+    "region_name": "Luxembourg"
   },
   {
     "country_name": "New Zealand",
