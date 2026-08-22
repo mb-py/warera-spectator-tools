@@ -28,13 +28,6 @@
     "region_name": "Yangon"
   },
   {
-    "country_name": "Eswatini",
-    "income_tax": 4.5,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Eswatini"
-  },
-  {
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
@@ -91,6 +84,13 @@
     "region_name": "Norwestern Greenland"
   },
   {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 60,
+    "region_name": "Western Iceland"
+  },
+  {
     "country_name": "Costa Rica",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -105,6 +105,13 @@
     "region_name": "Luxembourg"
   },
   {
+    "country_name": "Mongolia",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Ulaanbaatar"
+  },
+  {
     "country_name": "New Zealand",
     "income_tax": 3.9,
     "specialty": "grain",
@@ -117,13 +124,6 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Singapore"
-  },
-  {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Burundi"
   },
   {
     "country_name": "Kenya",
@@ -238,11 +238,11 @@
     "region_name": "Eastern Honduras"
   },
   {
-    "country_name": "Comoros",
-    "income_tax": 2.0,
+    "country_name": "United Kingdom",
+    "income_tax": 5.0,
     "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Comoros"
+    "total_bonus": 10.0,
+    "region_name": null
   },
   {
     "country_name": "Pakistan",
