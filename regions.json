@@ -238,11 +238,11 @@
     "region_name": "Eastern Honduras"
   },
   {
-    "country_name": "United Kingdom",
-    "income_tax": 5.0,
+    "country_name": "New Zealand",
+    "income_tax": 3.9,
     "specialty": "livestock",
-    "total_bonus": 10.0,
-    "region_name": null
+    "total_bonus": 60,
+    "region_name": "South Island"
   },
   {
     "country_name": "Pakistan",
