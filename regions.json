@@ -189,6 +189,13 @@
     "region_name": null
   },
   {
+    "country_name": "China",
+    "income_tax": 5.0,
+    "specialty": "lead",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "El Salvador",
     "income_tax": 9.0,
     "specialty": "lightAmmo",
@@ -243,13 +250,6 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Bern"
-  },
-  {
-    "country_name": "Luxembourg",
-    "income_tax": 2.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Luxembourg"
   },
   {
     "country_name": "United Kingdom",
