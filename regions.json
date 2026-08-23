@@ -3,7 +3,7 @@
     "country_name": "Venezuela",
     "income_tax": 8.0,
     "specialty": "ammo",
-    "total_bonus": 50.5,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -136,7 +136,7 @@
     "country_name": "Palestine",
     "income_tax": 8.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -161,17 +161,17 @@
     "region_name": "S\u00e9gou & Mopti"
   },
   {
-    "country_name": "Botswana",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 40.0,
-    "region_name": "Southeastern Botswana"
-  },
-  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Portugal",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 25.0,
     "region_name": null
   },
   {
@@ -284,13 +284,6 @@
     "income_tax": 4.5,
     "specialty": "steak",
     "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
-    "country_name": "France",
-    "income_tax": 7.0,
-    "specialty": "steak",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
