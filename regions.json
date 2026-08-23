@@ -35,6 +35,13 @@
     "region_name": null
   },
   {
+    "country_name": "Portugal",
+    "income_tax": 10.0,
+    "specialty": "cocain",
+    "total_bonus": 25.0,
+    "region_name": null
+  },
+  {
     "country_name": "Brazil",
     "income_tax": 5.6,
     "specialty": "cocain",
@@ -161,17 +168,17 @@
     "region_name": null
   },
   {
+    "country_name": "Botswana",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 40.0,
+    "region_name": "Ghanzi"
+  },
+  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Portugal",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 25.0,
     "region_name": null
   },
   {
@@ -213,7 +220,7 @@
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
-    "total_bonus": 56.5,
+    "total_bonus": 61.0,
     "region_name": null
   },
   {
@@ -245,11 +252,11 @@
     "region_name": "Luxembourg"
   },
   {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
+    "country_name": "United Kingdom",
+    "income_tax": 5.0,
     "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "South Island"
+    "total_bonus": 10.0,
+    "region_name": null
   },
   {
     "country_name": "Pakistan",
@@ -288,9 +295,16 @@
   },
   {
     "country_name": "Sweden",
-    "income_tax": 4.5,
+    "income_tax": 8.0,
     "specialty": "steak",
-    "total_bonus": 15.0,
+    "total_bonus": 20.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Iraq",
+    "income_tax": 4.0,
+    "specialty": "steel",
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
@@ -298,13 +312,6 @@
     "income_tax": 8.0,
     "specialty": "steel",
     "total_bonus": 60.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Iraq",
-    "income_tax": 4.0,
-    "specialty": "steel",
-    "total_bonus": 60.0,
     "region_name": null
   },
   {
