@@ -43,7 +43,7 @@
   },
   {
     "country_name": "Portugal",
-    "income_tax": 10.0,
+    "income_tax": 4.0,
     "specialty": "cocain",
     "total_bonus": 25.0,
     "region_name": null
@@ -94,7 +94,7 @@
     "country_name": "Jamaica",
     "income_tax": 8.0,
     "specialty": "cookedFish",
-    "total_bonus": 20.5,
+    "total_bonus": 21.0,
     "region_name": null
   },
   {
@@ -150,7 +150,7 @@
     "country_name": "Kenya",
     "income_tax": 9.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 45.5,
+    "total_bonus": 50.5,
     "region_name": null
   },
   {
@@ -203,13 +203,6 @@
     "region_name": null
   },
   {
-    "country_name": "China",
-    "income_tax": 5.0,
-    "specialty": "lead",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
     "country_name": "El Salvador",
     "income_tax": 9.0,
     "specialty": "lightAmmo",
@@ -234,7 +227,7 @@
     "country_name": "Burkina Faso",
     "income_tax": 2.9,
     "specialty": "lightAmmo",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -252,13 +245,6 @@
     "region_name": "Western Nicaragua"
   },
   {
-    "country_name": "Ecuador",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Colombian Caribbean"
-  },
-  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "livestock",
@@ -271,6 +257,20 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Luxembourg"
+  },
+  {
+    "country_name": "Lebanon",
+    "income_tax": 2.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "North Lebanon"
+  },
+  {
+    "country_name": "Gambia",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Gambia"
   },
   {
     "country_name": "Pakistan",
@@ -325,7 +325,7 @@
     "country_name": "Thailand",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 60.5,
+    "total_bonus": 55.0,
     "region_name": null
   },
   {
