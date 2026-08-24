@@ -49,13 +49,6 @@
     "region_name": null
   },
   {
-    "country_name": "Netherlands",
-    "income_tax": 8.0,
-    "specialty": "cocain",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Niger",
     "income_tax": 45.0,
     "specialty": "cocain",
@@ -133,11 +126,11 @@
     "region_name": "Kotto"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 2.748,
+    "country_name": "Georgia",
+    "income_tax": 3.0,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Sangha and Likouala"
+    "region_name": "Imereti"
   },
   {
     "country_name": "Kenya",
@@ -147,25 +140,11 @@
     "region_name": null
   },
   {
-    "country_name": "Palestine",
-    "income_tax": 8.0,
-    "specialty": "heavyAmmo",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
     "country_name": "Indonesia",
     "income_tax": 9.0,
     "specialty": "iron",
     "total_bonus": 60.0,
     "region_name": null
-  },
-  {
-    "country_name": "Mali",
-    "income_tax": 2.3,
-    "specialty": "iron",
-    "total_bonus": 40.0,
-    "region_name": "S\u00e9gou & Mopti"
   },
   {
     "country_name": "Botswana",
@@ -186,6 +165,13 @@
     "income_tax": 8.0,
     "specialty": "iron",
     "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Mali",
+    "income_tax": 2.3,
+    "specialty": "iron",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
