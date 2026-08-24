@@ -73,7 +73,7 @@
     "country_name": "Cameroon",
     "income_tax": 5.0,
     "specialty": "concrete",
-    "total_bonus": 55.0,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -175,17 +175,17 @@
     "region_name": "Ghanzi"
   },
   {
-    "country_name": "Nigeria",
-    "income_tax": 8.0,
+    "country_name": "DR Congo",
+    "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "DR Congo",
-    "income_tax": 10.0,
+    "country_name": "Nigeria",
+    "income_tax": 8.0,
     "specialty": "iron",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -217,13 +217,6 @@
     "region_name": null
   },
   {
-    "country_name": "Burkina Faso",
-    "income_tax": 2.9,
-    "specialty": "lightAmmo",
-    "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
     "country_name": "Liberia",
     "income_tax": 3.0,
     "specialty": "lightAmmo",
@@ -236,13 +229,6 @@
     "specialty": "limestone",
     "total_bonus": 61.0,
     "region_name": null
-  },
-  {
-    "country_name": "Nicaragua",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Western Nicaragua"
   },
   {
     "country_name": "Lebanon",
@@ -264,6 +250,13 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Gambia"
+  },
+  {
+    "country_name": "Nicaragua",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Western Nicaragua"
   },
   {
     "country_name": "Pakistan",
@@ -298,6 +291,13 @@
     "income_tax": 3.0,
     "specialty": "paper",
     "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Burkina Faso",
+    "income_tax": 7.0,
+    "specialty": "paper",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
