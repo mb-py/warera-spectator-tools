@@ -14,6 +14,13 @@
     "region_name": null
   },
   {
+    "country_name": "Israel",
+    "income_tax": 10.0,
+    "specialty": "bread",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Myanmar",
     "income_tax": 3.0,
     "specialty": "coca",
@@ -49,6 +56,20 @@
     "region_name": null
   },
   {
+    "country_name": "Netherlands",
+    "income_tax": 8.0,
+    "specialty": "cocain",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Niger",
+    "income_tax": 45.0,
+    "specialty": "cocain",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Chile",
     "income_tax": 9.0,
     "specialty": "concrete",
@@ -67,13 +88,6 @@
     "income_tax": 7.5,
     "specialty": "concrete",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Ethiopia",
-    "income_tax": 5.0,
-    "specialty": "concrete",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -105,32 +119,32 @@
     "region_name": "Western Costa Rica"
   },
   {
+    "country_name": "Honduras",
+    "income_tax": 1.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Eastern Honduras"
+  },
+  {
+    "country_name": "Comoros",
+    "income_tax": 2.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Comoros"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 2.748,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Kotto"
+  },
+  {
     "country_name": "Central Africa",
     "income_tax": 2.748,
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Sangha and Likouala"
-  },
-  {
-    "country_name": "Mongolia",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Ulaanbaatar"
-  },
-  {
-    "country_name": "Singapore",
-    "income_tax": 5.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Singapore"
-  },
-  {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Burundi"
   },
   {
     "country_name": "Kenya",
@@ -143,7 +157,7 @@
     "country_name": "Palestine",
     "income_tax": 8.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -161,18 +175,18 @@
     "region_name": "S\u00e9gou & Mopti"
   },
   {
-    "country_name": "Nigeria",
-    "income_tax": 8.0,
-    "specialty": "iron",
-    "total_bonus": 40.0,
-    "region_name": null
-  },
-  {
     "country_name": "Botswana",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 40.0,
     "region_name": "Ghanzi"
+  },
+  {
+    "country_name": "Nigeria",
+    "income_tax": 8.0,
+    "specialty": "iron",
+    "total_bonus": 35.0,
+    "region_name": null
   },
   {
     "country_name": "DR Congo",
@@ -252,11 +266,11 @@
     "region_name": "Bern"
   },
   {
-    "country_name": "United Kingdom",
-    "income_tax": 5.0,
+    "country_name": "Luxembourg",
+    "income_tax": 2.0,
     "specialty": "livestock",
-    "total_bonus": 10.0,
-    "region_name": null
+    "total_bonus": 60,
+    "region_name": "Luxembourg"
   },
   {
     "country_name": "Pakistan",
@@ -325,7 +339,7 @@
     "country_name": "Serbia",
     "income_tax": 6.0,
     "specialty": "steel",
-    "total_bonus": 20.5,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
