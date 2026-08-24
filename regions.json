@@ -49,13 +49,6 @@
     "region_name": null
   },
   {
-    "country_name": "Brazil",
-    "income_tax": 5.6,
-    "specialty": "cocain",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Netherlands",
     "income_tax": 8.0,
     "specialty": "cocain",
@@ -231,6 +224,13 @@
     "region_name": null
   },
   {
+    "country_name": "Liberia",
+    "income_tax": 3.0,
+    "specialty": "lightAmmo",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
@@ -245,25 +245,18 @@
     "region_name": "Western Nicaragua"
   },
   {
-    "country_name": "Switzerland",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Bern"
-  },
-  {
-    "country_name": "Luxembourg",
-    "income_tax": 2.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Luxembourg"
-  },
-  {
     "country_name": "Lebanon",
     "income_tax": 2.0,
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "North Lebanon"
+  },
+  {
+    "country_name": "Luxembourg",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Luxembourg"
   },
   {
     "country_name": "Gambia",
@@ -316,9 +309,9 @@
   },
   {
     "country_name": "Iraq",
-    "income_tax": 4.0,
+    "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 60.5,
+    "total_bonus": 61.0,
     "region_name": null
   },
   {
