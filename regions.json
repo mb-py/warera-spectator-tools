@@ -1,7 +1,7 @@
 [
   {
     "country_name": "Venezuela",
-    "income_tax": 8.0,
+    "income_tax": 10.0,
     "specialty": "ammo",
     "total_bonus": 55.5,
     "region_name": null
@@ -19,6 +19,13 @@
     "specialty": "bread",
     "total_bonus": 10.0,
     "region_name": null
+  },
+  {
+    "country_name": "Costa Rica",
+    "income_tax": 1.0,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Western Costa Rica"
   },
   {
     "country_name": "Myanmar",
@@ -42,15 +49,15 @@
     "region_name": null
   },
   {
-    "country_name": "Philippines",
-    "income_tax": 8.0,
+    "country_name": "Niger",
+    "income_tax": 7.0,
     "specialty": "cocain",
     "total_bonus": 10.0,
     "region_name": null
   },
   {
-    "country_name": "Niger",
-    "income_tax": 45.0,
+    "country_name": "Philippines",
+    "income_tax": 8.0,
     "specialty": "cocain",
     "total_bonus": 10.0,
     "region_name": null
@@ -74,6 +81,13 @@
     "income_tax": 7.5,
     "specialty": "concrete",
     "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Malta",
+    "income_tax": 6.9,
+    "specialty": "concrete",
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -196,13 +210,6 @@
     "region_name": null
   },
   {
-    "country_name": "Liberia",
-    "income_tax": 3.0,
-    "specialty": "lightAmmo",
-    "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
@@ -210,10 +217,10 @@
     "region_name": null
   },
   {
-    "country_name": "Kuwait",
-    "income_tax": 5.0,
+    "country_name": "Liberia",
+    "income_tax": 3.0,
     "specialty": "limestone",
-    "total_bonus": 35.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -243,6 +250,13 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Western Nicaragua"
+  },
+  {
+    "country_name": "Bangladesh",
+    "income_tax": 4.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Northern Bangladesh"
   },
   {
     "country_name": "Pakistan",
@@ -311,7 +325,7 @@
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 60.5,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -325,7 +339,7 @@
     "country_name": "Italy",
     "income_tax": 9.0,
     "specialty": "steel",
-    "total_bonus": 45.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -333,6 +347,13 @@
     "income_tax": 6.0,
     "specialty": "steel",
     "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Yemen",
+    "income_tax": 6.9,
+    "specialty": "steel",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
