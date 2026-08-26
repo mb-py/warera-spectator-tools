@@ -45,7 +45,7 @@
     "country_name": "Portugal",
     "income_tax": 4.0,
     "specialty": "cocain",
-    "total_bonus": 25.0,
+    "total_bonus": 25.5,
     "region_name": null
   },
   {
@@ -53,13 +53,6 @@
     "income_tax": 9.0,
     "specialty": "cocain",
     "total_bonus": 21.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Niger",
-    "income_tax": 7.0,
-    "specialty": "cocain",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -86,13 +79,6 @@
   {
     "country_name": "Djibouti",
     "income_tax": 7.5,
-    "specialty": "concrete",
-    "total_bonus": 40.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Malta",
-    "income_tax": 6.9,
     "specialty": "concrete",
     "total_bonus": 35.0,
     "region_name": null
@@ -137,14 +123,14 @@
     "income_tax": 2.748,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "Ogoou\u00e9"
+    "region_name": "Continental Equatorial Guinea"
   },
   {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
+    "country_name": "Central Africa",
+    "income_tax": 2.748,
     "specialty": "grain",
     "total_bonus": 60,
-    "region_name": "South Island"
+    "region_name": "Ogoou\u00e9"
   },
   {
     "country_name": "Kenya",
@@ -161,18 +147,18 @@
     "region_name": null
   },
   {
+    "country_name": "DR Congo",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 40.5,
+    "region_name": null
+  },
+  {
     "country_name": "Botswana",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 40.0,
     "region_name": "Ghanzi"
-  },
-  {
-    "country_name": "DR Congo",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 40.0,
-    "region_name": null
   },
   {
     "country_name": "Nigeria",
@@ -339,14 +325,14 @@
     "country_name": "Italy",
     "income_tax": 9.0,
     "specialty": "steel",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
     "country_name": "Serbia",
     "income_tax": 6.0,
     "specialty": "steel",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -355,6 +341,13 @@
     "specialty": "steel",
     "total_bonus": 10.0,
     "region_name": null
+  },
+  {
+    "country_name": "Malta",
+    "income_tax": 2.9,
+    "specialty": "wood",
+    "total_bonus": 35.0,
+    "region_name": "Malta"
   },
   {
     "country_name": "Guinea-Bissau",
