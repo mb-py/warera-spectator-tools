@@ -7,15 +7,15 @@
     "region_name": null
   },
   {
-    "country_name": "Vanuatu",
-    "income_tax": 5.0,
+    "country_name": "Israel",
+    "income_tax": 4.0,
     "specialty": "bread",
     "total_bonus": 10.0,
     "region_name": null
   },
   {
-    "country_name": "Israel",
-    "income_tax": 10.0,
+    "country_name": "Vanuatu",
+    "income_tax": 5.0,
     "specialty": "bread",
     "total_bonus": 10.0,
     "region_name": null
