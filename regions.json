@@ -109,7 +109,7 @@
     "income_tax": 10.0,
     "specialty": "fish",
     "total_bonus": 60,
-    "region_name": "Western Iceland"
+    "region_name": "Eastern Iceland"
   },
   {
     "country_name": "Switzerland",
@@ -310,13 +310,6 @@
   {
     "country_name": "Lebanon",
     "income_tax": 2.0,
-    "specialty": "petroleum",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Algeria",
-    "income_tax": 3.0,
     "specialty": "petroleum",
     "total_bonus": 30.0,
     "region_name": null
