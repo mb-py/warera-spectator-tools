@@ -42,6 +42,13 @@
     "region_name": "Rakhine and Chin"
   },
   {
+    "country_name": "Bangladesh",
+    "income_tax": 4.0,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Northern Bangladesh"
+  },
+  {
     "country_name": "Portugal",
     "income_tax": 4.0,
     "specialty": "cocain",
@@ -336,17 +343,17 @@
     "region_name": null
   },
   {
+    "country_name": "Guinea-Bissau",
+    "income_tax": 6.0,
+    "specialty": "wood",
+    "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
     "country_name": "Malta",
     "income_tax": 2.9,
     "specialty": "wood",
     "total_bonus": 35.0,
     "region_name": "Malta"
-  },
-  {
-    "country_name": "Guinea-Bissau",
-    "income_tax": 6.0,
-    "specialty": "wood",
-    "total_bonus": 10.0,
-    "region_name": null
   }
 ]
