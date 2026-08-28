@@ -73,7 +73,7 @@
     "country_name": "Philippines",
     "income_tax": 8.0,
     "specialty": "cocain",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -164,7 +164,7 @@
     "country_name": "Indonesia",
     "income_tax": 9.0,
     "specialty": "iron",
-    "total_bonus": 55.0,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -259,18 +259,18 @@
     "region_name": "Luxembourg"
   },
   {
-    "country_name": "Gambia",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Gambia"
-  },
-  {
     "country_name": "Singapore",
     "income_tax": 5.0,
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Singapore"
+  },
+  {
+    "country_name": "Bhutan",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 55.0,
+    "region_name": "Trashigang"
   },
   {
     "country_name": "Nepal",
