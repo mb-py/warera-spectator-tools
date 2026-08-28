@@ -49,13 +49,6 @@
     "region_name": "Eastern Honduras"
   },
   {
-    "country_name": "Congo",
-    "income_tax": 10.0,
-    "specialty": "coca",
-    "total_bonus": 35.0,
-    "region_name": "Cuvette and Plateaux"
-  },
-  {
     "country_name": "Portugal",
     "income_tax": 4.0,
     "specialty": "cocain",
@@ -178,7 +171,7 @@
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 40.5,
+    "total_bonus": 35.5,
     "region_name": null
   },
   {
@@ -245,6 +238,13 @@
     "region_name": null
   },
   {
+    "country_name": "Georgia",
+    "income_tax": 2.0,
+    "specialty": "livestock",
+    "total_bonus": 66,
+    "region_name": "Tbilisi"
+  },
+  {
     "country_name": "Mongolia",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -271,13 +271,6 @@
     "specialty": "livestock",
     "total_bonus": 55.0,
     "region_name": "Trashigang"
-  },
-  {
-    "country_name": "Nepal",
-    "income_tax": 5.0,
-    "specialty": "livestock",
-    "total_bonus": 35.0,
-    "region_name": "Southeastern Nepal"
   },
   {
     "country_name": "Pakistan",
@@ -331,13 +324,6 @@
   {
     "country_name": "Lebanon",
     "income_tax": 2.0,
-    "specialty": "petroleum",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Algeria",
-    "income_tax": 3.0,
     "specialty": "petroleum",
     "total_bonus": 30.0,
     "region_name": null
