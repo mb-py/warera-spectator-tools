@@ -119,6 +119,13 @@
     "region_name": "Eastern Iceland"
   },
   {
+    "country_name": "Burundi",
+    "income_tax": 7.0,
+    "specialty": "grain",
+    "total_bonus": 70,
+    "region_name": "Burundi"
+  },
+  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -147,13 +154,6 @@
     "region_name": "Ogoou\u00e9"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 2.748,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Ouham"
-  },
-  {
     "country_name": "Kenya",
     "income_tax": 9.0,
     "specialty": "heavyAmmo",
@@ -166,6 +166,13 @@
     "specialty": "iron",
     "total_bonus": 55.0,
     "region_name": null
+  },
+  {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 50.0,
+    "region_name": "Ha'il"
   },
   {
     "country_name": "DR Congo",
@@ -184,13 +191,6 @@
   {
     "country_name": "Mali",
     "income_tax": 2.3,
-    "specialty": "iron",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 10.0,
     "region_name": null
@@ -301,13 +301,6 @@
     "region_name": null
   },
   {
-    "country_name": "Slovakia",
-    "income_tax": 7.0,
-    "specialty": "paper",
-    "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
     "country_name": "Mauritania",
     "income_tax": 3.0,
     "specialty": "paper",
@@ -319,6 +312,13 @@
     "income_tax": 3.0,
     "specialty": "paper",
     "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Slovakia",
+    "income_tax": 7.0,
+    "specialty": "petroleum",
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -343,6 +343,13 @@
     "region_name": null
   },
   {
+    "country_name": "Slovenia",
+    "income_tax": 1.0,
+    "specialty": "petroleum",
+    "total_bonus": 26.0,
+    "region_name": "Slovenian Littoral"
+  },
+  {
     "country_name": "Sweden",
     "income_tax": 8.0,
     "specialty": "steak",
@@ -353,7 +360,7 @@
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 55.5,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
@@ -368,13 +375,6 @@
     "income_tax": 9.0,
     "specialty": "steel",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Yemen",
-    "income_tax": 6.9,
-    "specialty": "steel",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
