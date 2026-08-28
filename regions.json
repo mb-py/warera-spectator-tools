@@ -21,13 +21,6 @@
     "region_name": null
   },
   {
-    "country_name": "Costa Rica",
-    "income_tax": 1.0,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Western Costa Rica"
-  },
-  {
     "country_name": "Comoros",
     "income_tax": 2.0,
     "specialty": "coca",
