@@ -192,7 +192,7 @@
     "country_name": "Latvia",
     "income_tax": 8.5,
     "specialty": "lead",
-    "total_bonus": 55.0,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -245,18 +245,18 @@
     "region_name": "Tbilisi"
   },
   {
+    "country_name": "Luxembourg",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 64,
+    "region_name": "Luxembourg"
+  },
+  {
     "country_name": "Mongolia",
     "income_tax": 3.0,
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Western Mongolia"
-  },
-  {
-    "country_name": "Luxembourg",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Luxembourg"
   },
   {
     "country_name": "Singapore",
@@ -369,13 +369,6 @@
     "specialty": "wood",
     "total_bonus": 40.0,
     "region_name": null
-  },
-  {
-    "country_name": "Liechtenstein",
-    "income_tax": 2.89,
-    "specialty": "wood",
-    "total_bonus": 35.0,
-    "region_name": "Liechtenstein"
   },
   {
     "country_name": "Malta",
