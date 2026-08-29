@@ -105,13 +105,6 @@
     "region_name": null
   },
   {
-    "country_name": "Iceland",
-    "income_tax": 10.0,
-    "specialty": "fish",
-    "total_bonus": 60,
-    "region_name": "Eastern Iceland"
-  },
-  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "grain",
