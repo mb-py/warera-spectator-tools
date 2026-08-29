@@ -98,6 +98,13 @@
     "region_name": null
   },
   {
+    "country_name": "Ethiopia",
+    "income_tax": 5.0,
+    "specialty": "concrete",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Jamaica",
     "income_tax": 8.0,
     "specialty": "cookedFish",
@@ -234,7 +241,7 @@
     "country_name": "Liberia",
     "income_tax": 1.0,
     "specialty": "limestone",
-    "total_bonus": 50.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -252,13 +259,6 @@
     "region_name": "Luxembourg"
   },
   {
-    "country_name": "Singapore",
-    "income_tax": 5.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Singapore"
-  },
-  {
     "country_name": "Mongolia",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -271,6 +271,13 @@
     "specialty": "livestock",
     "total_bonus": 55.0,
     "region_name": "Trashigang"
+  },
+  {
+    "country_name": "Japan",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 30.0,
+    "region_name": "Chubu"
   },
   {
     "country_name": "Pakistan",
