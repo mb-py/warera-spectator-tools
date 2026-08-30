@@ -28,6 +28,13 @@
     "region_name": "Ouham"
   },
   {
+    "country_name": "Honduras",
+    "income_tax": 1.0,
+    "specialty": "coca",
+    "total_bonus": 67,
+    "region_name": "Eastern Honduras"
+  },
+  {
     "country_name": "Central Africa",
     "income_tax": 3.326,
     "specialty": "coca",
@@ -47,13 +54,6 @@
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Eastern Sri Lanka"
-  },
-  {
-    "country_name": "Comoros",
-    "income_tax": 2.0,
-    "specialty": "coca",
-    "total_bonus": 60,
-    "region_name": "Comoros"
   },
   {
     "country_name": "Portugal",
@@ -126,6 +126,13 @@
     "region_name": "Burundi"
   },
   {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 67,
+    "region_name": "Singapore"
+  },
+  {
     "country_name": "Comoros",
     "income_tax": 2.0,
     "specialty": "grain",
@@ -147,17 +154,10 @@
     "region_name": "Western Nicaragua"
   },
   {
-    "country_name": "Georgia",
-    "income_tax": 2.0,
-    "specialty": "grain",
-    "total_bonus": 50,
-    "region_name": "Imereti"
-  },
-  {
     "country_name": "Kenya",
     "income_tax": 9.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 45.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -250,6 +250,13 @@
     "specialty": "limestone",
     "total_bonus": 10.0,
     "region_name": null
+  },
+  {
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 70,
+    "region_name": "Bern"
   },
   {
     "country_name": "Gambia",

@@ -116,9 +116,9 @@
 
   function fillGoodFields(){
     var g=curRes(), isRaw=g.units===0;
-    $('rawname').value=g.raw; $('rawunits').value=g.units; $('pp').value=g.pp;
-    $('goodlabel').textContent=g.name;
-    $('selllabel').textContent=g.name+' sell price';
+    $('rawname').value=frontLabel(g.raw); $('rawunits').value=g.units; $('pp').value=g.pp;
+    $('goodlabel').textContent=frontLabel(g.name);
+    $('selllabel').textContent=frontLabel(g.name)+' sell price';
     ['rawname','rawunits','pmin','pmax'].forEach(function(id){
       $(''+id).closest('.field').style.display = isRaw ? 'none' : '';
     });
@@ -279,7 +279,7 @@
     $('readout').querySelector('tbody').innerHTML = rows;
 
     var labels = xs.map(function(x){ return x.toFixed(4); });
-    var xtitle = g.raw + ' price (BTC per unit)';
+    var xtitle = frontLabel(g.raw) + ' price (BTC per unit)';
     if(chart && curChartType !== 'line'){ chart.destroy(); chart = null; }
     curChartType = 'line';
     if(!chart){
@@ -490,7 +490,7 @@
   function start(){
     var sel = $('preset'); sel.innerHTML = '';
     RESOURCES.forEach(function(g,i){
-      var o=document.createElement('option'); o.value=i; o.textContent=g.name; sel.appendChild(o);
+      var o=document.createElement('option'); o.value=i; o.textContent=frontLabel(g.name); sel.appendChild(o);
     });
 
     $('preset').addEventListener('change', function(){ fillGoodFields(); applyGoodDefaults(); update(); });
@@ -519,7 +519,7 @@
 
   function saveAsFile(canvas){
     var a=document.createElement('a');
-    a.download=curRes().name.replace(/\s+/g,'_').toLowerCase()+'_cost_chart.png';
+    a.download=frontLabel(curRes().name).replace(/\s+/g,'_').toLowerCase()+'_cost_chart.png';
     a.href=canvas.toDataURL('image/png'); a.click();
   }
 
@@ -543,6 +543,7 @@
       if(el) el.addEventListener('click', function(){ exportChart(this); });
     });
 
+    $('net').value = DEFAULT_NW;  /* server default; a share hash overrides via applyState */
     var hadHash = loadHash();
     fillGoodFields();
     if(!hadHash) applyGoodDefaults();
@@ -572,7 +573,9 @@
       var p = res[1];
 
       var prices = (p&&p.result&&p.result.data)?p.result.data:(p&&typeof p==='object'&&!Array.isArray(p))?p:{};
+      if(p && typeof p._netWage === 'number') DEFAULT_NW = p._netWage;
       delete prices._updated;
+      delete prices._netWage;
       RESOURCES = buildResources(resources, prices);
       start();
     }).catch(function(){

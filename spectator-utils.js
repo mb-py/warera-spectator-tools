@@ -29,6 +29,19 @@ function fmtPriceDate(iso){
     ' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
 }
 
+/* ── Front-facing resource labels ────────────────────────────────────────────
+   WarEra's API/codebase use "coca"/"cocain(e)"; the public site and app show
+   "Medicinal Plant"/"Pill". Keys, share-link state and data-* attributes stay
+   canonical for compatibility — this only rewrites user-visible strings. */
+function frontLabel(s){
+  if(s == null) return s;
+  return String(s)
+    .replace(/Cocaine/g, 'Pill').replace(/Cocain/g, 'Pill')
+    .replace(/Coca/g,    'Medicinal Plant')
+    .replace(/cocaine/g, 'pill').replace(/cocain/g, 'pill')
+    .replace(/coca/g,    'medicinal plant');
+}
+
 /* ── Symlog scale helpers ────────────────────────────────────────────────────
    Hybrid linear-log for Chart.js axes where values cluster near zero.
    |x| ≤ SYMLOG_LIN_MAX  →  f(x) = x            (identity; equal pixel per unit)

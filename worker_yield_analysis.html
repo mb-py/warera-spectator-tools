@@ -207,7 +207,7 @@
   function num(id){ return parseFloat($(id).value); }
   function clampTax(t){ if(isNaN(t)) return 1; return Math.max(1, Math.min(99, t)); }
   function rnd(x){ return Math.round(x*10000)/10000; }
-  function nameOf(key){ for(var i=0;i<RESOURCES.length;i++){ if(RESOURCES[i].key===key) return RESOURCES[i].name; } return key; }
+  function nameOf(key){ for(var i=0;i<RESOURCES.length;i++){ if(RESOURCES[i].key===key) return frontLabel(RESOURCES[i].name); } return frontLabel(key); }
   function curRes(){ return RESOURCES[+$('res').value] || RESOURCES[0]; }
   function grossFor(mode,wage,tax){ return mode==='gross' ? wage : wage/(1-clampTax(tax)/100); }
   function netFor(mode,wage,tax){ return mode==='gross' ? wage*(1-clampTax(tax)/100) : wage; }
@@ -334,7 +334,7 @@
           return c;
         }
         datasets.push({
-          label: r.name+' · '+best1.name,
+          label: frontLabel(r.name)+' · '+best1.name,
           resource: r.name, region: best1.name,
           data: raw1.map(symlog),
           borderColor: dimCol, backgroundColor: dimCol,
@@ -342,7 +342,7 @@
           borderWidth: 2, pointRadius: 2, cubicInterpolationMode:'monotone', fill: false
         });
       })(color, r.name);
-      legendHTML += '<span class="legend-item"><span class="sw" style="background:'+color+'"></span>'+r.name+' · '+best1.name+'</span>';
+      legendHTML += '<span class="legend-item"><span class="sw" style="background:'+color+'"></span>'+frontLabel(r.name)+' · '+best1.name+'</span>';
 
       if(!same){
         var raw10 = FIDS.map(function(f){ return rnd(nb(best10.tax, best10.bonus, f)); });
@@ -354,7 +354,7 @@
             return c;
           }
           datasets.push({
-            label: r.name+' · '+best10.name+' (10%)',
+            label: frontLabel(r.name)+' · '+best10.name+' (10%)',
             resource: r.name, region: best10.name,
             data: raw10.map(symlog),
             borderColor: dimCol, backgroundColor: dimCol,
@@ -363,7 +363,7 @@
             borderWidth: 1.5, pointRadius: 2, cubicInterpolationMode:'monotone', fill: false
           });
         })(color, r.name);
-        legendHTML += '<span class="legend-item"><span class="sw" style="background:'+color+'; opacity:.5"></span>'+r.name+' · '+best10.name+' (10%)</span>';
+        legendHTML += '<span class="legend-item"><span class="sw" style="background:'+color+'; opacity:.5"></span>'+frontLabel(r.name)+' · '+best10.name+' (10%)</span>';
       }
     });
 
@@ -374,14 +374,14 @@
       var trOpen = '<tr data-resource="'+row.name+'">';
       rows += row.same
         ? trOpen+
-            '<td>'+dot+row.name+'</td>'+
+            '<td>'+dot+frontLabel(row.name)+'</td>'+
             '<td>'+row.best10.name+'</td>'+
             '<td class="'+row.c10+'">'+(row.v10>=0?'+':'')+row.v10.toFixed(3)+'</td>'+
             '<td class="be-na" style="font-size:9.5px">same</td>'+
             '<td class="'+row.c1+'">'+(row.v1>=0?'+':'')+row.v1.toFixed(3)+'</td>'+
           '</tr>'
         : trOpen+
-            '<td>'+dot+row.name+'</td>'+
+            '<td>'+dot+frontLabel(row.name)+'</td>'+
             '<td>'+row.best10.name+'</td>'+
             '<td class="'+row.c10+'">'+(row.v10>=0?'+':'')+row.v10.toFixed(3)+'</td>'+
             '<td>'+row.best1.name+'</td>'+
@@ -447,8 +447,8 @@
 
   function fillResourceDisplay(){
     var r=curRes();
-    $('reslabel').textContent = r.name;
-    $('selllabel').textContent = r.name + ' price';
+    $('reslabel').textContent = frontLabel(r.name);
+    $('selllabel').textContent = frontLabel(r.name) + ' price';
     if(r.type==='mfg'){
       $('recipe').value = r.pp + ' PP + ' + r.units + ' ' + nameOf(r.input);
       $('inpriceField').style.display='';
@@ -550,7 +550,7 @@
   function renderNations(){
     var key=curRes().key, m=matchingNations(key), box=$('nations');
     box.innerHTML='';
-    if(!m.length){ box.innerHTML='<div class="nat-empty">No regions specialise in '+curRes().name+'.</div>'; return; }
+    if(!m.length){ box.innerHTML='<div class="nat-empty">No regions specialise in '+frontLabel(curRes().name)+'.</div>'; return; }
     m.forEach(function(n){
       var spec = (n.specialty==='agrarian') ? 'agrarian' : nameOf(n.specialty);
       var ctx  = (n.region && n.region!==n.country) ? (n.country+' · ') : '';
@@ -616,7 +616,7 @@
             '<td>'+beTxt+'</td></tr>';
     });
 
-    if(!matching.length) legendHTML='<span class="be-na">No regions specialise in '+r.name+'.</span>';
+    if(!matching.length) legendHTML='<span class="be-na">No regions specialise in '+frontLabel(r.name)+'.</span>';
     else if(!chosen.length) legendHTML='<span class="be-na">Tick a region to plot it.</span>';
 
     $('legend').innerHTML=legendHTML;
@@ -678,7 +678,7 @@
         var idx=-1;
         for(var j=0;j<RESOURCES.length;j++){ if(RESOURCES[j].key===key){ idx=j; break; } }
         if(idx<0) return;
-        var o=document.createElement('option'); o.value=idx; o.textContent=RESOURCES[idx].name;
+        var o=document.createElement('option'); o.value=idx; o.textContent=frontLabel(RESOURCES[idx].name);
         og.appendChild(o);
       });
       sel.appendChild(og);
@@ -932,8 +932,11 @@
         var pd = document.getElementById('price-date');
         if(pd) pd.innerHTML = '<br>Prices updated '+fmtPriceDate(p._updated);
       }
+      if(p && typeof p._netWage === 'number') DEFAULT_WAGE = p._netWage;
       PRICES=(p&&p.result&&p.result.data)?p.result.data:(p&&typeof p==='object'&&!Array.isArray(p))?p:{};
       delete PRICES._updated;
+      delete PRICES._netWage;
+      $('wage').value = DEFAULT_WAGE;  /* server default; lsLoad() then loadHash() override if set */
       for(var k in PRICES) DEFAULT_PRICES[k]=PRICES[k]; /* snapshot before any overrides */
       var raw=Array.isArray(res[1])?res[1]:(res[1].regions||[]);
       NATIONS=raw.map(function(r){
