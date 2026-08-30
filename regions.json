@@ -241,7 +241,7 @@
     "country_name": "Liberia",
     "income_tax": 1.0,
     "specialty": "limestone",
-    "total_bonus": 20.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -253,7 +253,7 @@
   },
   {
     "country_name": "Switzerland",
-    "income_tax": 1.0,
+    "income_tax": 1.0000001,
     "specialty": "livestock",
     "total_bonus": 70,
     "region_name": "Bern"
@@ -280,11 +280,11 @@
     "region_name": "Northern Mongolia"
   },
   {
-    "country_name": "Japan",
+    "country_name": "Bhutan",
     "income_tax": 1.0,
     "specialty": "livestock",
-    "total_bonus": 30.0,
-    "region_name": "Chubu"
+    "total_bonus": 44.0,
+    "region_name": "Thimphu"
   },
   {
     "country_name": "Pakistan",
