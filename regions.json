@@ -140,18 +140,18 @@
     "region_name": "Antsiranana"
   },
   {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "South Island"
-  },
-  {
     "country_name": "Nicaragua",
     "income_tax": 3.0,
     "specialty": "grain",
     "total_bonus": 59,
     "region_name": "Western Nicaragua"
+  },
+  {
+    "country_name": "Georgia",
+    "income_tax": 2.0,
+    "specialty": "grain",
+    "total_bonus": 50,
+    "region_name": "Imereti"
   },
   {
     "country_name": "Kenya",
@@ -210,6 +210,13 @@
     "region_name": "Central Eritrea"
   },
   {
+    "country_name": "China",
+    "income_tax": 5.0,
+    "specialty": "lead",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "El Salvador",
     "income_tax": 9.0,
     "specialty": "lightAmmo",
@@ -266,6 +273,13 @@
     "region_name": "Gambia"
   },
   {
+    "country_name": "New Zealand",
+    "income_tax": 3.9,
+    "specialty": "livestock",
+    "total_bonus": 68,
+    "region_name": "South Island"
+  },
+  {
     "country_name": "Luxembourg",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -278,13 +292,6 @@
     "specialty": "livestock",
     "total_bonus": 56,
     "region_name": "Northern Mongolia"
-  },
-  {
-    "country_name": "Bhutan",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 44.0,
-    "region_name": "Thimphu"
   },
   {
     "country_name": "Pakistan",
@@ -360,7 +367,7 @@
     "country_name": "Thailand",
     "income_tax": 5.0,
     "specialty": "steel",
-    "total_bonus": 55.0,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
