@@ -7,15 +7,15 @@
     "region_name": null
   },
   {
-    "country_name": "Israel",
-    "income_tax": 4.0,
-    "specialty": "bread",
-    "total_bonus": 10.0,
+    "country_name": "Togo",
+    "income_tax": 1.0,
+    "specialty": "ammo",
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
-    "country_name": "Vanuatu",
-    "income_tax": 5.0,
+    "country_name": "Israel",
+    "income_tax": 4.0,
     "specialty": "bread",
     "total_bonus": 10.0,
     "region_name": null
@@ -140,13 +140,6 @@
     "region_name": "Singapore"
   },
   {
-    "country_name": "Comoros",
-    "income_tax": 2.0,
-    "specialty": "grain",
-    "total_bonus": 64,
-    "region_name": "Antsiranana"
-  },
-  {
     "country_name": "Nicaragua",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -210,13 +203,6 @@
     "region_name": null
   },
   {
-    "country_name": "Eritrea",
-    "income_tax": 5.0,
-    "specialty": "lead",
-    "total_bonus": 35.0,
-    "region_name": "Central Eritrea"
-  },
-  {
     "country_name": "China",
     "income_tax": 5.0,
     "specialty": "lead",
@@ -248,14 +234,14 @@
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
-    "total_bonus": 60.5,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
     "country_name": "Liberia",
     "income_tax": 1.0,
     "specialty": "limestone",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -311,7 +297,7 @@
     "country_name": "Burkina Faso",
     "income_tax": 7.0,
     "specialty": "paper",
-    "total_bonus": 45.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
