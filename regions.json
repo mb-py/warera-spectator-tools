@@ -273,6 +273,13 @@
     "region_name": "Bern"
   },
   {
+    "country_name": "Comoros",
+    "income_tax": 2.0,
+    "specialty": "livestock",
+    "total_bonus": 70,
+    "region_name": "Comoros"
+  },
+  {
     "country_name": "Gambia",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -292,13 +299,6 @@
     "specialty": "livestock",
     "total_bonus": 64,
     "region_name": "Luxembourg"
-  },
-  {
-    "country_name": "Costa Rica",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 63,
-    "region_name": "Western Costa Rica"
   },
   {
     "country_name": "Pakistan",
@@ -346,19 +346,19 @@
     "country_name": "Bahrain",
     "income_tax": 5.0,
     "specialty": "petroleum",
-    "total_bonus": 35.0,
+    "total_bonus": 37.0,
     "region_name": "Bahrain"
-  },
-  {
-    "country_name": "Lebanon",
-    "income_tax": 2.0,
-    "specialty": "petroleum",
-    "total_bonus": 30.0,
-    "region_name": null
   },
   {
     "country_name": "Algeria",
     "income_tax": 3.0,
+    "specialty": "petroleum",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Lebanon",
+    "income_tax": 2.0,
     "specialty": "petroleum",
     "total_bonus": 30.0,
     "region_name": null
@@ -397,12 +397,5 @@
     "specialty": "wood",
     "total_bonus": 45.0,
     "region_name": null
-  },
-  {
-    "country_name": "United States",
-    "income_tax": 10.0,
-    "specialty": "wood",
-    "total_bonus": 35.0,
-    "region_name": "American Great Lakes"
   }
 ]
