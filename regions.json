@@ -38,13 +38,6 @@
     "country_name": "Central Africa",
     "income_tax": 3.326,
     "specialty": "coca",
-    "total_bonus": 62,
-    "region_name": "Ogoou\u00e9"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.326,
-    "specialty": "coca",
     "total_bonus": 61,
     "region_name": "Kogi and Edo"
   },
@@ -54,6 +47,13 @@
     "specialty": "coca",
     "total_bonus": 60,
     "region_name": "Eastern Sri Lanka"
+  },
+  {
+    "country_name": "Myanmar",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 58,
+    "region_name": "Shan State"
   },
   {
     "country_name": "South Africa",
@@ -339,6 +339,13 @@
     "country_name": "Slovenia",
     "income_tax": 1.0,
     "specialty": "petroleum",
+    "total_bonus": 40.0,
+    "region_name": "Istria & Kvarner"
+  },
+  {
+    "country_name": "Slovenia",
+    "income_tax": 1.0,
+    "specialty": "petroleum",
     "total_bonus": 38.0,
     "region_name": "Styria Carinthia"
   },
@@ -354,13 +361,6 @@
     "income_tax": 3.0,
     "specialty": "petroleum",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Lebanon",
-    "income_tax": 2.0,
-    "specialty": "petroleum",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
