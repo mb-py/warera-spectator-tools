@@ -217,13 +217,6 @@
     "region_name": null
   },
   {
-    "country_name": "Uzbekistan",
-    "income_tax": 1.0,
-    "specialty": "limestone",
-    "total_bonus": 27.0,
-    "region_name": "Bukhoro"
-  },
-  {
     "country_name": "Bolivia",
     "income_tax": 1.0,
     "specialty": "limestone",
