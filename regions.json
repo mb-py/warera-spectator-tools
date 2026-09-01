@@ -43,7 +43,7 @@
   },
   {
     "country_name": "Portugal",
-    "income_tax": 4.0,
+    "income_tax": 8.0,
     "specialty": "cocain",
     "total_bonus": 25.0,
     "region_name": null
@@ -103,13 +103,6 @@
     "specialty": "fish",
     "total_bonus": 10.0,
     "region_name": null
-  },
-  {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "grain",
-    "total_bonus": 70,
-    "region_name": "Burundi"
   },
   {
     "country_name": "Singapore",
@@ -178,14 +171,21 @@
     "country_name": "Latvia",
     "income_tax": 8.5,
     "specialty": "lead",
-    "total_bonus": 51.0,
+    "total_bonus": 50.75,
     "region_name": null
   },
   {
     "country_name": "Eritrea",
     "income_tax": 5.0,
     "specialty": "lead",
-    "total_bonus": 10.0,
+    "total_bonus": 38.0,
+    "region_name": "Djibouti"
+  },
+  {
+    "country_name": "Bhutan",
+    "income_tax": 1.0,
+    "specialty": "lead",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
