@@ -28,6 +28,13 @@
     "region_name": "Kogi and Edo"
   },
   {
+    "country_name": "Comoros",
+    "income_tax": 2.0,
+    "specialty": "coca",
+    "total_bonus": 59,
+    "region_name": "Comoros"
+  },
+  {
     "country_name": "Myanmar",
     "income_tax": 3.0,
     "specialty": "coca",
@@ -117,6 +124,13 @@
     "specialty": "fish",
     "total_bonus": 10.0,
     "region_name": null
+  },
+  {
+    "country_name": "Mongolia",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 67,
+    "region_name": "Northern Mongolia"
   },
   {
     "country_name": "Singapore",
@@ -245,13 +259,6 @@
     "region_name": "Bern"
   },
   {
-    "country_name": "Comoros",
-    "income_tax": 2.0,
-    "specialty": "livestock",
-    "total_bonus": 70,
-    "region_name": "Comoros"
-  },
-  {
     "country_name": "Sri Lanka",
     "income_tax": 1.0,
     "specialty": "livestock",
@@ -266,11 +273,18 @@
     "region_name": "South Island"
   },
   {
-    "country_name": "Luxembourg",
+    "country_name": "Zambia",
     "income_tax": 3.0,
     "specialty": "livestock",
-    "total_bonus": 64,
-    "region_name": "Luxembourg"
+    "total_bonus": 67,
+    "region_name": "Copperbelt"
+  },
+  {
+    "country_name": "Costa Rica",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 65,
+    "region_name": "Western Costa Rica"
   },
   {
     "country_name": "Pakistan",
@@ -353,7 +367,7 @@
     "country_name": "Thailand",
     "income_tax": 5.0,
     "specialty": "steel",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
