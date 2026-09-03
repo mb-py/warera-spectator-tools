@@ -28,6 +28,13 @@
     "region_name": null
   },
   {
+    "country_name": "Myanmar",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 65,
+    "region_name": "Shan State"
+  },
+  {
     "country_name": "Philippines",
     "income_tax": 8.0,
     "specialty": "coca",
@@ -54,13 +61,6 @@
     "specialty": "coca",
     "total_bonus": 58,
     "region_name": "Ouham"
-  },
-  {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "coca",
-    "total_bonus": 50,
-    "region_name": "Burundi"
   },
   {
     "country_name": "South Africa",
@@ -126,6 +126,13 @@
     "region_name": null
   },
   {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 65,
+    "region_name": "Eastern Iceland"
+  },
+  {
     "country_name": "South Sudan",
     "income_tax": 1.0,
     "specialty": "fish",
@@ -150,14 +157,14 @@
     "country_name": "India",
     "income_tax": 7.5,
     "specialty": "iron",
-    "total_bonus": 67.0,
+    "total_bonus": 72.0,
     "region_name": "Punjab"
   },
   {
     "country_name": "India",
     "income_tax": 7.5,
     "specialty": "iron",
-    "total_bonus": 60.0,
+    "total_bonus": 65.0,
     "region_name": "Dhaka"
   },
   {
@@ -186,13 +193,6 @@
     "income_tax": 8.5,
     "specialty": "lead",
     "total_bonus": 50.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Bhutan",
-    "income_tax": 1.0,
-    "specialty": "lead",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -231,6 +231,13 @@
     "region_name": null
   },
   {
+    "country_name": "Luxembourg",
+    "income_tax": 2.0,
+    "specialty": "livestock",
+    "total_bonus": 70,
+    "region_name": "Luxembourg"
+  },
+  {
     "country_name": "Zambia",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -252,11 +259,11 @@
     "region_name": "South Island"
   },
   {
-    "country_name": "Japan",
-    "income_tax": 1.0,
+    "country_name": "Philippines",
+    "income_tax": 8.0,
     "specialty": "livestock",
-    "total_bonus": 45.0,
-    "region_name": "Kanto"
+    "total_bonus": 56,
+    "region_name": "Northern Taiwan"
   },
   {
     "country_name": "Mexico",
