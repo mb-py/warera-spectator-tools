@@ -24,8 +24,15 @@
     "country_name": "Sudan",
     "income_tax": 5.0,
     "specialty": "bread",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
+  },
+  {
+    "country_name": "Philippines",
+    "income_tax": 8.0,
+    "specialty": "coca",
+    "total_bonus": 65,
+    "region_name": "Visayas"
   },
   {
     "country_name": "Central Africa",
@@ -54,13 +61,6 @@
     "specialty": "coca",
     "total_bonus": 58,
     "region_name": "Ouham"
-  },
-  {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "coca",
-    "total_bonus": 51,
-    "region_name": "Burundi"
   },
   {
     "country_name": "South Africa",
@@ -129,7 +129,7 @@
     "country_name": "South Sudan",
     "income_tax": 1.0,
     "specialty": "fish",
-    "total_bonus": 10.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -154,45 +154,38 @@
     "region_name": null
   },
   {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 52.5,
-    "region_name": "Ha'il"
-  },
-  {
     "country_name": "India",
     "income_tax": 7.5,
     "specialty": "iron",
-    "total_bonus": 50.0,
+    "total_bonus": 67.0,
     "region_name": "Punjab"
   },
   {
     "country_name": "India",
     "income_tax": 7.5,
     "specialty": "iron",
-    "total_bonus": 50.0,
+    "total_bonus": 60.0,
     "region_name": "Dhaka"
   },
   {
-    "country_name": "Indonesia",
-    "income_tax": 9.0,
+    "country_name": "Egypt",
+    "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 35.0,
-    "region_name": null
+    "total_bonus": 52.0,
+    "region_name": "Ha'il"
   },
   {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
-    "country_name": "Latvia",
-    "income_tax": 8.5,
-    "specialty": "lead",
-    "total_bonus": 50.5,
+    "country_name": "Botswana",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -201,6 +194,13 @@
     "specialty": "lead",
     "total_bonus": 37.0,
     "region_name": "Red Sea Region"
+  },
+  {
+    "country_name": "Latvia",
+    "income_tax": 8.5,
+    "specialty": "lead",
+    "total_bonus": 20.5,
+    "region_name": null
   },
   {
     "country_name": "Bhutan",
@@ -214,13 +214,6 @@
     "income_tax": 9.0,
     "specialty": "lightAmmo",
     "total_bonus": 50.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Malaysia",
-    "income_tax": 3.0,
-    "specialty": "lightAmmo",
-    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -350,24 +343,17 @@
     "region_name": null
   },
   {
+    "country_name": "Portugal",
+    "income_tax": 8.0,
+    "specialty": "steel",
+    "total_bonus": 60.5,
+    "region_name": null
+  },
+  {
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
     "total_bonus": 51.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Portugal",
-    "income_tax": 8.0,
-    "specialty": "steel",
-    "total_bonus": 30.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Thailand",
-    "income_tax": 5.0,
-    "specialty": "steel",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
