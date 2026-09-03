@@ -108,7 +108,7 @@
     "country_name": "Cameroon",
     "income_tax": 5.0,
     "specialty": "cookedFish",
-    "total_bonus": 20.5,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -124,13 +124,6 @@
     "specialty": "cookedFish",
     "total_bonus": 10.0,
     "region_name": null
-  },
-  {
-    "country_name": "Iceland",
-    "income_tax": 10.0,
-    "specialty": "fish",
-    "total_bonus": 65,
-    "region_name": "Northeastern Iceland"
   },
   {
     "country_name": "South Sudan",
@@ -183,7 +176,7 @@
   },
   {
     "country_name": "Kyrgyzstan",
-    "income_tax": 1.0,
+    "income_tax": 6.0,
     "specialty": "iron",
     "total_bonus": 20.0,
     "region_name": null
@@ -194,13 +187,6 @@
     "specialty": "lead",
     "total_bonus": 50.5,
     "region_name": null
-  },
-  {
-    "country_name": "Eritrea",
-    "income_tax": 5.0,
-    "specialty": "lead",
-    "total_bonus": 32.0,
-    "region_name": "Red Sea Region"
   },
   {
     "country_name": "Bhutan",
@@ -264,13 +250,6 @@
     "specialty": "livestock",
     "total_bonus": 61,
     "region_name": "South Island"
-  },
-  {
-    "country_name": "Luxembourg",
-    "income_tax": 2.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Luxembourg"
   },
   {
     "country_name": "Japan",
