@@ -28,6 +28,13 @@
     "region_name": null
   },
   {
+    "country_name": "Hungary",
+    "income_tax": 9.0,
+    "specialty": "bread",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Myanmar",
     "income_tax": 3.0,
     "specialty": "coca",
@@ -40,13 +47,6 @@
     "specialty": "coca",
     "total_bonus": 65,
     "region_name": "Visayas"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.326,
-    "specialty": "coca",
-    "total_bonus": 61,
-    "region_name": "Kogi and Edo"
   },
   {
     "country_name": "Comoros",
@@ -63,6 +63,13 @@
     "region_name": "Ouham"
   },
   {
+    "country_name": "Burundi",
+    "income_tax": 7.0,
+    "specialty": "coca",
+    "total_bonus": 50,
+    "region_name": "Burundi"
+  },
+  {
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
@@ -73,7 +80,7 @@
     "country_name": "Brazil",
     "income_tax": 5.6,
     "specialty": "cocain",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -140,6 +147,13 @@
     "region_name": null
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 65,
+    "region_name": "Eastern Nicaragua"
+  },
+  {
     "country_name": "Guinea",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -161,13 +175,6 @@
     "region_name": "Punjab"
   },
   {
-    "country_name": "India",
-    "income_tax": 7.5,
-    "specialty": "iron",
-    "total_bonus": 65.0,
-    "region_name": "Dhaka"
-  },
-  {
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -186,6 +193,13 @@
     "income_tax": 6.0,
     "specialty": "iron",
     "total_bonus": 20.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Botswana",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -232,7 +246,7 @@
   },
   {
     "country_name": "Luxembourg",
-    "income_tax": 2.0,
+    "income_tax": 3.0,
     "specialty": "livestock",
     "total_bonus": 70,
     "region_name": "Luxembourg"
@@ -243,13 +257,6 @@
     "specialty": "livestock",
     "total_bonus": 67,
     "region_name": "Copperbelt"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.326,
-    "specialty": "livestock",
-    "total_bonus": 64,
-    "region_name": "Sangha and Likouala"
   },
   {
     "country_name": "New Zealand",
@@ -264,6 +271,13 @@
     "specialty": "livestock",
     "total_bonus": 56,
     "region_name": "Northern Taiwan"
+  },
+  {
+    "country_name": "Japan",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 45.0,
+    "region_name": "Kanto"
   },
   {
     "country_name": "Mexico",
@@ -297,7 +311,7 @@
     "country_name": "Slovakia",
     "income_tax": 6.0,
     "specialty": "petroleum",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
