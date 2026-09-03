@@ -70,6 +70,13 @@
     "region_name": null
   },
   {
+    "country_name": "Brazil",
+    "income_tax": 5.6,
+    "specialty": "cocain",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Ethiopia",
     "income_tax": 5.0,
     "specialty": "concrete",
@@ -133,13 +140,6 @@
     "region_name": null
   },
   {
-    "country_name": "Mongolia",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 67,
-    "region_name": "Northern Mongolia"
-  },
-  {
     "country_name": "Guinea",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -189,18 +189,18 @@
     "region_name": null
   },
   {
+    "country_name": "Latvia",
+    "income_tax": 8.5,
+    "specialty": "lead",
+    "total_bonus": 50.5,
+    "region_name": null
+  },
+  {
     "country_name": "Eritrea",
     "income_tax": 5.0,
     "specialty": "lead",
     "total_bonus": 32.0,
     "region_name": "Red Sea Region"
-  },
-  {
-    "country_name": "Latvia",
-    "income_tax": 8.5,
-    "specialty": "lead",
-    "total_bonus": 20.5,
-    "region_name": null
   },
   {
     "country_name": "Bhutan",
@@ -238,13 +238,6 @@
     "region_name": null
   },
   {
-    "country_name": "Bolivia",
-    "income_tax": 1.0,
-    "specialty": "limestone",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Zambia",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -264,13 +257,6 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Luxembourg"
-  },
-  {
-    "country_name": "Gambia",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 58,
-    "region_name": "Gambia"
   },
   {
     "country_name": "Japan",
@@ -350,17 +336,17 @@
     "region_name": null
   },
   {
-    "country_name": "Serbia",
-    "income_tax": 6.0,
+    "country_name": "Kyrgyzstan",
+    "income_tax": 1.0,
     "specialty": "steel",
     "total_bonus": 15.0,
     "region_name": null
   },
   {
-    "country_name": "Kyrgyzstan",
-    "income_tax": 1.0,
+    "country_name": "Serbia",
+    "income_tax": 6.0,
     "specialty": "steel",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
