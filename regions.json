@@ -322,11 +322,11 @@
     "region_name": null
   },
   {
-    "country_name": "Slovenia",
-    "income_tax": 1.0,
+    "country_name": "Algeria",
+    "income_tax": 3.0,
     "specialty": "petroleum",
-    "total_bonus": 33.0,
-    "region_name": "Styria Carinthia"
+    "total_bonus": 30.0,
+    "region_name": null
   },
   {
     "country_name": "Spain",
@@ -369,12 +369,5 @@
     "specialty": "wood",
     "total_bonus": 45.0,
     "region_name": null
-  },
-  {
-    "country_name": "United States",
-    "income_tax": 10.0,
-    "specialty": "wood",
-    "total_bonus": 39.0,
-    "region_name": "Northern USA"
   }
 ]
