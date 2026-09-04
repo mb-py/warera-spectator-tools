@@ -154,6 +154,13 @@
     "region_name": "Eastern Nicaragua"
   },
   {
+    "country_name": "Gambia",
+    "income_tax": 1.0,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "Gambia"
+  },
+  {
     "country_name": "Guinea",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -241,7 +248,7 @@
     "country_name": "Bosnia",
     "income_tax": 5.0,
     "specialty": "limestone",
-    "total_bonus": 10.5,
+    "total_bonus": 11.0,
     "region_name": null
   },
   {
