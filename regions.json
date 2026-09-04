@@ -206,7 +206,7 @@
     "country_name": "Latvia",
     "income_tax": 8.5,
     "specialty": "lead",
-    "total_bonus": 45.5,
+    "total_bonus": 50.5,
     "region_name": null
   },
   {
@@ -227,21 +227,21 @@
     "country_name": "India",
     "income_tax": 7.5,
     "specialty": "limestone",
-    "total_bonus": 55.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Benin",
-    "income_tax": 19.0,
-    "specialty": "limestone",
-    "total_bonus": 15.0,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
     "country_name": "Bosnia",
     "income_tax": 5.0,
     "specialty": "limestone",
-    "total_bonus": 11.0,
+    "total_bonus": 50.0,
+    "region_name": "Styria Carinthia"
+  },
+  {
+    "country_name": "Benin",
+    "income_tax": 19.0,
+    "specialty": "limestone",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -319,13 +319,6 @@
     "income_tax": 6.0,
     "specialty": "petroleum",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Algeria",
-    "income_tax": 3.0,
-    "specialty": "petroleum",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
