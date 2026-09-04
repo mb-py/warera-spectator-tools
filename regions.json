@@ -87,7 +87,7 @@
     "country_name": "Ethiopia",
     "income_tax": 5.0,
     "specialty": "concrete",
-    "total_bonus": 45.0,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -129,7 +129,7 @@
     "country_name": "Madagascar",
     "income_tax": 8.0,
     "specialty": "cookedFish",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -138,13 +138,6 @@
     "specialty": "fish",
     "total_bonus": 65,
     "region_name": "Eastern Iceland"
-  },
-  {
-    "country_name": "South Sudan",
-    "income_tax": 1.0,
-    "specialty": "fish",
-    "total_bonus": 10.0,
-    "region_name": null
   },
   {
     "country_name": "Nicaragua",
@@ -360,7 +353,7 @@
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 51.0,
+    "total_bonus": 56.0,
     "region_name": null
   },
   {
