@@ -168,18 +168,11 @@
     "region_name": null
   },
   {
-    "country_name": "India",
-    "income_tax": 7.5,
-    "specialty": "iron",
-    "total_bonus": 55.5,
-    "region_name": "Punjab"
-  },
-  {
     "country_name": "Kyrgyzstan",
     "income_tax": 6.0,
     "specialty": "iron",
-    "total_bonus": 55.0,
-    "region_name": null
+    "total_bonus": 60.0,
+    "region_name": "Ashgabat"
   },
   {
     "country_name": "Egypt",
@@ -189,11 +182,11 @@
     "region_name": "Ha'il"
   },
   {
-    "country_name": "Turkmenistan",
-    "income_tax": 3.0,
+    "country_name": "Nigeria",
+    "income_tax": 8.0,
     "specialty": "iron",
     "total_bonus": 28.0,
-    "region_name": "Ashgabat"
+    "region_name": "Bioko"
   },
   {
     "country_name": "Botswana",
@@ -203,10 +196,17 @@
     "region_name": null
   },
   {
+    "country_name": "Mali",
+    "income_tax": 2.3,
+    "specialty": "iron",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Latvia",
     "income_tax": 8.5,
     "specialty": "lead",
-    "total_bonus": 50.5,
+    "total_bonus": 45.5,
     "region_name": null
   },
   {
@@ -221,6 +221,13 @@
     "income_tax": 8.0,
     "specialty": "lightAmmo",
     "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "India",
+    "income_tax": 7.5,
+    "specialty": "limestone",
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
