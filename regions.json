@@ -147,13 +147,6 @@
     "region_name": "Gambia"
   },
   {
-    "country_name": "Ecuador",
-    "income_tax": 1.0,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "Ecuadorian Amazon"
-  },
-  {
     "country_name": "Guinea",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -278,13 +271,6 @@
     "specialty": "livestock",
     "total_bonus": 64,
     "region_name": "Western Honduras"
-  },
-  {
-    "country_name": "New Zealand",
-    "income_tax": 3.9,
-    "specialty": "livestock",
-    "total_bonus": 61,
-    "region_name": "South Island"
   },
   {
     "country_name": "Philippines",
