@@ -168,6 +168,13 @@
     "region_name": null
   },
   {
+    "country_name": "DR Congo",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Nigeria",
     "income_tax": 8.0,
     "specialty": "iron",
@@ -186,13 +193,6 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Mali",
-    "income_tax": 2.3,
-    "specialty": "iron",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -245,6 +245,13 @@
     "region_name": "Styria Carinthia"
   },
   {
+    "country_name": "Benin",
+    "income_tax": 19.0,
+    "specialty": "limestone",
+    "total_bonus": 36.0,
+    "region_name": "Eastern Burkina Faso"
+  },
+  {
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
@@ -252,11 +259,11 @@
     "region_name": null
   },
   {
-    "country_name": "Benin",
-    "income_tax": 19.0,
-    "specialty": "limestone",
-    "total_bonus": 10.0,
-    "region_name": null
+    "country_name": "New Zealand",
+    "income_tax": 3.9,
+    "specialty": "livestock",
+    "total_bonus": 70,
+    "region_name": "South Island"
   },
   {
     "country_name": "Zambia",
@@ -320,13 +327,6 @@
     "specialty": "petroleum",
     "total_bonus": 31.0,
     "region_name": "Cyprus"
-  },
-  {
-    "country_name": "Algeria",
-    "income_tax": 3.0,
-    "specialty": "petroleum",
-    "total_bonus": 30.0,
-    "region_name": null
   },
   {
     "country_name": "Spain",
