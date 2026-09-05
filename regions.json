@@ -35,6 +35,13 @@
     "region_name": null
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 3.326,
+    "specialty": "coca",
+    "total_bonus": 70,
+    "region_name": "Coastal Gabon"
+  },
+  {
     "country_name": "Myanmar",
     "income_tax": 3.0,
     "specialty": "coca",
