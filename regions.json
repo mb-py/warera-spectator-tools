@@ -168,18 +168,18 @@
     "region_name": null
   },
   {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 52.0,
-    "region_name": "Ha'il"
-  },
-  {
     "country_name": "Nigeria",
     "income_tax": 8.0,
     "specialty": "iron",
     "total_bonus": 28.0,
     "region_name": "Bioko"
+  },
+  {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 15.0,
+    "region_name": null
   },
   {
     "country_name": "Botswana",
