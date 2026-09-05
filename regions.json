@@ -42,13 +42,6 @@
     "region_name": "Shan State"
   },
   {
-    "country_name": "Philippines",
-    "income_tax": 8.0,
-    "specialty": "coca",
-    "total_bonus": 65,
-    "region_name": "Visayas"
-  },
-  {
     "country_name": "Comoros",
     "income_tax": 2.0,
     "specialty": "coca",
@@ -126,18 +119,18 @@
     "region_name": "Eastern Iceland"
   },
   {
-    "country_name": "Nicaragua",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 65,
-    "region_name": "Eastern Nicaragua"
-  },
-  {
     "country_name": "Gambia",
     "income_tax": 1.0,
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "Gambia"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 3.326,
+    "specialty": "grain",
+    "total_bonus": 52,
+    "region_name": "Coastal Gabon"
   },
   {
     "country_name": "Ecuador",
@@ -196,17 +189,17 @@
     "region_name": null
   },
   {
-    "country_name": "Latvia",
-    "income_tax": 8.5,
+    "country_name": "Brazil",
+    "income_tax": 5.6,
     "specialty": "lead",
     "total_bonus": 50.5,
     "region_name": null
   },
   {
-    "country_name": "Brazil",
-    "income_tax": 5.6,
+    "country_name": "Latvia",
+    "income_tax": 8.5,
     "specialty": "lead",
-    "total_bonus": 50.0,
+    "total_bonus": 50.5,
     "region_name": null
   },
   {
@@ -337,7 +330,7 @@
   },
   {
     "country_name": "Sweden",
-    "income_tax": 8.5,
+    "income_tax": 4.5,
     "specialty": "steak",
     "total_bonus": 20.0,
     "region_name": null
@@ -360,7 +353,7 @@
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 56.0,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
