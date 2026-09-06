@@ -24,7 +24,7 @@
     "country_name": "Sudan",
     "income_tax": 5.0,
     "specialty": "bread",
-    "total_bonus": 20.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -130,6 +130,13 @@
     "income_tax": 8.0,
     "specialty": "cookedFish",
     "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Greece",
+    "income_tax": 8.0,
+    "specialty": "cookedFish",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -273,11 +280,11 @@
     "region_name": "Eastern Costa Rica"
   },
   {
-    "country_name": "Philippines",
-    "income_tax": 8.0,
+    "country_name": "Czechia",
+    "income_tax": 3.0,
     "specialty": "livestock",
-    "total_bonus": 56,
-    "region_name": "Northern Taiwan"
+    "total_bonus": 42.0,
+    "region_name": "Western Czechia"
   },
   {
     "country_name": "Mexico",
