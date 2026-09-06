@@ -119,6 +119,13 @@
     "region_name": "Eastern Iceland"
   },
   {
+    "country_name": "Philippines",
+    "income_tax": 8.0,
+    "specialty": "grain",
+    "total_bonus": 61,
+    "region_name": "Luzon"
+  },
+  {
     "country_name": "Gambia",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -133,18 +140,18 @@
     "region_name": "Coastal Gabon"
   },
   {
-    "country_name": "Ecuador",
-    "income_tax": 6.0,
-    "specialty": "grain",
-    "total_bonus": 50,
-    "region_name": "Colombian Amazon"
-  },
-  {
     "country_name": "Guinea",
     "income_tax": 1.0,
     "specialty": "grain",
     "total_bonus": 38.0,
     "region_name": "Kindia and Mamou"
+  },
+  {
+    "country_name": "Ecuador",
+    "income_tax": 6.0,
+    "specialty": "heavyAmmo",
+    "total_bonus": 35.0,
+    "region_name": null
   },
   {
     "country_name": "Kenya",
@@ -210,13 +217,6 @@
     "region_name": null
   },
   {
-    "country_name": "Malaysia",
-    "income_tax": 3.0,
-    "specialty": "lightAmmo",
-    "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
     "country_name": "Paraguay",
     "income_tax": 8.0,
     "specialty": "lightAmmo",
@@ -236,13 +236,6 @@
     "specialty": "limestone",
     "total_bonus": 49.5,
     "region_name": "Styria Carinthia"
-  },
-  {
-    "country_name": "Benin",
-    "income_tax": 19.0,
-    "specialty": "limestone",
-    "total_bonus": 36.0,
-    "region_name": "Eastern Burkina Faso"
   },
   {
     "country_name": "Ukraine",
@@ -294,6 +287,13 @@
     "region_name": null
   },
   {
+    "country_name": "Malaysia",
+    "income_tax": 3.0,
+    "specialty": "paper",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
     "country_name": "Mauritania",
     "income_tax": 3.0,
     "specialty": "paper",
@@ -304,7 +304,7 @@
     "country_name": "Burkina Faso",
     "income_tax": 7.0,
     "specialty": "paper",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -332,7 +332,7 @@
     "country_name": "Sweden",
     "income_tax": 4.5,
     "specialty": "steak",
-    "total_bonus": 20.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
