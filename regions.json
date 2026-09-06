@@ -56,6 +56,13 @@
     "region_name": "Southern Congo"
   },
   {
+    "country_name": "Comoros",
+    "income_tax": 2.0,
+    "specialty": "coca",
+    "total_bonus": 54,
+    "region_name": "Comoros"
+  },
+  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "coca",
