@@ -35,11 +35,25 @@
     "region_name": null
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 66,
+    "region_name": "Eastern Nicaragua"
+  },
+  {
     "country_name": "Myanmar",
     "income_tax": 3.0,
     "specialty": "coca",
     "total_bonus": 65,
     "region_name": "Shan State"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 3.326,
+    "specialty": "coca",
+    "total_bonus": 61,
+    "region_name": "Southern Congo"
   },
   {
     "country_name": "Comoros",
@@ -80,7 +94,7 @@
     "country_name": "Djibouti",
     "income_tax": 7.5,
     "specialty": "concrete",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -210,6 +224,13 @@
     "region_name": null
   },
   {
+    "country_name": "Eritrea",
+    "income_tax": 5.0,
+    "specialty": "lead",
+    "total_bonus": 39.0,
+    "region_name": "Red Sea Region"
+  },
+  {
     "country_name": "El Salvador",
     "income_tax": 9.0,
     "specialty": "lightAmmo",
@@ -252,13 +273,6 @@
     "region_name": "South Island"
   },
   {
-    "country_name": "Zambia",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 67,
-    "region_name": "Copperbelt"
-  },
-  {
     "country_name": "Honduras",
     "income_tax": 1.0,
     "specialty": "livestock",
@@ -271,13 +285,6 @@
     "specialty": "livestock",
     "total_bonus": 56,
     "region_name": "Northern Taiwan"
-  },
-  {
-    "country_name": "Guatemala",
-    "income_tax": 3.5,
-    "specialty": "livestock",
-    "total_bonus": 54,
-    "region_name": "Southern Guatemala"
   },
   {
     "country_name": "Mexico",
@@ -315,13 +322,6 @@
     "region_name": "Bahrain"
   },
   {
-    "country_name": "Lebanon",
-    "income_tax": 2.0,
-    "specialty": "petroleum",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Spain",
     "income_tax": 4.0,
     "specialty": "petroleum",
@@ -353,7 +353,7 @@
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 50.5,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
