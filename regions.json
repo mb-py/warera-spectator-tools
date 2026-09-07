@@ -199,7 +199,7 @@
     "country_name": "Brazil",
     "income_tax": 5.6,
     "specialty": "lead",
-    "total_bonus": 50.5,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -248,7 +248,7 @@
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
-    "total_bonus": 10.5,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -257,6 +257,13 @@
     "specialty": "livestock",
     "total_bonus": 70,
     "region_name": "South Island"
+  },
+  {
+    "country_name": "Philippines",
+    "income_tax": 8.0,
+    "specialty": "livestock",
+    "total_bonus": 66,
+    "region_name": "Eastern Taiwan"
   },
   {
     "country_name": "Honduras",
@@ -278,6 +285,13 @@
     "specialty": "livestock",
     "total_bonus": 42.0,
     "region_name": "Western Czechia"
+  },
+  {
+    "country_name": "Madagascar",
+    "income_tax": 8.0,
+    "specialty": "paper",
+    "total_bonus": 45.0,
+    "region_name": null
   },
   {
     "country_name": "Mexico",
@@ -305,13 +319,6 @@
     "income_tax": 7.0,
     "specialty": "paper",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Madagascar",
-    "income_tax": 8.0,
-    "specialty": "paper",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -346,7 +353,7 @@
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 55.5,
+    "total_bonus": 55.0,
     "region_name": null
   },
   {
