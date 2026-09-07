@@ -57,7 +57,7 @@
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 3.326,
+    "income_tax": 2.624,
     "specialty": "coca",
     "total_bonus": 61,
     "region_name": "Southern Congo"
@@ -140,6 +140,13 @@
     "region_name": "Eastern Iceland"
   },
   {
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "grain",
+    "total_bonus": 62,
+    "region_name": "Bern"
+  },
+  {
     "country_name": "Philippines",
     "income_tax": 8.0,
     "specialty": "grain",
@@ -148,7 +155,7 @@
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 3.326,
+    "income_tax": 2.624,
     "specialty": "grain",
     "total_bonus": 52,
     "region_name": "Coastal Gabon"
@@ -234,7 +241,7 @@
     "country_name": "India",
     "income_tax": 7.5,
     "specialty": "limestone",
-    "total_bonus": 60.75,
+    "total_bonus": 55.75,
     "region_name": null
   },
   {
@@ -243,6 +250,13 @@
     "specialty": "limestone",
     "total_bonus": 49.0,
     "region_name": "Styria Carinthia"
+  },
+  {
+    "country_name": "Kuwait",
+    "income_tax": 5.0,
+    "specialty": "limestone",
+    "total_bonus": 35.0,
+    "region_name": null
   },
   {
     "country_name": "Ukraine",
@@ -264,13 +278,6 @@
     "specialty": "livestock",
     "total_bonus": 66,
     "region_name": "Eastern Taiwan"
-  },
-  {
-    "country_name": "Honduras",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 64,
-    "region_name": "Western Honduras"
   },
   {
     "country_name": "Costa Rica",
