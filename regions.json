@@ -24,7 +24,7 @@
     "country_name": "Hungary",
     "income_tax": 9.0,
     "specialty": "bread",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -105,15 +105,15 @@
     "region_name": null
   },
   {
-    "country_name": "Turkiye",
-    "income_tax": 8.0,
+    "country_name": "Poland",
+    "income_tax": 10.0,
     "specialty": "concrete",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
-    "country_name": "Poland",
-    "income_tax": 10.0,
+    "country_name": "Turkiye",
+    "income_tax": 8.0,
     "specialty": "concrete",
     "total_bonus": 10.0,
     "region_name": null
