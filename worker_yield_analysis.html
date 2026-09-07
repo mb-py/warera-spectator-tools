@@ -552,14 +552,13 @@
     box.innerHTML='';
     if(!m.length){ box.innerHTML='<div class="nat-empty">No regions specialise in '+frontLabel(curRes().name)+'.</div>'; return; }
     m.forEach(function(n){
-      var spec = (n.specialty==='agrarian') ? 'agrarian' : nameOf(n.specialty);
-      var ctx  = (n.region && n.region!==n.country) ? (n.country+' · ') : '';
+      var country = (n.region && n.region!==n.country) ? n.country : '';
       var row=document.createElement('div'); row.className='natrow';
       row.innerHTML =
         '<span class="bar" style="background:'+n._color+'"></span>'+
         '<span class="nat-info">'+
           '<span class="nat-name">'+n.name+'</span>'+
-          '<small>'+ctx+n.tax+'% · '+n.bonus+'% · '+spec+'</small>'+
+          '<small><strong>+'+n.bonus.toFixed(0)+'%</strong> · '+n.tax.toFixed(1)+'% tax'+(country ? ' · '+country : '')+'</small>'+
         '</span>';
       box.appendChild(row);
     });
@@ -587,10 +586,16 @@
     function avgNB(n){ var s=0; for(var i=0;i<FIDS.length;i++){ s+=nb(n.tax,n.bonus,FIDS[i]); } return s/FIDS.length; }
     function topBy(arr,score,k){ return arr.slice().sort(function(a,b){return score(b)-score(a);}).slice(0,k); }
 
-    var top1=topBy(chosen,function(n){return nb(n.tax,n.bonus,1);},2);
-    var top10=topBy(chosen,function(n){return nb(n.tax,n.bonus,10);},2);
-    var charted=top1.slice(); top10.forEach(function(n){if(charted.indexOf(n)<0) charted.push(n);});
-    if(charted.length<3) charted=topBy(chosen,avgNB,3);
+    /* Include all regions profitable at 10% fidelity, or at minimum 3 of the best */
+    var profitable10 = chosen.filter(function(n){ return nb(n.tax,n.bonus,10) >= 0; });
+    if(profitable10.length >= 3){
+      charted = profitable10;
+    } else {
+      var top1=topBy(chosen,function(n){return nb(n.tax,n.bonus,1);},2);
+      var top10=topBy(chosen,function(n){return nb(n.tax,n.bonus,10);},2);
+      charted=top1.slice(); top10.forEach(function(n){if(charted.indexOf(n)<0) charted.push(n);});
+      if(charted.length<3) charted=topBy(chosen,avgNB,3);
+    }
 
     var datasets=[], legendHTML='', rows='';
     charted.forEach(function(n){
