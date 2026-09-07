@@ -402,7 +402,7 @@
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 50.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -432,5 +432,12 @@
     "specialty": "wood",
     "total_bonus": 32.0,
     "region_name": "Carinthia"
+  },
+  {
+    "country_name": "Armenia",
+    "income_tax": 1.0,
+    "specialty": "wood",
+    "total_bonus": 10.0,
+    "region_name": null
   }
 ]
