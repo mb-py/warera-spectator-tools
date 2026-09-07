@@ -21,6 +21,13 @@
     "region_name": null
   },
   {
+    "country_name": "Serbia",
+    "income_tax": 6.0,
+    "specialty": "bread",
+    "total_bonus": 20.0,
+    "region_name": null
+  },
+  {
     "country_name": "Hungary",
     "income_tax": 9.0,
     "specialty": "bread",
@@ -392,13 +399,6 @@
     "region_name": null
   },
   {
-    "country_name": "Serbia",
-    "income_tax": 6.0,
-    "specialty": "steel",
-    "total_bonus": 20.0,
-    "region_name": null
-  },
-  {
     "country_name": "Romania",
     "income_tax": 9.0,
     "specialty": "steel",
@@ -418,5 +418,12 @@
     "specialty": "wood",
     "total_bonus": 45.0,
     "region_name": null
+  },
+  {
+    "country_name": "Austria",
+    "income_tax": 5.0,
+    "specialty": "wood",
+    "total_bonus": 32.0,
+    "region_name": "Carinthia"
   }
 ]
