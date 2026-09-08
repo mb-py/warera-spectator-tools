@@ -119,15 +119,15 @@
     "region_name": null
   },
   {
-    "country_name": "Cameroon",
-    "income_tax": 5.0,
+    "country_name": "Jamaica",
+    "income_tax": 8.0,
     "specialty": "cookedFish",
-    "total_bonus": 20.0,
+    "total_bonus": 25.0,
     "region_name": null
   },
   {
-    "country_name": "Jamaica",
-    "income_tax": 8.0,
+    "country_name": "Cameroon",
+    "income_tax": 5.0,
     "specialty": "cookedFish",
     "total_bonus": 20.0,
     "region_name": null
@@ -189,13 +189,6 @@
     "region_name": null
   },
   {
-    "country_name": "Nigeria",
-    "income_tax": 8.0,
-    "specialty": "iron",
-    "total_bonus": 33.0,
-    "region_name": "Bioko"
-  },
-  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -219,6 +212,13 @@
   {
     "country_name": "Mali",
     "income_tax": 2.3,
+    "specialty": "iron",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Nigeria",
+    "income_tax": 8.0,
     "specialty": "iron",
     "total_bonus": 10.0,
     "region_name": null
@@ -276,7 +276,7 @@
     "country_name": "Bosnia",
     "income_tax": 5.0,
     "specialty": "limestone",
-    "total_bonus": 49.0,
+    "total_bonus": 44.0,
     "region_name": "Styria Carinthia"
   },
   {
