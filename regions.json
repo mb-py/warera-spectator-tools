@@ -192,7 +192,7 @@
     "country_name": "Equatorial Guinea",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 40.0,
+    "total_bonus": 45.0,
     "region_name": "Continental Equatorial Guinea"
   },
   {
@@ -219,13 +219,6 @@
   {
     "country_name": "Mali",
     "income_tax": 2.3,
-    "specialty": "iron",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Nigeria",
-    "income_tax": 8.0,
     "specialty": "iron",
     "total_bonus": 10.0,
     "region_name": null
@@ -278,13 +271,6 @@
     "specialty": "limestone",
     "total_bonus": 55.75,
     "region_name": null
-  },
-  {
-    "country_name": "Bosnia",
-    "income_tax": 5.0,
-    "specialty": "limestone",
-    "total_bonus": 44.0,
-    "region_name": "Styria Carinthia"
   },
   {
     "country_name": "Benin",
@@ -369,6 +355,13 @@
     "specialty": "petroleum",
     "total_bonus": 30.0,
     "region_name": null
+  },
+  {
+    "country_name": "Bahrain",
+    "income_tax": 5.0,
+    "specialty": "petroleum",
+    "total_bonus": 29.0,
+    "region_name": "Bahrain"
   },
   {
     "country_name": "Sweden",
