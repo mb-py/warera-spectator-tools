@@ -105,13 +105,6 @@
     "region_name": null
   },
   {
-    "country_name": "Poland",
-    "income_tax": 10.0,
-    "specialty": "concrete",
-    "total_bonus": 20.0,
-    "region_name": null
-  },
-  {
     "country_name": "Turkiye",
     "income_tax": 8.0,
     "specialty": "concrete",
@@ -187,6 +180,13 @@
     "specialty": "iron",
     "total_bonus": 60.0,
     "region_name": null
+  },
+  {
+    "country_name": "Equatorial Guinea",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 40.0,
+    "region_name": "Continental Equatorial Guinea"
   },
   {
     "country_name": "DR Congo",
@@ -301,13 +301,6 @@
     "region_name": "Eastern Taiwan"
   },
   {
-    "country_name": "Costa Rica",
-    "income_tax": 2.5,
-    "specialty": "livestock",
-    "total_bonus": 56,
-    "region_name": "Eastern Costa Rica"
-  },
-  {
     "country_name": "Czechia",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -357,13 +350,6 @@
     "region_name": null
   },
   {
-    "country_name": "Bahrain",
-    "income_tax": 5.0,
-    "specialty": "petroleum",
-    "total_bonus": 43.0,
-    "region_name": "Bahrain"
-  },
-  {
     "country_name": "Algeria",
     "income_tax": 3.0,
     "specialty": "petroleum",
@@ -399,17 +385,17 @@
     "region_name": null
   },
   {
+    "country_name": "Poland",
+    "income_tax": 10.0,
+    "specialty": "steel",
+    "total_bonus": 20.0,
+    "region_name": null
+  },
+  {
     "country_name": "Romania",
     "income_tax": 9.0,
     "specialty": "steel",
     "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Italy",
-    "income_tax": 9.0,
-    "specialty": "steel",
-    "total_bonus": 5.5,
     "region_name": null
   },
   {
