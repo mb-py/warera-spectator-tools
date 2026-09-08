@@ -80,7 +80,7 @@
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
-    "total_bonus": 25.5,
+    "total_bonus": 25.75,
     "region_name": null
   },
   {
@@ -178,7 +178,7 @@
     "country_name": "Ecuador",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -227,7 +227,7 @@
     "country_name": "Brazil",
     "income_tax": 5.6,
     "specialty": "lead",
-    "total_bonus": 55.5,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
@@ -246,7 +246,7 @@
   },
   {
     "country_name": "El Salvador",
-    "income_tax": 9.0,
+    "income_tax": 8.5,
     "specialty": "lightAmmo",
     "total_bonus": 55.0,
     "region_name": null
