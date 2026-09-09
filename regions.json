@@ -24,7 +24,7 @@
     "country_name": "Serbia",
     "income_tax": 6.0,
     "specialty": "bread",
-    "total_bonus": 20.0,
+    "total_bonus": 25.0,
     "region_name": null
   },
   {
@@ -63,18 +63,18 @@
     "region_name": "Southern Congo"
   },
   {
+    "country_name": "Honduras",
+    "income_tax": 1.0,
+    "specialty": "coca",
+    "total_bonus": 57,
+    "region_name": "Western Honduras"
+  },
+  {
     "country_name": "Central Africa",
     "income_tax": 2.624,
     "specialty": "coca",
     "total_bonus": 56,
     "region_name": "Southwestern Central Africa"
-  },
-  {
-    "country_name": "Comoros",
-    "income_tax": 2.0,
-    "specialty": "coca",
-    "total_bonus": 54,
-    "region_name": "Comoros"
   },
   {
     "country_name": "South Africa",
@@ -91,6 +91,13 @@
     "region_name": null
   },
   {
+    "country_name": "Yemen",
+    "income_tax": 9.4,
+    "specialty": "concrete",
+    "total_bonus": 45.0,
+    "region_name": null
+  },
+  {
     "country_name": "Chile",
     "income_tax": 9.0,
     "specialty": "concrete",
@@ -102,13 +109,6 @@
     "income_tax": 7.5,
     "specialty": "concrete",
     "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Yemen",
-    "income_tax": 9.4,
-    "specialty": "concrete",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -269,7 +269,7 @@
     "country_name": "India",
     "income_tax": 7.5,
     "specialty": "limestone",
-    "total_bonus": 55.75,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -287,18 +287,18 @@
     "region_name": "South Island"
   },
   {
-    "country_name": "Philippines",
-    "income_tax": 8.0,
-    "specialty": "livestock",
-    "total_bonus": 66,
-    "region_name": "Eastern Taiwan"
-  },
-  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "livestock",
     "total_bonus": 64,
     "region_name": "Burundi"
+  },
+  {
+    "country_name": "Myanmar",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 54,
+    "region_name": "Kachin and Sagaing"
   },
   {
     "country_name": "Czechia",
@@ -336,17 +336,17 @@
     "region_name": null
   },
   {
-    "country_name": "Mauritania",
-    "income_tax": 3.0,
-    "specialty": "paper",
-    "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
     "country_name": "Burkina Faso",
     "income_tax": 7.0,
     "specialty": "paper",
     "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Mauritania",
+    "income_tax": 3.0,
+    "specialty": "paper",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -381,6 +381,13 @@
     "country_name": "Portugal",
     "income_tax": 8.0,
     "specialty": "steel",
+    "total_bonus": 55.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Poland",
+    "income_tax": 10.0,
+    "specialty": "steel",
     "total_bonus": 55.0,
     "region_name": null
   },
@@ -389,13 +396,6 @@
     "income_tax": 8.0,
     "specialty": "steel",
     "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Poland",
-    "income_tax": 10.0,
-    "specialty": "steel",
-    "total_bonus": 20.0,
     "region_name": null
   },
   {
