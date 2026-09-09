@@ -374,7 +374,7 @@
     "country_name": "Mauritania",
     "income_tax": 3.0,
     "specialty": "paper",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -409,7 +409,7 @@
     "country_name": "Portugal",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 55.5,
+    "total_bonus": 56.0,
     "region_name": null
   },
   {
