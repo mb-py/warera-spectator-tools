@@ -87,19 +87,19 @@
     "country_name": "Yemen",
     "income_tax": 9.4,
     "specialty": "concrete",
-    "total_bonus": 55.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Ethiopia",
-    "income_tax": 9.5,
-    "specialty": "concrete",
-    "total_bonus": 45.0,
+    "total_bonus": 60.0,
     "region_name": null
   },
   {
     "country_name": "Chile",
     "income_tax": 9.0,
+    "specialty": "concrete",
+    "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Ethiopia",
+    "income_tax": 9.5,
     "specialty": "concrete",
     "total_bonus": 40.0,
     "region_name": null
@@ -115,7 +115,7 @@
     "country_name": "Turkiye",
     "income_tax": 8.0,
     "specialty": "concrete",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -147,6 +147,13 @@
     "region_name": "Northeastern Iceland"
   },
   {
+    "country_name": "New Zealand",
+    "income_tax": 3.9,
+    "specialty": "grain",
+    "total_bonus": 69,
+    "region_name": "South Island"
+  },
+  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -166,6 +173,13 @@
     "specialty": "grain",
     "total_bonus": 61,
     "region_name": "Luzon"
+  },
+  {
+    "country_name": "Nicaragua",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 57,
+    "region_name": "Eastern Nicaragua"
   },
   {
     "country_name": "Central Africa",
@@ -329,6 +343,13 @@
     "region_name": null
   },
   {
+    "country_name": "Mexico",
+    "income_tax": 3.0,
+    "specialty": "oil",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
     "country_name": "Germany",
     "income_tax": 1.0,
     "specialty": "oil",
@@ -340,13 +361,6 @@
     "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Mexico",
-    "income_tax": 3.0,
-    "specialty": "paper",
-    "total_bonus": 35.0,
     "region_name": null
   },
   {
