@@ -28,13 +28,6 @@
     "region_name": null
   },
   {
-    "country_name": "Singapore",
-    "income_tax": 7.5,
-    "specialty": "coca",
-    "total_bonus": 65,
-    "region_name": "Singapore"
-  },
-  {
     "country_name": "Costa Rica",
     "income_tax": 2.5,
     "specialty": "coca",
@@ -84,17 +77,17 @@
     "region_name": null
   },
   {
-    "country_name": "Ethiopia",
-    "income_tax": 9.5,
-    "specialty": "concrete",
-    "total_bonus": 40.0,
-    "region_name": null
-  },
-  {
     "country_name": "Turkiye",
     "income_tax": 8.0,
     "specialty": "concrete",
     "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Ethiopia",
+    "income_tax": 9.5,
+    "specialty": "concrete",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -133,6 +126,13 @@
     "region_name": "South Island"
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 2.624,
+    "specialty": "grain",
+    "total_bonus": 63,
+    "region_name": "Coastal Gabon"
+  },
+  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -159,13 +159,6 @@
     "specialty": "grain",
     "total_bonus": 53,
     "region_name": "Mindanao"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 2.624,
-    "specialty": "grain",
-    "total_bonus": 52,
-    "region_name": "Coastal Gabon"
   },
   {
     "country_name": "Ecuador",
@@ -333,13 +326,6 @@
     "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Algeria",
-    "income_tax": 3.0,
-    "specialty": "petroleum",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
