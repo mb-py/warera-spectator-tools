@@ -28,13 +28,6 @@
     "region_name": null
   },
   {
-    "country_name": "Gambia",
-    "income_tax": 2.5,
-    "specialty": "coca",
-    "total_bonus": 70,
-    "region_name": "Gambia"
-  },
-  {
     "country_name": "Singapore",
     "income_tax": 7.5,
     "specialty": "coca",
@@ -47,13 +40,6 @@
     "specialty": "coca",
     "total_bonus": 63,
     "region_name": "Eastern Costa Rica"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 2.624,
-    "specialty": "coca",
-    "total_bonus": 61,
-    "region_name": "Southern Congo"
   },
   {
     "country_name": "Honduras",
@@ -252,13 +238,6 @@
     "region_name": null
   },
   {
-    "country_name": "Eritrea",
-    "income_tax": 5.0,
-    "specialty": "lead",
-    "total_bonus": 39.0,
-    "region_name": "Red Sea Region"
-  },
-  {
     "country_name": "El Salvador",
     "income_tax": 8.5,
     "specialty": "lightAmmo",
@@ -285,13 +264,6 @@
     "specialty": "limestone",
     "total_bonus": 55.0,
     "region_name": null
-  },
-  {
-    "country_name": "Bolivia",
-    "income_tax": 1.0,
-    "specialty": "limestone",
-    "total_bonus": 37.0,
-    "region_name": "Southwestern Bolivia"
   },
   {
     "country_name": "Benin",
@@ -359,6 +331,13 @@
   {
     "country_name": "Mauritania",
     "income_tax": 3.0,
+    "specialty": "paper",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Tunisia",
+    "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 10.0,
     "region_name": null
