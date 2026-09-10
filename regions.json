@@ -10,7 +10,7 @@
     "country_name": "Venezuela",
     "income_tax": 10.0,
     "specialty": "ammo",
-    "total_bonus": 20.0,
+    "total_bonus": 20.5,
     "region_name": null
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "country_name": "Singapore",
-    "income_tax": 5.0,
+    "income_tax": 7.5,
     "specialty": "coca",
     "total_bonus": 65,
     "region_name": "Singapore"
@@ -148,7 +148,7 @@
   },
   {
     "country_name": "New Zealand",
-    "income_tax": 3.9,
+    "income_tax": 2.9,
     "specialty": "grain",
     "total_bonus": 69,
     "region_name": "South Island"
@@ -166,13 +166,6 @@
     "specialty": "grain",
     "total_bonus": 62,
     "region_name": "Muchinga"
-  },
-  {
-    "country_name": "Philippines",
-    "income_tax": 8.0,
-    "specialty": "grain",
-    "total_bonus": 61,
-    "region_name": "Luzon"
   },
   {
     "country_name": "Nicaragua",
@@ -280,13 +273,6 @@
     "region_name": null
   },
   {
-    "country_name": "Taiwan",
-    "income_tax": 1.0,
-    "specialty": "lightAmmo",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
     "country_name": "Sudan",
     "income_tax": 7.0,
     "specialty": "limestone",
@@ -297,7 +283,7 @@
     "country_name": "India",
     "income_tax": 7.5,
     "specialty": "limestone",
-    "total_bonus": 55.5,
+    "total_bonus": 55.0,
     "region_name": null
   },
   {
@@ -361,13 +347,6 @@
     "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Malaysia",
-    "income_tax": 3.0,
-    "specialty": "paper",
-    "total_bonus": 35.0,
     "region_name": null
   },
   {
