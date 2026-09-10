@@ -56,6 +56,13 @@
     "region_name": "Southwestern Central Africa"
   },
   {
+    "country_name": "Gambia",
+    "income_tax": 2.5,
+    "specialty": "coca",
+    "total_bonus": 53,
+    "region_name": "Gambia"
+  },
+  {
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
@@ -145,6 +152,13 @@
     "specialty": "grain",
     "total_bonus": 57,
     "region_name": "Eastern Nicaragua"
+  },
+  {
+    "country_name": "Philippines",
+    "income_tax": 8.0,
+    "specialty": "grain",
+    "total_bonus": 53,
+    "region_name": "Mindanao"
   },
   {
     "country_name": "Central Africa",
