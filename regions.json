@@ -91,13 +91,6 @@
     "region_name": null
   },
   {
-    "country_name": "Djibouti",
-    "income_tax": 7.5,
-    "specialty": "concrete",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
     "country_name": "Turkiye",
     "income_tax": 8.0,
     "specialty": "concrete",
@@ -180,13 +173,6 @@
     "specialty": "iron",
     "total_bonus": 60.0,
     "region_name": null
-  },
-  {
-    "country_name": "Equatorial Guinea",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 45.0,
-    "region_name": "Continental Equatorial Guinea"
   },
   {
     "country_name": "DR Congo",
@@ -379,7 +365,7 @@
   },
   {
     "country_name": "Poland",
-    "income_tax": 10.0,
+    "income_tax": 8.0,
     "specialty": "steel",
     "total_bonus": 55.0,
     "region_name": null
@@ -410,13 +396,6 @@
     "income_tax": 6.0,
     "specialty": "wood",
     "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Armenia",
-    "income_tax": 1.0,
-    "specialty": "wood",
-    "total_bonus": 10.0,
     "region_name": null
   }
 ]
