@@ -35,13 +35,6 @@
     "region_name": "Eastern Costa Rica"
   },
   {
-    "country_name": "Honduras",
-    "income_tax": 1.0,
-    "specialty": "coca",
-    "total_bonus": 57,
-    "region_name": "Western Honduras"
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 2.624,
     "specialty": "coca",
@@ -77,17 +70,17 @@
     "region_name": null
   },
   {
+    "country_name": "Ethiopia",
+    "income_tax": 9.5,
+    "specialty": "concrete",
+    "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
     "country_name": "Turkiye",
     "income_tax": 8.0,
     "specialty": "concrete",
     "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Ethiopia",
-    "income_tax": 9.5,
-    "specialty": "concrete",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -164,7 +157,7 @@
     "country_name": "Ecuador",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 35.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -252,13 +245,6 @@
     "region_name": null
   },
   {
-    "country_name": "Benin",
-    "income_tax": 19.0,
-    "specialty": "limestone",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "livestock",
@@ -271,6 +257,13 @@
     "specialty": "livestock",
     "total_bonus": 54,
     "region_name": "Kachin and Sagaing"
+  },
+  {
+    "country_name": "Luxembourg",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 51,
+    "region_name": "Luxembourg"
   },
   {
     "country_name": "Czechia",
@@ -297,7 +290,7 @@
     "country_name": "Germany",
     "income_tax": 1.0,
     "specialty": "oil",
-    "total_bonus": 5.75,
+    "total_bonus": 5.5,
     "region_name": null
   },
   {
@@ -317,13 +310,6 @@
   {
     "country_name": "Mauritania",
     "income_tax": 3.0,
-    "specialty": "paper",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Tunisia",
-    "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 10.0,
     "region_name": null
@@ -353,7 +339,7 @@
     "country_name": "Portugal",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 56.0,
+    "total_bonus": 56.25,
     "region_name": null
   },
   {
@@ -368,6 +354,13 @@
     "income_tax": 8.0,
     "specialty": "steel",
     "total_bonus": 45.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Italy",
+    "income_tax": 9.0,
+    "specialty": "steel",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
