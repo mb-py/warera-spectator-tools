@@ -28,6 +28,13 @@
     "region_name": null
   },
   {
+    "country_name": "Costa Rica",
+    "income_tax": 2.0,
+    "specialty": "coca",
+    "total_bonus": 63,
+    "region_name": "Eastern Costa Rica"
+  },
+  {
     "country_name": "Gambia",
     "income_tax": 2.5,
     "specialty": "coca",
@@ -84,13 +91,6 @@
     "region_name": null
   },
   {
-    "country_name": "Greece",
-    "income_tax": 8.0,
-    "specialty": "cookedFish",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "New Zealand",
     "income_tax": 2.9,
     "specialty": "grain",
@@ -112,11 +112,11 @@
     "region_name": "Bern"
   },
   {
-    "country_name": "Nicaragua",
-    "income_tax": 3.0,
+    "country_name": "Philippines",
+    "income_tax": 8.0,
     "specialty": "grain",
-    "total_bonus": 57,
-    "region_name": "Eastern Nicaragua"
+    "total_bonus": 55,
+    "region_name": "Visayas"
   },
   {
     "country_name": "Singapore",
