@@ -140,6 +140,13 @@
     "region_name": "Mindanao"
   },
   {
+    "country_name": "Singapore",
+    "income_tax": 7.5,
+    "specialty": "grain",
+    "total_bonus": 51,
+    "region_name": "Singapore"
+  },
+  {
     "country_name": "Ecuador",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
@@ -229,6 +236,13 @@
     "specialty": "limestone",
     "total_bonus": 55.0,
     "region_name": null
+  },
+  {
+    "country_name": "Zambia",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 69,
+    "region_name": "Lusaka"
   },
   {
     "country_name": "Burundi",
