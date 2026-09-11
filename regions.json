@@ -29,17 +29,10 @@
   },
   {
     "country_name": "Costa Rica",
-    "income_tax": 2.5,
+    "income_tax": 2.0,
     "specialty": "coca",
     "total_bonus": 63,
     "region_name": "Eastern Costa Rica"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 2.624,
-    "specialty": "coca",
-    "total_bonus": 56,
-    "region_name": "Southwestern Central Africa"
   },
   {
     "country_name": "Gambia",
@@ -57,9 +50,9 @@
   },
   {
     "country_name": "Yemen",
-    "income_tax": 9.4,
+    "income_tax": 8.5,
     "specialty": "concrete",
-    "total_bonus": 60.0,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
@@ -131,13 +124,6 @@
     "specialty": "grain",
     "total_bonus": 62,
     "region_name": "Bern"
-  },
-  {
-    "country_name": "Zambia",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 62,
-    "region_name": "Muchinga"
   },
   {
     "country_name": "Nicaragua",
