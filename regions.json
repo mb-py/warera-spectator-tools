@@ -245,6 +245,13 @@
     "region_name": null
   },
   {
+    "country_name": "Uzbekistan",
+    "income_tax": 1.0,
+    "specialty": "limestone",
+    "total_bonus": 25.0,
+    "region_name": "Tashkent"
+  },
+  {
     "country_name": "Zambia",
     "income_tax": 5.0,
     "specialty": "livestock",
