@@ -28,6 +28,13 @@
     "region_name": null
   },
   {
+    "country_name": "Zambia",
+    "income_tax": 5.0,
+    "specialty": "coca",
+    "total_bonus": 70,
+    "region_name": "Katanga"
+  },
+  {
     "country_name": "Costa Rica",
     "income_tax": 2.0,
     "specialty": "coca",
@@ -389,13 +396,6 @@
     "income_tax": 9.0,
     "specialty": "steel",
     "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Romania",
-    "income_tax": 9.0,
-    "specialty": "steel",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
