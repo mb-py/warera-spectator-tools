@@ -392,13 +392,6 @@
     "region_name": null
   },
   {
-    "country_name": "Taiwan",
-    "income_tax": 3.0,
-    "specialty": "wood",
-    "total_bonus": 44.0,
-    "region_name": "Eastern Taiwan"
-  },
-  {
     "country_name": "Austria",
     "income_tax": 5.0,
     "specialty": "wood",
