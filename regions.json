@@ -1,7 +1,7 @@
 [
   {
     "country_name": "Togo",
-    "income_tax": 1.0,
+    "income_tax": 3.0,
     "specialty": "ammo",
     "total_bonus": 35.0,
     "region_name": null
@@ -266,13 +266,6 @@
     "region_name": "Western Honduras"
   },
   {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "livestock",
-    "total_bonus": 64,
-    "region_name": "Burundi"
-  },
-  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "livestock",
@@ -299,6 +292,13 @@
     "specialty": "livestock",
     "total_bonus": 54,
     "region_name": "Kachin and Sagaing"
+  },
+  {
+    "country_name": "United Kingdom",
+    "income_tax": 5.0,
+    "specialty": "livestock",
+    "total_bonus": 10.0,
+    "region_name": null
   },
   {
     "country_name": "Mexico",
@@ -395,14 +395,14 @@
     "country_name": "Italy",
     "income_tax": 9.0,
     "specialty": "steel",
-    "total_bonus": 15.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
     "country_name": "Austria",
     "income_tax": 5.0,
     "specialty": "wood",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   }
 ]
