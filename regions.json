@@ -105,11 +105,11 @@
     "region_name": "South Island"
   },
   {
-    "country_name": "Mauritius",
-    "income_tax": 1.0,
+    "country_name": "Comoros",
+    "income_tax": 2.0,
     "specialty": "grain",
-    "total_bonus": 63,
-    "region_name": "Mauritius"
+    "total_bonus": 65,
+    "region_name": "Comoros"
   },
   {
     "country_name": "Central Africa",
@@ -117,6 +117,13 @@
     "specialty": "grain",
     "total_bonus": 63,
     "region_name": "Coastal Gabon"
+  },
+  {
+    "country_name": "Mauritius",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 63,
+    "region_name": "Mauritius"
   },
   {
     "country_name": "Philippines",
@@ -164,7 +171,7 @@
     "country_name": "Nigeria",
     "income_tax": 8.0,
     "specialty": "iron",
-    "total_bonus": 26.0,
+    "total_bonus": 21.0,
     "region_name": "Zinder and Diffa"
   },
   {
@@ -227,7 +234,7 @@
     "country_name": "India",
     "income_tax": 7.5,
     "specialty": "limestone",
-    "total_bonus": 55.0,
+    "total_bonus": 60.0,
     "region_name": null
   },
   {
@@ -259,6 +266,13 @@
     "region_name": "Burundi"
   },
   {
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 57,
+    "region_name": "Bern"
+  },
+  {
     "country_name": "Central Africa",
     "income_tax": 2.624,
     "specialty": "livestock",
@@ -278,13 +292,6 @@
     "specialty": "livestock",
     "total_bonus": 54,
     "region_name": "Kachin and Sagaing"
-  },
-  {
-    "country_name": "United Kingdom",
-    "income_tax": 5.0,
-    "specialty": "livestock",
-    "total_bonus": 10.0,
-    "region_name": null
   },
   {
     "country_name": "Mexico",
@@ -332,7 +339,7 @@
     "country_name": "Cambodia",
     "income_tax": 6.0,
     "specialty": "petroleum",
-    "total_bonus": 47.0,
+    "total_bonus": 52.0,
     "region_name": "Stung Treng"
   },
   {
