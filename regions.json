@@ -28,13 +28,6 @@
     "region_name": null
   },
   {
-    "country_name": "Zambia",
-    "income_tax": 5.0,
-    "specialty": "coca",
-    "total_bonus": 70,
-    "region_name": "Katanga"
-  },
-  {
     "country_name": "Costa Rica",
     "income_tax": 2.0,
     "specialty": "coca",
@@ -133,6 +126,13 @@
     "region_name": "Mauritius"
   },
   {
+    "country_name": "Zambia",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 63,
+    "region_name": "Katanga"
+  },
+  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "grain",
@@ -145,13 +145,6 @@
     "specialty": "grain",
     "total_bonus": 55,
     "region_name": "Visayas"
-  },
-  {
-    "country_name": "Singapore",
-    "income_tax": 7.5,
-    "specialty": "grain",
-    "total_bonus": 51,
-    "region_name": "Singapore"
   },
   {
     "country_name": "Ecuador",
@@ -204,7 +197,7 @@
   },
   {
     "country_name": "Brazil",
-    "income_tax": 5.6,
+    "income_tax": 8.0,
     "specialty": "lead",
     "total_bonus": 61.0,
     "region_name": null
@@ -365,7 +358,7 @@
   },
   {
     "country_name": "Sweden",
-    "income_tax": 8.5,
+    "income_tax": 5.0,
     "specialty": "steak",
     "total_bonus": 20.0,
     "region_name": null
