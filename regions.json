@@ -24,7 +24,7 @@
     "country_name": "Serbia",
     "income_tax": 6.0,
     "specialty": "bread",
-    "total_bonus": 25.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -311,7 +311,7 @@
     "country_name": "Germany",
     "income_tax": 1.0,
     "specialty": "oil",
-    "total_bonus": 5.5,
+    "total_bonus": 5.75,
     "region_name": null
   },
   {
