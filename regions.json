@@ -154,10 +154,17 @@
     "region_name": null
   },
   {
+    "country_name": "Palestine",
+    "income_tax": 8.0,
+    "specialty": "heavyAmmo",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Kyrgyzstan",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 60.0,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
@@ -175,13 +182,6 @@
     "region_name": "Zinder and Diffa"
   },
   {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
     "country_name": "Botswana",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -191,6 +191,13 @@
   {
     "country_name": "Mali",
     "income_tax": 2.3,
+    "specialty": "iron",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 10.0,
     "region_name": null
@@ -245,6 +252,13 @@
     "region_name": null
   },
   {
+    "country_name": "Ukraine",
+    "income_tax": 6.9,
+    "specialty": "limestone",
+    "total_bonus": 43.0,
+    "region_name": "Brest"
+  },
+  {
     "country_name": "Zambia",
     "income_tax": 5.0,
     "specialty": "livestock",
@@ -257,6 +271,13 @@
     "specialty": "livestock",
     "total_bonus": 64,
     "region_name": "Western Honduras"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 2.624,
+    "specialty": "livestock",
+    "total_bonus": 58,
+    "region_name": "Ouham"
   },
   {
     "country_name": "Switzerland",
@@ -285,13 +306,6 @@
     "specialty": "livestock",
     "total_bonus": 54,
     "region_name": "Kachin and Sagaing"
-  },
-  {
-    "country_name": "United Kingdom",
-    "income_tax": 5.0,
-    "specialty": "livestock",
-    "total_bonus": 10.0,
-    "region_name": null
   },
   {
     "country_name": "Mexico",
