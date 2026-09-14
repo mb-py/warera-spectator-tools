@@ -57,9 +57,9 @@
   },
   {
     "country_name": "Yemen",
-    "income_tax": 8.5,
+    "income_tax": 10.0,
     "specialty": "concrete",
-    "total_bonus": 60.5,
+    "total_bonus": 60.0,
     "region_name": null
   },
   {
@@ -87,8 +87,8 @@
     "country_name": "Iceland",
     "income_tax": 10.0,
     "specialty": "fish",
-    "total_bonus": 60,
-    "region_name": "Western Iceland"
+    "total_bonus": 56,
+    "region_name": "Northeastern Iceland"
   },
   {
     "country_name": "New Zealand",
@@ -106,7 +106,7 @@
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 2.624,
+    "income_tax": 2.585,
     "specialty": "grain",
     "total_bonus": 63,
     "region_name": "Coastal Gabon"
@@ -133,6 +133,13 @@
     "region_name": "Singapore"
   },
   {
+    "country_name": "Czechia",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 50.0,
+    "region_name": "Western Czechia"
+  },
+  {
     "country_name": "Ecuador",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
@@ -144,6 +151,13 @@
     "income_tax": 5.0,
     "specialty": "heavyAmmo",
     "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Kenya",
+    "income_tax": 9.0,
+    "specialty": "heavyAmmo",
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -231,6 +245,13 @@
     "region_name": "Brest"
   },
   {
+    "country_name": "Bosnia",
+    "income_tax": 5.0,
+    "specialty": "limestone",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Zambia",
     "income_tax": 5.0,
     "specialty": "livestock",
@@ -245,15 +266,8 @@
     "region_name": "Mauritius"
   },
   {
-    "country_name": "Honduras",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 64,
-    "region_name": "Western Honduras"
-  },
-  {
     "country_name": "Central Africa",
-    "income_tax": 2.624,
+    "income_tax": 2.585,
     "specialty": "livestock",
     "total_bonus": 58,
     "region_name": "Ouham"
@@ -267,7 +281,7 @@
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 2.624,
+    "income_tax": 2.585,
     "specialty": "livestock",
     "total_bonus": 55,
     "region_name": "Southern Congo"
@@ -278,6 +292,13 @@
     "specialty": "livestock",
     "total_bonus": 54,
     "region_name": "Eastern Nicaragua"
+  },
+  {
+    "country_name": "United Kingdom",
+    "income_tax": 5.0,
+    "specialty": "livestock",
+    "total_bonus": 10.0,
+    "region_name": null
   },
   {
     "country_name": "Mexico",
