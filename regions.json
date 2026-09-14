@@ -231,18 +231,18 @@
     "region_name": null
   },
   {
-    "country_name": "Sudan",
-    "income_tax": 7.0,
-    "specialty": "limestone",
-    "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
     "total_bonus": 43.0,
     "region_name": "Brest"
+  },
+  {
+    "country_name": "Sudan",
+    "income_tax": 7.0,
+    "specialty": "limestone",
+    "total_bonus": 40.0,
+    "region_name": null
   },
   {
     "country_name": "Bosnia",
@@ -294,11 +294,11 @@
     "region_name": "Eastern Nicaragua"
   },
   {
-    "country_name": "United Kingdom",
-    "income_tax": 5.0,
+    "country_name": "Honduras",
+    "income_tax": 1.0,
     "specialty": "livestock",
-    "total_bonus": 10.0,
-    "region_name": null
+    "total_bonus": 51,
+    "region_name": "Western Honduras"
   },
   {
     "country_name": "Mexico",
@@ -325,7 +325,7 @@
     "country_name": "Madagascar",
     "income_tax": 5.0,
     "specialty": "paper",
-    "total_bonus": 40.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
