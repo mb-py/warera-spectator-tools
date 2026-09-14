@@ -28,13 +28,6 @@
     "region_name": null
   },
   {
-    "country_name": "Costa Rica",
-    "income_tax": 2.0,
-    "specialty": "coca",
-    "total_bonus": 63,
-    "region_name": "Eastern Costa Rica"
-  },
-  {
     "country_name": "Singapore",
     "income_tax": 7.5,
     "specialty": "coca",
@@ -89,13 +82,6 @@
     "specialty": "fish",
     "total_bonus": 56,
     "region_name": "Northeastern Iceland"
-  },
-  {
-    "country_name": "New Zealand",
-    "income_tax": 2.9,
-    "specialty": "grain",
-    "total_bonus": 69,
-    "region_name": "South Island"
   },
   {
     "country_name": "Comoros",
