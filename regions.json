@@ -10,14 +10,7 @@
     "country_name": "Venezuela",
     "income_tax": 10.0,
     "specialty": "ammo",
-    "total_bonus": 20.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Solomon Islands",
-    "income_tax": 6.5,
-    "specialty": "ammo",
-    "total_bonus": 15.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -418,6 +411,13 @@
     "specialty": "wood",
     "total_bonus": 27.0,
     "region_name": "Armenia"
+  },
+  {
+    "country_name": "Solomon Islands",
+    "income_tax": 6.5,
+    "specialty": "wood",
+    "total_bonus": 15.0,
+    "region_name": null
   },
   {
     "country_name": "Taiwan",
