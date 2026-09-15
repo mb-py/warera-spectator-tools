@@ -35,6 +35,13 @@
     "region_name": "Singapore"
   },
   {
+    "country_name": "Suriname",
+    "income_tax": 1.0,
+    "specialty": "coca",
+    "total_bonus": 35.0,
+    "region_name": "North Suriname"
+  },
+  {
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
@@ -66,7 +73,7 @@
     "country_name": "Ethiopia",
     "income_tax": 9.5,
     "specialty": "concrete",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -84,11 +91,25 @@
     "region_name": "Northeastern Iceland"
   },
   {
+    "country_name": "South Sudan",
+    "income_tax": 1.0,
+    "specialty": "fish",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Philippines",
     "income_tax": 8.0,
     "specialty": "grain",
     "total_bonus": 69,
     "region_name": "Luzon"
+  },
+  {
+    "country_name": "Costa Rica",
+    "income_tax": 2.0,
+    "specialty": "grain",
+    "total_bonus": 65,
+    "region_name": "Eastern Costa Rica"
   },
   {
     "country_name": "Comoros",
@@ -234,7 +255,7 @@
     "country_name": "Sudan",
     "income_tax": 3.0,
     "specialty": "limestone",
-    "total_bonus": 40.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -264,13 +285,6 @@
     "specialty": "livestock",
     "total_bonus": 65,
     "region_name": "Mauritius"
-  },
-  {
-    "country_name": "Switzerland",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 57,
-    "region_name": "Bern"
   },
   {
     "country_name": "Central Africa",
@@ -308,13 +322,6 @@
     "region_name": null
   },
   {
-    "country_name": "Germany",
-    "income_tax": 1.0,
-    "specialty": "oil",
-    "total_bonus": 5.75,
-    "region_name": null
-  },
-  {
     "country_name": "Cameroon",
     "income_tax": 8.0,
     "specialty": "paper",
@@ -336,18 +343,18 @@
     "region_name": null
   },
   {
-    "country_name": "Mauritania",
-    "income_tax": 3.0,
-    "specialty": "paper",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Cambodia",
     "income_tax": 6.0,
     "specialty": "petroleum",
     "total_bonus": 52.0,
     "region_name": "Stung Treng"
+  },
+  {
+    "country_name": "Mauritania",
+    "income_tax": 3.0,
+    "specialty": "petroleum",
+    "total_bonus": 42.0,
+    "region_name": "Adrar"
   },
   {
     "country_name": "Italy",
