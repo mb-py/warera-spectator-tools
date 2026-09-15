@@ -10,7 +10,7 @@
     "country_name": "Venezuela",
     "income_tax": 10.0,
     "specialty": "ammo",
-    "total_bonus": 20.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -66,7 +66,7 @@
     "country_name": "Chile",
     "income_tax": 9.0,
     "specialty": "concrete",
-    "total_bonus": 40.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -213,7 +213,7 @@
     "country_name": "Brazil",
     "income_tax": 8.0,
     "specialty": "lead",
-    "total_bonus": 61.0,
+    "total_bonus": 61.5,
     "region_name": null
   },
   {
@@ -241,14 +241,14 @@
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
-    "total_bonus": 53.0,
+    "total_bonus": 53.5,
     "region_name": "Brest"
   },
   {
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
-    "total_bonus": 42.0,
+    "total_bonus": 42.5,
     "region_name": "Crimea"
   },
   {
