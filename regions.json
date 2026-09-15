@@ -154,17 +154,17 @@
     "region_name": null
   },
   {
+    "country_name": "Botswana",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 40.0,
+    "region_name": "Eastern Botswana"
+  },
+  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Botswana",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -224,13 +224,6 @@
     "region_name": "Brest"
   },
   {
-    "country_name": "India",
-    "income_tax": 6.0,
-    "specialty": "limestone",
-    "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
@@ -247,6 +240,13 @@
   {
     "country_name": "Bosnia",
     "income_tax": 5.0,
+    "specialty": "limestone",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "India",
+    "income_tax": 6.0,
     "specialty": "limestone",
     "total_bonus": 10.0,
     "region_name": null
