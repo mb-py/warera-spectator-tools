@@ -84,6 +84,13 @@
     "region_name": "Northeastern Iceland"
   },
   {
+    "country_name": "Philippines",
+    "income_tax": 8.0,
+    "specialty": "grain",
+    "total_bonus": 69,
+    "region_name": "Luzon"
+  },
+  {
     "country_name": "Comoros",
     "income_tax": 2.0,
     "specialty": "grain",
@@ -103,6 +110,13 @@
     "specialty": "grain",
     "total_bonus": 59,
     "region_name": "Burundi"
+  },
+  {
+    "country_name": "Gambia",
+    "income_tax": 2.5,
+    "specialty": "grain",
+    "total_bonus": 50,
+    "region_name": "Gambia"
   },
   {
     "country_name": "Czechia",
@@ -185,7 +199,7 @@
     "country_name": "Latvia",
     "income_tax": 8.5,
     "specialty": "lead",
-    "total_bonus": 50.5,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -203,32 +217,32 @@
     "region_name": null
   },
   {
-    "country_name": "India",
-    "income_tax": 6.0,
-    "specialty": "limestone",
-    "total_bonus": 50.0,
-    "region_name": null
-  },
-  {
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
-    "total_bonus": 43.0,
+    "total_bonus": 53.0,
     "region_name": "Brest"
   },
   {
-    "country_name": "Sudan",
-    "income_tax": 7.0,
+    "country_name": "India",
+    "income_tax": 6.0,
     "specialty": "limestone",
-    "total_bonus": 40.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
-    "total_bonus": 32.0,
+    "total_bonus": 42.0,
     "region_name": "Crimea"
+  },
+  {
+    "country_name": "Sudan",
+    "income_tax": 3.0,
+    "specialty": "limestone",
+    "total_bonus": 40.0,
+    "region_name": null
   },
   {
     "country_name": "Bosnia",
@@ -266,11 +280,11 @@
     "region_name": "Southern Congo"
   },
   {
-    "country_name": "Nicaragua",
+    "country_name": "Myanmar",
     "income_tax": 3.0,
     "specialty": "livestock",
-    "total_bonus": 54,
-    "region_name": "Eastern Nicaragua"
+    "total_bonus": 52,
+    "region_name": "Shan State"
   },
   {
     "country_name": "Honduras",
@@ -336,13 +350,6 @@
     "region_name": "Stung Treng"
   },
   {
-    "country_name": "Slovakia",
-    "income_tax": 3.0,
-    "specialty": "petroleum",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Italy",
     "income_tax": 3.0,
     "specialty": "steak",
@@ -371,17 +378,24 @@
     "region_name": null
   },
   {
-    "country_name": "Poland",
-    "income_tax": 8.0,
-    "specialty": "steel",
-    "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 45.0,
+    "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Poland",
+    "income_tax": 8.0,
+    "specialty": "steel",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Thailand",
+    "income_tax": 5.0,
+    "specialty": "steel",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
