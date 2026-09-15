@@ -28,6 +28,13 @@
     "region_name": null
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 56,
+    "region_name": "Eastern Nicaragua"
+  },
+  {
     "country_name": "Singapore",
     "income_tax": 7.5,
     "specialty": "coca",
@@ -105,6 +112,13 @@
     "region_name": "Luzon"
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 2.51,
+    "specialty": "grain",
+    "total_bonus": 68,
+    "region_name": "Ouham"
+  },
+  {
     "country_name": "Costa Rica",
     "income_tax": 2.0,
     "specialty": "grain",
@@ -140,13 +154,6 @@
     "region_name": "Gambia"
   },
   {
-    "country_name": "Czechia",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 50.0,
-    "region_name": "Western Czechia"
-  },
-  {
     "country_name": "Ecuador",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
@@ -175,6 +182,13 @@
     "region_name": null
   },
   {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 42.0,
+    "region_name": "Central Egypt"
+  },
+  {
     "country_name": "Botswana",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -198,13 +212,6 @@
   {
     "country_name": "Angola",
     "income_tax": 7.5,
-    "specialty": "iron",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 10.0,
     "region_name": null
@@ -252,13 +259,6 @@
     "region_name": "Crimea"
   },
   {
-    "country_name": "Sudan",
-    "income_tax": 3.0,
-    "specialty": "limestone",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Bosnia",
     "income_tax": 5.0,
     "specialty": "limestone",
@@ -280,18 +280,18 @@
     "region_name": "Lusaka"
   },
   {
+    "country_name": "Georgia",
+    "income_tax": 2.0,
+    "specialty": "livestock",
+    "total_bonus": 66,
+    "region_name": "Imereti"
+  },
+  {
     "country_name": "Mauritius",
     "income_tax": 3.0,
     "specialty": "livestock",
     "total_bonus": 65,
     "region_name": "Mauritius"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 2.51,
-    "specialty": "livestock",
-    "total_bonus": 55,
-    "region_name": "Southern Congo"
   },
   {
     "country_name": "Myanmar",
@@ -322,17 +322,24 @@
     "region_name": null
   },
   {
-    "country_name": "Cameroon",
-    "income_tax": 8.0,
-    "specialty": "paper",
-    "total_bonus": 50.0,
+    "country_name": "Pakistan",
+    "income_tax": 5.0,
+    "specialty": "oil",
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
     "country_name": "Madagascar",
     "income_tax": 5.0,
     "specialty": "paper",
-    "total_bonus": 45.0,
+    "total_bonus": 50.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Cameroon",
+    "income_tax": 8.0,
+    "specialty": "paper",
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
