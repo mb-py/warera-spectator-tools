@@ -42,13 +42,6 @@
     "region_name": "Ogoou\u00e9"
   },
   {
-    "country_name": "Suriname",
-    "income_tax": 1.0,
-    "specialty": "coca",
-    "total_bonus": 35.0,
-    "region_name": "North Suriname"
-  },
-  {
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
@@ -133,18 +126,18 @@
     "region_name": "Cuvette and Plateaux"
   },
   {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "grain",
-    "total_bonus": 59,
-    "region_name": "Burundi"
-  },
-  {
     "country_name": "Kuwait",
     "income_tax": 5.0,
     "specialty": "grain",
     "total_bonus": 54,
     "region_name": "Western Iran"
+  },
+  {
+    "country_name": "Gambia",
+    "income_tax": 2.5,
+    "specialty": "grain",
+    "total_bonus": 50,
+    "region_name": "Gambia"
   },
   {
     "country_name": "Ecuador",
@@ -215,13 +208,6 @@
     "specialty": "lead",
     "total_bonus": 50.0,
     "region_name": null
-  },
-  {
-    "country_name": "Eritrea",
-    "income_tax": 5.0,
-    "specialty": "lead",
-    "total_bonus": 25.0,
-    "region_name": "Red Sea Region"
   },
   {
     "country_name": "El Salvador",
@@ -315,13 +301,6 @@
     "region_name": "Western Honduras"
   },
   {
-    "country_name": "United Kingdom",
-    "income_tax": 5.0,
-    "specialty": "livestock",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Chile",
     "income_tax": 7.0,
     "specialty": "oil",
@@ -353,7 +332,7 @@
     "country_name": "Madagascar",
     "income_tax": 5.0,
     "specialty": "paper",
-    "total_bonus": 50.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
