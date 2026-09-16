@@ -21,6 +21,13 @@
     "region_name": null
   },
   {
+    "country_name": "Singapore",
+    "income_tax": 7.5,
+    "specialty": "coca",
+    "total_bonus": 60,
+    "region_name": "Singapore"
+  },
+  {
     "country_name": "Nicaragua",
     "income_tax": 3.0,
     "specialty": "coca",
@@ -231,6 +238,13 @@
     "region_name": null
   },
   {
+    "country_name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+    "income_tax": 8.0,
+    "specialty": "lightAmmo",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Brazil",
     "income_tax": 8.0,
     "specialty": "limestone",
@@ -243,6 +257,13 @@
     "specialty": "limestone",
     "total_bonus": 58.5,
     "region_name": "Brest"
+  },
+  {
+    "country_name": "Ukraine",
+    "income_tax": 6.9,
+    "specialty": "limestone",
+    "total_bonus": 49.5,
+    "region_name": "Western Slovakia"
   },
   {
     "country_name": "India",
@@ -339,7 +360,7 @@
     "country_name": "Cameroon",
     "income_tax": 45.0,
     "specialty": "paper",
-    "total_bonus": 40.5,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -350,18 +371,18 @@
     "region_name": null
   },
   {
-    "country_name": "Cambodia",
-    "income_tax": 6.0,
-    "specialty": "petroleum",
-    "total_bonus": 52.0,
-    "region_name": "Stung Treng"
-  },
-  {
     "country_name": "Mauritania",
     "income_tax": 3.0,
     "specialty": "petroleum",
     "total_bonus": 42.0,
     "region_name": "Adrar"
+  },
+  {
+    "country_name": "Cambodia",
+    "income_tax": 6.0,
+    "specialty": "petroleum",
+    "total_bonus": 20.0,
+    "region_name": null
   },
   {
     "country_name": "Italy",
@@ -399,13 +420,6 @@
     "region_name": null
   },
   {
-    "country_name": "Iraq",
-    "income_tax": 8.0,
-    "specialty": "steel",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
     "country_name": "Thailand",
     "income_tax": 5.0,
     "specialty": "steel",
@@ -418,13 +432,6 @@
     "specialty": "wood",
     "total_bonus": 27.0,
     "region_name": "Armenia"
-  },
-  {
-    "country_name": "Solomon Islands",
-    "income_tax": 6.5,
-    "specialty": "wood",
-    "total_bonus": 15.0,
-    "region_name": null
   },
   {
     "country_name": "Taiwan",
