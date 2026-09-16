@@ -35,6 +35,13 @@
     "region_name": "Singapore"
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 4.445,
+    "specialty": "coca",
+    "total_bonus": 55,
+    "region_name": "Ogoou\u00e9"
+  },
+  {
     "country_name": "Suriname",
     "income_tax": 1.0,
     "specialty": "coca",
@@ -119,6 +126,13 @@
     "region_name": "Comoros"
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 4.445,
+    "specialty": "grain",
+    "total_bonus": 61,
+    "region_name": "Cuvette and Plateaux"
+  },
+  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "grain",
@@ -131,13 +145,6 @@
     "specialty": "grain",
     "total_bonus": 54,
     "region_name": "Western Iran"
-  },
-  {
-    "country_name": "Gambia",
-    "income_tax": 2.5,
-    "specialty": "grain",
-    "total_bonus": 50,
-    "region_name": "Gambia"
   },
   {
     "country_name": "Ecuador",
@@ -171,7 +178,7 @@
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 42.0,
+    "total_bonus": 47.0,
     "region_name": "Central Egypt"
   },
   {
@@ -353,7 +360,7 @@
     "country_name": "Burkina Faso",
     "income_tax": 7.0,
     "specialty": "paper",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -395,7 +402,7 @@
     "country_name": "Portugal",
     "income_tax": 10.0,
     "specialty": "steel",
-    "total_bonus": 60.75,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
