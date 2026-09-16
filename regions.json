@@ -28,13 +28,6 @@
     "region_name": "Eastern Nicaragua"
   },
   {
-    "country_name": "Singapore",
-    "income_tax": 7.5,
-    "specialty": "coca",
-    "total_bonus": 56,
-    "region_name": "Singapore"
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 4.445,
     "specialty": "coca",
@@ -271,13 +264,6 @@
     "specialty": "limestone",
     "total_bonus": 10.0,
     "region_name": null
-  },
-  {
-    "country_name": "Zambia",
-    "income_tax": 5.0,
-    "specialty": "livestock",
-    "total_bonus": 69,
-    "region_name": "Lusaka"
   },
   {
     "country_name": "Georgia",
