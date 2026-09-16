@@ -218,7 +218,7 @@
   },
   {
     "country_name": "El Salvador",
-    "income_tax": 8.5,
+    "income_tax": 10.0,
     "specialty": "lightAmmo",
     "total_bonus": 55.0,
     "region_name": null
@@ -245,6 +245,13 @@
     "region_name": "Brest"
   },
   {
+    "country_name": "India",
+    "income_tax": 6.0,
+    "specialty": "limestone",
+    "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
     "country_name": "Sudan",
     "income_tax": 3.0,
     "specialty": "limestone",
@@ -254,13 +261,6 @@
   {
     "country_name": "Bosnia",
     "income_tax": 5.0,
-    "specialty": "limestone",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "India",
-    "income_tax": 6.0,
     "specialty": "limestone",
     "total_bonus": 10.0,
     "region_name": null
@@ -302,7 +302,7 @@
   },
   {
     "country_name": "Chile",
-    "income_tax": 9.0,
+    "income_tax": 7.0,
     "specialty": "oil",
     "total_bonus": 45.0,
     "region_name": null
@@ -339,7 +339,7 @@
     "country_name": "Cameroon",
     "income_tax": 45.0,
     "specialty": "paper",
-    "total_bonus": 45.5,
+    "total_bonus": 40.5,
     "region_name": null
   },
   {
