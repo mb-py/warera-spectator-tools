@@ -126,18 +126,18 @@
     "region_name": "Burundi"
   },
   {
+    "country_name": "Kuwait",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 54,
+    "region_name": "Western Iran"
+  },
+  {
     "country_name": "Gambia",
     "income_tax": 2.5,
     "specialty": "grain",
     "total_bonus": 50,
     "region_name": "Gambia"
-  },
-  {
-    "country_name": "Czechia",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 50.0,
-    "region_name": "Western Czechia"
   },
   {
     "country_name": "Ecuador",
@@ -245,13 +245,6 @@
     "region_name": "Brest"
   },
   {
-    "country_name": "Ukraine",
-    "income_tax": 6.9,
-    "specialty": "limestone",
-    "total_bonus": 47.5,
-    "region_name": "Crimea"
-  },
-  {
     "country_name": "Sudan",
     "income_tax": 3.0,
     "specialty": "limestone",
@@ -336,10 +329,10 @@
     "region_name": null
   },
   {
-    "country_name": "Cameroon",
-    "income_tax": 8.0,
-    "specialty": "paper",
-    "total_bonus": 50.5,
+    "country_name": "Brunei",
+    "income_tax": 1.2,
+    "specialty": "oil",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -347,6 +340,13 @@
     "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 50.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Cameroon",
+    "income_tax": 8.0,
+    "specialty": "paper",
+    "total_bonus": 45.5,
     "region_name": null
   },
   {
@@ -409,7 +409,7 @@
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
