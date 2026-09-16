@@ -29,7 +29,7 @@
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 4.445,
+    "income_tax": 3.76,
     "specialty": "coca",
     "total_bonus": 55,
     "region_name": "Ogoou\u00e9"
@@ -99,7 +99,7 @@
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 4.445,
+    "income_tax": 3.76,
     "specialty": "grain",
     "total_bonus": 68,
     "region_name": "Ouham"
@@ -120,7 +120,7 @@
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 4.445,
+    "income_tax": 3.76,
     "specialty": "grain",
     "total_bonus": 61,
     "region_name": "Cuvette and Plateaux"
@@ -337,7 +337,7 @@
   },
   {
     "country_name": "Cameroon",
-    "income_tax": 8.0,
+    "income_tax": 45.0,
     "specialty": "paper",
     "total_bonus": 45.5,
     "region_name": null
