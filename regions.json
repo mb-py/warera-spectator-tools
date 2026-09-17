@@ -21,6 +21,13 @@
     "region_name": null
   },
   {
+    "country_name": "Myanmar",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 66,
+    "region_name": "Rakhine and Chin"
+  },
+  {
     "country_name": "Singapore",
     "income_tax": 7.5,
     "specialty": "coca",
@@ -143,7 +150,7 @@
     "country_name": "Ecuador",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 40.5,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -336,15 +343,15 @@
     "region_name": null
   },
   {
-    "country_name": "Cameroon",
-    "income_tax": 45.0,
+    "country_name": "Burkina Faso",
+    "income_tax": 7.0,
     "specialty": "paper",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Burkina Faso",
-    "income_tax": 7.0,
+    "country_name": "Cameroon",
+    "income_tax": 45.0,
     "specialty": "paper",
     "total_bonus": 35.0,
     "region_name": null
