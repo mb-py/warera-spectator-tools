@@ -59,7 +59,7 @@
     "country_name": "Yemen",
     "income_tax": 10.0,
     "specialty": "concrete",
-    "total_bonus": 60.0,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
@@ -91,13 +91,6 @@
     "region_name": null
   },
   {
-    "country_name": "Philippines",
-    "income_tax": 8.0,
-    "specialty": "grain",
-    "total_bonus": 69,
-    "region_name": "Luzon"
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 3.76,
     "specialty": "grain",
@@ -126,18 +119,25 @@
     "region_name": "Cuvette and Plateaux"
   },
   {
-    "country_name": "Kuwait",
-    "income_tax": 5.0,
-    "specialty": "grain",
-    "total_bonus": 54,
-    "region_name": "Western Iran"
-  },
-  {
     "country_name": "Gambia",
     "income_tax": 2.5,
     "specialty": "grain",
     "total_bonus": 50,
     "region_name": "Gambia"
+  },
+  {
+    "country_name": "Czechia",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 33.0,
+    "region_name": "Northeastern Czechia"
+  },
+  {
+    "country_name": "Mozambique",
+    "income_tax": 10.0,
+    "specialty": "grain",
+    "total_bonus": 23.0,
+    "region_name": "Maputo"
   },
   {
     "country_name": "Ecuador",
@@ -217,17 +217,17 @@
     "region_name": null
   },
   {
+    "country_name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+    "income_tax": 8.0,
+    "specialty": "lightAmmo",
+    "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
     "country_name": "Paraguay",
     "income_tax": 8.0,
     "specialty": "lightAmmo",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
-    "income_tax": 8.0,
-    "specialty": "lightAmmo",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -287,11 +287,11 @@
     "region_name": "South Island"
   },
   {
-    "country_name": "Myanmar",
-    "income_tax": 3.0,
+    "country_name": "Burundi",
+    "income_tax": 7.0,
     "specialty": "livestock",
     "total_bonus": 52,
-    "region_name": "Shan State"
+    "region_name": "Burundi"
   },
   {
     "country_name": "Honduras",
@@ -308,17 +308,17 @@
     "region_name": null
   },
   {
-    "country_name": "Mexico",
-    "income_tax": 3.0,
+    "country_name": "Ghana",
+    "income_tax": 1.0,
     "specialty": "oil",
     "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Pakistan",
-    "income_tax": 5.0,
+    "country_name": "Mexico",
+    "income_tax": 3.0,
     "specialty": "oil",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -351,7 +351,7 @@
   },
   {
     "country_name": "Mauritania",
-    "income_tax": 3.0,
+    "income_tax": 6.0,
     "specialty": "petroleum",
     "total_bonus": 42.0,
     "region_name": "Adrar"
