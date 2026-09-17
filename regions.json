@@ -112,13 +112,6 @@
     "region_name": "Eastern Costa Rica"
   },
   {
-    "country_name": "Comoros",
-    "income_tax": 2.0,
-    "specialty": "grain",
-    "total_bonus": 65,
-    "region_name": "Comoros"
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 3.76,
     "specialty": "grain",
@@ -238,6 +231,13 @@
     "region_name": null
   },
   {
+    "country_name": "Libya",
+    "income_tax": 5.0,
+    "specialty": "lightAmmo",
+    "total_bonus": 5.5,
+    "region_name": null
+  },
+  {
     "country_name": "Brazil",
     "income_tax": 8.0,
     "specialty": "limestone",
@@ -330,7 +330,7 @@
   },
   {
     "country_name": "Brunei",
-    "income_tax": 1.2,
+    "income_tax": 1.0,
     "specialty": "oil",
     "total_bonus": 10.0,
     "region_name": null
@@ -343,15 +343,15 @@
     "region_name": null
   },
   {
-    "country_name": "Burkina Faso",
-    "income_tax": 7.0,
+    "country_name": "Cameroon",
+    "income_tax": 1.0,
     "specialty": "paper",
     "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Cameroon",
-    "income_tax": 45.0,
+    "country_name": "Burkina Faso",
+    "income_tax": 7.0,
     "specialty": "paper",
     "total_bonus": 35.0,
     "region_name": null
