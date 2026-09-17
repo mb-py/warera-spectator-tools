@@ -1,5 +1,12 @@
 [
   {
+    "country_name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+    "income_tax": 8.0,
+    "specialty": "ammo",
+    "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
     "country_name": "Togo",
     "income_tax": 3.0,
     "specialty": "ammo",
@@ -217,13 +224,6 @@
     "region_name": null
   },
   {
-    "country_name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
-    "income_tax": 8.0,
-    "specialty": "lightAmmo",
-    "total_bonus": 40.0,
-    "region_name": null
-  },
-  {
     "country_name": "Paraguay",
     "income_tax": 8.0,
     "specialty": "lightAmmo",
@@ -259,15 +259,15 @@
     "region_name": "Western Slovakia"
   },
   {
-    "country_name": "India",
-    "income_tax": 6.0,
+    "country_name": "Sudan",
+    "income_tax": 3.0,
     "specialty": "limestone",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Sudan",
-    "income_tax": 3.0,
+    "country_name": "India",
+    "income_tax": 6.0,
     "specialty": "limestone",
     "total_bonus": 35.0,
     "region_name": null
@@ -280,11 +280,11 @@
     "region_name": null
   },
   {
-    "country_name": "Georgia",
-    "income_tax": 2.0,
+    "country_name": "Mauritius",
+    "income_tax": 3.0,
     "specialty": "livestock",
-    "total_bonus": 66,
-    "region_name": "Imereti"
+    "total_bonus": 69,
+    "region_name": "Mauritius"
   },
   {
     "country_name": "New Zealand",
@@ -409,7 +409,7 @@
     "country_name": "Thailand",
     "income_tax": 5.0,
     "specialty": "steel",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
