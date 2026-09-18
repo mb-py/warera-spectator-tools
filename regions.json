@@ -49,6 +49,13 @@
     "region_name": "Eastern Nicaragua"
   },
   {
+    "country_name": "Comoros",
+    "income_tax": 2.0,
+    "specialty": "coca",
+    "total_bonus": 55,
+    "region_name": "Comoros"
+  },
+  {
     "country_name": "Central Africa",
     "income_tax": 3.76,
     "specialty": "coca",
@@ -245,24 +252,17 @@
     "region_name": null
   },
   {
-    "country_name": "Ukraine",
-    "income_tax": 6.9,
-    "specialty": "limestone",
-    "total_bonus": 59.5,
-    "region_name": "Brest"
-  },
-  {
-    "country_name": "Ukraine",
-    "income_tax": 6.9,
-    "specialty": "limestone",
-    "total_bonus": 50.5,
-    "region_name": "Western Slovakia"
-  },
-  {
     "country_name": "Sudan",
     "income_tax": 3.0,
     "specialty": "limestone",
     "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Ukraine",
+    "income_tax": 6.9,
+    "specialty": "limestone",
+    "total_bonus": 21.5,
     "region_name": null
   },
   {
@@ -403,6 +403,13 @@
     "income_tax": 8.0,
     "specialty": "steel",
     "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Solomon Islands",
+    "income_tax": 6.5,
+    "specialty": "wood",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
