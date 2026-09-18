@@ -91,13 +91,6 @@
     "region_name": "Northeastern Iceland"
   },
   {
-    "country_name": "South Sudan",
-    "income_tax": 1.0,
-    "specialty": "fish",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 3.76,
     "specialty": "grain",
@@ -110,13 +103,6 @@
     "specialty": "grain",
     "total_bonus": 65,
     "region_name": "Eastern Costa Rica"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.76,
-    "specialty": "grain",
-    "total_bonus": 61,
-    "region_name": "Cuvette and Plateaux"
   },
   {
     "country_name": "Georgia",
@@ -145,6 +131,13 @@
     "specialty": "grain",
     "total_bonus": 33.0,
     "region_name": "Northeastern Czechia"
+  },
+  {
+    "country_name": "Mozambique",
+    "income_tax": 10.0,
+    "specialty": "grain",
+    "total_bonus": 23.0,
+    "region_name": "Maputo"
   },
   {
     "country_name": "Ecuador",
@@ -207,6 +200,13 @@
     "income_tax": 2.3,
     "specialty": "iron",
     "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Indonesia",
+    "income_tax": 9.0,
+    "specialty": "iron",
+    "total_bonus": 5.5,
     "region_name": null
   },
   {
@@ -382,13 +382,6 @@
     "income_tax": 3.5,
     "specialty": "steak",
     "total_bonus": 20.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Australia",
-    "income_tax": 6.0,
-    "specialty": "steak",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
