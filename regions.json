@@ -98,13 +98,6 @@
     "region_name": "Northeastern Iceland"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 3.76,
-    "specialty": "grain",
-    "total_bonus": 68,
-    "region_name": "Ouham"
-  },
-  {
     "country_name": "Costa Rica",
     "income_tax": 2.0,
     "specialty": "grain",
@@ -175,13 +168,6 @@
     "region_name": null
   },
   {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 47.0,
-    "region_name": "Central Egypt"
-  },
-  {
     "country_name": "Angola",
     "income_tax": 7.5,
     "specialty": "iron",
@@ -200,6 +186,13 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -357,13 +350,6 @@
     "region_name": "Continental Equatorial Guinea"
   },
   {
-    "country_name": "Mauritania",
-    "income_tax": 6.0,
-    "specialty": "petroleum",
-    "total_bonus": 42.0,
-    "region_name": "Adrar"
-  },
-  {
     "country_name": "Cambodia",
     "income_tax": 6.0,
     "specialty": "petroleum",
@@ -373,6 +359,13 @@
   {
     "country_name": "Iran",
     "income_tax": 2.0,
+    "specialty": "petroleum",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Mauritania",
+    "income_tax": 6.0,
     "specialty": "petroleum",
     "total_bonus": 10.0,
     "region_name": null
@@ -409,15 +402,8 @@
     "country_name": "Thailand",
     "income_tax": 5.0,
     "specialty": "steel",
-    "total_bonus": 20.0,
+    "total_bonus": 30.0,
     "region_name": null
-  },
-  {
-    "country_name": "Armenia",
-    "income_tax": 1.0,
-    "specialty": "wood",
-    "total_bonus": 27.0,
-    "region_name": "Armenia"
   },
   {
     "country_name": "Taiwan",
