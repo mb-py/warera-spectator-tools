@@ -7,13 +7,6 @@
     "region_name": null
   },
   {
-    "country_name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
-    "income_tax": 8.0,
-    "specialty": "ammo",
-    "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
     "country_name": "Venezuela",
     "income_tax": 10.0,
     "specialty": "ammo",
@@ -175,13 +168,6 @@
     "region_name": "Cabinda"
   },
   {
-    "country_name": "Botswana",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 40.0,
-    "region_name": "Eastern Botswana"
-  },
-  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -190,6 +176,13 @@
   },
   {
     "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Botswana",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 15.0,
@@ -273,13 +266,6 @@
     "region_name": "Burundi"
   },
   {
-    "country_name": "Honduras",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 51,
-    "region_name": "Western Honduras"
-  },
-  {
     "country_name": "Chile",
     "income_tax": 7.0,
     "specialty": "oil",
@@ -329,18 +315,18 @@
     "region_name": "Caspian Sea Coast"
   },
   {
+    "country_name": "Equatorial Guinea",
+    "income_tax": 6.0,
+    "specialty": "petroleum",
+    "total_bonus": 48.0,
+    "region_name": "Continental Equatorial Guinea"
+  },
+  {
     "country_name": "Syria",
     "income_tax": 3.0,
     "specialty": "petroleum",
     "total_bonus": 45.0,
     "region_name": "Homs & Hama"
-  },
-  {
-    "country_name": "Equatorial Guinea",
-    "income_tax": 6.0,
-    "specialty": "petroleum",
-    "total_bonus": 43.0,
-    "region_name": "Continental Equatorial Guinea"
   },
   {
     "country_name": "Spain",
