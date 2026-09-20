@@ -14,13 +14,6 @@
     "region_name": null
   },
   {
-    "country_name": "Serbia",
-    "income_tax": 6.0,
-    "specialty": "bread",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Honduras",
     "income_tax": 1.0,
     "specialty": "coca",
@@ -110,13 +103,6 @@
     "specialty": "grain",
     "total_bonus": 66,
     "region_name": "North Island"
-  },
-  {
-    "country_name": "Costa Rica",
-    "income_tax": 2.0,
-    "specialty": "grain",
-    "total_bonus": 65,
-    "region_name": "Eastern Costa Rica"
   },
   {
     "country_name": "Central Africa",
@@ -259,11 +245,25 @@
     "region_name": "Mauritius"
   },
   {
+    "country_name": "Georgia",
+    "income_tax": 2.0,
+    "specialty": "livestock",
+    "total_bonus": 68,
+    "region_name": "Tbilisi"
+  },
+  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "livestock",
     "total_bonus": 66,
     "region_name": "Burundi"
+  },
+  {
+    "country_name": "Myanmar",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 53,
+    "region_name": "Rakhine and Chin"
   },
   {
     "country_name": "Chile",
