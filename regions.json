@@ -21,6 +21,13 @@
     "region_name": "Singapore"
   },
   {
+    "country_name": "Gambia",
+    "income_tax": 2.5,
+    "specialty": "coca",
+    "total_bonus": 65,
+    "region_name": "Gambia"
+  },
+  {
     "country_name": "Honduras",
     "income_tax": 1.0,
     "specialty": "coca",
