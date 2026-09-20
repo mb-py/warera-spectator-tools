@@ -21,13 +21,6 @@
     "region_name": null
   },
   {
-    "country_name": "Myanmar",
-    "income_tax": 3.0,
-    "specialty": "coca",
-    "total_bonus": 66,
-    "region_name": "Rakhine and Chin"
-  },
-  {
     "country_name": "Honduras",
     "income_tax": 1.0,
     "specialty": "coca",
@@ -63,13 +56,6 @@
     "region_name": "Comoros"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 3.76,
-    "specialty": "coca",
-    "total_bonus": 55,
-    "region_name": "Ogoou\u00e9"
-  },
-  {
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
@@ -87,7 +73,7 @@
     "country_name": "Yemen",
     "income_tax": 10.0,
     "specialty": "concrete",
-    "total_bonus": 61.5,
+    "total_bonus": 61.75,
     "region_name": null
   },
   {
@@ -112,6 +98,13 @@
     "region_name": null
   },
   {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 59,
+    "region_name": "Eastern Iceland"
+  },
+  {
     "country_name": "New Zealand",
     "income_tax": 2.9,
     "specialty": "grain",
@@ -126,17 +119,24 @@
     "region_name": "Eastern Costa Rica"
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 3.76,
+    "specialty": "grain",
+    "total_bonus": 54,
+    "region_name": "Coastal Gabon"
+  },
+  {
     "country_name": "Czechia",
     "income_tax": 3.0,
     "specialty": "grain",
-    "total_bonus": 38.0,
-    "region_name": "Northeastern Czechia"
+    "total_bonus": 43.0,
+    "region_name": "Western Czechia"
   },
   {
     "country_name": "Ecuador",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 40.0,
+    "total_bonus": 40.5,
     "region_name": null
   },
   {
@@ -339,7 +339,7 @@
     "country_name": "Iran",
     "income_tax": 5.0,
     "specialty": "petroleum",
-    "total_bonus": 15.0,
+    "total_bonus": 15.5,
     "region_name": null
   },
   {
