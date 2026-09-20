@@ -28,20 +28,6 @@
     "region_name": "Western Honduras"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 3.76,
-    "specialty": "coca",
-    "total_bonus": 61,
-    "region_name": "Ouham"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 3.76,
-    "specialty": "coca",
-    "total_bonus": 59,
-    "region_name": "Cuvette and Plateaux"
-  },
-  {
     "country_name": "Comoros",
     "income_tax": 2.0,
     "specialty": "coca",
@@ -98,11 +84,11 @@
     "region_name": "Eastern Iceland"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 3.76,
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
     "specialty": "grain",
-    "total_bonus": 54,
-    "region_name": "Coastal Gabon"
+    "total_bonus": 53,
+    "region_name": "Bern"
   },
   {
     "country_name": "Czechia",
@@ -133,6 +119,13 @@
     "region_name": null
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 6.99,
+    "specialty": "iron",
+    "total_bonus": 63.5,
+    "region_name": "Mayo-K\u00e9bbi and Logone"
+  },
+  {
     "country_name": "Kyrgyzstan",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -140,18 +133,18 @@
     "region_name": null
   },
   {
+    "country_name": "Mali",
+    "income_tax": 2.3,
+    "specialty": "iron",
+    "total_bonus": 46.0,
+    "region_name": "Kayes"
+  },
+  {
     "country_name": "Angola",
     "income_tax": 7.5,
     "specialty": "iron",
     "total_bonus": 45.0,
     "region_name": "Cabinda"
-  },
-  {
-    "country_name": "Indonesia",
-    "income_tax": 9.0,
-    "specialty": "iron",
-    "total_bonus": 35.5,
-    "region_name": null
   },
   {
     "country_name": "DR Congo",
@@ -172,13 +165,6 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Mali",
-    "income_tax": 2.3,
-    "specialty": "iron",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -341,6 +327,13 @@
     "specialty": "petroleum",
     "total_bonus": 45.0,
     "region_name": "Homs & Hama"
+  },
+  {
+    "country_name": "Bahrain",
+    "income_tax": 4.0,
+    "specialty": "petroleum",
+    "total_bonus": 32.0,
+    "region_name": "Bahrain"
   },
   {
     "country_name": "Cambodia",
