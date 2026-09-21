@@ -45,7 +45,7 @@
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
-    "total_bonus": 26.25,
+    "total_bonus": 26.0,
     "region_name": null
   },
   {
@@ -82,13 +82,6 @@
     "specialty": "cookedFish",
     "total_bonus": 10.0,
     "region_name": null
-  },
-  {
-    "country_name": "Iceland",
-    "income_tax": 10.0,
-    "specialty": "fish",
-    "total_bonus": 59,
-    "region_name": "Eastern Iceland"
   },
   {
     "country_name": "Switzerland",
@@ -304,7 +297,7 @@
     "country_name": "Madagascar",
     "income_tax": 5.0,
     "specialty": "paper",
-    "total_bonus": 40.0,
+    "total_bonus": 40.5,
     "region_name": null
   },
   {
