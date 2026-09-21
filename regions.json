@@ -91,6 +91,13 @@
     "region_name": "Southern Iceland"
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 57,
+    "region_name": "Eastern Nicaragua"
+  },
+  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
