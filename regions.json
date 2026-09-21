@@ -84,6 +84,13 @@
     "region_name": null
   },
   {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 54,
+    "region_name": "Southern Iceland"
+  },
+  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -239,10 +246,17 @@
   },
   {
     "country_name": "Bangladesh",
-    "income_tax": 10.0,
+    "income_tax": 4.0,
     "specialty": "livestock",
     "total_bonus": 65,
     "region_name": "Northern Bangladesh"
+  },
+  {
+    "country_name": "Burundi",
+    "income_tax": 7.0,
+    "specialty": "livestock",
+    "total_bonus": 56,
+    "region_name": "Burundi"
   },
   {
     "country_name": "Myanmar",
@@ -382,6 +396,13 @@
     "income_tax": 8.0,
     "specialty": "steel",
     "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Iraq",
+    "income_tax": 8.0,
+    "specialty": "steel",
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
