@@ -171,7 +171,7 @@
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 15.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -332,7 +332,7 @@
     "country_name": "Iran",
     "income_tax": 5.0,
     "specialty": "petroleum",
-    "total_bonus": 47.5,
+    "total_bonus": 47.0,
     "region_name": "Central Iran"
   },
   {
