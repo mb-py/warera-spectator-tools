@@ -45,7 +45,7 @@
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
-    "total_bonus": 26.0,
+    "total_bonus": 25.5,
     "region_name": null
   },
   {
@@ -273,13 +273,6 @@
     "region_name": "Rakhine and Chin"
   },
   {
-    "country_name": "New Zealand",
-    "income_tax": 2.9,
-    "specialty": "livestock",
-    "total_bonus": 51,
-    "region_name": "South Island"
-  },
-  {
     "country_name": "Chile",
     "income_tax": 7.0,
     "specialty": "oil",
@@ -329,13 +322,6 @@
     "region_name": null
   },
   {
-    "country_name": "Equatorial Guinea",
-    "income_tax": 6.0,
-    "specialty": "petroleum",
-    "total_bonus": 53.0,
-    "region_name": "Continental Equatorial Guinea"
-  },
-  {
     "country_name": "Sweden",
     "income_tax": 8.0,
     "specialty": "petroleum",
@@ -350,18 +336,18 @@
     "region_name": "Central Iran"
   },
   {
-    "country_name": "Syria",
-    "income_tax": 3.0,
-    "specialty": "petroleum",
-    "total_bonus": 45.0,
-    "region_name": "Homs & Hama"
-  },
-  {
     "country_name": "Bahrain",
     "income_tax": 4.0,
     "specialty": "petroleum",
     "total_bonus": 32.0,
     "region_name": "Bahrain"
+  },
+  {
+    "country_name": "Equatorial Guinea",
+    "income_tax": 6.0,
+    "specialty": "petroleum",
+    "total_bonus": 15.0,
+    "region_name": null
   },
   {
     "country_name": "Cambodia",
