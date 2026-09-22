@@ -35,13 +35,6 @@
     "region_name": "Eastern Costa Rica"
   },
   {
-    "country_name": "Comoros",
-    "income_tax": 2.0,
-    "specialty": "coca",
-    "total_bonus": 55,
-    "region_name": "Comoros"
-  },
-  {
     "country_name": "Zambia",
     "income_tax": 5.0,
     "specialty": "coca",
@@ -245,6 +238,13 @@
     "region_name": null
   },
   {
+    "country_name": "Ukraine",
+    "income_tax": 6.9,
+    "specialty": "limestone",
+    "total_bonus": 56.5,
+    "region_name": "Samogitia"
+  },
+  {
     "country_name": "Sudan",
     "income_tax": 3.0,
     "specialty": "limestone",
@@ -252,11 +252,11 @@
     "region_name": null
   },
   {
-    "country_name": "Ukraine",
-    "income_tax": 6.9,
+    "country_name": "Uzbekistan",
+    "income_tax": 1.0,
     "specialty": "limestone",
-    "total_bonus": 20.5,
-    "region_name": null
+    "total_bonus": 33.0,
+    "region_name": "Tashkent"
   },
   {
     "country_name": "Bosnia",
@@ -292,6 +292,13 @@
     "specialty": "livestock",
     "total_bonus": 53,
     "region_name": "Rakhine and Chin"
+  },
+  {
+    "country_name": "Solomon Islands",
+    "income_tax": 6.5,
+    "specialty": "livestock",
+    "total_bonus": 49.0,
+    "region_name": "Solomon Islands"
   },
   {
     "country_name": "Thailand",
