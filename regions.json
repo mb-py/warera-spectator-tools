@@ -91,6 +91,13 @@
     "region_name": "Southern Iceland"
   },
   {
+    "country_name": "Comoros",
+    "income_tax": 2.0,
+    "specialty": "grain",
+    "total_bonus": 59,
+    "region_name": "Comoros"
+  },
+  {
     "country_name": "Nicaragua",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -172,7 +179,7 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 30.0,
-    "region_name": null
+    "region_name": "Kivu"
   },
   {
     "country_name": "Egypt",
@@ -250,13 +257,6 @@
     "specialty": "limestone",
     "total_bonus": 35.0,
     "region_name": null
-  },
-  {
-    "country_name": "Uzbekistan",
-    "income_tax": 1.0,
-    "specialty": "limestone",
-    "total_bonus": 33.0,
-    "region_name": "Tashkent"
   },
   {
     "country_name": "Bosnia",
