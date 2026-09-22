@@ -28,13 +28,6 @@
     "region_name": "Gambia"
   },
   {
-    "country_name": "Honduras",
-    "income_tax": 1.0,
-    "specialty": "coca",
-    "total_bonus": 63,
-    "region_name": "Western Honduras"
-  },
-  {
     "country_name": "Costa Rica",
     "income_tax": 2.0,
     "specialty": "coca",
@@ -47,6 +40,13 @@
     "specialty": "coca",
     "total_bonus": 55,
     "region_name": "Comoros"
+  },
+  {
+    "country_name": "Zambia",
+    "income_tax": 5.0,
+    "specialty": "coca",
+    "total_bonus": 54,
+    "region_name": "Lusaka"
   },
   {
     "country_name": "South Africa",
@@ -66,7 +66,7 @@
     "country_name": "Yemen",
     "income_tax": 10.0,
     "specialty": "concrete",
-    "total_bonus": 61.75,
+    "total_bonus": 61.5,
     "region_name": null
   },
   {
