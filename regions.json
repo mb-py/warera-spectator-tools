@@ -203,6 +203,13 @@
     "region_name": null
   },
   {
+    "country_name": "Namibia",
+    "income_tax": 8.0,
+    "specialty": "lead",
+    "total_bonus": 27.0,
+    "region_name": "Karas"
+  },
+  {
     "country_name": "El Salvador",
     "income_tax": 10.0,
     "specialty": "lightAmmo",
@@ -250,13 +257,6 @@
     "specialty": "limestone",
     "total_bonus": 10.0,
     "region_name": null
-  },
-  {
-    "country_name": "Mauritius",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 69,
-    "region_name": "Mauritius"
   },
   {
     "country_name": "Georgia",
