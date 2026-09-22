@@ -315,6 +315,13 @@
     "region_name": null
   },
   {
+    "country_name": "Brunei",
+    "income_tax": 5.0,
+    "specialty": "paper",
+    "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
     "country_name": "Burkina Faso",
     "income_tax": 7.0,
     "specialty": "paper",
@@ -326,13 +333,6 @@
     "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 10.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Brunei",
-    "income_tax": 5.0,
-    "specialty": "paper",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
