@@ -35,6 +35,13 @@
     "region_name": "Western Honduras"
   },
   {
+    "country_name": "Costa Rica",
+    "income_tax": 2.0,
+    "specialty": "coca",
+    "total_bonus": 59,
+    "region_name": "Eastern Costa Rica"
+  },
+  {
     "country_name": "Comoros",
     "income_tax": 2.0,
     "specialty": "coca",
@@ -112,6 +119,13 @@
     "region_name": "Western Czechia"
   },
   {
+    "country_name": "Solomon Islands",
+    "income_tax": 6.5,
+    "specialty": "grain",
+    "total_bonus": 38.0,
+    "region_name": "Solomon Islands"
+  },
+  {
     "country_name": "Ecuador",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
@@ -154,13 +168,6 @@
     "region_name": "Kayes"
   },
   {
-    "country_name": "Angola",
-    "income_tax": 7.5,
-    "specialty": "iron",
-    "total_bonus": 45.0,
-    "region_name": "Cabinda"
-  },
-  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -179,6 +186,13 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Indonesia",
+    "income_tax": 9.0,
+    "specialty": "iron",
+    "total_bonus": 5.5,
     "region_name": null
   },
   {
@@ -301,24 +315,24 @@
     "region_name": null
   },
   {
-    "country_name": "Brunei",
-    "income_tax": 1.0,
-    "specialty": "oil",
-    "total_bonus": 10.0,
+    "country_name": "Burkina Faso",
+    "income_tax": 7.0,
+    "specialty": "paper",
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
     "country_name": "Madagascar",
     "income_tax": 5.0,
     "specialty": "paper",
-    "total_bonus": 40.5,
+    "total_bonus": 10.5,
     "region_name": null
   },
   {
-    "country_name": "Burkina Faso",
-    "income_tax": 7.0,
+    "country_name": "Brunei",
+    "income_tax": 5.0,
     "specialty": "paper",
-    "total_bonus": 35.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -389,20 +403,6 @@
     "income_tax": 8.0,
     "specialty": "steel",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Iraq",
-    "income_tax": 8.0,
-    "specialty": "steel",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Solomon Islands",
-    "income_tax": 6.5,
-    "specialty": "wood",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
