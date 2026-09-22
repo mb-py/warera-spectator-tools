@@ -105,6 +105,13 @@
     "region_name": "Eastern Nicaragua"
   },
   {
+    "country_name": "New Zealand",
+    "income_tax": 2.9,
+    "specialty": "grain",
+    "total_bonus": 54,
+    "region_name": "South Island"
+  },
+  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -117,13 +124,6 @@
     "specialty": "grain",
     "total_bonus": 43.0,
     "region_name": "Western Czechia"
-  },
-  {
-    "country_name": "Solomon Islands",
-    "income_tax": 6.5,
-    "specialty": "grain",
-    "total_bonus": 38.0,
-    "region_name": "Solomon Islands"
   },
   {
     "country_name": "Ecuador",
