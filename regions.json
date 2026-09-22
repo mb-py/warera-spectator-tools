@@ -119,6 +119,13 @@
     "region_name": "Bern"
   },
   {
+    "country_name": "Mauritius",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 50,
+    "region_name": "Mauritius"
+  },
+  {
     "country_name": "Czechia",
     "income_tax": 3.0,
     "specialty": "grain",
