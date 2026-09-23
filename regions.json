@@ -14,13 +14,6 @@
     "region_name": null
   },
   {
-    "country_name": "Singapore",
-    "income_tax": 7.5,
-    "specialty": "coca",
-    "total_bonus": 69,
-    "region_name": "Singapore"
-  },
-  {
     "country_name": "Gambia",
     "income_tax": 2.5,
     "specialty": "coca",
@@ -143,7 +136,7 @@
     "country_name": "Kyrgyzstan",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 60.5,
+    "total_bonus": 60.0,
     "region_name": null
   },
   {
@@ -183,7 +176,7 @@
   },
   {
     "country_name": "Latvia",
-    "income_tax": 8.5,
+    "income_tax": 10.0,
     "specialty": "lead",
     "total_bonus": 50.0,
     "region_name": null
@@ -213,7 +206,7 @@
     "country_name": "Brazil",
     "income_tax": 8.0,
     "specialty": "limestone",
-    "total_bonus": 62.0,
+    "total_bonus": 61.5,
     "region_name": null
   },
   {
@@ -224,11 +217,25 @@
     "region_name": "Samogitia"
   },
   {
+    "country_name": "Uzbekistan",
+    "income_tax": 1.0,
+    "specialty": "limestone",
+    "total_bonus": 32.0,
+    "region_name": "Turkistan"
+  },
+  {
     "country_name": "Bosnia",
     "income_tax": 5.0,
     "specialty": "limestone",
     "total_bonus": 10.0,
     "region_name": null
+  },
+  {
+    "country_name": "Singapore",
+    "income_tax": 7.5,
+    "specialty": "livestock",
+    "total_bonus": 70,
+    "region_name": "Singapore"
   },
   {
     "country_name": "Georgia",
@@ -280,17 +287,17 @@
     "region_name": null
   },
   {
-    "country_name": "Mexico",
-    "income_tax": 3.0,
+    "country_name": "Ghana",
+    "income_tax": 1.0,
     "specialty": "oil",
     "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Ghana",
-    "income_tax": 1.0,
+    "country_name": "Mexico",
+    "income_tax": 3.0,
     "specialty": "oil",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -322,13 +329,6 @@
     "region_name": null
   },
   {
-    "country_name": "Iran",
-    "income_tax": 5.0,
-    "specialty": "petroleum",
-    "total_bonus": 52.0,
-    "region_name": "Central Iran"
-  },
-  {
     "country_name": "Sweden",
     "income_tax": 8.0,
     "specialty": "petroleum",
@@ -341,6 +341,13 @@
     "specialty": "petroleum",
     "total_bonus": 32.0,
     "region_name": "Bahrain"
+  },
+  {
+    "country_name": "Iran",
+    "income_tax": 5.0,
+    "specialty": "petroleum",
+    "total_bonus": 20.0,
+    "region_name": null
   },
   {
     "country_name": "Equatorial Guinea",
