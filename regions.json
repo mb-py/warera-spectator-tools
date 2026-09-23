@@ -119,13 +119,6 @@
     "region_name": "Mauritius"
   },
   {
-    "country_name": "Czechia",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 43.0,
-    "region_name": "Western Czechia"
-  },
-  {
     "country_name": "Ecuador",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
@@ -165,7 +158,7 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 30.0,
-    "region_name": "Kivu"
+    "region_name": null
   },
   {
     "country_name": "Egypt",
@@ -214,13 +207,6 @@
     "income_tax": 8.0,
     "specialty": "lightAmmo",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Libya",
-    "income_tax": 5.0,
-    "specialty": "lightAmmo",
-    "total_bonus": 5.5,
     "region_name": null
   },
   {
