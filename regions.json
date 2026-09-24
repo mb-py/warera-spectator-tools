@@ -182,13 +182,6 @@
     "region_name": null
   },
   {
-    "country_name": "Namibia",
-    "income_tax": 8.0,
-    "specialty": "lead",
-    "total_bonus": 32.0,
-    "region_name": "Karas"
-  },
-  {
     "country_name": "El Salvador",
     "income_tax": 10.0,
     "specialty": "lightAmmo",
@@ -236,6 +229,13 @@
     "specialty": "livestock",
     "total_bonus": 65,
     "region_name": "Northern Bangladesh"
+  },
+  {
+    "country_name": "Georgia",
+    "income_tax": 2.0,
+    "specialty": "livestock",
+    "total_bonus": 63,
+    "region_name": "Kakheti"
   },
   {
     "country_name": "New Zealand",
@@ -302,7 +302,7 @@
   },
   {
     "country_name": "Brunei",
-    "income_tax": 5.0,
+    "income_tax": 6.0,
     "specialty": "paper",
     "total_bonus": 40.0,
     "region_name": null
