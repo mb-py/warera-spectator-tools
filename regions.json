@@ -77,13 +77,6 @@
     "region_name": "Southern Iceland"
   },
   {
-    "country_name": "Comoros",
-    "income_tax": 2.0,
-    "specialty": "grain",
-    "total_bonus": 59,
-    "region_name": "Comoros"
-  },
-  {
     "country_name": "Nicaragua",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -155,7 +148,7 @@
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 6.99,
+    "income_tax": 9.99,
     "specialty": "iron",
     "total_bonus": 25.5,
     "region_name": null
@@ -341,6 +334,13 @@
     "specialty": "petroleum",
     "total_bonus": 50.5,
     "region_name": null
+  },
+  {
+    "country_name": "Bahrain",
+    "income_tax": 4.0,
+    "specialty": "petroleum",
+    "total_bonus": 31.0,
+    "region_name": "Bahrain"
   },
   {
     "country_name": "Iran",
