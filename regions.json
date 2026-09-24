@@ -35,13 +35,6 @@
     "region_name": "Eastern Costa Rica"
   },
   {
-    "country_name": "Zambia",
-    "income_tax": 5.0,
-    "specialty": "coca",
-    "total_bonus": 54,
-    "region_name": "Lusaka"
-  },
-  {
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
@@ -82,6 +75,13 @@
     "specialty": "fish",
     "total_bonus": 54,
     "region_name": "Southern Iceland"
+  },
+  {
+    "country_name": "Burundi",
+    "income_tax": 7.0,
+    "specialty": "grain",
+    "total_bonus": 70,
+    "region_name": "Burundi"
   },
   {
     "country_name": "Nicaragua",
@@ -231,13 +231,6 @@
     "region_name": "Singapore"
   },
   {
-    "country_name": "Georgia",
-    "income_tax": 2.0,
-    "specialty": "livestock",
-    "total_bonus": 68,
-    "region_name": "Tbilisi"
-  },
-  {
     "country_name": "Bangladesh",
     "income_tax": 4.0,
     "specialty": "livestock",
@@ -245,11 +238,11 @@
     "region_name": "Northern Bangladesh"
   },
   {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
+    "country_name": "New Zealand",
+    "income_tax": 2.9,
     "specialty": "livestock",
-    "total_bonus": 56,
-    "region_name": "Burundi"
+    "total_bonus": 62,
+    "region_name": "North Island"
   },
   {
     "country_name": "Myanmar",
