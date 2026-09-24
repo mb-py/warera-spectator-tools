@@ -14,6 +14,13 @@
     "region_name": null
   },
   {
+    "country_name": "Comoros",
+    "income_tax": 2.0,
+    "specialty": "coca",
+    "total_bonus": 70,
+    "region_name": "Comoros"
+  },
+  {
     "country_name": "Gambia",
     "income_tax": 2.5,
     "specialty": "coca",
@@ -273,6 +280,13 @@
     "region_name": "Solomon Islands"
   },
   {
+    "country_name": "Czechia",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 42.0,
+    "region_name": "Western Czechia"
+  },
+  {
     "country_name": "Thailand",
     "income_tax": 8.0,
     "specialty": "oil",
@@ -346,7 +360,7 @@
     "country_name": "Iran",
     "income_tax": 5.0,
     "specialty": "petroleum",
-    "total_bonus": 20.0,
+    "total_bonus": 20.5,
     "region_name": null
   },
   {
