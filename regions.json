@@ -42,6 +42,13 @@
     "region_name": null
   },
   {
+    "country_name": "Niger",
+    "income_tax": 4.0,
+    "specialty": "cocain",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "United Korea",
     "income_tax": 13.0,
     "specialty": "cocain",
@@ -305,13 +312,6 @@
     "income_tax": 6.0,
     "specialty": "paper",
     "total_bonus": 40.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Burkina Faso",
-    "income_tax": 7.0,
-    "specialty": "paper",
-    "total_bonus": 35.0,
     "region_name": null
   },
   {
