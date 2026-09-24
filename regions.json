@@ -91,13 +91,6 @@
     "region_name": "Eastern Nicaragua"
   },
   {
-    "country_name": "New Zealand",
-    "income_tax": 2.9,
-    "specialty": "grain",
-    "total_bonus": 54,
-    "region_name": "South Island"
-  },
-  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -224,17 +217,10 @@
     "region_name": "Samogitia"
   },
   {
-    "country_name": "Uzbekistan",
-    "income_tax": 1.0,
-    "specialty": "limestone",
-    "total_bonus": 32.0,
-    "region_name": "Turkistan"
-  },
-  {
     "country_name": "Bosnia",
     "income_tax": 5.0,
     "specialty": "limestone",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
