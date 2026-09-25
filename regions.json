@@ -21,6 +21,20 @@
     "region_name": "Comoros"
   },
   {
+    "country_name": "Zambia",
+    "income_tax": 2.5,
+    "specialty": "coca",
+    "total_bonus": 63,
+    "region_name": "Muchinga"
+  },
+  {
+    "country_name": "Costa Rica",
+    "income_tax": 2.0,
+    "specialty": "coca",
+    "total_bonus": 51,
+    "region_name": "Eastern Costa Rica"
+  },
+  {
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
@@ -288,7 +302,7 @@
   },
   {
     "country_name": "Brunei",
-    "income_tax": 6.0,
+    "income_tax": 10.0,
     "specialty": "paper",
     "total_bonus": 40.0,
     "region_name": null
