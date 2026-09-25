@@ -7,6 +7,13 @@
     "region_name": null
   },
   {
+    "country_name": "Palestine",
+    "income_tax": 5.0,
+    "specialty": "ammo",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
     "country_name": "Venezuela",
     "income_tax": 10.0,
     "specialty": "ammo",
@@ -84,11 +91,25 @@
     "region_name": null
   },
   {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 53,
+    "region_name": "Western Iceland"
+  },
+  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "grain",
     "total_bonus": 70,
     "region_name": "Burundi"
+  },
+  {
+    "country_name": "Singapore",
+    "income_tax": 7.5,
+    "specialty": "grain",
+    "total_bonus": 59,
+    "region_name": "Singapore"
   },
   {
     "country_name": "Honduras",
@@ -119,13 +140,6 @@
     "region_name": null
   },
   {
-    "country_name": "Palestine",
-    "income_tax": 5.0,
-    "specialty": "heavyAmmo",
-    "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
     "country_name": "Kenya",
     "income_tax": 9.0,
     "specialty": "heavyAmmo",
@@ -138,6 +152,13 @@
     "specialty": "iron",
     "total_bonus": 60.0,
     "region_name": null
+  },
+  {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 52.0,
+    "region_name": "Central Egypt"
   },
   {
     "country_name": "Central Africa",
@@ -158,13 +179,6 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
