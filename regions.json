@@ -28,6 +28,13 @@
     "region_name": "Comoros"
   },
   {
+    "country_name": "Myanmar",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 70,
+    "region_name": "Yangon"
+  },
+  {
     "country_name": "Gambia",
     "income_tax": 2.5,
     "specialty": "coca",
@@ -168,13 +175,6 @@
     "region_name": "Southern Congo"
   },
   {
-    "country_name": "Mali",
-    "income_tax": 2.3,
-    "specialty": "iron",
-    "total_bonus": 46.0,
-    "region_name": "Kayes"
-  },
-  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -186,6 +186,13 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Mali",
+    "income_tax": 2.3,
+    "specialty": "iron",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -201,6 +208,13 @@
     "specialty": "lead",
     "total_bonus": 50.0,
     "region_name": null
+  },
+  {
+    "country_name": "Belarus",
+    "income_tax": 1.0,
+    "specialty": "lead",
+    "total_bonus": 41.0,
+    "region_name": "Minsk"
   },
   {
     "country_name": "El Salvador",
