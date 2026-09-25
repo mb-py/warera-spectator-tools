@@ -21,20 +21,6 @@
     "region_name": "Comoros"
   },
   {
-    "country_name": "Gambia",
-    "income_tax": 2.5,
-    "specialty": "coca",
-    "total_bonus": 65,
-    "region_name": "Gambia"
-  },
-  {
-    "country_name": "Costa Rica",
-    "income_tax": 2.0,
-    "specialty": "coca",
-    "total_bonus": 59,
-    "region_name": "Eastern Costa Rica"
-  },
-  {
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
@@ -133,6 +119,13 @@
     "region_name": null
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 9.99,
+    "specialty": "iron",
+    "total_bonus": 49.5,
+    "region_name": "Southern Congo"
+  },
+  {
     "country_name": "Mali",
     "income_tax": 2.3,
     "specialty": "iron",
@@ -147,17 +140,10 @@
     "region_name": null
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 9.99,
-    "specialty": "iron",
-    "total_bonus": 25.5,
-    "region_name": null
-  },
-  {
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 20.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -238,6 +224,13 @@
     "region_name": "North Island"
   },
   {
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 61,
+    "region_name": "Bern"
+  },
+  {
     "country_name": "Myanmar",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -309,7 +302,7 @@
   },
   {
     "country_name": "Sweden",
-    "income_tax": 8.0,
+    "income_tax": 10.0,
     "specialty": "petroleum",
     "total_bonus": 50.5,
     "region_name": null
@@ -361,13 +354,6 @@
     "income_tax": 10.0,
     "specialty": "steel",
     "total_bonus": 60.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Poland",
-    "income_tax": 8.0,
-    "specialty": "steel",
-    "total_bonus": 35.0,
     "region_name": null
   },
   {
