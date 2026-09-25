@@ -29,7 +29,7 @@
   },
   {
     "country_name": "Zambia",
-    "income_tax": 2.5,
+    "income_tax": 1.5,
     "specialty": "coca",
     "total_bonus": 63,
     "region_name": "Muchinga"
@@ -89,13 +89,6 @@
     "specialty": "grain",
     "total_bonus": 70,
     "region_name": "Burundi"
-  },
-  {
-    "country_name": "Nicaragua",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 57,
-    "region_name": "Eastern Nicaragua"
   },
   {
     "country_name": "Honduras",
@@ -210,17 +203,17 @@
     "region_name": null
   },
   {
+    "country_name": "Bosnia",
+    "income_tax": 5.0,
+    "specialty": "limestone",
+    "total_bonus": 36.0,
+    "region_name": "Southern Bosnia"
+  },
+  {
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
     "total_bonus": 20.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Bosnia",
-    "income_tax": 5.0,
-    "specialty": "limestone",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -250,13 +243,6 @@
     "specialty": "livestock",
     "total_bonus": 61,
     "region_name": "Bern"
-  },
-  {
-    "country_name": "Myanmar",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 53,
-    "region_name": "Rakhine and Chin"
   },
   {
     "country_name": "Solomon Islands",
