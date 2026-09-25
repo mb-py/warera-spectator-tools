@@ -105,6 +105,13 @@
     "region_name": "Mauritius"
   },
   {
+    "country_name": "Vietnam",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 43.0,
+    "region_name": "Ho Chi Minh City"
+  },
+  {
     "country_name": "Ecuador",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
@@ -134,7 +141,7 @@
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 9.99,
+    "income_tax": 4.99,
     "specialty": "iron",
     "total_bonus": 49.5,
     "region_name": "Southern Congo"
@@ -295,7 +302,7 @@
   },
   {
     "country_name": "Brunei",
-    "income_tax": 10.0,
+    "income_tax": 15.0,
     "specialty": "paper",
     "total_bonus": 40.0,
     "region_name": null
