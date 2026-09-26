@@ -35,6 +35,13 @@
     "region_name": "Yangon"
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 65,
+    "region_name": "Eastern Nicaragua"
+  },
+  {
     "country_name": "Gambia",
     "income_tax": 2.5,
     "specialty": "coca",
@@ -301,6 +308,13 @@
     "region_name": "Western Czechia"
   },
   {
+    "country_name": "Taiwan",
+    "income_tax": 5.0,
+    "specialty": "livestock",
+    "total_bonus": 31.0,
+    "region_name": "Southern Taiwan"
+  },
+  {
     "country_name": "Thailand",
     "income_tax": 8.0,
     "specialty": "oil",
@@ -371,6 +385,13 @@
     "region_name": "Bahrain"
   },
   {
+    "country_name": "Tajikistan",
+    "income_tax": 3.0,
+    "specialty": "petroleum",
+    "total_bonus": 29.0,
+    "region_name": "Leninabad"
+  },
+  {
     "country_name": "Iran",
     "income_tax": 5.0,
     "specialty": "petroleum",
@@ -403,13 +424,6 @@
     "income_tax": 10.0,
     "specialty": "steel",
     "total_bonus": 60.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Taiwan",
-    "income_tax": 3.0,
-    "specialty": "wood",
-    "total_bonus": 10.0,
     "region_name": null
   }
 ]
