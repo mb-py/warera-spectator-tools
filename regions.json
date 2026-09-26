@@ -252,13 +252,6 @@
     "region_name": null
   },
   {
-    "country_name": "Bangladesh",
-    "income_tax": 4.0,
-    "specialty": "livestock",
-    "total_bonus": 65,
-    "region_name": "Northern Bangladesh"
-  },
-  {
     "country_name": "Georgia",
     "income_tax": 2.0,
     "specialty": "livestock",
