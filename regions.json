@@ -87,7 +87,7 @@
     "country_name": "Yemen",
     "income_tax": 10.0,
     "specialty": "concrete",
-    "total_bonus": 61.0,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
@@ -171,7 +171,7 @@
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 52.0,
+    "total_bonus": 52.5,
     "region_name": "Central Egypt"
   },
   {
@@ -271,13 +271,6 @@
     "specialty": "livestock",
     "total_bonus": 63,
     "region_name": "Kakheti"
-  },
-  {
-    "country_name": "New Zealand",
-    "income_tax": 2.9,
-    "specialty": "livestock",
-    "total_bonus": 62,
-    "region_name": "North Island"
   },
   {
     "country_name": "Switzerland",
@@ -425,5 +418,12 @@
     "specialty": "steel",
     "total_bonus": 60.5,
     "region_name": null
+  },
+  {
+    "country_name": "Armenia",
+    "income_tax": 1.0,
+    "specialty": "wood",
+    "total_bonus": 42.0,
+    "region_name": "Armenia"
   }
 ]
