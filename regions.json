@@ -1,14 +1,14 @@
 [
   {
-    "country_name": "Togo",
-    "income_tax": 3.0,
+    "country_name": "Palestine",
+    "income_tax": 5.0,
     "specialty": "ammo",
-    "total_bonus": 35.0,
+    "total_bonus": 35.5,
     "region_name": null
   },
   {
-    "country_name": "Palestine",
-    "income_tax": 5.0,
+    "country_name": "Togo",
+    "income_tax": 3.0,
     "specialty": "ammo",
     "total_bonus": 35.0,
     "region_name": null
@@ -245,6 +245,13 @@
     "region_name": "Southern Bosnia"
   },
   {
+    "country_name": "Estonia",
+    "income_tax": 5.0,
+    "specialty": "limestone",
+    "total_bonus": 31.0,
+    "region_name": "Northern Estonia"
+  },
+  {
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "limestone",
@@ -271,6 +278,13 @@
     "specialty": "livestock",
     "total_bonus": 61,
     "region_name": "Bern"
+  },
+  {
+    "country_name": "Bangladesh",
+    "income_tax": 4.0,
+    "specialty": "livestock",
+    "total_bonus": 55,
+    "region_name": "Dhaka"
   },
   {
     "country_name": "Solomon Islands",
@@ -323,7 +337,7 @@
   },
   {
     "country_name": "Brunei",
-    "income_tax": 15.0,
+    "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 40.0,
     "region_name": null
