@@ -133,13 +133,6 @@
     "region_name": "Singapore"
   },
   {
-    "country_name": "Honduras",
-    "income_tax": 1.0,
-    "specialty": "grain",
-    "total_bonus": 50,
-    "region_name": "Western Honduras"
-  },
-  {
     "country_name": "Vietnam",
     "income_tax": 5.0,
     "specialty": "grain",
@@ -166,6 +159,13 @@
     "specialty": "iron",
     "total_bonus": 60.0,
     "region_name": null
+  },
+  {
+    "country_name": "Botswana",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 55.0,
+    "region_name": "Eastern Botswana"
   },
   {
     "country_name": "Central Africa",
@@ -200,13 +200,6 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 15.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Botswana",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
