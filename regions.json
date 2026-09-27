@@ -35,13 +35,6 @@
     "region_name": "Yangon"
   },
   {
-    "country_name": "Nicaragua",
-    "income_tax": 3.0,
-    "specialty": "coca",
-    "total_bonus": 65,
-    "region_name": "Eastern Nicaragua"
-  },
-  {
     "country_name": "Gambia",
     "income_tax": 2.5,
     "specialty": "coca",
@@ -418,5 +411,12 @@
     "specialty": "wood",
     "total_bonus": 42.0,
     "region_name": "Armenia"
+  },
+  {
+    "country_name": "Laos",
+    "income_tax": 7.5,
+    "specialty": "wood",
+    "total_bonus": 39.0,
+    "region_name": "Luang Namtha"
   }
 ]
