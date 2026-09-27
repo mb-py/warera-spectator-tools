@@ -14,6 +14,13 @@
     "region_name": null
   },
   {
+    "country_name": "Peru",
+    "income_tax": 10.0,
+    "specialty": "ammo",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Venezuela",
     "income_tax": 10.0,
     "specialty": "ammo",
@@ -175,6 +182,13 @@
     "region_name": "Southern Congo"
   },
   {
+    "country_name": "Angola",
+    "income_tax": 7.5,
+    "specialty": "iron",
+    "total_bonus": 33.0,
+    "region_name": "Lunda"
+  },
+  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -193,13 +207,6 @@
     "income_tax": 2.3,
     "specialty": "iron",
     "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Indonesia",
-    "income_tax": 9.0,
-    "specialty": "iron",
-    "total_bonus": 5.5,
     "region_name": null
   },
   {
@@ -346,7 +353,7 @@
     "country_name": "Madagascar",
     "income_tax": 5.0,
     "specialty": "paper",
-    "total_bonus": 10.5,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
