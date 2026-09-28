@@ -140,6 +140,13 @@
     "region_name": "Singapore"
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 56,
+    "region_name": "Eastern Nicaragua"
+  },
+  {
     "country_name": "Vietnam",
     "income_tax": 5.0,
     "specialty": "grain",
@@ -273,13 +280,6 @@
     "region_name": "South Island"
   },
   {
-    "country_name": "Bangladesh",
-    "income_tax": 4.0,
-    "specialty": "livestock",
-    "total_bonus": 55,
-    "region_name": "Dhaka"
-  },
-  {
     "country_name": "Czechia",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -332,7 +332,7 @@
     "country_name": "Germany",
     "income_tax": 1.0,
     "specialty": "oil",
-    "total_bonus": 10.75,
+    "total_bonus": 5.75,
     "region_name": null
   },
   {
