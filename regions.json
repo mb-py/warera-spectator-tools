@@ -98,6 +98,13 @@
     "region_name": null
   },
   {
+    "country_name": "Turkiye",
+    "income_tax": 8.0,
+    "specialty": "concrete",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Jamaica",
     "income_tax": 10.0,
     "specialty": "cookedFish",
@@ -145,13 +152,6 @@
     "specialty": "grain",
     "total_bonus": 56,
     "region_name": "Eastern Nicaragua"
-  },
-  {
-    "country_name": "Vietnam",
-    "income_tax": 5.0,
-    "specialty": "grain",
-    "total_bonus": 43.0,
-    "region_name": "Ho Chi Minh City"
   },
   {
     "country_name": "Ecuador",
@@ -245,6 +245,13 @@
     "region_name": "Ushuaia"
   },
   {
+    "country_name": "Ukraine",
+    "income_tax": 6.9,
+    "specialty": "limestone",
+    "total_bonus": 43.0,
+    "region_name": "Odesa"
+  },
+  {
     "country_name": "Estonia",
     "income_tax": 5.0,
     "specialty": "limestone",
@@ -252,25 +259,11 @@
     "region_name": "Northern Estonia"
   },
   {
-    "country_name": "Ukraine",
-    "income_tax": 6.9,
-    "specialty": "limestone",
-    "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
     "country_name": "Bosnia",
     "income_tax": 5.0,
     "specialty": "limestone",
     "total_bonus": 10.0,
     "region_name": null
-  },
-  {
-    "country_name": "Georgia",
-    "income_tax": 2.0,
-    "specialty": "livestock",
-    "total_bonus": 63,
-    "region_name": "Kakheti"
   },
   {
     "country_name": "New Zealand",
