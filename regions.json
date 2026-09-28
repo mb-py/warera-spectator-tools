@@ -189,13 +189,6 @@
     "region_name": "Southern Congo"
   },
   {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 37.5,
-    "region_name": "Cyprus"
-  },
-  {
     "country_name": "DR Congo",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -215,6 +208,13 @@
     "specialty": "iron",
     "total_bonus": 29.5,
     "region_name": "Mindanao"
+  },
+  {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 15.0,
+    "region_name": null
   },
   {
     "country_name": "Latvia",
@@ -252,17 +252,17 @@
     "region_name": "Northern Estonia"
   },
   {
-    "country_name": "Bosnia",
-    "income_tax": 5.0,
+    "country_name": "Ukraine",
+    "income_tax": 6.9,
     "specialty": "limestone",
     "total_bonus": 15.0,
     "region_name": null
   },
   {
-    "country_name": "Ukraine",
-    "income_tax": 6.9,
+    "country_name": "Bosnia",
+    "income_tax": 5.0,
     "specialty": "limestone",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
