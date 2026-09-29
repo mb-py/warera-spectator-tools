@@ -175,6 +175,13 @@
     "region_name": "Al Madinah"
   },
   {
+    "country_name": "Mali",
+    "income_tax": 2.3,
+    "specialty": "iron",
+    "total_bonus": 44.0,
+    "region_name": "Kayes"
+  },
+  {
     "country_name": "Indonesia",
     "income_tax": 9.0,
     "specialty": "iron",
@@ -194,13 +201,6 @@
     "specialty": "iron",
     "total_bonus": 33.0,
     "region_name": "Lunda"
-  },
-  {
-    "country_name": "Indonesia",
-    "income_tax": 9.0,
-    "specialty": "iron",
-    "total_bonus": 29.75,
-    "region_name": "Mindanao"
   },
   {
     "country_name": "Latvia",
