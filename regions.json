@@ -87,21 +87,7 @@
     "country_name": "Yemen",
     "income_tax": 10.0,
     "specialty": "concrete",
-    "total_bonus": 60.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Ethiopia",
-    "income_tax": 9.5,
-    "specialty": "concrete",
-    "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Turkiye",
-    "income_tax": 8.0,
-    "specialty": "concrete",
-    "total_bonus": 30.0,
+    "total_bonus": 60.75,
     "region_name": null
   },
   {
@@ -154,6 +140,13 @@
     "region_name": "Singapore"
   },
   {
+    "country_name": "Georgia",
+    "income_tax": 2.0,
+    "specialty": "grain",
+    "total_bonus": 58,
+    "region_name": "Abkhazia"
+  },
+  {
     "country_name": "Nicaragua",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -189,11 +182,11 @@
     "region_name": "Eastern Botswana"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.99,
+    "country_name": "Egypt",
+    "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 44.0,
-    "region_name": "Southern Congo"
+    "total_bonus": 46.0,
+    "region_name": "Al Madinah"
   },
   {
     "country_name": "Indonesia",
@@ -249,7 +242,7 @@
     "income_tax": 8.0,
     "specialty": "limestone",
     "total_bonus": 61.5,
-    "region_name": "Ushuaia"
+    "region_name": null
   },
   {
     "country_name": "Ukraine",
