@@ -178,7 +178,7 @@
     "country_name": "Indonesia",
     "income_tax": 9.0,
     "specialty": "iron",
-    "total_bonus": 41.5,
+    "total_bonus": 41.75,
     "region_name": "Nusa Tenggara"
   },
   {
@@ -199,7 +199,7 @@
     "country_name": "Indonesia",
     "income_tax": 9.0,
     "specialty": "iron",
-    "total_bonus": 29.5,
+    "total_bonus": 29.75,
     "region_name": "Mindanao"
   },
   {
@@ -276,7 +276,7 @@
     "country_name": "Thailand",
     "income_tax": 8.0,
     "specialty": "oil",
-    "total_bonus": 55.5,
+    "total_bonus": 50.5,
     "region_name": null
   },
   {
@@ -304,7 +304,7 @@
     "country_name": "Brunei",
     "income_tax": 2.2,
     "specialty": "paper",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
