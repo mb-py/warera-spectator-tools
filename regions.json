@@ -119,13 +119,6 @@
     "region_name": "Mauritius"
   },
   {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "grain",
-    "total_bonus": 70,
-    "region_name": "Burundi"
-  },
-  {
     "country_name": "Comoros",
     "income_tax": 2.0,
     "specialty": "grain",
@@ -259,6 +252,13 @@
     "region_name": "South Island"
   },
   {
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 55,
+    "region_name": "Zurich"
+  },
+  {
     "country_name": "Solomon Islands",
     "income_tax": 6.5,
     "specialty": "livestock",
@@ -332,7 +332,7 @@
     "country_name": "Iran",
     "income_tax": 5.0,
     "specialty": "petroleum",
-    "total_bonus": 10.75,
+    "total_bonus": 10.5,
     "region_name": null
   },
   {
@@ -362,13 +362,6 @@
     "specialty": "steel",
     "total_bonus": 61.0,
     "region_name": null
-  },
-  {
-    "country_name": "Armenia",
-    "income_tax": 1.0,
-    "specialty": "wood",
-    "total_bonus": 42.0,
-    "region_name": "Armenia"
   },
   {
     "country_name": "Laos",
