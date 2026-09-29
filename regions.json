@@ -266,13 +266,6 @@
     "region_name": "South Island"
   },
   {
-    "country_name": "Czechia",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 42.0,
-    "region_name": "Western Czechia"
-  },
-  {
     "country_name": "Solomon Islands",
     "income_tax": 6.5,
     "specialty": "livestock",
@@ -301,13 +294,6 @@
     "region_name": null
   },
   {
-    "country_name": "Ghana",
-    "income_tax": 1.0,
-    "specialty": "oil",
-    "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
     "country_name": "Mexico",
     "income_tax": 3.0,
     "specialty": "oil",
@@ -315,10 +301,17 @@
     "region_name": null
   },
   {
+    "country_name": "Ghana",
+    "income_tax": 1.0,
+    "specialty": "oil",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Germany",
     "income_tax": 1.0,
     "specialty": "oil",
-    "total_bonus": 5.75,
+    "total_bonus": 5.5,
     "region_name": null
   },
   {
@@ -388,7 +381,7 @@
     "country_name": "Portugal",
     "income_tax": 10.0,
     "specialty": "steel",
-    "total_bonus": 60.5,
+    "total_bonus": 61.0,
     "region_name": null
   },
   {
