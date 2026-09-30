@@ -98,13 +98,6 @@
     "region_name": "Northern Bangladesh"
   },
   {
-    "country_name": "Singapore",
-    "income_tax": 7.5,
-    "specialty": "grain",
-    "total_bonus": 59,
-    "region_name": "Singapore"
-  },
-  {
     "country_name": "Georgia",
     "income_tax": 2.0,
     "specialty": "grain",
@@ -243,6 +236,13 @@
     "specialty": "livestock",
     "total_bonus": 67,
     "region_name": "Eastern Costa Rica"
+  },
+  {
+    "country_name": "Singapore",
+    "income_tax": 7.5,
+    "specialty": "livestock",
+    "total_bonus": 65,
+    "region_name": "Singapore"
   },
   {
     "country_name": "New Zealand",
