@@ -35,11 +35,11 @@
     "region_name": null
   },
   {
-    "country_name": "Gambia",
-    "income_tax": 2.5,
+    "country_name": "Myanmar",
+    "income_tax": 3.0,
     "specialty": "coca",
-    "total_bonus": 64,
-    "region_name": "Gambia"
+    "total_bonus": 60,
+    "region_name": "Nay Pyi Taw"
   },
   {
     "country_name": "South Africa",
@@ -73,7 +73,7 @@
     "country_name": "Croatia",
     "income_tax": 10.0,
     "specialty": "cookedFish",
-    "total_bonus": 10.0,
+    "total_bonus": 10.5,
     "region_name": null
   },
   {
@@ -238,6 +238,13 @@
     "region_name": "Northern Estonia"
   },
   {
+    "country_name": "Costa Rica",
+    "income_tax": 2.0,
+    "specialty": "livestock",
+    "total_bonus": 67,
+    "region_name": "Eastern Costa Rica"
+  },
+  {
     "country_name": "New Zealand",
     "income_tax": 2.9,
     "specialty": "livestock",
@@ -250,6 +257,13 @@
     "specialty": "livestock",
     "total_bonus": 55,
     "region_name": "Zurich"
+  },
+  {
+    "country_name": "Czechia",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 37.0,
+    "region_name": "Western Czechia"
   },
   {
     "country_name": "Taiwan",
@@ -348,13 +362,6 @@
     "specialty": "steel",
     "total_bonus": 61.25,
     "region_name": null
-  },
-  {
-    "country_name": "Laos",
-    "income_tax": 7.5,
-    "specialty": "wood",
-    "total_bonus": 39.0,
-    "region_name": "Luang Namtha"
   },
   {
     "country_name": "Armenia",
