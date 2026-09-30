@@ -35,6 +35,13 @@
     "region_name": null
   },
   {
+    "country_name": "Burundi",
+    "income_tax": 7.0,
+    "specialty": "coca",
+    "total_bonus": 65,
+    "region_name": "Burundi"
+  },
+  {
     "country_name": "Myanmar",
     "income_tax": 3.0,
     "specialty": "coca",
@@ -82,13 +89,6 @@
     "specialty": "fish",
     "total_bonus": 63,
     "region_name": "Eastern Iceland"
-  },
-  {
-    "country_name": "Mauritius",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 70,
-    "region_name": "Mauritius"
   },
   {
     "country_name": "Bangladesh",
