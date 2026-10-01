@@ -175,25 +175,11 @@
     "region_name": null
   },
   {
-    "country_name": "Botswana",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 55.0,
-    "region_name": "Eastern Botswana"
-  },
-  {
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 41.5,
     "region_name": "Al Madinah"
-  },
-  {
-    "country_name": "Kyrgyzstan",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 35.0,
-    "region_name": null
   },
   {
     "country_name": "DR Congo",
@@ -210,10 +196,31 @@
     "region_name": "Lunda"
   },
   {
+    "country_name": "Kyrgyzstan",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Central Africa",
     "income_tax": 4.99,
     "specialty": "iron",
     "total_bonus": 20.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Mali",
+    "income_tax": 2.3,
+    "specialty": "iron",
+    "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Latvia",
+    "income_tax": 10.0,
+    "specialty": "lead",
+    "total_bonus": 46.0,
     "region_name": null
   },
   {
@@ -224,17 +231,10 @@
     "region_name": null
   },
   {
-    "country_name": "Latvia",
-    "income_tax": 10.0,
-    "specialty": "lead",
-    "total_bonus": 41.0,
-    "region_name": null
-  },
-  {
     "country_name": "Bhutan",
     "income_tax": 1.0,
     "specialty": "lead",
-    "total_bonus": 20.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -257,6 +257,13 @@
     "specialty": "limestone",
     "total_bonus": 43.0,
     "region_name": "Odesa"
+  },
+  {
+    "country_name": "Estonia",
+    "income_tax": 5.0,
+    "specialty": "limestone",
+    "total_bonus": 31.0,
+    "region_name": "Western Estonia"
   },
   {
     "country_name": "Sudan",
@@ -330,7 +337,7 @@
   },
   {
     "country_name": "Algeria",
-    "income_tax": 3.0,
+    "income_tax": 7.0,
     "specialty": "petroleum",
     "total_bonus": 30.0,
     "region_name": null
