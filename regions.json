@@ -70,13 +70,6 @@
     "region_name": null
   },
   {
-    "country_name": "Yemen",
-    "income_tax": 10.0,
-    "specialty": "concrete",
-    "total_bonus": 60.5,
-    "region_name": null
-  },
-  {
     "country_name": "Ethiopia",
     "income_tax": 9.5,
     "specialty": "concrete",
@@ -117,6 +110,13 @@
     "specialty": "grain",
     "total_bonus": 63,
     "region_name": "Northern Bangladesh"
+  },
+  {
+    "country_name": "New Zealand",
+    "income_tax": 2.9,
+    "specialty": "grain",
+    "total_bonus": 60,
+    "region_name": "North Island"
   },
   {
     "country_name": "Georgia",
@@ -231,13 +231,6 @@
     "region_name": "Odesa"
   },
   {
-    "country_name": "Costa Rica",
-    "income_tax": 2.0,
-    "specialty": "livestock",
-    "total_bonus": 67,
-    "region_name": "Eastern Costa Rica"
-  },
-  {
     "country_name": "Singapore",
     "income_tax": 7.5,
     "specialty": "livestock",
@@ -269,8 +262,8 @@
     "country_name": "Taiwan",
     "income_tax": 5.0,
     "specialty": "livestock",
-    "total_bonus": 31.0,
-    "region_name": "Southern Taiwan"
+    "total_bonus": 33.0,
+    "region_name": "Southern China"
   },
   {
     "country_name": "Chile",
@@ -340,6 +333,13 @@
     "income_tax": 10.0,
     "specialty": "steak",
     "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Yemen",
+    "income_tax": 10.0,
+    "specialty": "steel",
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
