@@ -91,18 +91,11 @@
     "region_name": null
   },
   {
-    "country_name": "Iceland",
-    "income_tax": 10.0,
-    "specialty": "fish",
-    "total_bonus": 63,
-    "region_name": "Eastern Iceland"
-  },
-  {
-    "country_name": "Costa Rica",
+    "country_name": "Georgia",
     "income_tax": 2.0,
     "specialty": "grain",
-    "total_bonus": 67,
-    "region_name": "Eastern Costa Rica"
+    "total_bonus": 64,
+    "region_name": "Abkhazia"
   },
   {
     "country_name": "Bangladesh",
@@ -189,15 +182,15 @@
     "region_name": null
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.99,
+    "country_name": "Mali",
+    "income_tax": 2.3,
     "specialty": "iron",
-    "total_bonus": 20.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
-    "country_name": "Mali",
-    "income_tax": 2.3,
+    "country_name": "Central Africa",
+    "income_tax": 4.99,
     "specialty": "iron",
     "total_bonus": 15.0,
     "region_name": null
@@ -343,18 +336,18 @@
     "region_name": null
   },
   {
+    "country_name": "Equatorial Guinea",
+    "income_tax": 6.0,
+    "specialty": "petroleum",
+    "total_bonus": 50.0,
+    "region_name": "Ogoou\u00e9"
+  },
+  {
     "country_name": "Lebanon",
     "income_tax": 2.0,
     "specialty": "petroleum",
     "total_bonus": 45.0,
     "region_name": "Beirut"
-  },
-  {
-    "country_name": "Equatorial Guinea",
-    "income_tax": 6.0,
-    "specialty": "petroleum",
-    "total_bonus": 45.0,
-    "region_name": "Ogoou\u00e9"
   },
   {
     "country_name": "Algeria",
