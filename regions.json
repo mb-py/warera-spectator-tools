@@ -105,13 +105,6 @@
     "region_name": "Eastern Iceland"
   },
   {
-    "country_name": "Zambia",
-    "income_tax": 1.5,
-    "specialty": "grain",
-    "total_bonus": 69,
-    "region_name": "Western Zambia"
-  },
-  {
     "country_name": "Costa Rica",
     "income_tax": 2.0,
     "specialty": "grain",
@@ -133,13 +126,6 @@
     "region_name": "North Island"
   },
   {
-    "country_name": "Georgia",
-    "income_tax": 2.0,
-    "specialty": "grain",
-    "total_bonus": 58,
-    "region_name": "Abkhazia"
-  },
-  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "grain",
@@ -154,17 +140,17 @@
     "region_name": "Solomon Islands"
   },
   {
-    "country_name": "Ecuador",
-    "income_tax": 6.0,
-    "specialty": "heavyAmmo",
-    "total_bonus": 40.0,
-    "region_name": null
-  },
-  {
     "country_name": "Kenya",
     "income_tax": 9.0,
     "specialty": "heavyAmmo",
     "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Ecuador",
+    "income_tax": 6.0,
+    "specialty": "heavyAmmo",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -189,13 +175,6 @@
     "region_name": null
   },
   {
-    "country_name": "Angola",
-    "income_tax": 7.5,
-    "specialty": "iron",
-    "total_bonus": 33.0,
-    "region_name": "Lunda"
-  },
-  {
     "country_name": "Kyrgyzstan",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -217,6 +196,20 @@
     "region_name": null
   },
   {
+    "country_name": "Botswana",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Sweden",
+    "income_tax": 9.0,
+    "specialty": "lead",
+    "total_bonus": 50.0,
+    "region_name": null
+  },
+  {
     "country_name": "Latvia",
     "income_tax": 10.0,
     "specialty": "lead",
@@ -224,17 +217,10 @@
     "region_name": null
   },
   {
-    "country_name": "Sweden",
-    "income_tax": 9.0,
-    "specialty": "lead",
-    "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Bhutan",
-    "income_tax": 1.0,
-    "specialty": "lead",
-    "total_bonus": 15.0,
+    "country_name": "South Korea",
+    "income_tax": 6.9,
+    "specialty": "lightAmmo",
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -316,9 +302,16 @@
   },
   {
     "country_name": "Brunei",
-    "income_tax": 5.0,
+    "income_tax": 4.0,
     "specialty": "paper",
     "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Burkina Faso",
+    "income_tax": 7.0,
+    "specialty": "paper",
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -374,7 +367,7 @@
     "country_name": "Portugal",
     "income_tax": 10.0,
     "specialty": "steel",
-    "total_bonus": 51.0,
+    "total_bonus": 50.75,
     "region_name": null
   },
   {
