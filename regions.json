@@ -42,13 +42,6 @@
     "region_name": "Battambang"
   },
   {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "coca",
-    "total_bonus": 65,
-    "region_name": "Burundi"
-  },
-  {
     "country_name": "Comoros",
     "income_tax": 2.0,
     "specialty": "coca",
@@ -105,6 +98,13 @@
     "region_name": "North Island"
   },
   {
+    "country_name": "Costa Rica",
+    "income_tax": 2.0,
+    "specialty": "grain",
+    "total_bonus": 56,
+    "region_name": "Western Costa Rica"
+  },
+  {
     "country_name": "Singapore",
     "income_tax": 7.5,
     "specialty": "grain",
@@ -126,13 +126,6 @@
     "region_name": "Zurich"
   },
   {
-    "country_name": "Solomon Islands",
-    "income_tax": 6.5,
-    "specialty": "grain",
-    "total_bonus": 44.0,
-    "region_name": "Solomon Islands"
-  },
-  {
     "country_name": "Kenya",
     "income_tax": 9.0,
     "specialty": "heavyAmmo",
@@ -150,7 +143,7 @@
     "country_name": "Brazil",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 46.0,
+    "total_bonus": 46.5,
     "region_name": null
   },
   {
@@ -196,17 +189,17 @@
     "region_name": null
   },
   {
+    "country_name": "Latvia",
+    "income_tax": 10.0,
+    "specialty": "lead",
+    "total_bonus": 51.0,
+    "region_name": null
+  },
+  {
     "country_name": "Sweden",
     "income_tax": 9.0,
     "specialty": "lead",
     "total_bonus": 50.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Latvia",
-    "income_tax": 10.0,
-    "specialty": "lead",
-    "total_bonus": 46.0,
     "region_name": null
   },
   {
@@ -238,18 +231,18 @@
     "region_name": "Al Wusta"
   },
   {
-    "country_name": "Estonia",
-    "income_tax": 5.0,
-    "specialty": "limestone",
-    "total_bonus": 31.0,
-    "region_name": "Western Estonia"
-  },
-  {
     "country_name": "Sudan",
     "income_tax": 3.0,
     "specialty": "limestone",
     "total_bonus": 30.0,
     "region_name": "Amhara"
+  },
+  {
+    "country_name": "Estonia",
+    "income_tax": 5.0,
+    "specialty": "limestone",
+    "total_bonus": 26.0,
+    "region_name": "Western Estonia"
   },
   {
     "country_name": "Ukraine",
