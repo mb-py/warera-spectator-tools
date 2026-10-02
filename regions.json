@@ -59,7 +59,7 @@
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "cocain",
-    "total_bonus": 20.5,
+    "total_bonus": 25.5,
     "region_name": null
   },
   {
@@ -117,6 +117,20 @@
     "specialty": "grain",
     "total_bonus": 60,
     "region_name": "North Island"
+  },
+  {
+    "country_name": "Singapore",
+    "income_tax": 7.5,
+    "specialty": "grain",
+    "total_bonus": 56,
+    "region_name": "Singapore"
+  },
+  {
+    "country_name": "Gambia",
+    "income_tax": 2.5,
+    "specialty": "grain",
+    "total_bonus": 55,
+    "region_name": "Gambia"
   },
   {
     "country_name": "Switzerland",
@@ -189,10 +203,10 @@
     "region_name": null
   },
   {
-    "country_name": "Botswana",
-    "income_tax": 10.0,
+    "country_name": "Nigeria",
+    "income_tax": 8.0,
     "specialty": "iron",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -353,7 +367,7 @@
     "country_name": "Mauritania",
     "income_tax": 6.0,
     "specialty": "petroleum",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -388,7 +402,7 @@
     "country_name": "Portugal",
     "income_tax": 10.0,
     "specialty": "steel",
-    "total_bonus": 45.75,
+    "total_bonus": 45.5,
     "region_name": null
   },
   {
