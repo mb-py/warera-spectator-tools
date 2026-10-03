@@ -17,7 +17,7 @@
     "country_name": "Peru",
     "income_tax": 10.0,
     "specialty": "ammo",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -112,6 +112,13 @@
     "region_name": "Abkhazia"
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 63,
+    "region_name": "Western Nicaragua"
+  },
+  {
     "country_name": "Bangladesh",
     "income_tax": 4.0,
     "specialty": "grain",
@@ -157,7 +164,7 @@
     "country_name": "Brazil",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 41.0,
+    "total_bonus": 46.0,
     "region_name": null
   },
   {
@@ -381,7 +388,7 @@
     "country_name": "Yemen",
     "income_tax": 10.0,
     "specialty": "steel",
-    "total_bonus": 56.0,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
