@@ -28,6 +28,13 @@
     "region_name": null
   },
   {
+    "country_name": "Zambia",
+    "income_tax": 1.5,
+    "specialty": "coca",
+    "total_bonus": 70,
+    "region_name": "Western Zambia"
+  },
+  {
     "country_name": "Myanmar",
     "income_tax": 3.0,
     "specialty": "coca",
@@ -189,8 +196,8 @@
     "region_name": null
   },
   {
-    "country_name": "Mali",
-    "income_tax": 2.3,
+    "country_name": "Central Africa",
+    "income_tax": 4.99,
     "specialty": "iron",
     "total_bonus": 15.0,
     "region_name": null
@@ -367,7 +374,7 @@
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "steel",
-    "total_bonus": 56.0,
+    "total_bonus": 61.0,
     "region_name": null
   },
   {
@@ -382,6 +389,13 @@
     "income_tax": 10.0,
     "specialty": "steel",
     "total_bonus": 10.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Poland",
+    "income_tax": 8.0,
+    "specialty": "steel",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
