@@ -84,6 +84,13 @@
     "region_name": null
   },
   {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 67,
+    "region_name": "Northeastern Iceland"
+  },
+  {
     "country_name": "Georgia",
     "income_tax": 2.0,
     "specialty": "grain",
@@ -143,7 +150,7 @@
     "country_name": "Brazil",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 46.5,
+    "total_bonus": 46.0,
     "region_name": null
   },
   {
@@ -175,17 +182,17 @@
     "region_name": null
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 4.99,
+    "specialty": "iron",
+    "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 10.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Botswana",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -203,6 +210,13 @@
     "region_name": null
   },
   {
+    "country_name": "El Salvador",
+    "income_tax": 10.0,
+    "specialty": "lightAmmo",
+    "total_bonus": 50.0,
+    "region_name": null
+  },
+  {
     "country_name": "South Korea",
     "income_tax": 6.9,
     "specialty": "lightAmmo",
@@ -214,13 +228,6 @@
     "income_tax": 8.0,
     "specialty": "lightAmmo",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "El Salvador",
-    "income_tax": 1.0,
-    "specialty": "lightAmmo",
-    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -297,7 +304,7 @@
     "country_name": "Ghana",
     "income_tax": 1.0,
     "specialty": "oil",
-    "total_bonus": 35.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -308,17 +315,17 @@
     "region_name": null
   },
   {
-    "country_name": "Madagascar",
-    "income_tax": 5.0,
+    "country_name": "Costa Rica",
+    "income_tax": 4.0,
     "specialty": "paper",
     "total_bonus": 40.0,
     "region_name": null
   },
   {
-    "country_name": "Burkina Faso",
-    "income_tax": 7.0,
+    "country_name": "Madagascar",
+    "income_tax": 5.0,
     "specialty": "paper",
-    "total_bonus": 35.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
