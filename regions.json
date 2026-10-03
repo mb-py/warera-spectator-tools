@@ -56,8 +56,15 @@
     "region_name": "Comoros"
   },
   {
+    "country_name": "Solomon Islands",
+    "income_tax": 6.5,
+    "specialty": "coca",
+    "total_bonus": 38.0,
+    "region_name": "Solomon Islands"
+  },
+  {
     "country_name": "Ethiopia",
-    "income_tax": 9.5,
+    "income_tax": 45.0,
     "specialty": "concrete",
     "total_bonus": 30.0,
     "region_name": null
@@ -143,14 +150,14 @@
     "country_name": "Kenya",
     "income_tax": 9.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
     "country_name": "Brazil",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 46.0,
+    "total_bonus": 41.0,
     "region_name": null
   },
   {
@@ -266,13 +273,6 @@
     "region_name": "Mauritius"
   },
   {
-    "country_name": "Zambia",
-    "income_tax": 1.5,
-    "specialty": "livestock",
-    "total_bonus": 53,
-    "region_name": "Luapula"
-  },
-  {
     "country_name": "Taiwan",
     "income_tax": 5.0,
     "specialty": "livestock",
@@ -329,11 +329,11 @@
     "region_name": null
   },
   {
-    "country_name": "Lebanon",
-    "income_tax": 2.0,
+    "country_name": "Iran",
+    "income_tax": 5.0,
     "specialty": "petroleum",
-    "total_bonus": 45.0,
-    "region_name": "Beirut"
+    "total_bonus": 45.5,
+    "region_name": "Armenia"
   },
   {
     "country_name": "Equatorial Guinea",
@@ -341,6 +341,13 @@
     "specialty": "petroleum",
     "total_bonus": 45.0,
     "region_name": null
+  },
+  {
+    "country_name": "Slovakia",
+    "income_tax": 3.0,
+    "specialty": "petroleum",
+    "total_bonus": 41.0,
+    "region_name": "Zilina & Banska Bystrica"
   },
   {
     "country_name": "Spain",
@@ -364,13 +371,6 @@
     "region_name": null
   },
   {
-    "country_name": "Iran",
-    "income_tax": 5.0,
-    "specialty": "petroleum",
-    "total_bonus": 10.5,
-    "region_name": null
-  },
-  {
     "country_name": "Italy",
     "income_tax": 9.0,
     "specialty": "steak",
@@ -388,7 +388,7 @@
     "country_name": "Yemen",
     "income_tax": 10.0,
     "specialty": "steel",
-    "total_bonus": 61.0,
+    "total_bonus": 56.0,
     "region_name": null
   },
   {
