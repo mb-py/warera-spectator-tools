@@ -98,20 +98,6 @@
     "region_name": "Abkhazia"
   },
   {
-    "country_name": "Nicaragua",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 63,
-    "region_name": "Western Nicaragua"
-  },
-  {
-    "country_name": "New Zealand",
-    "income_tax": 2.9,
-    "specialty": "grain",
-    "total_bonus": 60,
-    "region_name": "North Island"
-  },
-  {
     "country_name": "Taiwan",
     "income_tax": 5.0,
     "specialty": "grain",
@@ -147,6 +133,13 @@
     "region_name": null
   },
   {
+    "country_name": "Brazil",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 51.0,
+    "region_name": null
+  },
+  {
     "country_name": "Thailand",
     "income_tax": 8.0,
     "specialty": "iron",
@@ -158,13 +151,6 @@
     "income_tax": 9.0,
     "specialty": "iron",
     "total_bonus": 50.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Brazil",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 46.0,
     "region_name": null
   },
   {
@@ -243,13 +229,6 @@
     "specialty": "limestone",
     "total_bonus": 42.0,
     "region_name": "Al Wusta"
-  },
-  {
-    "country_name": "Estonia",
-    "income_tax": 5.0,
-    "specialty": "limestone",
-    "total_bonus": 26.0,
-    "region_name": "Western Estonia"
   },
   {
     "country_name": "Bangladesh",
@@ -346,14 +325,14 @@
     "country_name": "Algeria",
     "income_tax": 7.0,
     "specialty": "petroleum",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
     "country_name": "Gabon",
     "income_tax": 1.0,
     "specialty": "steak",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -378,15 +357,22 @@
     "region_name": null
   },
   {
-    "country_name": "Portugal",
-    "income_tax": 10.0,
+    "country_name": "Poland",
+    "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 10.5,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
-    "country_name": "Poland",
+    "country_name": "Iraq",
     "income_tax": 8.0,
+    "specialty": "steel",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Portugal",
+    "income_tax": 10.0,
     "specialty": "steel",
     "total_bonus": 10.0,
     "region_name": null
