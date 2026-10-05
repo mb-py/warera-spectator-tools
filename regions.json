@@ -73,14 +73,7 @@
     "country_name": "Djibouti",
     "income_tax": 7.5,
     "specialty": "concrete",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Brunei",
-    "income_tax": 2.0,
-    "specialty": "concrete",
-    "total_bonus": 10.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -157,12 +150,12 @@
     "country_name": "Brazil",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 51.0,
+    "total_bonus": 50.5,
     "region_name": null
   },
   {
     "country_name": "Ghana",
-    "income_tax": 6.0,
+    "income_tax": 7.0,
     "specialty": "iron",
     "total_bonus": 50.0,
     "region_name": null
@@ -290,7 +283,7 @@
     "country_name": "Chile",
     "income_tax": 7.0,
     "specialty": "oil",
-    "total_bonus": 40.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -329,13 +322,6 @@
     "region_name": null
   },
   {
-    "country_name": "Slovakia",
-    "income_tax": 3.0,
-    "specialty": "petroleum",
-    "total_bonus": 36.0,
-    "region_name": "Zilina & Banska Bystrica"
-  },
-  {
     "country_name": "Equatorial Guinea",
     "income_tax": 6.0,
     "specialty": "petroleum",
@@ -351,7 +337,7 @@
   },
   {
     "country_name": "Gabon",
-    "income_tax": 1.0,
+    "income_tax": 5.9,
     "specialty": "steak",
     "total_bonus": 15.0,
     "region_name": null
