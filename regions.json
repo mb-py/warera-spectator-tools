@@ -21,13 +21,6 @@
     "region_name": null
   },
   {
-    "country_name": "Zambia",
-    "income_tax": 1.5,
-    "specialty": "coca",
-    "total_bonus": 70,
-    "region_name": "Western Zambia"
-  },
-  {
     "country_name": "Myanmar",
     "income_tax": 3.0,
     "specialty": "coca",
@@ -52,7 +45,7 @@
     "country_name": "Venezuela",
     "income_tax": 10.0,
     "specialty": "concrete",
-    "total_bonus": 50.5,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -103,13 +96,6 @@
     "specialty": "grain",
     "total_bonus": 55.0,
     "region_name": "Central China"
-  },
-  {
-    "country_name": "Switzerland",
-    "income_tax": 1.0,
-    "specialty": "grain",
-    "total_bonus": 39.0,
-    "region_name": "Zurich"
   },
   {
     "country_name": "Ecuador",
@@ -344,7 +330,7 @@
   },
   {
     "country_name": "Yemen",
-    "income_tax": 10.0,
+    "income_tax": 45.0,
     "specialty": "steel",
     "total_bonus": 40.0,
     "region_name": null
