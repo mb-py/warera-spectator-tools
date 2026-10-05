@@ -91,20 +91,6 @@
     "region_name": "Southern Iceland"
   },
   {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "grain",
-    "total_bonus": 66,
-    "region_name": "Burundi"
-  },
-  {
-    "country_name": "Georgia",
-    "income_tax": 2.0,
-    "specialty": "grain",
-    "total_bonus": 64,
-    "region_name": "Abkhazia"
-  },
-  {
     "country_name": "Comoros",
     "income_tax": 2.0,
     "specialty": "grain",
@@ -140,6 +126,13 @@
     "region_name": null
   },
   {
+    "country_name": "Ghana",
+    "income_tax": 7.0,
+    "specialty": "iron",
+    "total_bonus": 55.0,
+    "region_name": null
+  },
+  {
     "country_name": "Thailand",
     "income_tax": 8.0,
     "specialty": "iron",
@@ -151,13 +144,6 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 50.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Ghana",
-    "income_tax": 7.0,
-    "specialty": "iron",
-    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -297,14 +283,14 @@
     "country_name": "Pakistan",
     "income_tax": 5.0,
     "specialty": "oil",
-    "total_bonus": 10.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
     "country_name": "Guinea-Bissau",
     "income_tax": 6.0,
     "specialty": "paper",
-    "total_bonus": 45.0,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
