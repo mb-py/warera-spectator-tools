@@ -10,7 +10,7 @@
     "country_name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
     "income_tax": 8.0,
     "specialty": "ammo",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -33,13 +33,6 @@
     "specialty": "coca",
     "total_bonus": 59,
     "region_name": "Kachin and Sagaing"
-  },
-  {
-    "country_name": "Cambodia",
-    "income_tax": 6.0,
-    "specialty": "coca",
-    "total_bonus": 52,
-    "region_name": "Siem Reap"
   },
   {
     "country_name": "Gambia",
@@ -77,6 +70,13 @@
     "region_name": null
   },
   {
+    "country_name": "Djibouti",
+    "income_tax": 7.5,
+    "specialty": "concrete",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Brunei",
     "income_tax": 2.0,
     "specialty": "concrete",
@@ -89,6 +89,13 @@
     "specialty": "cookedFish",
     "total_bonus": 15.5,
     "region_name": null
+  },
+  {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 55,
+    "region_name": "Southern Iceland"
   },
   {
     "country_name": "Burundi",
@@ -155,9 +162,16 @@
   },
   {
     "country_name": "Ghana",
-    "income_tax": 9.0,
+    "income_tax": 6.0,
     "specialty": "iron",
     "total_bonus": 50.0,
+    "region_name": null
+  },
+  {
+    "country_name": "DR Congo",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -168,13 +182,6 @@
     "region_name": "Northwestern Botswana"
   },
   {
-    "country_name": "DR Congo",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
     "country_name": "Kyrgyzstan",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -182,8 +189,8 @@
     "region_name": "Ashgabat"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.99,
+    "country_name": "Mali",
+    "income_tax": 45.0,
     "specialty": "iron",
     "total_bonus": 15.0,
     "region_name": null
@@ -245,6 +252,13 @@
     "region_name": "Dhaka"
   },
   {
+    "country_name": "Cambodia",
+    "income_tax": 6.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Siem Reap"
+  },
+  {
     "country_name": "Mauritius",
     "income_tax": 3.0,
     "specialty": "livestock",
@@ -264,13 +278,6 @@
     "specialty": "livestock",
     "total_bonus": 51,
     "region_name": "Western Nicaragua"
-  },
-  {
-    "country_name": "Czechia",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 37.0,
-    "region_name": "Western Czechia"
   },
   {
     "country_name": "Solomon Islands",
@@ -322,13 +329,6 @@
     "region_name": null
   },
   {
-    "country_name": "Bahrain",
-    "income_tax": 8.0,
-    "specialty": "petroleum",
-    "total_bonus": 41.0,
-    "region_name": "Bahrain"
-  },
-  {
     "country_name": "Slovakia",
     "income_tax": 3.0,
     "specialty": "petroleum",
@@ -374,7 +374,7 @@
     "country_name": "Yemen",
     "income_tax": 10.0,
     "specialty": "steel",
-    "total_bonus": 45.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
