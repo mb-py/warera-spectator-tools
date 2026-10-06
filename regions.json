@@ -101,7 +101,7 @@
     "country_name": "Jamaica",
     "income_tax": 10.0,
     "specialty": "cookedFish",
-    "total_bonus": 15.5,
+    "total_bonus": 15.75,
     "region_name": null
   },
   {
@@ -171,7 +171,7 @@
     "country_name": "Brazil",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 50.75,
+    "total_bonus": 50.5,
     "region_name": null
   },
   {
@@ -241,7 +241,7 @@
     "country_name": "Pakistan",
     "income_tax": 5.0,
     "specialty": "limestone",
-    "total_bonus": 55.0,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -304,7 +304,7 @@
     "country_name": "Chile",
     "income_tax": 7.0,
     "specialty": "oil",
-    "total_bonus": 45.0,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
