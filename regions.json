@@ -175,17 +175,17 @@
     "region_name": "Ashgabat"
   },
   {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 28.5,
+    "region_name": "Al Madinah"
+  },
+  {
     "country_name": "Mali",
     "income_tax": 45.0,
     "specialty": "iron",
     "total_bonus": 15.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 4.99,
-    "specialty": "iron",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -325,7 +325,7 @@
     "country_name": "Burkina Faso",
     "income_tax": 7.0,
     "specialty": "paper",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
