@@ -63,15 +63,15 @@
     "region_name": null
   },
   {
-    "country_name": "Ethiopia",
-    "income_tax": 45.0,
+    "country_name": "Djibouti",
+    "income_tax": 7.5,
     "specialty": "concrete",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Djibouti",
-    "income_tax": 7.5,
+    "country_name": "Ethiopia",
+    "income_tax": 45.0,
     "specialty": "concrete",
     "total_bonus": 35.0,
     "region_name": null
@@ -140,10 +140,10 @@
     "region_name": null
   },
   {
-    "country_name": "Ghana",
-    "income_tax": 7.0,
+    "country_name": "Brazil",
+    "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 55.0,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -154,10 +154,10 @@
     "region_name": null
   },
   {
-    "country_name": "Brazil",
-    "income_tax": 10.0,
+    "country_name": "Ghana",
+    "income_tax": 7.0,
     "specialty": "iron",
-    "total_bonus": 50.5,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -273,18 +273,18 @@
     "region_name": "Eastern Honduras"
   },
   {
+    "country_name": "Georgia",
+    "income_tax": 2.0,
+    "specialty": "livestock",
+    "total_bonus": 50,
+    "region_name": "Imereti"
+  },
+  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "livestock",
     "total_bonus": 48.0,
     "region_name": "Ticons Grisons"
-  },
-  {
-    "country_name": "Solomon Islands",
-    "income_tax": 6.5,
-    "specialty": "livestock",
-    "total_bonus": 35.0,
-    "region_name": "Solomon Islands"
   },
   {
     "country_name": "Chile",
@@ -319,6 +319,13 @@
     "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Burkina Faso",
+    "income_tax": 7.0,
+    "specialty": "paper",
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
