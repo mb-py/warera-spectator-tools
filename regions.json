@@ -3,7 +3,7 @@
     "country_name": "Cyprus",
     "income_tax": 8.0,
     "specialty": "ammo",
-    "total_bonus": 40.0,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -234,6 +234,13 @@
     "country_name": "Oman",
     "income_tax": 6.666666666666667,
     "specialty": "limestone",
+    "total_bonus": 47.0,
+    "region_name": "Sana'a"
+  },
+  {
+    "country_name": "Oman",
+    "income_tax": 6.666666666666667,
+    "specialty": "limestone",
     "total_bonus": 43.0,
     "region_name": "Muscat"
   },
@@ -250,6 +257,20 @@
     "specialty": "livestock",
     "total_bonus": 60,
     "region_name": "Siem Reap"
+  },
+  {
+    "country_name": "New Zealand",
+    "income_tax": 2.9,
+    "specialty": "livestock",
+    "total_bonus": 58,
+    "region_name": "South Island"
+  },
+  {
+    "country_name": "Myanmar",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 57,
+    "region_name": "Nay Pyi Taw"
   },
   {
     "country_name": "Mauritius",
@@ -271,20 +292,6 @@
     "specialty": "livestock",
     "total_bonus": 51,
     "region_name": "Eastern Honduras"
-  },
-  {
-    "country_name": "Georgia",
-    "income_tax": 2.0,
-    "specialty": "livestock",
-    "total_bonus": 50,
-    "region_name": "Imereti"
-  },
-  {
-    "country_name": "Switzerland",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 48.0,
-    "region_name": "Ticons Grisons"
   },
   {
     "country_name": "Chile",
@@ -358,7 +365,7 @@
   },
   {
     "country_name": "Algeria",
-    "income_tax": 7.0,
+    "income_tax": 1.0,
     "specialty": "petroleum",
     "total_bonus": 35.5,
     "region_name": null
@@ -382,6 +389,13 @@
     "income_tax": 8.0,
     "specialty": "steel",
     "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Albania",
+    "income_tax": 0.0,
+    "specialty": "steel",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
