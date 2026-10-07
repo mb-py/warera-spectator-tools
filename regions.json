@@ -1,14 +1,14 @@
 [
   {
-    "country_name": "Palestine",
-    "income_tax": 5.0,
+    "country_name": "Cyprus",
+    "income_tax": 8.0,
     "specialty": "ammo",
-    "total_bonus": 35.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
-    "country_name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
-    "income_tax": 8.0,
+    "country_name": "Palestine",
+    "income_tax": 5.0,
     "specialty": "ammo",
     "total_bonus": 35.0,
     "region_name": null
@@ -21,25 +21,11 @@
     "region_name": null
   },
   {
-    "country_name": "Cyprus",
-    "income_tax": 8.0,
-    "specialty": "ammo",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "coca",
     "total_bonus": 65,
     "region_name": "Burundi"
-  },
-  {
-    "country_name": "Myanmar",
-    "income_tax": 3.0,
-    "specialty": "coca",
-    "total_bonus": 59,
-    "region_name": "Kachin and Sagaing"
   },
   {
     "country_name": "Gambia",
@@ -248,8 +234,8 @@
     "country_name": "Oman",
     "income_tax": 6.666666666666667,
     "specialty": "limestone",
-    "total_bonus": 10.0,
-    "region_name": null
+    "total_bonus": 43.0,
+    "region_name": "Muscat"
   },
   {
     "country_name": "Bangladesh",
@@ -287,18 +273,18 @@
     "region_name": "Eastern Honduras"
   },
   {
-    "country_name": "Nicaragua",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 51,
-    "region_name": "Western Nicaragua"
-  },
-  {
     "country_name": "Switzerland",
     "income_tax": 1.0,
     "specialty": "livestock",
     "total_bonus": 48.0,
     "region_name": "Ticons Grisons"
+  },
+  {
+    "country_name": "Solomon Islands",
+    "income_tax": 6.5,
+    "specialty": "livestock",
+    "total_bonus": 35.0,
+    "region_name": "Solomon Islands"
   },
   {
     "country_name": "Chile",
@@ -357,6 +343,13 @@
     "region_name": "Damascus"
   },
   {
+    "country_name": "Tajikistan",
+    "income_tax": 3.0,
+    "specialty": "petroleum",
+    "total_bonus": 36.0,
+    "region_name": "Leninabad"
+  },
+  {
     "country_name": "Algeria",
     "income_tax": 7.0,
     "specialty": "petroleum",
@@ -375,13 +368,6 @@
     "income_tax": 9.0,
     "specialty": "steel",
     "total_bonus": 60.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Yemen",
-    "income_tax": 45.0,
-    "specialty": "steel",
-    "total_bonus": 35.0,
     "region_name": null
   },
   {
