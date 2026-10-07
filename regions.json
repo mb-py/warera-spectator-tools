@@ -133,17 +133,17 @@
     "region_name": null
   },
   {
-    "country_name": "Brazil",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 55.5,
-    "region_name": null
-  },
-  {
     "country_name": "Thailand",
     "income_tax": 8.0,
     "specialty": "iron",
     "total_bonus": 55.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Brazil",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 50.5,
     "region_name": null
   },
   {
