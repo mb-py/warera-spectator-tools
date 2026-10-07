@@ -119,13 +119,6 @@
     "region_name": "Central China"
   },
   {
-    "country_name": "Czechia",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 35.0,
-    "region_name": "Northeastern Czechia"
-  },
-  {
     "country_name": "Ecuador",
     "income_tax": 6.0,
     "specialty": "heavyAmmo",
@@ -161,13 +154,6 @@
     "region_name": null
   },
   {
-    "country_name": "Botswana",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 38.0,
-    "region_name": "Northwestern Botswana"
-  },
-  {
     "country_name": "Kyrgyzstan",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -189,10 +175,17 @@
     "region_name": null
   },
   {
+    "country_name": "Central Africa",
+    "income_tax": 4.99,
+    "specialty": "iron",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Sweden",
     "income_tax": 9.0,
     "specialty": "lead",
-    "total_bonus": 55.0,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -243,6 +236,13 @@
     "specialty": "limestone",
     "total_bonus": 43.0,
     "region_name": "Muscat"
+  },
+  {
+    "country_name": "Senegal",
+    "income_tax": 1.0,
+    "specialty": "limestone",
+    "total_bonus": 42.0,
+    "region_name": "Central Senegal"
   },
   {
     "country_name": "Bangladesh",
