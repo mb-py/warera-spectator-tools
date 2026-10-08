@@ -1,16 +1,9 @@
 [
   {
-    "country_name": "Cyprus",
-    "income_tax": 8.0,
-    "specialty": "ammo",
-    "total_bonus": 50.0,
-    "region_name": null
-  },
-  {
     "country_name": "Togo",
     "income_tax": 3.0,
     "specialty": "ammo",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -98,11 +91,11 @@
     "region_name": "Northeastern Iceland"
   },
   {
-    "country_name": "Taiwan",
-    "income_tax": 5.0,
+    "country_name": "Comoros",
+    "income_tax": 1.0,
     "specialty": "grain",
-    "total_bonus": 55.0,
-    "region_name": "Central China"
+    "total_bonus": 55,
+    "region_name": "Comoros"
   },
   {
     "country_name": "Uruguay",
@@ -136,7 +129,7 @@
     "country_name": "Thailand",
     "income_tax": 8.0,
     "specialty": "iron",
-    "total_bonus": 55.0,
+    "total_bonus": 60.0,
     "region_name": null
   },
   {
@@ -144,6 +137,13 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 50.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Cyprus",
+    "income_tax": 8.0,
+    "specialty": "iron",
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -170,13 +170,6 @@
   {
     "country_name": "Central Africa",
     "income_tax": 4.99,
-    "specialty": "iron",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Botswana",
-    "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 10.0,
     "region_name": null
