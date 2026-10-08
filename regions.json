@@ -63,15 +63,15 @@
     "region_name": null
   },
   {
-    "country_name": "Djibouti",
-    "income_tax": 7.5,
+    "country_name": "Ethiopia",
+    "income_tax": 45.0,
     "specialty": "concrete",
-    "total_bonus": 35.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
-    "country_name": "Ethiopia",
-    "income_tax": 45.0,
+    "country_name": "Djibouti",
+    "income_tax": 7.5,
     "specialty": "concrete",
     "total_bonus": 35.0,
     "region_name": null
@@ -231,13 +231,6 @@
     "region_name": "Sana'a"
   },
   {
-    "country_name": "Oman",
-    "income_tax": 6.666666666666667,
-    "specialty": "limestone",
-    "total_bonus": 43.0,
-    "region_name": "Muscat"
-  },
-  {
     "country_name": "Senegal",
     "income_tax": 1.0,
     "specialty": "limestone",
@@ -338,13 +331,6 @@
   {
     "country_name": "Malaysia",
     "income_tax": 3.0,
-    "specialty": "paper",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Tunisia",
-    "income_tax": 5.0,
     "specialty": "paper",
     "total_bonus": 10.0,
     "region_name": null
