@@ -38,7 +38,7 @@
     "country_name": "DR Congo",
     "income_tax": 8.0,
     "specialty": "cocain",
-    "total_bonus": 15.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -52,7 +52,7 @@
     "country_name": "Italy",
     "income_tax": 6.5,
     "specialty": "concrete",
-    "total_bonus": 45.5,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -112,6 +112,13 @@
     "region_name": "Montevideo"
   },
   {
+    "country_name": "Czechia",
+    "income_tax": 3.0,
+    "specialty": "grain",
+    "total_bonus": 43.0,
+    "region_name": "Bohemia & Vysocina"
+  },
+  {
     "country_name": "Palestine",
     "income_tax": 5.0,
     "specialty": "heavyAmmo",
@@ -141,7 +148,7 @@
   },
   {
     "country_name": "Thailand",
-    "income_tax": 8.0,
+    "income_tax": 6.0,
     "specialty": "iron",
     "total_bonus": 60.0,
     "region_name": null
@@ -332,7 +339,7 @@
     "country_name": "Madagascar",
     "income_tax": 5.0,
     "specialty": "paper",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
