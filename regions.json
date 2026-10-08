@@ -330,10 +330,24 @@
   },
   {
     "country_name": "Bahrain",
-    "income_tax": 8.0,
+    "income_tax": 3.0,
     "specialty": "petroleum",
     "total_bonus": 45.0,
     "region_name": "Bahrain"
+  },
+  {
+    "country_name": "Spain",
+    "income_tax": 4.0,
+    "specialty": "petroleum",
+    "total_bonus": 42.0,
+    "region_name": "Balearic Islands"
+  },
+  {
+    "country_name": "Hungary",
+    "income_tax": 9.0,
+    "specialty": "petroleum",
+    "total_bonus": 41.0,
+    "region_name": "Great Plains"
   },
   {
     "country_name": "Tajikistan",
