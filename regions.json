@@ -28,13 +28,6 @@
     "region_name": "Western Nicaragua"
   },
   {
-    "country_name": "Guatemala",
-    "income_tax": 3.5,
-    "specialty": "coca",
-    "total_bonus": 50,
-    "region_name": "Northern Guatemala"
-  },
-  {
     "country_name": "DR Congo",
     "income_tax": 8.0,
     "specialty": "cocain",
@@ -182,8 +175,8 @@
     "region_name": "Al Madinah"
   },
   {
-    "country_name": "Mali",
-    "income_tax": 45.0,
+    "country_name": "Central Africa",
+    "income_tax": 4.99,
     "specialty": "iron",
     "total_bonus": 15.0,
     "region_name": null
@@ -259,6 +252,13 @@
     "region_name": "Northern Oman"
   },
   {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "livestock",
+    "total_bonus": 65,
+    "region_name": "Singapore"
+  },
+  {
     "country_name": "Bangladesh",
     "income_tax": 4.0,
     "specialty": "livestock",
@@ -299,13 +299,6 @@
     "specialty": "livestock",
     "total_bonus": 55,
     "region_name": "Western Zambia"
-  },
-  {
-    "country_name": "Honduras",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 51,
-    "region_name": "Eastern Honduras"
   },
   {
     "country_name": "Chile",
