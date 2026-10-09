@@ -56,6 +56,13 @@
     "region_name": null
   },
   {
+    "country_name": "Brunei",
+    "income_tax": 5.0,
+    "specialty": "concrete",
+    "total_bonus": 35.0,
+    "region_name": null
+  },
+  {
     "country_name": "Djibouti",
     "income_tax": 7.5,
     "specialty": "concrete",
@@ -259,18 +266,18 @@
     "region_name": "Northern Oman"
   },
   {
+    "country_name": "Georgia",
+    "income_tax": 2.0,
+    "specialty": "livestock",
+    "total_bonus": 69,
+    "region_name": "Guria and Ajaria"
+  },
+  {
     "country_name": "Singapore",
     "income_tax": 5.0,
     "specialty": "livestock",
     "total_bonus": 65,
     "region_name": "Singapore"
-  },
-  {
-    "country_name": "Bangladesh",
-    "income_tax": 4.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Dhaka"
   },
   {
     "country_name": "New Zealand",
@@ -381,7 +388,7 @@
     "country_name": "Gabon",
     "income_tax": 5.9,
     "specialty": "steak",
-    "total_bonus": 20.0,
+    "total_bonus": 25.0,
     "region_name": null
   },
   {
