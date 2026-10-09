@@ -77,6 +77,13 @@
     "region_name": null
   },
   {
+    "country_name": "Lithuania",
+    "income_tax": 7.0,
+    "specialty": "cookedFish",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "Iceland",
     "income_tax": 10.0,
     "specialty": "fish",
@@ -133,17 +140,17 @@
     "region_name": null
   },
   {
-    "country_name": "Cyprus",
-    "income_tax": 4.0,
+    "country_name": "Thailand",
+    "income_tax": 6.0,
     "specialty": "iron",
     "total_bonus": 60.0,
     "region_name": null
   },
   {
-    "country_name": "Thailand",
-    "income_tax": 6.0,
+    "country_name": "Cyprus",
+    "income_tax": 4.0,
     "specialty": "iron",
-    "total_bonus": 60.0,
+    "total_bonus": 55.0,
     "region_name": null
   },
   {
@@ -157,7 +164,7 @@
     "country_name": "Ghana",
     "income_tax": 7.0,
     "specialty": "iron",
-    "total_bonus": 45.0,
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -168,15 +175,15 @@
     "region_name": "Sinai"
   },
   {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 28.5,
-    "region_name": "Al Madinah"
-  },
-  {
     "country_name": "Central Africa",
     "income_tax": 4.99,
+    "specialty": "iron",
+    "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Mali",
+    "income_tax": 45.0,
     "specialty": "iron",
     "total_bonus": 15.0,
     "region_name": null
@@ -266,13 +273,6 @@
     "region_name": "Dhaka"
   },
   {
-    "country_name": "Cambodia",
-    "income_tax": 6.0,
-    "specialty": "livestock",
-    "total_bonus": 60,
-    "region_name": "Siem Reap"
-  },
-  {
     "country_name": "New Zealand",
     "income_tax": 2.9,
     "specialty": "livestock",
@@ -287,18 +287,25 @@
     "region_name": "Nay Pyi Taw"
   },
   {
-    "country_name": "Mauritius",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 56,
-    "region_name": "Mauritius"
-  },
-  {
     "country_name": "Zambia",
     "income_tax": 1.5,
     "specialty": "livestock",
     "total_bonus": 55,
     "region_name": "Western Zambia"
+  },
+  {
+    "country_name": "Honduras",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 51,
+    "region_name": "Eastern Honduras"
+  },
+  {
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 48.0,
+    "region_name": "Ticons Grisons"
   },
   {
     "country_name": "Chile",
@@ -350,6 +357,13 @@
     "region_name": null
   },
   {
+    "country_name": "Syria",
+    "income_tax": 3.0,
+    "specialty": "petroleum",
+    "total_bonus": 48.0,
+    "region_name": "Zarqa"
+  },
+  {
     "country_name": "Bahrain",
     "income_tax": 3.0,
     "specialty": "petroleum",
@@ -395,7 +409,7 @@
     "country_name": "Poland",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
