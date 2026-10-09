@@ -28,6 +28,13 @@
     "region_name": "Western Nicaragua"
   },
   {
+    "country_name": "Bangladesh",
+    "income_tax": 4.0,
+    "specialty": "coca",
+    "total_bonus": 54,
+    "region_name": "Dhaka"
+  },
+  {
     "country_name": "DR Congo",
     "income_tax": 8.0,
     "specialty": "cocain",
@@ -96,13 +103,6 @@
     "specialty": "fish",
     "total_bonus": 67,
     "region_name": "Northeastern Iceland"
-  },
-  {
-    "country_name": "Gambia",
-    "income_tax": 2.5,
-    "specialty": "grain",
-    "total_bonus": 56,
-    "region_name": "Gambia"
   },
   {
     "country_name": "Comoros",
@@ -182,17 +182,17 @@
     "region_name": "Sinai"
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 4.99,
+    "country_name": "Mali",
+    "income_tax": 45.0,
     "specialty": "iron",
     "total_bonus": 15.0,
     "region_name": null
   },
   {
-    "country_name": "Mali",
-    "income_tax": 45.0,
+    "country_name": "Central Africa",
+    "income_tax": 4.99,
     "specialty": "iron",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -388,7 +388,7 @@
     "country_name": "Gabon",
     "income_tax": 5.9,
     "specialty": "steak",
-    "total_bonus": 25.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
