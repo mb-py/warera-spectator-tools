@@ -28,13 +28,6 @@
     "region_name": "Northern Guatemala"
   },
   {
-    "country_name": "Bangladesh",
-    "income_tax": 4.0,
-    "specialty": "coca",
-    "total_bonus": 54,
-    "region_name": "Dhaka"
-  },
-  {
     "country_name": "DR Congo",
     "income_tax": 8.0,
     "specialty": "cocain",
@@ -66,7 +59,7 @@
     "country_name": "Brunei",
     "income_tax": 5.0,
     "specialty": "concrete",
-    "total_bonus": 35.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -133,6 +126,13 @@
     "region_name": "Bohemia & Vysocina"
   },
   {
+    "country_name": "Bangladesh",
+    "income_tax": 4.0,
+    "specialty": "heavyAmmo",
+    "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
     "country_name": "Palestine",
     "income_tax": 5.0,
     "specialty": "heavyAmmo",
@@ -189,17 +189,17 @@
     "region_name": "Sinai"
   },
   {
+    "country_name": "Indonesia",
+    "income_tax": 9.0,
+    "specialty": "iron",
+    "total_bonus": 31.0,
+    "region_name": "Papua"
+  },
+  {
     "country_name": "Mali",
     "income_tax": 8.0,
     "specialty": "iron",
     "total_bonus": 20.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 4.99,
-    "specialty": "iron",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -292,13 +292,6 @@
     "specialty": "livestock",
     "total_bonus": 58,
     "region_name": "Mauritius"
-  },
-  {
-    "country_name": "Bangladesh",
-    "income_tax": 4.0,
-    "specialty": "livestock",
-    "total_bonus": 57,
-    "region_name": "Nay Pyi Taw"
   },
   {
     "country_name": "Honduras",
@@ -402,7 +395,7 @@
     "country_name": "Gabon",
     "income_tax": 4.0,
     "specialty": "steel",
-    "total_bonus": 30.0,
+    "total_bonus": 60.0,
     "region_name": null
   },
   {
