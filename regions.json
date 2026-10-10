@@ -63,13 +63,6 @@
     "region_name": null
   },
   {
-    "country_name": "Djibouti",
-    "income_tax": 7.5,
-    "specialty": "concrete",
-    "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
     "country_name": "Ukraine",
     "income_tax": 6.9,
     "specialty": "cookedFish",
@@ -94,7 +87,7 @@
     "country_name": "Iceland",
     "income_tax": 10.0,
     "specialty": "fish",
-    "total_bonus": 67,
+    "total_bonus": 62,
     "region_name": "Northeastern Iceland"
   },
   {
@@ -117,6 +110,13 @@
     "specialty": "grain",
     "total_bonus": 53,
     "region_name": "Montevideo"
+  },
+  {
+    "country_name": "Zambia",
+    "income_tax": 1.5,
+    "specialty": "grain",
+    "total_bonus": 52,
+    "region_name": "Western Zambia"
   },
   {
     "country_name": "Czechia",
@@ -308,11 +308,11 @@
     "region_name": "Eastern Honduras"
   },
   {
-    "country_name": "Switzerland",
-    "income_tax": 1.0,
+    "country_name": "Taiwan",
+    "income_tax": 5.0,
     "specialty": "livestock",
-    "total_bonus": 48.0,
-    "region_name": "Ticons Grisons"
+    "total_bonus": 45.0,
+    "region_name": "Southern Taiwan"
   },
   {
     "country_name": "Chile",
@@ -347,13 +347,6 @@
     "income_tax": 7.0,
     "specialty": "paper",
     "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Madagascar",
-    "income_tax": 5.0,
-    "specialty": "paper",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -409,7 +402,7 @@
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 15.5,
+    "total_bonus": 20.5,
     "region_name": null
   },
   {
