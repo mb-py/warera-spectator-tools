@@ -31,7 +31,7 @@
     "country_name": "DR Congo",
     "income_tax": 8.0,
     "specialty": "cocain",
-    "total_bonus": 20.0,
+    "total_bonus": 25.0,
     "region_name": null
   },
   {
@@ -96,6 +96,13 @@
     "specialty": "fish",
     "total_bonus": 67,
     "region_name": "Northeastern Iceland"
+  },
+  {
+    "country_name": "Cambodia",
+    "income_tax": 6.0,
+    "specialty": "grain",
+    "total_bonus": 62,
+    "region_name": "Siem Reap"
   },
   {
     "country_name": "Comoros",
@@ -178,7 +185,7 @@
     "country_name": "Mali",
     "income_tax": 45.0,
     "specialty": "iron",
-    "total_bonus": 15.0,
+    "total_bonus": 20.0,
     "region_name": null
   },
   {
@@ -231,18 +238,18 @@
     "region_name": null
   },
   {
+    "country_name": "Oman",
+    "income_tax": 6.666666666666667,
+    "specialty": "limestone",
+    "total_bonus": 47.0,
+    "region_name": "Sana'a"
+  },
+  {
     "country_name": "Senegal",
     "income_tax": 1.0,
     "specialty": "limestone",
     "total_bonus": 42.0,
     "region_name": "Central Senegal"
-  },
-  {
-    "country_name": "Oman",
-    "income_tax": 6.666666666666667,
-    "specialty": "limestone",
-    "total_bonus": 42.0,
-    "region_name": "Sana'a"
   },
   {
     "country_name": "Sudan",
@@ -255,7 +262,7 @@
     "country_name": "Oman",
     "income_tax": 6.666666666666667,
     "specialty": "limestone",
-    "total_bonus": 34.0,
+    "total_bonus": 39.0,
     "region_name": "Northern Oman"
   },
   {
@@ -336,17 +343,17 @@
     "region_name": null
   },
   {
-    "country_name": "Madagascar",
-    "income_tax": 5.0,
+    "country_name": "Burkina Faso",
+    "income_tax": 7.0,
     "specialty": "paper",
     "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Burkina Faso",
-    "income_tax": 7.0,
+    "country_name": "Madagascar",
+    "income_tax": 5.0,
     "specialty": "paper",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
