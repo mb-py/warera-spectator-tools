@@ -154,17 +154,17 @@
     "region_name": null
   },
   {
+    "country_name": "Brazil",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 55.5,
+    "region_name": null
+  },
+  {
     "country_name": "Cyprus",
     "income_tax": 4.0,
     "specialty": "iron",
     "total_bonus": 55.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Brazil",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 50.5,
     "region_name": null
   },
   {
@@ -294,18 +294,11 @@
     "region_name": "Mauritius"
   },
   {
-    "country_name": "Myanmar",
-    "income_tax": 3.0,
+    "country_name": "Bangladesh",
+    "income_tax": 4.0,
     "specialty": "livestock",
     "total_bonus": 57,
     "region_name": "Nay Pyi Taw"
-  },
-  {
-    "country_name": "Zambia",
-    "income_tax": 1.5,
-    "specialty": "livestock",
-    "total_bonus": 55,
-    "region_name": "Western Zambia"
   },
   {
     "country_name": "Honduras",
@@ -313,6 +306,13 @@
     "specialty": "livestock",
     "total_bonus": 51,
     "region_name": "Eastern Honduras"
+  },
+  {
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 48.0,
+    "region_name": "Ticons Grisons"
   },
   {
     "country_name": "Chile",
