@@ -246,7 +246,7 @@
   },
   {
     "country_name": "Latvia",
-    "income_tax": 10.0,
+    "income_tax": 8.5,
     "specialty": "lead",
     "total_bonus": 55.75,
     "region_name": null
@@ -255,7 +255,7 @@
     "country_name": "Sweden",
     "income_tax": 9.0,
     "specialty": "lead",
-    "total_bonus": 55.5,
+    "total_bonus": 55.0,
     "region_name": null
   },
   {
@@ -306,13 +306,6 @@
     "specialty": "livestock",
     "total_bonus": 65,
     "region_name": "Singapore"
-  },
-  {
-    "country_name": "New Zealand",
-    "income_tax": 2.9,
-    "specialty": "livestock",
-    "total_bonus": 58,
-    "region_name": "South Island"
   },
   {
     "country_name": "Mauritius",
