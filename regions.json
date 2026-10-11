@@ -281,17 +281,10 @@
   },
   {
     "country_name": "Pakistan",
-    "income_tax": 5.0,
+    "income_tax": 7.5,
     "specialty": "limestone",
     "total_bonus": 60.0,
     "region_name": null
-  },
-  {
-    "country_name": "Sudan",
-    "income_tax": 3.0,
-    "specialty": "limestone",
-    "total_bonus": 41.0,
-    "region_name": "Darfur"
   },
   {
     "country_name": "Oman",
