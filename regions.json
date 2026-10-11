@@ -126,6 +126,13 @@
     "region_name": null
   },
   {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 66,
+    "region_name": "Western Iceland"
+  },
+  {
     "country_name": "Cambodia",
     "income_tax": 6.0,
     "specialty": "grain",
@@ -259,6 +266,13 @@
     "region_name": null
   },
   {
+    "country_name": "Eritrea",
+    "income_tax": 5.0,
+    "specialty": "lead",
+    "total_bonus": 36.5,
+    "region_name": "Djibouti"
+  },
+  {
     "country_name": "El Salvador",
     "income_tax": 10.0,
     "specialty": "lightAmmo",
@@ -329,6 +343,13 @@
     "region_name": null
   },
   {
+    "country_name": "Mali",
+    "income_tax": 45.0,
+    "specialty": "oil",
+    "total_bonus": 25.0,
+    "region_name": null
+  },
+  {
     "country_name": "Germany",
     "income_tax": 1.0,
     "specialty": "oil",
@@ -371,13 +392,6 @@
     "region_name": "Beirut"
   },
   {
-    "country_name": "Mauritania",
-    "income_tax": 6.0,
-    "specialty": "petroleum",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Belgium",
     "income_tax": 10.0,
     "specialty": "steak",
@@ -402,7 +416,7 @@
     "country_name": "Iraq",
     "income_tax": 8.0,
     "specialty": "steel",
-    "total_bonus": 20.5,
+    "total_bonus": 15.5,
     "region_name": null
   },
   {
