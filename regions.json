@@ -21,6 +21,13 @@
     "region_name": null
   },
   {
+    "country_name": "Myanmar",
+    "income_tax": 3.0,
+    "specialty": "coca",
+    "total_bonus": 62,
+    "region_name": "Shan State"
+  },
+  {
     "country_name": "Burundi",
     "income_tax": 7.0,
     "specialty": "coca",
@@ -57,7 +64,7 @@
   },
   {
     "country_name": "Morocco",
-    "income_tax": 4.0,
+    "income_tax": 6.0,
     "specialty": "cocain",
     "total_bonus": 5.5,
     "region_name": null
