@@ -35,13 +35,6 @@
     "region_name": "Burundi"
   },
   {
-    "country_name": "Nicaragua",
-    "income_tax": 3.0,
-    "specialty": "coca",
-    "total_bonus": 58,
-    "region_name": "Western Nicaragua"
-  },
-  {
     "country_name": "Guatemala",
     "income_tax": 3.5,
     "specialty": "coca",
@@ -54,6 +47,13 @@
     "specialty": "coca",
     "total_bonus": 53,
     "region_name": "Eastern Honduras"
+  },
+  {
+    "country_name": "Taiwan",
+    "income_tax": 5.0,
+    "specialty": "coca",
+    "total_bonus": 49.0,
+    "region_name": "Southern Taiwan"
   },
   {
     "country_name": "DR Congo",
@@ -140,13 +140,6 @@
     "region_name": "Siem Reap"
   },
   {
-    "country_name": "Gambia",
-    "income_tax": 2.5,
-    "specialty": "grain",
-    "total_bonus": 61,
-    "region_name": "Gambia"
-  },
-  {
     "country_name": "Nicaragua",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -224,13 +217,6 @@
     "region_name": "Southeastern Botswana"
   },
   {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 32.5,
-    "region_name": "Sinai"
-  },
-  {
     "country_name": "Ghana",
     "income_tax": 7.0,
     "specialty": "iron",
@@ -243,6 +229,13 @@
     "specialty": "iron",
     "total_bonus": 27.0,
     "region_name": "Luanda"
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 4.99,
+    "specialty": "iron",
+    "total_bonus": 10.0,
+    "region_name": null
   },
   {
     "country_name": "Sweden",
@@ -280,13 +273,6 @@
     "region_name": null
   },
   {
-    "country_name": "South Korea",
-    "income_tax": 1.69,
-    "specialty": "lightAmmo",
-    "total_bonus": 35.0,
-    "region_name": null
-  },
-  {
     "country_name": "Paraguay",
     "income_tax": 8.0,
     "specialty": "lightAmmo",
@@ -304,8 +290,8 @@
     "country_name": "Oman",
     "income_tax": 6.666666666666667,
     "specialty": "limestone",
-    "total_bonus": 39.0,
-    "region_name": "Northern Oman"
+    "total_bonus": 10.0,
+    "region_name": null
   },
   {
     "country_name": "Singapore",
