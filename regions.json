@@ -273,6 +273,13 @@
     "region_name": null
   },
   {
+    "country_name": "Namibia",
+    "income_tax": 8.0,
+    "specialty": "lead",
+    "total_bonus": 39.0,
+    "region_name": "Hardap"
+  },
+  {
     "country_name": "Eritrea",
     "income_tax": 5.0,
     "specialty": "lead",
@@ -327,13 +334,6 @@
     "specialty": "livestock",
     "total_bonus": 58,
     "region_name": "Mauritius"
-  },
-  {
-    "country_name": "Taiwan",
-    "income_tax": 5.0,
-    "specialty": "livestock",
-    "total_bonus": 45.0,
-    "region_name": "Southern Taiwan"
   },
   {
     "country_name": "Mali",
