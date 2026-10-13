@@ -91,6 +91,13 @@
     "region_name": null
   },
   {
+    "country_name": "Djibouti",
+    "income_tax": 7.5,
+    "specialty": "concrete",
+    "total_bonus": 30.0,
+    "region_name": null
+  },
+  {
     "country_name": "Brunei",
     "income_tax": 5.0,
     "specialty": "concrete",
@@ -133,13 +140,6 @@
     "region_name": null
   },
   {
-    "country_name": "Iceland",
-    "income_tax": 10.0,
-    "specialty": "fish",
-    "total_bonus": 66,
-    "region_name": "Western Iceland"
-  },
-  {
     "country_name": "Uruguay",
     "income_tax": 5.0,
     "specialty": "grain",
@@ -166,13 +166,6 @@
     "specialty": "grain",
     "total_bonus": 54,
     "region_name": "North Island"
-  },
-  {
-    "country_name": "Czechia",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 43.0,
-    "region_name": "Bohemia & Vysocina"
   },
   {
     "country_name": "Bangladesh",
@@ -218,7 +211,7 @@
   },
   {
     "country_name": "Cyprus",
-    "income_tax": 4.0,
+    "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 30.0,
     "region_name": null
@@ -395,7 +388,7 @@
     "country_name": "Armenia",
     "income_tax": 4.0,
     "specialty": "steak",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -410,13 +403,6 @@
     "income_tax": 9.0,
     "specialty": "steel",
     "total_bonus": 55.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Iraq",
-    "income_tax": 8.0,
-    "specialty": "steel",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
