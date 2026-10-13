@@ -59,7 +59,7 @@
     "country_name": "DR Congo",
     "income_tax": 8.0,
     "specialty": "cocain",
-    "total_bonus": 25.0,
+    "total_bonus": 25.5,
     "region_name": null
   },
   {
@@ -220,13 +220,6 @@
     "country_name": "Cyprus",
     "income_tax": 4.0,
     "specialty": "iron",
-    "total_bonus": 40.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Ghana",
-    "income_tax": 7.0,
-    "specialty": "iron",
     "total_bonus": 30.0,
     "region_name": null
   },
@@ -242,6 +235,13 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 5.5,
     "region_name": null
   },
   {
@@ -264,13 +264,6 @@
     "specialty": "lead",
     "total_bonus": 39.0,
     "region_name": "Hardap"
-  },
-  {
-    "country_name": "Eritrea",
-    "income_tax": 5.0,
-    "specialty": "lead",
-    "total_bonus": 36.5,
-    "region_name": "Djibouti"
   },
   {
     "country_name": "El Salvador",
@@ -339,7 +332,7 @@
     "country_name": "Mali",
     "income_tax": 8.0,
     "specialty": "oil",
-    "total_bonus": 55.0,
+    "total_bonus": 60.0,
     "region_name": null
   },
   {
@@ -388,7 +381,7 @@
     "country_name": "Burkina Faso",
     "income_tax": 7.0,
     "specialty": "paper",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -396,6 +389,13 @@
     "income_tax": 3.0,
     "specialty": "petroleum",
     "total_bonus": 55.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Armenia",
+    "income_tax": 4.0,
+    "specialty": "steak",
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -425,12 +425,5 @@
     "specialty": "wood",
     "total_bonus": 40.0,
     "region_name": null
-  },
-  {
-    "country_name": "Armenia",
-    "income_tax": 1.0,
-    "specialty": "wood",
-    "total_bonus": 31.0,
-    "region_name": "Karabakh"
   }
 ]
