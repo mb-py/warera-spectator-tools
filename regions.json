@@ -133,6 +133,13 @@
     "region_name": null
   },
   {
+    "country_name": "Uruguay",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 69,
+    "region_name": "Montevideo"
+  },
+  {
     "country_name": "Nicaragua",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -280,13 +287,6 @@
     "region_name": null
   },
   {
-    "country_name": "Liberia",
-    "income_tax": 6.0,
-    "specialty": "limestone",
-    "total_bonus": 40.0,
-    "region_name": null
-  },
-  {
     "country_name": "Senegal",
     "income_tax": 1.0,
     "specialty": "limestone",
@@ -343,6 +343,13 @@
     "region_name": null
   },
   {
+    "country_name": "Liberia",
+    "income_tax": 6.0,
+    "specialty": "paper",
+    "total_bonus": 45.0,
+    "region_name": null
+  },
+  {
     "country_name": "Costa Rica",
     "income_tax": 4.0,
     "specialty": "paper",
@@ -350,15 +357,15 @@
     "region_name": null
   },
   {
-    "country_name": "Guinea-Bissau",
-    "income_tax": 6.0,
+    "country_name": "Madagascar",
+    "income_tax": 5.0,
     "specialty": "paper",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
-    "country_name": "Madagascar",
-    "income_tax": 5.0,
+    "country_name": "Guinea-Bissau",
+    "income_tax": 6.0,
     "specialty": "paper",
     "total_bonus": 35.0,
     "region_name": null
