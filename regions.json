@@ -91,13 +91,6 @@
     "region_name": null
   },
   {
-    "country_name": "Djibouti",
-    "income_tax": 7.5,
-    "specialty": "concrete",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
     "country_name": "Brunei",
     "income_tax": 5.0,
     "specialty": "concrete",
@@ -277,6 +270,13 @@
     "income_tax": 7.5,
     "specialty": "limestone",
     "total_bonus": 60.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Liberia",
+    "income_tax": 6.0,
+    "specialty": "limestone",
+    "total_bonus": 40.0,
     "region_name": null
   },
   {
