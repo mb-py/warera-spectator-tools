@@ -203,20 +203,6 @@
     "region_name": null
   },
   {
-    "country_name": "Central Africa",
-    "income_tax": 1.0,
-    "specialty": "iron",
-    "total_bonus": 49.0,
-    "region_name": "Ouham"
-  },
-  {
-    "country_name": "Central Africa",
-    "income_tax": 1.0,
-    "specialty": "iron",
-    "total_bonus": 40.0,
-    "region_name": "Northern Cameroon"
-  },
-  {
     "country_name": "Cyprus",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -235,6 +221,13 @@
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 5.5,
     "region_name": null
   },
   {
@@ -404,6 +397,13 @@
     "specialty": "steel",
     "total_bonus": 50.5,
     "region_name": null
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 1.0,
+    "specialty": "wood",
+    "total_bonus": 49.0,
+    "region_name": "Coastal Gabon"
   },
   {
     "country_name": "Algeria",
