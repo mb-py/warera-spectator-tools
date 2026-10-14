@@ -105,17 +105,17 @@
     "region_name": null
   },
   {
+    "country_name": "Poland",
+    "income_tax": 5.0,
+    "specialty": "cookedFish",
+    "total_bonus": 20.0,
+    "region_name": null
+  },
+  {
     "country_name": "Jamaica",
     "income_tax": 10.0,
     "specialty": "cookedFish",
     "total_bonus": 16.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Poland",
-    "income_tax": 5.0,
-    "specialty": "cookedFish",
-    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -128,13 +128,6 @@
   {
     "country_name": "Ukraine",
     "income_tax": 5.0,
-    "specialty": "cookedFish",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Lithuania",
-    "income_tax": 7.0,
     "specialty": "cookedFish",
     "total_bonus": 10.0,
     "region_name": null
@@ -166,6 +159,13 @@
     "specialty": "grain",
     "total_bonus": 54,
     "region_name": "North Island"
+  },
+  {
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
+    "specialty": "grain",
+    "total_bonus": 30.0,
+    "region_name": "Zurich"
   },
   {
     "country_name": "Bangladesh",
@@ -259,6 +259,13 @@
     "region_name": "Hardap"
   },
   {
+    "country_name": "Namibia",
+    "income_tax": 8.0,
+    "specialty": "lead",
+    "total_bonus": 30.0,
+    "region_name": "Free State"
+  },
+  {
     "country_name": "El Salvador",
     "income_tax": 10.0,
     "specialty": "lightAmmo",
@@ -315,13 +322,6 @@
     "region_name": "Comoros"
   },
   {
-    "country_name": "Switzerland",
-    "income_tax": 1.0,
-    "specialty": "livestock",
-    "total_bonus": 46.0,
-    "region_name": "Zurich"
-  },
-  {
     "country_name": "Nepal",
     "income_tax": 5.0,
     "specialty": "livestock",
@@ -340,13 +340,6 @@
     "income_tax": 7.0,
     "specialty": "oil",
     "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Mexico",
-    "income_tax": 3.0,
-    "specialty": "oil",
-    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -416,7 +409,7 @@
     "country_name": "Algeria",
     "income_tax": 3.5,
     "specialty": "wood",
-    "total_bonus": 40.0,
+    "total_bonus": 35.0,
     "region_name": null
   }
 ]
