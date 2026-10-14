@@ -140,6 +140,13 @@
     "region_name": "Montevideo"
   },
   {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 66,
+    "region_name": "Singapore"
+  },
+  {
     "country_name": "Nicaragua",
     "income_tax": 3.0,
     "specialty": "grain",
@@ -418,5 +425,12 @@
     "specialty": "wood",
     "total_bonus": 35.0,
     "region_name": null
+  },
+  {
+    "country_name": "Laos",
+    "income_tax": 7.5,
+    "specialty": "wood",
+    "total_bonus": 22.0,
+    "region_name": "Vientiane"
   }
 ]
