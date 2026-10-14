@@ -42,13 +42,6 @@
     "region_name": "Shan State"
   },
   {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "coca",
-    "total_bonus": 61,
-    "region_name": "Burundi"
-  },
-  {
     "country_name": "Guatemala",
     "income_tax": 3.5,
     "specialty": "coca",
@@ -131,6 +124,13 @@
     "specialty": "cookedFish",
     "total_bonus": 10.0,
     "region_name": null
+  },
+  {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 65,
+    "region_name": "Southern Iceland"
   },
   {
     "country_name": "Uruguay",
@@ -308,6 +308,13 @@
     "region_name": "Central Uganda"
   },
   {
+    "country_name": "Burundi",
+    "income_tax": 7.0,
+    "specialty": "livestock",
+    "total_bonus": 66,
+    "region_name": "Burundi"
+  },
+  {
     "country_name": "Gambia",
     "income_tax": 2.5,
     "specialty": "livestock",
@@ -322,11 +329,11 @@
     "region_name": "Comoros"
   },
   {
-    "country_name": "Nepal",
+    "country_name": "United Kingdom",
     "income_tax": 5.0,
     "specialty": "livestock",
-    "total_bonus": 35.0,
-    "region_name": "Northern Nepal"
+    "total_bonus": 10.0,
+    "region_name": null
   },
   {
     "country_name": "Mali",
