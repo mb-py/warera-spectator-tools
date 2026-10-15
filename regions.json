@@ -80,7 +80,7 @@
     "country_name": "Ethiopia",
     "income_tax": 8.0,
     "specialty": "concrete",
-    "total_bonus": 40.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -145,13 +145,6 @@
     "specialty": "grain",
     "total_bonus": 61,
     "region_name": "Western Costa Rica"
-  },
-  {
-    "country_name": "Ecuador",
-    "income_tax": 6.0,
-    "specialty": "grain",
-    "total_bonus": 55,
-    "region_name": "Ecuadorian Islands"
   },
   {
     "country_name": "New Zealand",
@@ -248,13 +241,6 @@
     "country_name": "Namibia",
     "income_tax": 8.0,
     "specialty": "lead",
-    "total_bonus": 39.0,
-    "region_name": "Hardap"
-  },
-  {
-    "country_name": "Namibia",
-    "income_tax": 8.0,
-    "specialty": "lead",
     "total_bonus": 30.0,
     "region_name": "Free State"
   },
@@ -322,18 +308,18 @@
     "region_name": "Gambia"
   },
   {
+    "country_name": "Ecuador",
+    "income_tax": 6.0,
+    "specialty": "livestock",
+    "total_bonus": 60,
+    "region_name": "Ecuadorian Islands"
+  },
+  {
     "country_name": "Eswatini",
     "income_tax": 4.5,
     "specialty": "livestock",
     "total_bonus": 57,
     "region_name": "Eswatini"
-  },
-  {
-    "country_name": "United Kingdom",
-    "income_tax": 5.0,
-    "specialty": "livestock",
-    "total_bonus": 10.0,
-    "region_name": null
   },
   {
     "country_name": "Mali",
