@@ -42,13 +42,6 @@
     "region_name": "Shan State"
   },
   {
-    "country_name": "Guatemala",
-    "income_tax": 3.5,
-    "specialty": "coca",
-    "total_bonus": 54,
-    "region_name": "Northern Guatemala"
-  },
-  {
     "country_name": "Taiwan",
     "income_tax": 5.0,
     "specialty": "coca",
