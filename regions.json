@@ -1,14 +1,14 @@
 [
   {
-    "country_name": "Costa Rica",
-    "income_tax": 4.0,
+    "country_name": "Tunisia",
+    "income_tax": 3.5,
     "specialty": "ammo",
     "total_bonus": 40.0,
     "region_name": null
   },
   {
-    "country_name": "Tunisia",
-    "income_tax": 6.617,
+    "country_name": "Costa Rica",
+    "income_tax": 4.0,
     "specialty": "ammo",
     "total_bonus": 40.0,
     "region_name": null
@@ -73,7 +73,7 @@
     "country_name": "Ethiopia",
     "income_tax": 8.0,
     "specialty": "concrete",
-    "total_bonus": 45.0,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -171,7 +171,7 @@
     "country_name": "Kenya",
     "income_tax": 45.0,
     "specialty": "heavyAmmo",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -340,13 +340,6 @@
     "income_tax": 6.0,
     "specialty": "paper",
     "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Madagascar",
-    "income_tax": 5.0,
-    "specialty": "paper",
-    "total_bonus": 35.0,
     "region_name": null
   },
   {
