@@ -315,6 +315,13 @@
     "region_name": "Burundi"
   },
   {
+    "country_name": "Honduras",
+    "income_tax": 1.0,
+    "specialty": "livestock",
+    "total_bonus": 64,
+    "region_name": "Eastern Honduras"
+  },
+  {
     "country_name": "Gambia",
     "income_tax": 2.5,
     "specialty": "livestock",
@@ -423,7 +430,7 @@
     "country_name": "Central Africa",
     "income_tax": 1.0,
     "specialty": "wood",
-    "total_bonus": 49.0,
+    "total_bonus": 40.0,
     "region_name": "Coastal Gabon"
   },
   {
