@@ -1,5 +1,12 @@
 [
   {
+    "country_name": "Costa Rica",
+    "income_tax": 4.0,
+    "specialty": "ammo",
+    "total_bonus": 40.0,
+    "region_name": null
+  },
+  {
     "country_name": "Tunisia",
     "income_tax": 6.617,
     "specialty": "ammo",
@@ -26,13 +33,6 @@
     "specialty": "coca",
     "total_bonus": 66,
     "region_name": "Siem Reap"
-  },
-  {
-    "country_name": "Mauritius",
-    "income_tax": 3.0,
-    "specialty": "coca",
-    "total_bonus": 65,
-    "region_name": "Mauritius"
   },
   {
     "country_name": "Myanmar",
@@ -78,7 +78,7 @@
   },
   {
     "country_name": "Ethiopia",
-    "income_tax": 45.0,
+    "income_tax": 8.0,
     "specialty": "concrete",
     "total_bonus": 40.0,
     "region_name": null
@@ -101,7 +101,7 @@
     "country_name": "Poland",
     "income_tax": 5.0,
     "specialty": "cookedFish",
-    "total_bonus": 20.0,
+    "total_bonus": 20.5,
     "region_name": null
   },
   {
@@ -116,13 +116,6 @@
     "income_tax": 10.0,
     "specialty": "cookedFish",
     "total_bonus": 10.5,
-    "region_name": null
-  },
-  {
-    "country_name": "Ukraine",
-    "income_tax": 5.0,
-    "specialty": "cookedFish",
-    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -152,13 +145,6 @@
     "specialty": "grain",
     "total_bonus": 61,
     "region_name": "Western Costa Rica"
-  },
-  {
-    "country_name": "Eswatini",
-    "income_tax": 4.5,
-    "specialty": "grain",
-    "total_bonus": 59,
-    "region_name": "Eswatini"
   },
   {
     "country_name": "Ecuador",
@@ -234,7 +220,7 @@
     "country_name": "Botswana",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 10.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -301,6 +287,13 @@
     "region_name": "Dakar"
   },
   {
+    "country_name": "Nicaragua",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 70,
+    "region_name": "Western Nicaragua"
+  },
+  {
     "country_name": "Uganda",
     "income_tax": 5.0,
     "specialty": "livestock",
@@ -329,11 +322,11 @@
     "region_name": "Gambia"
   },
   {
-    "country_name": "Comoros",
-    "income_tax": 1.0,
+    "country_name": "Eswatini",
+    "income_tax": 4.5,
     "specialty": "livestock",
-    "total_bonus": 61,
-    "region_name": "Comoros"
+    "total_bonus": 57,
+    "region_name": "Eswatini"
   },
   {
     "country_name": "United Kingdom",
@@ -368,13 +361,6 @@
     "income_tax": 6.0,
     "specialty": "paper",
     "total_bonus": 45.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Costa Rica",
-    "income_tax": 4.0,
-    "specialty": "paper",
-    "total_bonus": 40.0,
     "region_name": null
   },
   {
@@ -413,6 +399,13 @@
     "region_name": null
   },
   {
+    "country_name": "Australia",
+    "income_tax": 6.0,
+    "specialty": "steak",
+    "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
     "country_name": "Gabon",
     "income_tax": 7.69,
     "specialty": "steel",
@@ -423,7 +416,7 @@
     "country_name": "South Africa",
     "income_tax": 9.0,
     "specialty": "steel",
-    "total_bonus": 50.5,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
