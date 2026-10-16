@@ -129,7 +129,7 @@
     "country_name": "Nicaragua",
     "income_tax": 3.0,
     "specialty": "grain",
-    "total_bonus": 61,
+    "total_bonus": 56,
     "region_name": "Western Costa Rica"
   },
   {
@@ -182,13 +182,6 @@
     "region_name": null
   },
   {
-    "country_name": "Ghana",
-    "income_tax": 7.0,
-    "specialty": "iron",
-    "total_bonus": 30.0,
-    "region_name": null
-  },
-  {
     "country_name": "Cyprus",
     "income_tax": 10.0,
     "specialty": "iron",
@@ -210,17 +203,17 @@
     "region_name": null
   },
   {
-    "country_name": "Sweden",
-    "income_tax": 10.0,
-    "specialty": "lead",
-    "total_bonus": 60.0,
-    "region_name": null
-  },
-  {
     "country_name": "Latvia",
     "income_tax": 8.5,
     "specialty": "lead",
     "total_bonus": 55.75,
+    "region_name": null
+  },
+  {
+    "country_name": "Sweden",
+    "income_tax": 10.0,
+    "specialty": "lead",
+    "total_bonus": 55.0,
     "region_name": null
   },
   {
@@ -346,7 +339,7 @@
     "country_name": "Syria",
     "income_tax": 7.0,
     "specialty": "petroleum",
-    "total_bonus": 55.0,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -376,6 +369,13 @@
     "specialty": "steel",
     "total_bonus": 45.0,
     "region_name": null
+  },
+  {
+    "country_name": "Central Africa",
+    "income_tax": 1.0,
+    "specialty": "wood",
+    "total_bonus": 49.0,
+    "region_name": "Ouham"
   },
   {
     "country_name": "Central Africa",
