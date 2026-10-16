@@ -42,6 +42,13 @@
     "region_name": "Shan State"
   },
   {
+    "country_name": "Guatemala",
+    "income_tax": 3.5,
+    "specialty": "coca",
+    "total_bonus": 59,
+    "region_name": "Northern Guatemala"
+  },
+  {
     "country_name": "DR Congo",
     "income_tax": 8.0,
     "specialty": "cocain",
@@ -294,11 +301,11 @@
     "region_name": "Eswatini"
   },
   {
-    "country_name": "Taiwan",
-    "income_tax": 5.0,
+    "country_name": "Burundi",
+    "income_tax": 7.0,
     "specialty": "livestock",
-    "total_bonus": 39.0,
-    "region_name": "Central Taiwan"
+    "total_bonus": 55,
+    "region_name": "Burundi"
   },
   {
     "country_name": "Mali",
@@ -325,14 +332,14 @@
     "country_name": "Liberia",
     "income_tax": 6.0,
     "specialty": "paper",
-    "total_bonus": 45.0,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
     "country_name": "Guinea-Bissau",
     "income_tax": 6.0,
     "specialty": "paper",
-    "total_bonus": 35.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -360,7 +367,7 @@
     "country_name": "Gabon",
     "income_tax": 7.69,
     "specialty": "steel",
-    "total_bonus": 60.0,
+    "total_bonus": 60.5,
     "region_name": null
   },
   {
@@ -372,14 +379,14 @@
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 1.0,
+    "income_tax": 2.18125,
     "specialty": "wood",
     "total_bonus": 49.0,
     "region_name": "Ouham"
   },
   {
     "country_name": "Central Africa",
-    "income_tax": 1.0,
+    "income_tax": 2.18125,
     "specialty": "wood",
     "total_bonus": 40.0,
     "region_name": "Coastal Gabon"
