@@ -10,7 +10,7 @@
     "country_name": "Tunisia",
     "income_tax": 3.5,
     "specialty": "ammo",
-    "total_bonus": 30.0,
+    "total_bonus": 35.0,
     "region_name": null
   },
   {
@@ -33,13 +33,6 @@
     "specialty": "coca",
     "total_bonus": 70.0,
     "region_name": "Southern Malawi"
-  },
-  {
-    "country_name": "Myanmar",
-    "income_tax": 4.5,
-    "specialty": "coca",
-    "total_bonus": 64,
-    "region_name": "Nay Pyi Taw"
   },
   {
     "country_name": "Eswatini",
@@ -73,7 +66,7 @@
     "country_name": "Niger",
     "income_tax": 4.0,
     "specialty": "cocain",
-    "total_bonus": 15.0,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -161,18 +154,18 @@
     "region_name": "Salto"
   },
   {
+    "country_name": "Singapore",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 62,
+    "region_name": "Singapore"
+  },
+  {
     "country_name": "South Korea",
     "income_tax": 1.69,
     "specialty": "grain",
     "total_bonus": 58,
     "region_name": "Northern South Korea"
-  },
-  {
-    "country_name": "New Zealand",
-    "income_tax": 2.9,
-    "specialty": "grain",
-    "total_bonus": 56,
-    "region_name": "North Island"
   },
   {
     "country_name": "Uganda",
@@ -241,7 +234,7 @@
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 5.5,
+    "total_bonus": 10.5,
     "region_name": null
   },
   {
@@ -308,6 +301,13 @@
     "region_name": null
   },
   {
+    "country_name": "Kuwait",
+    "income_tax": 4.0,
+    "specialty": "limestone",
+    "total_bonus": 55.0,
+    "region_name": "Kuwait"
+  },
+  {
     "country_name": "Central Africa",
     "income_tax": 2.18125,
     "specialty": "livestock",
@@ -327,13 +327,6 @@
     "specialty": "livestock",
     "total_bonus": 60.0,
     "region_name": "South Australia"
-  },
-  {
-    "country_name": "Ecuador",
-    "income_tax": 6.0,
-    "specialty": "livestock",
-    "total_bonus": 59,
-    "region_name": "Ecuadorian Islands"
   },
   {
     "country_name": "Mali",
