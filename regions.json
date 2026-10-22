@@ -49,13 +49,6 @@
     "region_name": "Burundi"
   },
   {
-    "country_name": "Nicaragua",
-    "income_tax": 4.0,
-    "specialty": "coca",
-    "total_bonus": 50,
-    "region_name": "Western Costa Rica"
-  },
-  {
     "country_name": "DR Congo",
     "income_tax": 8.0,
     "specialty": "cocain",
@@ -236,6 +229,13 @@
     "specialty": "iron",
     "total_bonus": 55.0,
     "region_name": null
+  },
+  {
+    "country_name": "Indonesia",
+    "income_tax": 9.0,
+    "specialty": "iron",
+    "total_bonus": 43.0,
+    "region_name": "Papua"
   },
   {
     "country_name": "Botswana",
