@@ -7,10 +7,10 @@
     "region_name": null
   },
   {
-    "country_name": "Costa Rica",
-    "income_tax": 3.0,
+    "country_name": "Tunisia",
+    "income_tax": 3.5,
     "specialty": "ammo",
-    "total_bonus": 40.0,
+    "total_bonus": 30.0,
     "region_name": null
   },
   {
@@ -73,7 +73,7 @@
     "country_name": "Niger",
     "income_tax": 4.0,
     "specialty": "cocain",
-    "total_bonus": 20.0,
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -154,13 +154,6 @@
     "region_name": "Comoros"
   },
   {
-    "country_name": "Honduras",
-    "income_tax": 1.0,
-    "specialty": "grain",
-    "total_bonus": 66,
-    "region_name": "Eastern Honduras"
-  },
-  {
     "country_name": "Uruguay",
     "income_tax": 5.0,
     "specialty": "grain",
@@ -168,18 +161,25 @@
     "region_name": "Salto"
   },
   {
-    "country_name": "Singapore",
-    "income_tax": 5.0,
-    "specialty": "grain",
-    "total_bonus": 66,
-    "region_name": "Singapore"
-  },
-  {
     "country_name": "South Korea",
     "income_tax": 1.69,
     "specialty": "grain",
     "total_bonus": 58,
     "region_name": "Northern South Korea"
+  },
+  {
+    "country_name": "New Zealand",
+    "income_tax": 2.9,
+    "specialty": "grain",
+    "total_bonus": 56,
+    "region_name": "North Island"
+  },
+  {
+    "country_name": "Uganda",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 56,
+    "region_name": "Western Uganda"
   },
   {
     "country_name": "Chile",
