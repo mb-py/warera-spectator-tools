@@ -59,7 +59,7 @@
     "country_name": "Venezuela",
     "income_tax": 10.0,
     "specialty": "concrete",
-    "total_bonus": 56.0,
+    "total_bonus": 55.5,
     "region_name": null
   },
   {
@@ -168,11 +168,11 @@
     "region_name": "Northern South Korea"
   },
   {
-    "country_name": "Uganda",
-    "income_tax": 5.0,
+    "country_name": "Cambodia",
+    "income_tax": 6.0,
     "specialty": "grain",
-    "total_bonus": 56,
-    "region_name": "Western Uganda"
+    "total_bonus": 53,
+    "region_name": "Battambang"
   },
   {
     "country_name": "Chile",
@@ -308,6 +308,13 @@
     "region_name": "Darfur"
   },
   {
+    "country_name": "Kuwait",
+    "income_tax": 4.0,
+    "specialty": "limestone",
+    "total_bonus": 39.0,
+    "region_name": "Al Anbar"
+  },
+  {
     "country_name": "India",
     "income_tax": 6.0,
     "specialty": "limestone",
@@ -322,11 +329,18 @@
     "region_name": "Mbomou"
   },
   {
+    "country_name": "Burundi",
+    "income_tax": 7.0,
+    "specialty": "livestock",
+    "total_bonus": 68,
+    "region_name": "Burundi"
+  },
+  {
     "country_name": "Australia",
     "income_tax": 6.0,
     "specialty": "livestock",
-    "total_bonus": 69.0,
-    "region_name": "Mahajanga"
+    "total_bonus": 66.0,
+    "region_name": "Antsiranana"
   },
   {
     "country_name": "Ecuador",
@@ -355,13 +369,6 @@
     "specialty": "livestock",
     "total_bonus": 53,
     "region_name": "Kachin and Sagaing"
-  },
-  {
-    "country_name": "Czechia",
-    "income_tax": 3.0,
-    "specialty": "livestock",
-    "total_bonus": 35.0,
-    "region_name": "Western Czechia"
   },
   {
     "country_name": "Mali",
