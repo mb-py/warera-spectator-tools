@@ -91,17 +91,17 @@
     "region_name": null
   },
   {
-    "country_name": "Croatia",
-    "income_tax": 10.0,
-    "specialty": "cookedFish",
-    "total_bonus": 20.0,
-    "region_name": null
-  },
-  {
     "country_name": "Jamaica",
     "income_tax": 10.0,
     "specialty": "cookedFish",
     "total_bonus": 15.5,
+    "region_name": null
+  },
+  {
+    "country_name": "Croatia",
+    "income_tax": 10.0,
+    "specialty": "cookedFish",
+    "total_bonus": 15.0,
     "region_name": null
   },
   {
@@ -126,6 +126,13 @@
     "region_name": "Southern Greenland"
   },
   {
+    "country_name": "Iceland",
+    "income_tax": 10.0,
+    "specialty": "fish",
+    "total_bonus": 53,
+    "region_name": "Northeastern Iceland"
+  },
+  {
     "country_name": "Australia",
     "income_tax": 6.0,
     "specialty": "grain",
@@ -147,6 +154,13 @@
     "region_name": "Comoros"
   },
   {
+    "country_name": "Australia",
+    "income_tax": 6.0,
+    "specialty": "grain",
+    "total_bonus": 67.0,
+    "region_name": "Southern Malawi"
+  },
+  {
     "country_name": "Uruguay",
     "income_tax": 5.0,
     "specialty": "grain",
@@ -166,13 +180,6 @@
     "specialty": "grain",
     "total_bonus": 58,
     "region_name": "Northern South Korea"
-  },
-  {
-    "country_name": "Uganda",
-    "income_tax": 5.0,
-    "specialty": "grain",
-    "total_bonus": 56,
-    "region_name": "Western Uganda"
   },
   {
     "country_name": "Chile",
@@ -252,13 +259,6 @@
     "region_name": null
   },
   {
-    "country_name": "Latvia",
-    "income_tax": 10.0,
-    "specialty": "lead",
-    "total_bonus": 40.0,
-    "region_name": null
-  },
-  {
     "country_name": "Eritrea",
     "income_tax": 5.0,
     "specialty": "lead",
@@ -271,6 +271,13 @@
     "specialty": "lead",
     "total_bonus": 37.0,
     "region_name": "Kunene-Erongo"
+  },
+  {
+    "country_name": "Latvia",
+    "income_tax": 10.0,
+    "specialty": "lead",
+    "total_bonus": 35.0,
+    "region_name": null
   },
   {
     "country_name": "Kazakhstan",
