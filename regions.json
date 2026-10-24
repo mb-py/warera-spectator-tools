@@ -213,13 +213,6 @@
     "country_name": "Indonesia",
     "income_tax": 9.0,
     "specialty": "iron",
-    "total_bonus": 43.0,
-    "region_name": "Papua"
-  },
-  {
-    "country_name": "Indonesia",
-    "income_tax": 9.0,
-    "specialty": "iron",
     "total_bonus": 34.0,
     "region_name": "Mindanao"
   },
