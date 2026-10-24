@@ -66,7 +66,7 @@
     "country_name": "Venezuela",
     "income_tax": 10.0,
     "specialty": "concrete",
-    "total_bonus": 50.5,
+    "total_bonus": 50.0,
     "region_name": null
   },
   {
@@ -131,13 +131,6 @@
     "specialty": "grain",
     "total_bonus": 72.0,
     "region_name": "Mauritius"
-  },
-  {
-    "country_name": "Taiwan",
-    "income_tax": 3.0,
-    "specialty": "grain",
-    "total_bonus": 70,
-    "region_name": "Northern Taiwan"
   },
   {
     "country_name": "Uruguay",
@@ -206,7 +199,7 @@
     "country_name": "Brazil",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 61.0,
+    "total_bonus": 56.0,
     "region_name": null
   },
   {
@@ -276,7 +269,7 @@
     "country_name": "Ethiopia",
     "income_tax": 5.0,
     "specialty": "lightAmmo",
-    "total_bonus": 50.0,
+    "total_bonus": 45.0,
     "region_name": null
   },
   {
@@ -339,6 +332,13 @@
     "country_name": "Australia",
     "income_tax": 6.0,
     "specialty": "livestock",
+    "total_bonus": 67.0,
+    "region_name": "Tasmania"
+  },
+  {
+    "country_name": "Australia",
+    "income_tax": 6.0,
+    "specialty": "livestock",
     "total_bonus": 66.0,
     "region_name": "Antsiranana"
   },
@@ -355,13 +355,6 @@
     "specialty": "livestock",
     "total_bonus": 56,
     "region_name": "South Island"
-  },
-  {
-    "country_name": "Guatemala",
-    "income_tax": 4.0,
-    "specialty": "livestock",
-    "total_bonus": 55,
-    "region_name": "Northern Guatemala"
   },
   {
     "country_name": "Mali",
@@ -418,6 +411,13 @@
     "specialty": "steel",
     "total_bonus": 10.0,
     "region_name": null
+  },
+  {
+    "country_name": "Malta",
+    "income_tax": 2.9,
+    "specialty": "wood",
+    "total_bonus": 43.0,
+    "region_name": "Malta"
   },
   {
     "country_name": "Algeria",
