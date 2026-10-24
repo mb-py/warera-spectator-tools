@@ -133,13 +133,6 @@
     "region_name": "Northeastern Iceland"
   },
   {
-    "country_name": "Australia",
-    "income_tax": 6.0,
-    "specialty": "grain",
-    "total_bonus": 72.0,
-    "region_name": "Mauritius"
-  },
-  {
     "country_name": "Uruguay",
     "income_tax": 5.0,
     "specialty": "grain",
@@ -176,7 +169,7 @@
   },
   {
     "country_name": "Chile",
-    "income_tax": 7.0,
+    "income_tax": 10.0,
     "specialty": "heavyAmmo",
     "total_bonus": 55.0,
     "region_name": null
@@ -224,11 +217,11 @@
     "region_name": "Papua"
   },
   {
-    "country_name": "Haiti",
-    "income_tax": 3.0,
+    "country_name": "Indonesia",
+    "income_tax": 9.0,
     "specialty": "iron",
-    "total_bonus": 28.0,
-    "region_name": "Haiti"
+    "total_bonus": 34.0,
+    "region_name": "Mindanao"
   },
   {
     "country_name": "Egypt",
