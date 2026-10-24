@@ -87,7 +87,7 @@
     "country_name": "Croatia",
     "income_tax": 10.0,
     "specialty": "cookedFish",
-    "total_bonus": 15.5,
+    "total_bonus": 15.75,
     "region_name": null
   },
   {
@@ -140,11 +140,11 @@
     "region_name": "Northern Taiwan"
   },
   {
-    "country_name": "Australia",
-    "income_tax": 6.0,
+    "country_name": "Uruguay",
+    "income_tax": 5.0,
     "specialty": "grain",
-    "total_bonus": 68.0,
-    "region_name": "Comoros"
+    "total_bonus": 69,
+    "region_name": "Salto"
   },
   {
     "country_name": "Australia",
@@ -154,13 +154,6 @@
     "region_name": "Southern Malawi"
   },
   {
-    "country_name": "Uruguay",
-    "income_tax": 5.0,
-    "specialty": "grain",
-    "total_bonus": 66,
-    "region_name": "Salto"
-  },
-  {
     "country_name": "South Korea",
     "income_tax": 1.69,
     "specialty": "grain",
@@ -168,11 +161,18 @@
     "region_name": "Northern South Korea"
   },
   {
-    "country_name": "Cambodia",
-    "income_tax": 6.0,
+    "country_name": "Switzerland",
+    "income_tax": 1.0,
     "specialty": "grain",
-    "total_bonus": 53,
-    "region_name": "Battambang"
+    "total_bonus": 39.0,
+    "region_name": "Ticons Grisons"
+  },
+  {
+    "country_name": "Vietnam",
+    "income_tax": 5.0,
+    "specialty": "grain",
+    "total_bonus": 31.0,
+    "region_name": "Da Nang"
   },
   {
     "country_name": "Chile",
@@ -415,13 +415,6 @@
   {
     "country_name": "Zimbabwe",
     "income_tax": 7.0,
-    "specialty": "steel",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Romania",
-    "income_tax": 9.0,
     "specialty": "steel",
     "total_bonus": 10.0,
     "region_name": null
