@@ -350,25 +350,11 @@
     "region_name": "Mbomou"
   },
   {
-    "country_name": "Burundi",
-    "income_tax": 7.0,
-    "specialty": "livestock",
-    "total_bonus": 68,
-    "region_name": "Burundi"
-  },
-  {
     "country_name": "Australia",
     "income_tax": 6.0,
     "specialty": "livestock",
     "total_bonus": 67.0,
     "region_name": "Tasmania"
-  },
-  {
-    "country_name": "Australia",
-    "income_tax": 6.0,
-    "specialty": "livestock",
-    "total_bonus": 66.0,
-    "region_name": "Antsiranana"
   },
   {
     "country_name": "Ecuador",
@@ -383,6 +369,20 @@
     "specialty": "livestock",
     "total_bonus": 57.0,
     "region_name": "Mauritius"
+  },
+  {
+    "country_name": "New Zealand",
+    "income_tax": 2.9,
+    "specialty": "livestock",
+    "total_bonus": 56,
+    "region_name": "North Island"
+  },
+  {
+    "country_name": "Guatemala",
+    "income_tax": 4.0,
+    "specialty": "livestock",
+    "total_bonus": 55,
+    "region_name": "Northern Guatemala"
   },
   {
     "country_name": "Mali",
