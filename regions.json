@@ -28,6 +28,20 @@
     "region_name": null
   },
   {
+    "country_name": "Serbia",
+    "income_tax": 6.0,
+    "specialty": "bread",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Australia",
+    "income_tax": 6.0,
+    "specialty": "coca",
+    "total_bonus": 72.0,
+    "region_name": "Comoros"
+  },
+  {
     "country_name": "Taiwan",
     "income_tax": 3.0,
     "specialty": "coca",
@@ -98,6 +112,13 @@
     "region_name": null
   },
   {
+    "country_name": "Lithuania",
+    "income_tax": 7.0,
+    "specialty": "cookedFish",
+    "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
     "country_name": "Germany",
     "income_tax": 10.0,
     "specialty": "cookedFish",
@@ -105,17 +126,10 @@
     "region_name": null
   },
   {
-    "country_name": "Lithuania",
-    "income_tax": 7.0,
-    "specialty": "cookedFish",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
     "country_name": "Croatia",
     "income_tax": 10.0,
     "specialty": "cookedFish",
-    "total_bonus": 5.75,
+    "total_bonus": 5.5,
     "region_name": null
   },
   {
@@ -215,6 +229,13 @@
     "specialty": "iron",
     "total_bonus": 34.0,
     "region_name": "Mindanao"
+  },
+  {
+    "country_name": "Cyprus",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 30.0,
+    "region_name": "Cyprus"
   },
   {
     "country_name": "Egypt",
@@ -380,13 +401,6 @@
   {
     "country_name": "Slovenia",
     "income_tax": 1.0,
-    "specialty": "petroleum",
-    "total_bonus": 10.0,
-    "region_name": null
-  },
-  {
-    "country_name": "Lebanon",
-    "income_tax": 2.0,
     "specialty": "petroleum",
     "total_bonus": 10.0,
     "region_name": null
