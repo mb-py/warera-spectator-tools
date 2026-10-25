@@ -224,18 +224,18 @@
     "region_name": null
   },
   {
+    "country_name": "Cyprus",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 35.0,
+    "region_name": "Cyprus"
+  },
+  {
     "country_name": "Indonesia",
     "income_tax": 9.0,
     "specialty": "iron",
     "total_bonus": 34.0,
     "region_name": "Mindanao"
-  },
-  {
-    "country_name": "Cyprus",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 30.0,
-    "region_name": "Cyprus"
   },
   {
     "country_name": "Egypt",
@@ -364,11 +364,11 @@
     "region_name": "Ecuadorian Islands"
   },
   {
-    "country_name": "Guatemala",
-    "income_tax": 4.0,
+    "country_name": "Australia",
+    "income_tax": 6.0,
     "specialty": "livestock",
-    "total_bonus": 55,
-    "region_name": "Northern Guatemala"
+    "total_bonus": 57.0,
+    "region_name": "Mauritius"
   },
   {
     "country_name": "Mali",
