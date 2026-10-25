@@ -238,13 +238,6 @@
     "region_name": "Cyprus"
   },
   {
-    "country_name": "Indonesia",
-    "income_tax": 9.0,
-    "specialty": "iron",
-    "total_bonus": 34.0,
-    "region_name": "Mindanao"
-  },
-  {
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
