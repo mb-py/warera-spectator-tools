@@ -161,6 +161,13 @@
     "region_name": "Southern Malawi"
   },
   {
+    "country_name": "Cambodia",
+    "income_tax": 6.0,
+    "specialty": "grain",
+    "total_bonus": 63,
+    "region_name": "Battambang"
+  },
+  {
     "country_name": "South Korea",
     "income_tax": 1.69,
     "specialty": "grain",
@@ -315,6 +322,13 @@
     "region_name": "Dakar"
   },
   {
+    "country_name": "Dominican Republic",
+    "income_tax": 3.0,
+    "specialty": "limestone",
+    "total_bonus": 10.0,
+    "region_name": null
+  },
+  {
     "country_name": "India",
     "income_tax": 6.0,
     "specialty": "limestone",
@@ -374,7 +388,7 @@
     "country_name": "Mali",
     "income_tax": 8.0,
     "specialty": "oil",
-    "total_bonus": 55.0,
+    "total_bonus": 60.0,
     "region_name": null
   },
   {
