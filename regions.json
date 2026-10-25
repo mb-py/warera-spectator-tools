@@ -287,6 +287,13 @@
     "region_name": "Al Anbar"
   },
   {
+    "country_name": "Senegal",
+    "income_tax": 1.0,
+    "specialty": "limestone",
+    "total_bonus": 29.0,
+    "region_name": "Dakar"
+  },
+  {
     "country_name": "India",
     "income_tax": 6.0,
     "specialty": "limestone",
@@ -336,11 +343,11 @@
     "region_name": "Ecuadorian Islands"
   },
   {
-    "country_name": "New Zealand",
-    "income_tax": 2.9,
+    "country_name": "Guatemala",
+    "income_tax": 4.0,
     "specialty": "livestock",
-    "total_bonus": 56,
-    "region_name": "South Island"
+    "total_bonus": 55,
+    "region_name": "Northern Guatemala"
   },
   {
     "country_name": "Mali",
