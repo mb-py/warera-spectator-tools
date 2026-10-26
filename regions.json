@@ -262,7 +262,7 @@
     "country_name": "Egypt",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 10.5,
+    "total_bonus": 5.5,
     "region_name": null
   },
   {
@@ -301,18 +301,18 @@
     "region_name": null
   },
   {
-    "country_name": "Kuwait",
-    "income_tax": 4.0,
-    "specialty": "limestone",
-    "total_bonus": 39.0,
-    "region_name": "Al Anbar"
-  },
-  {
     "country_name": "Senegal",
     "income_tax": 1.0,
     "specialty": "limestone",
     "total_bonus": 29.0,
     "region_name": "Dakar"
+  },
+  {
+    "country_name": "Kuwait",
+    "income_tax": 4.0,
+    "specialty": "limestone",
+    "total_bonus": 15.0,
+    "region_name": null
   },
   {
     "country_name": "Dominican Republic",
@@ -343,25 +343,11 @@
     "region_name": "Mbomou"
   },
   {
-    "country_name": "Australia",
-    "income_tax": 6.0,
-    "specialty": "livestock",
-    "total_bonus": 67.0,
-    "region_name": "Tasmania"
-  },
-  {
     "country_name": "Ecuador",
     "income_tax": 5.0,
     "specialty": "livestock",
     "total_bonus": 62,
     "region_name": "Ecuadorian Islands"
-  },
-  {
-    "country_name": "Australia",
-    "income_tax": 6.0,
-    "specialty": "livestock",
-    "total_bonus": 57.0,
-    "region_name": "Mauritius"
   },
   {
     "country_name": "New Zealand",
@@ -376,6 +362,20 @@
     "specialty": "livestock",
     "total_bonus": 55,
     "region_name": "Northern Guatemala"
+  },
+  {
+    "country_name": "South Korea",
+    "income_tax": 1.69,
+    "specialty": "livestock",
+    "total_bonus": 52,
+    "region_name": "Thimphu"
+  },
+  {
+    "country_name": "Czechia",
+    "income_tax": 3.0,
+    "specialty": "livestock",
+    "total_bonus": 35.0,
+    "region_name": "Western Czechia"
   },
   {
     "country_name": "Mali",
@@ -399,11 +399,25 @@
     "region_name": null
   },
   {
+    "country_name": "Lebanon",
+    "income_tax": 2.0,
+    "specialty": "petroleum",
+    "total_bonus": 39.0,
+    "region_name": "North Lebanon"
+  },
+  {
     "country_name": "Syria",
     "income_tax": 7.0,
     "specialty": "petroleum",
     "total_bonus": 35.0,
     "region_name": null
+  },
+  {
+    "country_name": "Mauritania",
+    "income_tax": 0.0,
+    "specialty": "petroleum",
+    "total_bonus": 32.0,
+    "region_name": "Southeastern Mauritania"
   },
   {
     "country_name": "Slovenia",
