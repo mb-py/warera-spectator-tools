@@ -80,7 +80,7 @@
     "country_name": "DR Congo",
     "income_tax": 8.0,
     "specialty": "cocain",
-    "total_bonus": 20.0,
+    "total_bonus": 25.0,
     "region_name": null
   },
   {
@@ -101,7 +101,7 @@
     "country_name": "Turkiye",
     "income_tax": 8.0,
     "specialty": "concrete",
-    "total_bonus": 10.5,
+    "total_bonus": 10.0,
     "region_name": null
   },
   {
@@ -196,11 +196,11 @@
     "region_name": "Yangon"
   },
   {
-    "country_name": "Switzerland",
-    "income_tax": 1.0,
+    "country_name": "Vietnam",
+    "income_tax": 5.0,
     "specialty": "grain",
-    "total_bonus": 39.0,
-    "region_name": "Ticons Grisons"
+    "total_bonus": 31.0,
+    "region_name": "Da Nang"
   },
   {
     "country_name": "Chile",
@@ -248,21 +248,21 @@
     "country_name": "Cyprus",
     "income_tax": 10.0,
     "specialty": "iron",
-    "total_bonus": 35.0,
+    "total_bonus": 38.0,
     "region_name": "Cyprus"
-  },
-  {
-    "country_name": "Egypt",
-    "income_tax": 10.0,
-    "specialty": "iron",
-    "total_bonus": 15.5,
-    "region_name": null
   },
   {
     "country_name": "Botswana",
     "income_tax": 10.0,
     "specialty": "iron",
     "total_bonus": 15.0,
+    "region_name": null
+  },
+  {
+    "country_name": "Egypt",
+    "income_tax": 10.0,
+    "specialty": "iron",
+    "total_bonus": 10.5,
     "region_name": null
   },
   {
@@ -301,13 +301,6 @@
     "region_name": null
   },
   {
-    "country_name": "Sudan",
-    "income_tax": 3.0,
-    "specialty": "limestone",
-    "total_bonus": 41.0,
-    "region_name": "Darfur"
-  },
-  {
     "country_name": "Kuwait",
     "income_tax": 4.0,
     "specialty": "limestone",
@@ -320,6 +313,13 @@
     "specialty": "limestone",
     "total_bonus": 29.0,
     "region_name": "Dakar"
+  },
+  {
+    "country_name": "Dominican Republic",
+    "income_tax": 3.0,
+    "specialty": "limestone",
+    "total_bonus": 10.0,
+    "region_name": null
   },
   {
     "country_name": "India",
@@ -351,7 +351,7 @@
   },
   {
     "country_name": "Ecuador",
-    "income_tax": 6.0,
+    "income_tax": 5.0,
     "specialty": "livestock",
     "total_bonus": 62,
     "region_name": "Ecuadorian Islands"
@@ -439,12 +439,5 @@
     "specialty": "wood",
     "total_bonus": 43.0,
     "region_name": "Malta"
-  },
-  {
-    "country_name": "Algeria",
-    "income_tax": 3.5,
-    "specialty": "wood",
-    "total_bonus": 35.0,
-    "region_name": null
   }
 ]
